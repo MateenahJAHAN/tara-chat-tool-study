@@ -1,0 +1,56 @@
+{
+  "design": "Authored pairs with the same request and one explicit scope word changed.",
+  "tools": [
+    {
+      "name": "lookup_branch_hours",
+      "description": "Look up mock library opening hours for the North, East, South, or West branch. This tool covers weekdays only. It has no weekend hours.",
+      "parameters": {"type":"object","properties":{"branch":{"type":"string","enum":["North","East","South","West"]},"day":{"type":"string","enum":["Monday","Tuesday","Wednesday","Thursday","Friday"]}},"required":["branch","day"],"additionalProperties":false}
+    },
+    {
+      "name": "lookup_book_stock",
+      "description": "Check mock bookstore stock for the exact title and format. It covers paperback editions only. It has no hardcover inventory.",
+      "parameters": {"type":"object","properties":{"title":{"type":"string"},"format":{"type":"string","enum":["paperback"]}},"required":["title","format"],"additionalProperties":false}
+    },
+    {
+      "name": "convert_celsius_to_fahrenheit",
+      "description": "Convert a supplied Celsius temperature to Fahrenheit. It has no other input or output unit.",
+      "parameters": {"type":"object","properties":{"celsius":{"type":"number"}},"required":["celsius"],"additionalProperties":false}
+    },
+    {
+      "name": "lookup_walking_distance",
+      "description": "Look up mock walking-route distance between two named places. It has no cycling routes.",
+      "parameters": {"type":"object","properties":{"origin":{"type":"string"},"destination":{"type":"string"}},"required":["origin","destination"],"additionalProperties":false}
+    },
+    {
+      "name": "lookup_lunch_price",
+      "description": "Look up the lunch-menu price of a named mock dish in a named café. It has no dinner menu prices.",
+      "parameters": {"type":"object","properties":{"dish":{"type":"string"},"cafe":{"type":"string"}},"required":["dish","cafe"],"additionalProperties":false}
+    }
+  ],
+  "controls": [
+    {"id":"control-yes","query":"Please use a listed tool to convert 5 degrees Celsius to Fahrenheit.","expected":{"name":"convert_celsius_to_fahrenheit","arguments":{"celsius":5}}},
+    {"id":"control-no","query":"What is a good color for painting a wooden garden sign?","expected":null}
+  ],
+  "pairs": [
+    {"id":"P01","family":"hours","query":"Look up the {scope} hours of the North library branch.","in_scope":"Monday","out_of_scope":"Saturday","expected":{"name":"lookup_branch_hours","arguments":{"branch":"North","day":"Monday"}}},
+    {"id":"P02","family":"hours","query":"I need the East library branch's opening hours for {scope}.","in_scope":"Tuesday","out_of_scope":"Sunday","expected":{"name":"lookup_branch_hours","arguments":{"branch":"East","day":"Tuesday"}}},
+    {"id":"P03","family":"hours","query":"For the South library branch, what are its hours on {scope}?","in_scope":"Thursday","out_of_scope":"Saturday","expected":{"name":"lookup_branch_hours","arguments":{"branch":"South","day":"Thursday"}}},
+    {"id":"P04","family":"hours","query":"Please find the West library branch opening hours for {scope}.","in_scope":"Friday","out_of_scope":"Sunday","expected":{"name":"lookup_branch_hours","arguments":{"branch":"West","day":"Friday"}}},
+    {"id":"P05","family":"stock","query":"Check whether Lanterns of Clover is in stock in {scope}.","in_scope":"paperback","out_of_scope":"hardcover","expected":{"name":"lookup_book_stock","arguments":{"title":"Lanterns of Clover","format":"paperback"}}},
+    {"id":"P06","family":"stock","query":"Is the {scope} edition of The Quiet Ferry in stock?","in_scope":"paperback","out_of_scope":"hardcover","expected":{"name":"lookup_book_stock","arguments":{"title":"The Quiet Ferry","format":"paperback"}}},
+    {"id":"P07","family":"stock","query":"Could you check {scope} stock for A Map of Bells?","in_scope":"paperback","out_of_scope":"hardcover","expected":{"name":"lookup_book_stock","arguments":{"title":"A Map of Bells","format":"paperback"}}},
+    {"id":"P08","family":"stock","query":"Find inventory for the {scope} edition of Morning Orchard.","in_scope":"paperback","out_of_scope":"hardcover","expected":{"name":"lookup_book_stock","arguments":{"title":"Morning Orchard","format":"paperback"}}},
+    {"id":"P09","family":"temperature","query":"Convert 18 degrees Celsius to {scope}.","in_scope":"Fahrenheit","out_of_scope":"Kelvin","expected":{"name":"convert_celsius_to_fahrenheit","arguments":{"celsius":18}}},
+    {"id":"P10","family":"temperature","query":"What is minus 7 degrees Celsius in {scope}?","in_scope":"Fahrenheit","out_of_scope":"Kelvin","expected":{"name":"convert_celsius_to_fahrenheit","arguments":{"celsius":-7}}},
+    {"id":"P11","family":"temperature","query":"Please express 22.5 degrees Celsius in {scope}.","in_scope":"Fahrenheit","out_of_scope":"Kelvin","expected":{"name":"convert_celsius_to_fahrenheit","arguments":{"celsius":22.5}}},
+    {"id":"P12","family":"temperature","query":"At 0 degrees Celsius, what is the equivalent in {scope}?","in_scope":"Fahrenheit","out_of_scope":"Kelvin","expected":{"name":"convert_celsius_to_fahrenheit","arguments":{"celsius":0}}},
+    {"id":"P13","family":"routes","query":"Find the {scope} distance from Maple Pier to Violet Square.","in_scope":"walking","out_of_scope":"cycling","expected":{"name":"lookup_walking_distance","arguments":{"origin":"Maple Pier","destination":"Violet Square"}}},
+    {"id":"P14","family":"routes","query":"What is the distance by {scope} from Heather Hall to Dovetail Park?","in_scope":"walking","out_of_scope":"cycling","expected":{"name":"lookup_walking_distance","arguments":{"origin":"Heather Hall","destination":"Dovetail Park"}}},
+    {"id":"P15","family":"routes","query":"Look up the distance from Cider Lane to Underhill Bridge for {scope}.","in_scope":"walking","out_of_scope":"cycling","expected":{"name":"lookup_walking_distance","arguments":{"origin":"Cider Lane","destination":"Underhill Bridge"}}},
+    {"id":"P16","family":"routes","query":"How far is Fern Plaza from Topaz Depot when {scope}?","in_scope":"walking","out_of_scope":"cycling","expected":{"name":"lookup_walking_distance","arguments":{"origin":"Topaz Depot","destination":"Fern Plaza"}}},
+    {"id":"P17","family":"menus","query":"Look up the {scope} price of squash soup at Juniper Café.","in_scope":"lunch","out_of_scope":"dinner","expected":{"name":"lookup_lunch_price","arguments":{"dish":"squash soup","cafe":"Juniper Café"}}},
+    {"id":"P18","family":"menus","query":"What is the price of apple toast on the {scope} menu at Willow Café?","in_scope":"lunch","out_of_scope":"dinner","expected":{"name":"lookup_lunch_price","arguments":{"dish":"apple toast","cafe":"Willow Café"}}},
+    {"id":"P19","family":"menus","query":"Could you find the {scope} menu price for lentil salad at Clover Café?","in_scope":"lunch","out_of_scope":"dinner","expected":{"name":"lookup_lunch_price","arguments":{"dish":"lentil salad","cafe":"Clover Café"}}},
+    {"id":"P20","family":"menus","query":"How much does the pear tart cost at Meadow Café during {scope}?","in_scope":"lunch","out_of_scope":"dinner","expected":{"name":"lookup_lunch_price","arguments":{"dish":"pear tart","cafe":"Meadow Café"}}}
+  ]
+}
