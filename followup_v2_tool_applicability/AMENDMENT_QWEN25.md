@@ -1,0 +1,7 @@
+# Second checkpoint amendment after Qwen3 runtime controls
+
+The template-corrected Qwen3 endpoint still used its entire 96-token allowance on scratchpad text in both arms for all four smoke requests. It produced neither expected structured call. Both Qwen3 trial streams are diagnostic records and do not enter the behavioural contrast.
+
+Use the original study's pinned Qwen2.5-1.5B-Instruct checkpoint as the second model. This gives the same model a new independent holdout bank. Reuse the frozen pair bank, schemas, schedule, system messages, scorer and 96-token ceiling. Load the local model offline with Transformers, FP32, eager attention and MPS, following the original TARA setup. Use greedy decoding. The model's own tokenizer renders its native tool template. Parse a complete standalone native tool-call tag into the scorer's standard structured-message boundary while keeping the exact decoded continuation and token IDs alongside it. Leave malformed or wrapped generations in their model text form for the frozen scorer. This adapter makes the formatting conditions comparable within this model. It does not make the two model stacks interchangeable.
+
+The applicable smoke control must make the expected canonical call in both interfaces, and no smoke response may hit the token cap. Exact abstention misses remain visible. Keep each run with a documented checkpoint, tokenizer/template and runtime version.
