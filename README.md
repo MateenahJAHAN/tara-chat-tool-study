@@ -1,0 +1,25 @@
+# Function applicability across text and tool interfaces
+
+A TARA research project in progress. This repository will contain the prospective protocol, independently implemented code, raw live-model outputs and analysis for a study of function selection and abstention.
+
+## Research question
+
+When a request does not match the available function, does the same model abstain consistently in text-serialized and native tool interfaces? Do linear probes trained in one interface transfer to the other, and do controlled interventions change behaviour while preserving output quality?
+
+## Current status
+
+The course-informed protocol and implementation are being prepared with Claude Code Opus 5.5 at max effort and independent review. **The substantive held-out experiment has not run yet.** Protocol/code will be frozen before held-out inference, and failed checks and negative outcomes will be retained.
+
+The proposed data are the published [Berkeley Function Calling Leaderboard](https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard) relevance/irrelevance tasks, with a separate live-data evaluation and controls for source, length and function-schema effects. The candidate open-weight model is Qwen2.5-1.5B-Instruct; exact revisions, licenses and selection rules will be recorded in the protocol.
+
+## Methods and scope
+
+The approach draws on linear probes, model steering and agent evaluation in the [ARENA curriculum](https://github.com/ARENA-education/ARENA_materials). The implementation will be original code; course notebooks are not redistributed here.
+
+This is a comparison of interface packages and function applicability. It does not isolate tool availability alone or establish general agent safety, biological-misuse resistance or a clinical result. An earlier six-case fictional-card engineering pilot was a separate connection/control check and will not enter this study's estimates.
+
+## Reproducibility and contributions
+
+Model weights and downloaded benchmark data will stay out of Git. Source revisions, retrieval scripts, dataset/split hashes, commands, resource settings, raw model records and analysis will identify exactly what ran. Upstream models and data retain their own licenses.
+
+The preparation is AI-assisted. Code, study-design and execution assistance from Codex and Claude Code will be documented separately from Mateenah's personal research contribution. This repository is a working study, not a peer-reviewed publication.
