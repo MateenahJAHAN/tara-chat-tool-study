@@ -1,0 +1,12 @@
+{
+  "recorded_at_utc": "2026-11-20T02:06:17.678723+00:00",
+  "before_any_main_model_inference": true,
+  "observed_input_issue": "5initially selected public input schemas contain unsupported nonstandard optional keyword",
+  "decision": "Apply identical parser-supported-schema eligibility screen to ALL candidates before fixed matching, preserving all raw input grouping/quarantine rules; no model outcome seen and no row individually cherry-picked",
+  "prior_bank": "version_history/input_bank_001_before_schema_support_screen",
+  "main_counts_target_unchanged": {
+    "TRAIN": 64,
+    "DEV": 16,
+    "HELDOUT": 32
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "design_id": "BFCL_IFACE_PROBE_V1_OPERATOR_AMENDED",
+  "status": "OPERATOR_AMENDED_PROSPECTIVE_READY_FOR_ROOT_REVIEW_NOT_EXECUTION_APPROVAL",
+  "written_utc": "2026-11-20",
+  "author_role": "Actual Opus5.5 Max draft lead, independently reviewed and amended by operators before any main inference; human authorship/contributions will be confirmed before any manuscript release",
+  "title": "Does a native tool-template interface package change false function calls on BFCL irrelevance items, and do applicability probes transfer across interfaces and sources?",
+  "research_questions": {
+    "RQ1_PRIMARY_BEHAVIOUR": "On heldout benchmark-defined irrelevant items (live_irrelevance, one function), what is the paired difference in false-call rate (any call attempt, including malformed calls and unknown names) between NATIVE_TOOLS and TEXT_CATALOGUE, holding the canonical function object, user query and operator rule fixed?",
+    "RQ2_UTILITY_PARSING_CONTROLS": "On heldout relevant items (live_simple), paired differences in call rate, valid-call rate, BFCL-inspired correct-call rate, format compliance, parse failures, empty and truncated outputs.",
+    "RQ3_SECONDARY_PROBES": "Do difference-of-means (MM) and logistic (LR) probes for the benchmark-defined applicability label, fitted only on native-BFCL train residuals, transfer across interfaces (2x2 train/test interface matrix) and to the independent live source, beyond length/schema/query/lexical-overlap baselines, a query-only activation control and permuted-label/random-direction controls?",
+    "RQ4_OPTIONAL_STEERING": "Only if dev quality gates pass: does adding the train-derived MM direction at the dev-selected layer and norm-relative scale reduce false calls beyond norm-matched random and permuted-label directions, without failing relevant-utility, invalid/empty-output and completion-KL gates?"
+  },
+  "explicit_non_claims": [
+    "Not an isolated causal effect of tool availability: the estimand is a whole interface-package effect (template header, <tools> wrapper, native output instructions, token positions).",
+    "Not official BFCL scoring (official irrelevance scoring treats decode failure as success; we count every call attempt as a false call).",
+    "Labels are benchmark-defined by source category file; semantic applicability is not independently verified; no human labels are created.",
+    "Heldout = held out from this project's fitting/selection; pretraining/post-training contamination is unknown.",
+    "Not agent safety, not bio-misuse, not a refusal/deception mechanism; probe decodability does not prove the model uses the direction.",
+    "Native-vs-prompt gaps and small-Qwen abstention failures are prior work (BFCL ICML2025; arXiv 2609.22819; arXiv 2607.02595); the behavioural contrast is a replication-style baseline. The scoped extension is controlled probe transfer and bounded intervention evidence."
+  ],
+  "model_runtime": {
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "license": "Apache-2.0 (pinned LICENSE sha256 832dd9e0...)",
+    "file_sha256": "exact values from OPERATOR_FACTS.model_manifest.files, copied into config/study_config.json and verified before every phase",
+    "dtype": "float32 (FP16 failed D1 finiteness; FP32 passed; no other dtype, no quantization)",
+    "device": "mps",
+    "attention": "eager",
+    "loading": "offline only: local_files_only=True, HF_HUB_OFFLINE=1, trust_remote_code=False, no token",
+    "decoding": "manual greedy argmax loop with KV cache (no sampling, no repetition_penalty, generation_config ignored), batch size 1",
+    "eos_token_ids": [
+      151645,
+      151643
+    ],
+    "max_new_tokens": 256,
+    "max_input_tokens": 2048,
+    "residual_capture": "forward hooks on all 28 decoder blocks; block output (pre-final-norm residual) at the final prompt token (the newline after '<|im_start|>assistant'), prefill pass only; width 1536",
+    "first_token_record": "log-probs of <tool_call>(151657) and 'NO'(8996), top-5 ids, entropy at the decision position",
+    "preflight_numeric_gate": "before main dev run: finite logits/residuals, zero-change hook max|dlogit|<=1e-3, two repeated greedy generations token-identical on one declared dev item"
+  },
+  "data": {
+    "repo": "ShishirPatil/gorilla",
+    "commit": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+    "license": "Apache-2.0; root LICENSE retained with outputs",
+    "files_sha256": "exact values from OPERATOR_FACTS.data_manifest, verified before use",
+    "label": "benchmark_irrelevant = 1 for BFCL_v4_irrelevance / BFCL_v4_live_irrelevance, 0 for BFCL_v4_simple_python / BFCL_v4_live_simple",
+    "pools": {
+      "native_train_dev_candidates": [
+        "BFCL_v4_simple_python.json (400)",
+        "BFCL_v4_irrelevance.json (240)"
+      ],
+      "heldout_candidates": [
+        "BFCL_v4_live_simple.json (258)",
+        "BFCL_v4_live_irrelevance.json one-function subset (508)"
+      ]
+    },
+    "eligibility_input_only": [
+      "E1 exactly one function in item.function",
+      "E2 question = exactly one turn with exactly one role=user message, non-empty string (items with system/multi-message turns excluded)",
+      "E3 function canonicalizes: str name, str description, parameters dict with dict properties; types mapped dict->object, float->number, tuple->array recursively, identically for all conditions; other types retained and flagged",
+      "E4 English-dominant query: >=95% of alphabetic characters are ASCII",
+      "E5 safe-domain keyword/regex exclusion (CBRN/pathogen enhancement, explosives/weapons, self-harm, sexual content, cyber-offense, illicit drug synthesis) on query + serialized function; list frozen in config",
+      "E6 secret/PII-like exclusion: email/SSN/Luhn-valid card number in query; API-key-like tokens in query or function",
+      "E7 both TEXT_CATALOGUE and NATIVE_TOOLS rendered prompts <= 2048 tokens with the pinned tokenizer (pairing preserved: exclusion applies to both)",
+      "E8 relevant items need exactly one possible-answer call whose name equals the supplied function name",
+      "E9 the canonical tool JSON string must appear verbatim in both rendered prompts",
+      "E3b unsupported nonstandard schema types excluded prospectively; standard union types tracked recursively. Benign/token/possible-answer filters applied after global grouping, so excluded native rows cannot erase conservative overlap blocks.",
+      "E3c all candidate schemas must pass the frozen scorer supported-schema-keyword/constraint screen; unsupported BFCL optional annotations are excluded before deterministic bank matching, with original bank001 retained as input-audit history."
+    ],
+    "development_only_items": [
+      "simple_python_0",
+      "irrelevance_0",
+      "and every item in their group components"
+    ],
+    "grouping": "Global connected components of exact NFKC/casefold/whitespace query OR full namespaced function name OR canonical complete function OR complete parameter schema; numeric-normalized token trigrams for >=8-word queries at Jaccard>=0.90. No generic function-tail/provenance/low-word-overlap union. Same source-preserving algorithm independently replayed before any model outcomes.",
+    "split_rules": [
+      "All C0 seed connected components are CALIBRATION_ONLY, excluded from every main train/dev/heldout bank",
+      "No live component touching a native strict single-user/one-function candidate is eligible for heldout",
+      "Exact deterministic group-balanced matching: native80/class split into TRAIN64/class and DEV16/class by seeded input rank; live HELDOUT32/class",
+      "One item per connected component globally across all224 selected main rows; exact realized counts asserted. No outcome-based exclusions/replacements.",
+      "Dev/heldout steering subsets8/class selected from inputs before outcomes. Fail exact count gate without relaxing grouping."
+    ],
+    "caps_balanced": {
+      "per_group_item_cap": 1,
+      "TRAIN": {
+        "per_class": 64,
+        "rows": 128,
+        "groups": 128,
+        "generation": false
+      },
+      "DEV": {
+        "per_class": 16,
+        "rows": 32,
+        "groups": 32
+      },
+      "HELDOUT": {
+        "per_class": 32,
+        "rows": 64,
+        "groups": 64
+      },
+      "C0_in_main": false
+    },
+    "seeds": {
+      "split": 20261119,
+      "selection": 20261120,
+      "probe_permutation_base": 20261200,
+      "steer_random_direction_base": 20261300,
+      "probe_random_direction_base": 20261400,
+      "bootstrap": 20261500
+    }
+  },
+  "conditions": {
+    "operator_rule_system_text": "Decide whether a listed function applies to the user request. If one applies, emit one call as <tool_call>{\"name\":...,\"arguments\":...}</tool_call>. Otherwise reply NO_CALL. Do not call unrelated functions or guess missing required arguments. Do not execute external actions.",
+    "canonical_tool_object": "{\"type\":\"function\",\"function\":{\"name\",\"description\",\"parameters\":{\"type\":\"object\",\"properties\",\"required\"}}} in that key order; property order as in source",
+    "tool_json_string": "json.dumps(tool_object, ensure_ascii=False) with default separators = the pinned template's tojson output",
+    "TEXT_CATALOGUE": "messages=[system: RULE + '\\nFunction catalogue (JSON):\\n' + tool_json_string, user: query]; apply_chat_template(tools=None, add_generation_prompt=True)",
+    "NATIVE_TOOLS": "messages=[system: RULE, user: query]; apply_chat_template(tools=[tool_object], add_generation_prompt=True)",
+    "QUERY_ONLY_CONTROL": "prefill-only activation control: system RULE + '\\nFunction catalogue (JSON):\\n(no functions listed)'; no generation",
+    "change_from_C0": "C0 text rendering used a sorted-key JSON list. Main text rendering uses the byte-identical per-tool string of the native template so the catalogue string is held fixed. Decided on design grounds, not on the four C0 outputs; C0 stays development-only and is not pooled."
+  },
+  "outcomes": {
+    "call_attempt_primary": "Any syntactic call attempt across the entire output, including malformed tagged/untagged JSON, unknown names and Python-like calls. No generated syntax is executed. Parse/catalogue/argument/format validity are separate diagnostics.",
+    "call_attempt_broad_sensitivity": "primary OR any code line whose AST is a single bare call expression (any name)",
+    "false_call": "benchmark_irrelevant item with >=1 primary call attempt",
+    "operational_abstention": "Exact trimmed NO_CALL alone, EOS termination, no error/truncation; arbitrary no-detected-call text is a separate unknown/no-attempt diagnostic",
+    "strict_abstention": "Same exact NO_CALL criterion; no substring credit",
+    "valid_call": "parsed name in supplied catalogue, required args present, no unknown args, JSON-schema type/enum checks pass",
+    "correct_call": "Exactly one completely parsed semantically valid catalogue call matching pinned possible_answer under documented BFCL-inspired normalization/optional/nested-alternative rules. This is project-specific, not official BFCL scoring.",
+    "format_compliant": "Whole cleaned body is exactly one complete canonical tagged JSON name/arguments object. Exact NO_CALL is recorded separately as strict abstention, not a formatted call.",
+    "status_fields": "stop_reason (eos|max_new_tokens|error), empty_output, parse_error, unknown_name, multiple_calls; errors stay in denominators"
+  },
+  "analysis": {
+    "unit": "One independently grouped selected BFCL item; one item per component; paired conditions retained",
+    "cluster": "group component id",
+    "primary_estimand": "mean over heldout irrelevant items of false_call(NATIVE_TOOLS) - false_call(TEXT_CATALOGUE)",
+    "primary_inference": "Observed paired finite-bank false-call difference with2000 group-resampling percentile descriptors; no confirmatory p-value or population-coverage/equivalence/general-safety claim",
+    "secondary_behaviour_family": [
+      "S1 operational abstention diff (irrelevant)",
+      "S2 correct-call diff (relevant)",
+      "S3 call-rate diff (relevant)",
+      "S4 format-compliance diff among attempts"
+    ],
+    "secondary_rule": "All secondary estimates descriptive. No McNemar/Holm decision rule.",
+    "native_source_results": "reported as development/descriptive only, never pooled with heldout",
+    "degenerate_cases": "Report raw paired counts and flag any constant paired differences/degenerate resampling; no general no-effect/equivalence claim"
+  },
+  "probes": {
+    "features": "per-condition final-prompt-token block outputs, layers 0..27",
+    "types": {
+      "MM": "w = mean(irrelevant) - mean(relevant) on train; score=h.w; threshold = midpoint of projected train class means",
+      "LR": "StandardScaler(train) + L2 logistic regression, C in {0.001,0.01,0.1,1.0}, lbfgs, max_iter 5000, threshold 0.5"
+    },
+    "selection": "per probe type and training interface: layer (and C) maximizing in-interface native-DEV AUROC; ties -> earliest layer, then smallest C. Frozen in selected_params.json before heldout.",
+    "evaluation": "Frozen2x2 interface transfer, query-only controls and live cross-source evaluation, all exploratory/descriptive.2000 component bootstrap descriptors. Nonfinite feature rows cause a retained stop, not complete-case filtering.",
+    "controls": [
+      "length-only LR (query chars/words, description chars, n params, n required, prompt tokens)",
+      "TF-IDF query-only LR; TF-IDF schema-only LR; TF-IDF query+schema LR",
+      "query-function lexical-overlap features LR (Jaccard, shared content words, name-token hits)",
+      "QUERY_ONLY_CONTROL activation probes (same selection rules)",
+      "20 permuted-label MM/LR probes at selected layer/C (seeds 20261200+k)",
+      "20 random unit directions at selected layer (seeds 20261400+k)",
+      "native DEV query-matched subset (label-mixed groups) diagnostic if >=10 items per class"
+    ],
+    "beyond_surface_rule": "Report paired AUROC difference to best dev-selected surface baseline and finite-bank resampling descriptor; positive interval is exploratory, not semantic/mechanistic proof.",
+    "exploratory": "decision probe predicting the model's own call attempt; cosine between text and native MM directions per layer (train only)",
+    "claim_limit": "decodability of a benchmark/source-confounded label; not knowledge, intent or use",
+    "fitted_artifact_freeze": "All selected probe coefficients/standardizers, every layer MM direction, surface TF-IDF vocabulary/idf/scaler/coefficients,20permutation controls,20random directions and selected steering vectors are fitted/stored/hashed before heldout. No heldout refitting."
+  },
+  "steering_optional": {
+    "entry_gates": "per condition: selected MM probe in-interface dev AUROC>=0.75 and baseline dev false-call rate>=0.10; else steering skipped for that condition and reported",
+    "direction": "unit(mean irrelevant - mean relevant) from that condition's train residuals at the MM dev-selected layer",
+    "vector": "alpha * median train last-token residual norm at that layer * unit direction, added to that block's output at all positions (prefill and decode)",
+    "dev_grid": {
+      "alpha": [
+        0.01,
+        0.03
+      ],
+      "signs": [
+        1,
+        -1
+      ]
+    },
+    "relevant_completion_kl": "teacher-forced mean per-token KL(unsteered||steered) over the unsteered greedy completion of relevant items excluding the first generated position",
+    "dev_selection_rule": "eligible +sign alpha: dev false-call reduction>=0.10 AND relevant correct-call drop<=0.10 AND (empty+truncated+parse_error) increase<=0.05 AND completion KL<=0.10 nats/token; choose largest false-call reduction, ties -> smallest alpha; none eligible -> STEERING_GATE_FAILED retained",
+    "heldout_configs": "baseline (reused), +d at selected alpha, -d at selected alpha, 3 norm-matched random directions, 1 permuted-label MM direction (seed 20261200)",
+    "heldout_claim_rule": "+d false-call reduction cluster CI excludes 0 AND exceeds every random/permuted control point estimate AND heldout utility/invalid/KL gates pass; otherwise no causal claim",
+    "claim_limit": "local intervention evidence for one direction/layer/scale in one model",
+    "subset": "8relevant-source+8irrelevant-source rows per dev/heldout bank, prospectively input-selected; compare candidates to reused baseline on exactly that same subset. Entry gate still uses full dev baseline and probe AUROC."
+  },
+  "compute_caps": {
+    "baseline_generations": 192,
+    "training_generations": 0,
+    "dev_steering_max_generations": 128,
+    "heldout_steering_max_generations": 192,
+    "main_max_generations": 512,
+    "separate_manual_runtime_preflight_repeats": 2,
+    "hard_generation_attempt_cap_including_failures": 600,
+    "explicit_main_activation_prefill_forwards": 480,
+    "KL_model_forwards_max": 192,
+    "forward_accounting": "Actual generator/prefill/KL/preflight model-forward counts separately ledgered; generation repeats are not new independent items."
+  },
+  "heldout_gate": {
+    "file": "<STUDY_ROOT>/approvals/root-heldout-approval.json written by root only",
+    "required_exact_hashes": [
+      "code_tree_sha256",
+      "config_sha256",
+      "split_manifest_sha256",
+      "model_manifest_sha256",
+      "parser_sha256",
+      "selected_params_sha256",
+      "dev_record_sha256",
+      "Every fitted artifact referenced by selected_params and every dev artifact referenced by DEV_RECORD is rehashed and verified at each gate entry"
+    ],
+    "behaviour": "heldout runner recomputes every hash and aborts on any mismatch, missing field, approved!=true, or non-empty heldout output directory (single shot; reruns need a new root approval and keep prior partial outputs)"
+  },
+  "open_gates_ref": "proposal/OPEN_GATES.json",
+  "stop_rules": [
+    "any staged file hash mismatch",
+    "preflight numeric gate failure",
+    "count minima not met after frozen eligibility/grouping/caps",
+    "verbatim catalogue-string invariant fails for the template",
+    "generation cap reached (remaining jobs recorded as not run)"
+  ],
+  "amended_at_utc": "2026-11-20T02:04:05.254780+00:00",
+  "amendment_authority": "ROOT_METHOD_AMENDMENTS.json"
+}

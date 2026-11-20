@@ -1,0 +1,9 @@
+{
+  "status": "failed_before_model_load",
+  "recorded_at_utc": "2026-11-20T01:39:07.522390+00:00",
+  "reason": "Default sandbox cannot access MPS; unchanged script correctly raised unavailable-backend guard",
+  "completed_generations": 0,
+  "script_unchanged": true,
+  "automatic_retries": 0,
+  "next": "R2 is separately frozen authorized local-MPS execution with elevated backend access, same source/data/dtype"
+}

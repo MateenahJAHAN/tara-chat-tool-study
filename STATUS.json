@@ -1,5 +1,5 @@
 {
-  "study_status": "prospective protocol and implementation in preparation",
+  "study_status": "prospective main code/input freeze; development authorized; heldout not yet authorized",
   "main_heldout_inference_started": false,
   "research_question": "Function applicability across text and native tool interfaces",
   "initialization": "AI-assisted; not a claim of unaided personal work",
@@ -14,10 +14,17 @@
     "device": "AppleMPS",
     "main_results": false,
     "readme": "development_calibration/README.md",
-    "portable_adaptations_rerun": false
+    "portable_adaptations_rerun": true
   },
   "opus_design_lead": {
-    "phase1": "research phase reached recorded20-minute cap without proposal artifacts; preserved",
-    "phase2": "focused Opus5.5/max implementation phase launched with verified inputs; no further web search"
+    "phase1": "research phase reached recorded20-minute cap without artifacts; preserved",
+    "phase2": "completed actual claude-opus-5-5/max implementation, exit0; independent amendments before any main outcome"
+  },
+  "public_protocol": "study_v1/PROSPECTIVE_FREEZE_RECORD.json",
+  "split_counts": {
+    "train": 128,
+    "dev": 32,
+    "heldout": 64,
+    "unique_groups": 224
   }
 }

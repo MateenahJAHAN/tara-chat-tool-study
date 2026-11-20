@@ -1,0 +1,54 @@
+{
+  "recorded_at_utc": "2026-11-20T01:50:25.976034+00:00",
+  "authority": "Root research-method review, collaboration message in this session",
+  "status": "APPROVED_PROSPECTIVE_METHOD_AMENDMENTS_ONLY",
+  "heldout_execution_approved": false,
+  "original_opus_draft_preserved": true,
+  "rules": {
+    "grouping": "Independent-reviewed exact connected components + numeric-normalized token-trigram Jaccard>=0.90; no low-overlap/tail/provenance unions",
+    "calibration": "Every C0 connected component CALIBRATION_ONLY, excluded from all main train/dev/heldout splits",
+    "source_separation": "No eligible live component touching native candidates in heldout",
+    "targets_per_class": {
+      "TRAIN": 64,
+      "DEV": 16,
+      "HELDOUT": 32
+    },
+    "heldout_group_cap": 1,
+    "split_components_disjoint": true,
+    "count_shortfall": "Report deterministic input-only counts and lower prospectively if needed, never relax duplicate rules after outcomes",
+    "planned_baseline_generations": 192,
+    "training": "Prefill/activations only, no training generations",
+    "steering_input_subset_per_class": 8,
+    "steering_dev_alphas": [
+      0.01,
+      0.03
+    ],
+    "steering_dev_signs": [
+      1,
+      -1
+    ],
+    "maximum_dev_steering_generations": 128,
+    "maximum_heldout_steering_generations": 192,
+    "heldout_steering_conditions": [
+      "positive direction",
+      "negative direction",
+      "random1",
+      "random2",
+      "random3",
+      "permuted label direction"
+    ],
+    "planned_generation_cap": 512,
+    "hard_generation_attempt_cap": 600,
+    "max_new_tokens": 256,
+    "abstention": "Only exact trimmed NO_CALL is explicit abstention; arbitrary no-attempt text described separately",
+    "call_attempt": "Syntax/name/parse independent attempts, malformed/unknown/empty/truncated reported separately in fixed denominators",
+    "statistics": "Descriptive finite-bank group-bootstrap CIs; no anti-cluster item-McNemar confirmation/equivalence/general safety claims",
+    "probe_permutations": 20,
+    "probe_random_controls": 20,
+    "bootstrap_replicates": 2000,
+    "quality_controls": "Keep norm-matched random/permutation, relevant utility, invalid-output and KL gates; steering may validly fail dev gate",
+    "novelty": "Behavioral baseline replication; exploratory controlled transfer/steering extension",
+    "before_main": "Reviewed operator code/config/data/splits, checks and public prospective freeze",
+    "before_heldout": "Actual final source/config/splits/dev-selected fitted parameter hashes reviewed by root and explicit heldout gate file only root writes"
+  }
+}

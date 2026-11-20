@@ -1,0 +1,7 @@
+AI-assisted original implementation and measurements. Actual Claude Code Opus5.5 Max drafted the design/source; independent operators amended and tested it before main inference. Human authorship/contributions must be confirmed before manuscript release.
+
+BFCL public data: ShishirPatil/gorilla@6ea57973c7a6097fd7c5915698c54c17c5b1b6c8, Apache-2.0. Selected rows/prompts/reference values retain their provenance in the split manifest. Model: Qwen/Qwen2.5-1.5B-Instruct@989aa7980e4cf806f80c7fef2b1adb7bc71aa306, Apache-2.0. Weights are not included.
+
+Course concepts attributed to MateenahJAHAN/ARENA_materials@db66202317a3cc9cb64eb3a64adf062949255bf1, chapter1 hooks/linear-probes/steering and chapter3 evaluations/agents. No course implementation copied. Probe concepts also follow Marks and Tegmark, arXiv:2310.06824.
+
+BFCL-inspired scorer conventions independently reimplemented from the pinned upstream AST checker, with project-specific whole-output intent, finite/literal/recursive-schema/protocol controls. This is not an official BFCL score. Behavioral interface comparison is a replication-style baseline; close prior work includes BFCL ICML2025, arXiv:2609.22819 and arXiv:2607.02595.

@@ -1,0 +1,773 @@
+{
+  "status": "PASS",
+  "verified_at_utc": "2026-11-20T01:40:02.512962+00:00",
+  "published_commit": "403ec01",
+  "phase": "Development-only portable source reproduction",
+  "completed_new_generations": 4,
+  "unique_native_items": 2,
+  "captured_vectors": 112,
+  "nonmodifying_control_forwards": 8,
+  "heldout_inference": false,
+  "main_inference": false,
+  "unchanged_published_script": true,
+  "script_sha256": "bdb4b0bd9b425ef9bb7507b767be141e7677f3faef29fe084113283d3c1aac8b",
+  "record_comparisons": [
+    {
+      "id": "simple_python_0",
+      "condition": "TEXT_CATALOGUE",
+      "fields_equal": {
+        "id": true,
+        "condition": true,
+        "rendered_prompt": true,
+        "prompt_sha256": true,
+        "generated_token_ids": true,
+        "generated_text": true,
+        "input_tokens": true,
+        "generated_tokens": true,
+        "all_residuals_finite": true,
+        "zero_change_hook_logit_max_abs_difference": true
+      }
+    },
+    {
+      "id": "simple_python_0",
+      "condition": "NATIVE_TOOLS",
+      "fields_equal": {
+        "id": true,
+        "condition": true,
+        "rendered_prompt": true,
+        "prompt_sha256": true,
+        "generated_token_ids": true,
+        "generated_text": true,
+        "input_tokens": true,
+        "generated_tokens": true,
+        "all_residuals_finite": true,
+        "zero_change_hook_logit_max_abs_difference": true
+      }
+    },
+    {
+      "id": "irrelevance_0",
+      "condition": "TEXT_CATALOGUE",
+      "fields_equal": {
+        "id": true,
+        "condition": true,
+        "rendered_prompt": true,
+        "prompt_sha256": true,
+        "generated_token_ids": true,
+        "generated_text": true,
+        "input_tokens": true,
+        "generated_tokens": true,
+        "all_residuals_finite": true,
+        "zero_change_hook_logit_max_abs_difference": true
+      }
+    },
+    {
+      "id": "irrelevance_0",
+      "condition": "NATIVE_TOOLS",
+      "fields_equal": {
+        "id": true,
+        "condition": true,
+        "rendered_prompt": true,
+        "prompt_sha256": true,
+        "generated_token_ids": true,
+        "generated_text": true,
+        "input_tokens": true,
+        "generated_tokens": true,
+        "all_residuals_finite": true,
+        "zero_change_hook_logit_max_abs_difference": true
+      }
+    }
+  ],
+  "vector_comparisons": [
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer0",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer1",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer2",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer3",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer4",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer5",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer6",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer7",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer8",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer9",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer10",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer11",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer12",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer13",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer14",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer15",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer16",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer17",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer18",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer19",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer20",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer21",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer22",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer23",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer24",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer25",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer26",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__TEXT_CATALOGUE__layer27",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer0",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer1",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer2",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer3",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer4",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer5",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer6",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer7",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer8",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer9",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer10",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer11",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer12",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer13",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer14",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer15",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer16",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer17",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer18",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer19",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer20",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer21",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer22",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer23",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer24",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer25",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer26",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "simple_python_0__NATIVE_TOOLS__layer27",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer0",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer1",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer2",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer3",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer4",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer5",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer6",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer7",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer8",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer9",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer10",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer11",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer12",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer13",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer14",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer15",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer16",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer17",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer18",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer19",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer20",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer21",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer22",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer23",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer24",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer25",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer26",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__TEXT_CATALOGUE__layer27",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer0",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer1",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer2",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer3",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer4",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer5",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer6",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer7",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer8",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer9",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer10",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer11",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer12",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer13",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer14",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer15",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer16",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer17",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer18",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer19",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer20",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer21",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer22",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer23",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer24",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer25",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer26",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    },
+    {
+      "key": "irrelevance_0__NATIVE_TOOLS__layer27",
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "all_finite": true
+    }
+  ],
+  "preceding_default_sandbox_failure_retained": "../portable_reproduction_R1/FAILURE.json",
+  "fresh_execution_result": {
+    "phase": "C0_V2_DECLARED_DEVELOPMENT_RUNTIME_COMPATIBILITY",
+    "completed_at_utc": "2026-11-20T01:39:26.856996+00:00",
+    "actual_model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "actual_backend": "mps",
+    "actual_dtype": "float32",
+    "torch": "2.15.0",
+    "scheduled_generations": 4,
+    "completed_generations": 4,
+    "scheduled_nonmodifying_prefill_forwards": 8,
+    "captured_vectors": 112,
+    "elapsed_s": 9.532636791933328,
+    "heldout_inference_performed": false,
+    "scientific_claims": false,
+    "next": "Review Opus prospective study, preserve C0 as development-only and freeze main before heldout."
+  },
+  "no_generated_functions_executed": true
+}

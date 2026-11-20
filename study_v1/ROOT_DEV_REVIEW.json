@@ -1,0 +1,26 @@
+{
+  "reviewed_at_utc": "2026-11-20T02:15:24.279906+00:00",
+  "status": "APPROVED_FOR_PREFLIGHT_AND_DEV_ONLY",
+  "heldout_approved": false,
+  "reviewer": "Codex root operator; independent parser/input/runtime/probe source reviews recorded",
+  "checks": {
+    "regression_methods_passed": 37,
+    "all_code_syntax": true,
+    "selected_rows": 224,
+    "selected_unique_groups": 224,
+    "unsupported_selected_schemas": 0,
+    "train_per_class": 64,
+    "dev_per_class": 16,
+    "heldout_per_class": 32,
+    "C0_components_excluded": true
+  },
+  "code_tree_sha256": "4257b4575385c8c60f50b14af0dde461ac4ff853d75a8418c2bfef1cd57cd02e",
+  "config_sha256": "7798c38c3a258ccb33d66a3ab7f279cdc58925fcf9b3624790252049556c22f2",
+  "split_manifest_sha256": "6e265ee4f4d667077a8e9793c8e2e1be01cd00737c74f04582b0003f2aaa93d9",
+  "scope": "Fixed BFCL subset, one open model, interface-package behaviour and exploratory probes. Main heldout needs a separate fitted-artifact hash review.",
+  "notes": [
+    "Original Opus proposal preserved; root methodological amendments are prospective and source-hashed.",
+    "37 regression methods plus independent source review; real numeric preflight still required.",
+    "No formal registry, universal safety, or peer-reviewed novelty claim."
+  ]
+}

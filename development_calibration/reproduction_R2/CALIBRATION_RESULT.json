@@ -1,0 +1,17 @@
+{
+  "phase": "C0_V2_DECLARED_DEVELOPMENT_RUNTIME_COMPATIBILITY",
+  "completed_at_utc": "2026-11-20T01:39:26.856996+00:00",
+  "actual_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "actual_backend": "mps",
+  "actual_dtype": "float32",
+  "torch": "2.15.0",
+  "scheduled_generations": 4,
+  "completed_generations": 4,
+  "scheduled_nonmodifying_prefill_forwards": 8,
+  "captured_vectors": 112,
+  "elapsed_s": 9.532636791933328,
+  "heldout_inference_performed": false,
+  "scientific_claims": false,
+  "next": "Review Opus prospective study, preserve C0 as development-only and freeze main before heldout."
+}

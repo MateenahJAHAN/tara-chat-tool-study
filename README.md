@@ -8,13 +8,19 @@ When a request does not match the available function, does the same model abstai
 
 ## Current status
 
-The course-informed protocol and implementation are being prepared with Claude Code Opus 5.5 at max effort and independent review. **The substantive held-out experiment has not run yet.** Protocol/code will be frozen before held-out inference, and failed checks and negative outcomes will be retained.
+The [prospective protocol, code, split manifest and tests](study_v1/) are now frozen before main inference, following actual Claude Code Opus 5.5 Max implementation and independent source review. **The substantive held-out experiment has not run yet.** Development is authorized; held-out execution requires a separate review of the fitted artifacts. Failed checks and negative outcomes will be retained.
 
 The proposed data are the published [Berkeley Function Calling Leaderboard](https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard) relevance/irrelevance tasks, with a separate live-data evaluation and controls for source, length and function-schema effects. The candidate open-weight model is Qwen2.5-1.5B-Instruct; exact revisions, licenses and selection rules will be recorded in the protocol.
 
 ## Completed development calibration
 
 [Real local model outputs and reproduction code](development_calibration/README.md) are now available: four generations on two declared public BFCL development items, residual activations from all 28 decoder layers and retained precision diagnostics. Float32/MPS passed the non-modifying-hook check; the earlier float16 numerical failure is preserved. These are development checks, not held-out study results.
+
+The [fresh reproduction record](development_calibration/reproduction_R2/README.txt) verifies that the published calibration script reproduces all four original token sequences and all 112 residual vectors exactly.
+
+## Prospective main study
+
+The fixed bank contains 128 training, 32 development and 64 held-out tasks, balanced by source label and drawn from 224 distinct query/function/schema groups. Training uses activation prefills; development and held-out behaviour are separate. The bounded schedule allows up to 512 planned generations plus two numeric-calibration repeats, with a hard cap of 600 attempts. Optional steering remains conditional on the predeclared development gates. The analysis reports finite-bank descriptive estimates and uncertainty.
 
 ## Methods and scope
 
