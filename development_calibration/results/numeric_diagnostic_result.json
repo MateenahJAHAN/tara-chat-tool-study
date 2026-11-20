@@ -1,0 +1,67 @@
+{
+  "phase": "D1_NUMERIC_DEVELOPMENT_ONLY",
+  "completed_at_utc": "2026-11-20T01:20:55.189890+00:00",
+  "rows": [
+    {
+      "dtype": "float16",
+      "backend": "mps",
+      "input_tokens": 153,
+      "repeat_forward_metric": {
+        "all_logits_finite": false,
+        "max_abs": null,
+        "rms": null,
+        "kl": null,
+        "top1_equal": false
+      },
+      "hook_metric": {
+        "all_logits_finite": false,
+        "max_abs": null,
+        "rms": null,
+        "kl": null,
+        "top1_equal": false
+      },
+      "captured_layers": 28,
+      "residual_widths": [
+        1536
+      ],
+      "all_residuals_finite": false,
+      "actual_prefill_forwards": 3,
+      "generations": 0,
+      "heldout_inference": false,
+      "predeclared_numeric_gate_pass": false
+    },
+    {
+      "dtype": "float32",
+      "backend": "mps",
+      "input_tokens": 153,
+      "repeat_forward_metric": {
+        "all_logits_finite": true,
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "kl": -3.026798367500305e-08,
+        "top1_equal": true
+      },
+      "hook_metric": {
+        "all_logits_finite": true,
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "kl": -3.026798367500305e-08,
+        "top1_equal": true
+      },
+      "captured_layers": 28,
+      "residual_widths": [
+        1536
+      ],
+      "all_residuals_finite": true,
+      "actual_prefill_forwards": 3,
+      "generations": 0,
+      "heldout_inference": false,
+      "predeclared_numeric_gate_pass": true
+    }
+  ],
+  "selected_pre_main_candidate": "float32",
+  "selection_rule": "Prefer float32 if finite28-layer1536-width hook identity maxabs<=.001 and stabletop1; do not relax guard after results.",
+  "scientific_effect_claim": false,
+  "heldout_inference_performed": false,
+  "model_generations": 0
+}

@@ -12,6 +12,10 @@ The course-informed protocol and implementation are being prepared with Claude C
 
 The proposed data are the published [Berkeley Function Calling Leaderboard](https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard) relevance/irrelevance tasks, with a separate live-data evaluation and controls for source, length and function-schema effects. The candidate open-weight model is Qwen2.5-1.5B-Instruct; exact revisions, licenses and selection rules will be recorded in the protocol.
 
+## Completed development calibration
+
+[Real local model outputs and reproduction code](development_calibration/README.md) are now available: four generations on two declared public BFCL development items, residual activations from all 28 decoder layers and retained precision diagnostics. Float32/MPS passed the non-modifying-hook check; the earlier float16 numerical failure is preserved. These are development checks, not held-out study results.
+
 ## Methods and scope
 
 The approach draws on linear probes, model steering and agent evaluation in the [ARENA curriculum](https://github.com/ARENA-education/ARENA_materials). The implementation will be original code; course notebooks are not redistributed here.

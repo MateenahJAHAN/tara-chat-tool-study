@@ -1,0 +1,16 @@
+{
+  "phase": "D1_NUMERIC_DEVELOPMENT_ONLY",
+  "frozen_at_utc": "2026-11-20T01:20:40.288384+00:00",
+  "before_any_D1_forward": true,
+  "files": {
+    "diagnostic_D1/PLAN.json": "c50d433170d8009423f4d3b90a01c2e2d77337632d96f086941721f5b9372f05",
+    "diagnostic_D1/run_diagnostic.py": "dc7a853bdf481049246b97b41a5bacf4763176890bb8953cb8ea9c203634fb02",
+    "MODEL_ARTIFACT_MANIFEST.json": "4870b2172dac37597fd129468f054bc9e77c6192be175b84f3ab43f987a369b9",
+    "RUNTIME_READINESS.json": "0101e717cab447cb916584ddd8a0eb0392d70092f5569cb04d9ab6d0961dd57e",
+    "artifacts/benchmark_raw/BFCL_v4_simple_python.json": "82dd63ba502eb2520c6b5d1d9a5c4b590e03ff261565175561f6228a367d1991"
+  },
+  "scheduled_forwards": 6,
+  "scheduled_generations": 0,
+  "automatic_retries": 0,
+  "heldout_inference_allowed": false
+}

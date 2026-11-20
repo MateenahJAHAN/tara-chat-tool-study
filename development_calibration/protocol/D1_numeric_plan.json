@@ -1,0 +1,24 @@
+{
+  "phase": "D1_NUMERIC_DEVELOPMENT_ONLY",
+  "reason": "C0 stopped at non-modifying-hook identity guard before any generation. Diagnose numeric repeat/hook/precision behavior without heldout or outcome tuning.",
+  "source_id": "simple_python_0",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dtype_candidates": [
+    "float16",
+    "float32"
+  ],
+  "backend": "mps",
+  "attention": "eager",
+  "scheduled_prefill_forwards": 6,
+  "scheduled_generations": 0,
+  "heldout_inference": false,
+  "automatic_retries": 0,
+  "gate": "All logits/residuals finite;28 captured layers ofwidth1536; hook logit max_abs<=.001 and stabletop1. Preferfloat32 if passes; otherwise stop and report numerical blocker. Threshold not changed from C0.",
+  "raw_metrics": [
+    "repeat-forward max/rms/KL/top1",
+    "hook max/rms/KL/top1",
+    "residual shape/finite"
+  ],
+  "limits": "This is numerical development validation, not benchmark accuracy, a semantic probe, a scientific intervention or a heldout result."
+}

@@ -3,5 +3,21 @@
   "main_heldout_inference_started": false,
   "research_question": "Function applicability across text and native tool interfaces",
   "initialization": "AI-assisted; not a claim of unaided personal work",
-  "existing_engineering_pilot_pooled": false
+  "existing_engineering_pilot_pooled": false,
+  "development_calibration": {
+    "status": "completed and raw records published",
+    "actual_generations": 4,
+    "official_development_items": 2,
+    "decoder_layers": 28,
+    "residual_vectors": 112,
+    "dtype": "float32",
+    "device": "AppleMPS",
+    "main_results": false,
+    "readme": "development_calibration/README.md",
+    "portable_adaptations_rerun": false
+  },
+  "opus_design_lead": {
+    "phase1": "research phase reached recorded20-minute cap without proposal artifacts; preserved",
+    "phase2": "focused Opus5.5/max implementation phase launched with verified inputs; no further web search"
+  }
 }

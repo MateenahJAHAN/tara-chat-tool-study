@@ -1,0 +1,5 @@
+This is original AI-assisted operator code, with public BFCL data/model provenance.
+BFCL benchmark: Shishir G. Patil et al., The Berkeley Function Calling Leaderboard (ICML2025), ShishirPatil/gorilla pinned revision6ea57973c7a6097fd7c5915698c54c17c5b1b6c8; Apache2 license retained.
+Model: Qwen Team, Qwen2.5-1.5B-Instruct pinned revision989aa7980e4cf806f80c7fef2b1adb7bc71aa306; Apache2 license retained; weights are not distributed.
+Course grounding: ARENA linear probes, forward hooks/ablation and steering concepts, reviewed through MateenahJAHAN/ARENA_materials@db66202317a3cc9cb64eb3a64adf062949255bf1. No course notebook code is copied or redistributed.
+These development checks were prepared/executed by AI agents and the operator. Mateenah's personal contribution must be documented separately; no claim of unaided execution is made.

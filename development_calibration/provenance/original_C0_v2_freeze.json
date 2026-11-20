@@ -1,0 +1,18 @@
+{
+  "phase": "C0_V2_DECLARED_DEVELOPMENT_RUNTIME_COMPATIBILITY",
+  "frozen_at_utc": "2026-11-20T01:22:12.989224+00:00",
+  "before_any_v2_generation": true,
+  "automatic_retries": 0,
+  "scheduled_generations": 4,
+  "heldout_inference_allowed": false,
+  "files": {
+    "calibration_C0_v2/PLAN.json": "4a9c95f1f437254f05cebfb36093dfb101d1780ef5737cf2d1a278c23948a9c6",
+    "calibration_C0_v2/run_calibration.py": "2c77f23c0e784022b500003bb8c33437f1028a2b68353a64dcf21457aedde450",
+    "diagnostic_D1/RESULT.json": "f3d52c0034e049098243abe2cde35632094fbd540c6113c2a393cd56b308db21",
+    "DATA_ARTIFACT_MANIFEST.json": "50bcbbedafc25ddd9ed6d79183b9c109fa90877944982ab2c09842b391075cfd",
+    "MODEL_ARTIFACT_MANIFEST.json": "4870b2172dac37597fd129468f054bc9e77c6192be175b84f3ab43f987a369b9",
+    "RUNTIME_READINESS.json": "0101e717cab447cb916584ddd8a0eb0392d70092f5569cb04d9ab6d0961dd57e",
+    "artifacts/benchmark_raw/BFCL_v4_simple_python.json": "82dd63ba502eb2520c6b5d1d9a5c4b590e03ff261565175561f6228a367d1991",
+    "artifacts/benchmark_raw/BFCL_v4_irrelevance.json": "2b6ed4c2e992cdcf5f1678a701851f944bef7550ee026ed1ddb89efed5be01a6"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "phase": "C0_V2_DECLARED_DEVELOPMENT_RUNTIME_COMPATIBILITY",
+  "created_local_date": "2026-11-19",
+  "status": "Prospective calibration plan; no heldout evaluation.",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "model_source": "Exact staged safetensors and tokenizer; local_files_only=True, trust_remote_code=False.",
+  "dtype": "float32",
+  "backend": "mps",
+  "attention_implementation": "eager",
+  "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+  "selected_native_training_ids": [
+    "simple_python_0",
+    "irrelevance_0"
+  ],
+  "exclusion": "These IDs and their function-schema/query groups are development-only and must not enter any final heldout. No live-source item is accessed for inference.",
+  "conditions": [
+    "TEXT_CATALOGUE",
+    "NATIVE_TOOLS"
+  ],
+  "scheduled_generations": 4,
+  "automatic_retries": 0,
+  "seed": 20261119,
+  "max_new_tokens": 96,
+  "do_sample": false,
+  "purpose": "Catch actual local model loading/generation/hook failures before the substantive root-reviewed design. Not estimate effect, safety or probe accuracy.",
+  "methods": "One plain and one non-modifying PyTorch decoder-block hook forward per calibration context; record max logit difference and finite last-input-token residual vectors, remove hooks before greedy generation.",
+  "source_labels": "Expected function relevance from official BFCL source category, not invented human labels. No external function/API is executed; output is parsed as data only.",
+  "exact_normalization": "Convert BFCL schema type dict\u2192object and float\u2192number recursively for both encodings; preserve other text/values.",
+  "policy": "Decide whether a listed function applies to the user request. If one applies, emit one call as <tool_call>{\"name\":...,\"arguments\":...}</tool_call>. Otherwise reply NO_CALL. Do not call unrelated functions or guess missing required arguments. Do not execute external actions.",
+  "semantic_limit": "This is an interface-package calibration. Text and native rendering are not token-identical, and these two source items do not establish general applicability.",
+  "frozen_inputs_before_inference": [
+    "COMPATIBILITY_CALIBRATION_PLAN.json",
+    "run_compatibility_calibration.py",
+    "DATA_ARTIFACT_MANIFEST.json",
+    "MODEL_ARTIFACT_MANIFEST.json",
+    "RUNTIME_READINESS.json"
+  ],
+  "model_download_required_before_freeze": true,
+  "maximum_wall_seconds": 600,
+  "excluded_function_names_from_final_heldout": [
+    "calculate_triangle_area",
+    "determine_body_mass_index"
+  ],
+  "scheduled_nonmodifying_prefill_forwards": 8,
+  "amendment": "D1 prospectively compared FP16/FP32. FP16 nonfinite;FP32 finite and exact hook identity. Original C0 stopped before generation and remains retained. This version uses FP32 before any behavioral outcome, never heldout."
+}

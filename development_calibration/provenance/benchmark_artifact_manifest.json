@@ -1,0 +1,68 @@
+{
+  "staged_at_utc": "2026-11-20T01:11:27.134877+00:00",
+  "repo": "ShishirPatil/gorilla",
+  "revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+  "files": {
+    "BFCL_v4_irrelevance.json": {
+      "source_url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_irrelevance.json",
+      "repository_path": "berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_irrelevance.json",
+      "sha256": "2b6ed4c2e992cdcf5f1678a701851f944bef7550ee026ed1ddb89efed5be01a6",
+      "git_blob_sha1": "0077629949f2d52734cef2f110b0d040d8c47554",
+      "bytes": 159940,
+      "row_count": 240
+    },
+    "BFCL_v4_simple_python.json": {
+      "source_url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_simple_python.json",
+      "repository_path": "berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_simple_python.json",
+      "sha256": "82dd63ba502eb2520c6b5d1d9a5c4b590e03ff261565175561f6228a367d1991",
+      "git_blob_sha1": "356a0db61e54eb1d92d8e10d014463cf2eb513cc",
+      "bytes": 283274,
+      "row_count": 400
+    },
+    "BFCL_v4_live_irrelevance.json": {
+      "source_url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_live_irrelevance.json",
+      "repository_path": "berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_live_irrelevance.json",
+      "sha256": "6559fda2beaceb609a2cd2e504c65b4a56cb448e1ef88fddfd199e163d163349",
+      "git_blob_sha1": "547f60220b546ea5c864815dbb310b2f46ec0f43",
+      "bytes": 2209534,
+      "row_count": 884
+    },
+    "BFCL_v4_live_simple.json": {
+      "source_url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_live_simple.json",
+      "repository_path": "berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_live_simple.json",
+      "sha256": "1af2ac87dca47556db7b7e37e51e28b459a38b594e3c7b3c792b4903598ca0c4",
+      "git_blob_sha1": "e8f4b8d33c07753affc77bfc4a646f94109de5af",
+      "bytes": 260140,
+      "row_count": 258
+    },
+    "possible_answer_BFCL_v4_simple_python.json": {
+      "source_url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/possible_answer/BFCL_v4_simple_python.json",
+      "repository_path": "berkeley-function-call-leaderboard/bfcl_eval/data/possible_answer/BFCL_v4_simple_python.json",
+      "sha256": "90cd5bc653690ee8e459b5b3f3fc9458606f7f3fcbf795bb51b7dc581f8c86dc",
+      "git_blob_sha1": "268c55641a21b51fc15730ce39ce906444a935a1",
+      "bytes": 63627,
+      "row_count": 400
+    },
+    "possible_answer_BFCL_v4_live_simple.json": {
+      "source_url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/possible_answer/BFCL_v4_live_simple.json",
+      "repository_path": "berkeley-function-call-leaderboard/bfcl_eval/data/possible_answer/BFCL_v4_live_simple.json",
+      "sha256": "fec9cfa9744a936f9126981e85a2023da1e63e273eafebc81923a1162fad70ce",
+      "git_blob_sha1": "2c4778cee08e5ce7b236861de9a927d3ea7cde1f",
+      "bytes": 46972,
+      "row_count": 258
+    },
+    "BFCL_REPOSITORY_LICENSE": {
+      "source_url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/LICENSE",
+      "repository_path": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "bytes": 11357,
+      "row_count": null
+    }
+  },
+  "inference_performed": false,
+  "splits_selected": false,
+  "heldout_outputs_accessed": false,
+  "license": "Apache2; exact root LICENSE retained",
+  "note": "Staging bytes/counts is not an experiment. Native/live split and safe eligibility still need prospective protocol."
+}

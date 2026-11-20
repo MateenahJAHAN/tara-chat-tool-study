@@ -1,0 +1,16 @@
+[
+  {
+    "id": "simple_python_0",
+    "file": "data/BFCL_v4_simple_python.json",
+    "source_category": "BFCL_v4_simple_python.json",
+    "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+    "selection": "Fixed native-training row0 selected before generation; development only; excluded from final heldout."
+  },
+  {
+    "id": "irrelevance_0",
+    "file": "data/BFCL_v4_irrelevance.json",
+    "source_category": "BFCL_v4_irrelevance.json",
+    "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+    "selection": "Fixed native-training row0 selected before generation; development only; excluded from final heldout."
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "recorded_at_utc": "2026-11-20T01:20:40.288062+00:00",
+  "exit_code": 1,
+  "phase": "C0 development compatibility",
+  "error": "RuntimeError: Non-modifying hook control failed",
+  "plain_forward_completed": true,
+  "hooked_forward_completed": true,
+  "completed_generations": 0,
+  "guard_diagnostics_were_not_persisted": true,
+  "heldout_inference_performed": false,
+  "followup": "Separate prospectively frozen D1 numeric diagnostic; original frozen C0 source/marker retained."
+}
