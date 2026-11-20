@@ -1,0 +1,388 @@
+{
+  "bank_sha256": "df087e895e8a70fbcd7cff87db4a2693effe207eb4b58e5816a7a106f8adefff",
+  "protocol_sha256": "9614dd26b0b7ec7a4bd248e82eb6625aa708527aa5565b9d832f11a0ca2c320e",
+  "raw_records_checked": 296,
+  "received_scores_recomputed": 253,
+  "sha256": {
+    "results_qwen25/qwen2.5-1.5b_raw.jsonl": "0b76cef00fe6b588b9bf55aa0de96f9040249794e07e81a76bd2733635a0c6ad",
+    "results/qwen3.5-4b_raw.jsonl": "6892b02df70108a300c857cceb0df512e594110d4bf1cb7a2e2b5030ec7c20e1",
+    "results/qwen3-4b_raw.jsonl": "5ea8118e6e5e9074b0a9650073e9b1532020bfc0d97d51ab9d0f8e5da50d9e5f",
+    "results_qwen3_amended/qwen3-4b_raw.jsonl": "b9dedb4d22f4a9d3e020320d22abd0e7f08395432dfe188bf90c0244dd55f4f9"
+  },
+  "results": {
+    "qwen2.5-1.5b": {
+      "status": "complete",
+      "records": 80,
+      "smoke_control_records": [
+        {
+          "call_attempt": true,
+          "exact_abstain": false,
+          "semantic_correct_call": true,
+          "canonical_correct_call": true,
+          "parse_path": "text_json"
+        },
+        {
+          "call_attempt": true,
+          "exact_abstain": false,
+          "semantic_correct_call": true,
+          "canonical_correct_call": true,
+          "parse_path": "native"
+        },
+        {
+          "call_attempt": false,
+          "exact_abstain": false,
+          "semantic_correct_call": false,
+          "canonical_correct_call": false,
+          "parse_path": "none"
+        },
+        {
+          "call_attempt": false,
+          "exact_abstain": true,
+          "semantic_correct_call": false,
+          "canonical_correct_call": false,
+          "parse_path": "none"
+        }
+      ],
+      "conditions": {
+        "text": {
+          "n_pairs": 20,
+          "false_calls": 14,
+          "exact_abstentions": 6,
+          "semantic_correct_calls": 19,
+          "canonical_correct_calls": 19,
+          "scope_pairs_passed": 6,
+          "generation_caps": 0
+        },
+        "native": {
+          "n_pairs": 20,
+          "false_calls": 19,
+          "exact_abstentions": 1,
+          "semantic_correct_calls": 18,
+          "canonical_correct_calls": 18,
+          "scope_pairs_passed": 1,
+          "generation_caps": 0
+        }
+      },
+      "paired_false_calls": {
+        "both": 14,
+        "text_only": 0,
+        "native_only": 5,
+        "neither": 1
+      },
+      "difference_native_minus_text_pp": 25.0,
+      "bootstrap_95_descriptor_pp": [
+        10.0,
+        45.0
+      ],
+      "exact_two_sided_discordance_sign_p": 0.0625
+    },
+    "qwen3.5-4b": {
+      "status": "complete",
+      "records": 80,
+      "smoke_control_records": [
+        {
+          "call_attempt": true,
+          "exact_abstain": false,
+          "semantic_correct_call": true,
+          "canonical_correct_call": true,
+          "parse_path": "text_json"
+        },
+        {
+          "call_attempt": true,
+          "exact_abstain": false,
+          "semantic_correct_call": true,
+          "canonical_correct_call": true,
+          "parse_path": "native"
+        },
+        {
+          "call_attempt": false,
+          "exact_abstain": false,
+          "semantic_correct_call": false,
+          "canonical_correct_call": false,
+          "parse_path": "none"
+        },
+        {
+          "call_attempt": false,
+          "exact_abstain": true,
+          "semantic_correct_call": false,
+          "canonical_correct_call": false,
+          "parse_path": "none"
+        }
+      ],
+      "conditions": {
+        "text": {
+          "n_pairs": 20,
+          "false_calls": 0,
+          "exact_abstentions": 20,
+          "semantic_correct_calls": 19,
+          "canonical_correct_calls": 18,
+          "scope_pairs_passed": 19,
+          "generation_caps": 0
+        },
+        "native": {
+          "n_pairs": 20,
+          "false_calls": 10,
+          "exact_abstentions": 0,
+          "semantic_correct_calls": 19,
+          "canonical_correct_calls": 19,
+          "scope_pairs_passed": 0,
+          "generation_caps": 0
+        }
+      },
+      "paired_false_calls": {
+        "both": 0,
+        "text_only": 0,
+        "native_only": 10,
+        "neither": 10
+      },
+      "difference_native_minus_text_pp": 50.0,
+      "bootstrap_95_descriptor_pp": [
+        30.0,
+        70.0
+      ],
+      "exact_two_sided_discordance_sign_p": 0.001953125
+    }
+  },
+  "runtime_audit": {
+    "qwen2.5-1.5b": {
+      "requests": 84,
+      "received_heldout": 80,
+      "error_heldout": 0,
+      "heldout_length_caps": 0,
+      "control_length_caps": 0,
+      "control_exact_no_call": [
+        "text"
+      ],
+      "heldout_out_of_scope_abstention_variants": {},
+      "heldout_false_calls_by_family": {
+        "temperature": {
+          "text": {
+            "n": 4,
+            "false_calls": 2
+          },
+          "native": {
+            "n": 4,
+            "false_calls": 4
+          }
+        },
+        "hours": {
+          "text": {
+            "n": 4,
+            "false_calls": 4
+          },
+          "native": {
+            "n": 4,
+            "false_calls": 4
+          }
+        },
+        "stock": {
+          "text": {
+            "n": 4,
+            "false_calls": 3
+          },
+          "native": {
+            "n": 4,
+            "false_calls": 4
+          }
+        },
+        "routes": {
+          "text": {
+            "n": 4,
+            "false_calls": 2
+          },
+          "native": {
+            "n": 4,
+            "false_calls": 3
+          }
+        },
+        "menus": {
+          "text": {
+            "n": 4,
+            "false_calls": 3
+          },
+          "native": {
+            "n": 4,
+            "false_calls": 4
+          }
+        }
+      }
+    },
+    "qwen3.5-4b": {
+      "requests": 84,
+      "received_heldout": 80,
+      "error_heldout": 0,
+      "heldout_length_caps": 0,
+      "control_length_caps": 0,
+      "control_exact_no_call": [
+        "text"
+      ],
+      "heldout_out_of_scope_abstention_variants": {
+        "native:NOCALL": 10
+      },
+      "heldout_false_calls_by_family": {
+        "temperature": {
+          "text": {
+            "n": 4,
+            "false_calls": 0
+          },
+          "native": {
+            "n": 4,
+            "false_calls": 0
+          }
+        },
+        "hours": {
+          "text": {
+            "n": 4,
+            "false_calls": 0
+          },
+          "native": {
+            "n": 4,
+            "false_calls": 3
+          }
+        },
+        "stock": {
+          "text": {
+            "n": 4,
+            "false_calls": 0
+          },
+          "native": {
+            "n": 4,
+            "false_calls": 3
+          }
+        },
+        "routes": {
+          "text": {
+            "n": 4,
+            "false_calls": 0
+          },
+          "native": {
+            "n": 4,
+            "false_calls": 2
+          }
+        },
+        "menus": {
+          "text": {
+            "n": 4,
+            "false_calls": 0
+          },
+          "native": {
+            "n": 4,
+            "false_calls": 2
+          }
+        }
+      }
+    },
+    "qwen3_legacy_runtime": {
+      "requests": 84,
+      "received_heldout": 37,
+      "error_heldout": 43,
+      "heldout_length_caps": 37,
+      "control_length_caps": 4,
+      "control_exact_no_call": [],
+      "heldout_out_of_scope_abstention_variants": {},
+      "heldout_false_calls_by_family": {
+        "temperature": {
+          "text": {
+            "n": 4,
+            "false_calls": 0
+          },
+          "native": {
+            "n": 3,
+            "false_calls": 0
+          }
+        },
+        "hours": {
+          "text": {
+            "n": 3,
+            "false_calls": 0
+          },
+          "native": {
+            "n": 3,
+            "false_calls": 0
+          }
+        },
+        "stock": {
+          "text": {
+            "n": 1,
+            "false_calls": 0
+          },
+          "native": {
+            "n": 1,
+            "false_calls": 0
+          }
+        },
+        "routes": {
+          "text": {
+            "n": 1,
+            "false_calls": 0
+          },
+          "native": {
+            "n": 1,
+            "false_calls": 0
+          }
+        }
+      }
+    },
+    "qwen3_amended_runtime": {
+      "requests": 44,
+      "received_heldout": 40,
+      "error_heldout": 0,
+      "heldout_length_caps": 40,
+      "control_length_caps": 4,
+      "control_exact_no_call": [],
+      "heldout_out_of_scope_abstention_variants": {},
+      "heldout_false_calls_by_family": {
+        "temperature": {
+          "text": {
+            "n": 4,
+            "false_calls": 0
+          },
+          "native": {
+            "n": 4,
+            "false_calls": 0
+          }
+        },
+        "hours": {
+          "text": {
+            "n": 3,
+            "false_calls": 0
+          },
+          "native": {
+            "n": 3,
+            "false_calls": 0
+          }
+        },
+        "stock": {
+          "text": {
+            "n": 1,
+            "false_calls": 0
+          },
+          "native": {
+            "n": 1,
+            "false_calls": 0
+          }
+        },
+        "routes": {
+          "text": {
+            "n": 1,
+            "false_calls": 0
+          },
+          "native": {
+            "n": 1,
+            "false_calls": 0
+          }
+        },
+        "menus": {
+          "text": {
+            "n": 1,
+            "false_calls": 0
+          },
+          "native": {
+            "n": 1,
+            "false_calls": 0
+          }
+        }
+      }
+    }
+  }
+}

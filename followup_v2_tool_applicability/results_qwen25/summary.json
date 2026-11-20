@@ -1,0 +1,69 @@
+{
+  "qwen2.5-1.5b": {
+    "status": "complete",
+    "records": 80,
+    "smoke_control_records": [
+      {
+        "call_attempt": true,
+        "exact_abstain": false,
+        "semantic_correct_call": true,
+        "canonical_correct_call": true,
+        "parse_path": "text_json"
+      },
+      {
+        "call_attempt": true,
+        "exact_abstain": false,
+        "semantic_correct_call": true,
+        "canonical_correct_call": true,
+        "parse_path": "native"
+      },
+      {
+        "call_attempt": false,
+        "exact_abstain": false,
+        "semantic_correct_call": false,
+        "canonical_correct_call": false,
+        "parse_path": "none"
+      },
+      {
+        "call_attempt": false,
+        "exact_abstain": true,
+        "semantic_correct_call": false,
+        "canonical_correct_call": false,
+        "parse_path": "none"
+      }
+    ],
+    "conditions": {
+      "text": {
+        "n_pairs": 20,
+        "false_calls": 14,
+        "exact_abstentions": 6,
+        "semantic_correct_calls": 19,
+        "canonical_correct_calls": 19,
+        "scope_pairs_passed": 6,
+        "generation_caps": 0
+      },
+      "native": {
+        "n_pairs": 20,
+        "false_calls": 19,
+        "exact_abstentions": 1,
+        "semantic_correct_calls": 18,
+        "canonical_correct_calls": 18,
+        "scope_pairs_passed": 1,
+        "generation_caps": 0
+      }
+    },
+    "paired_false_calls": {
+      "both": 14,
+      "text_only": 0,
+      "native_only": 5,
+      "neither": 1
+    },
+    "difference_native_minus_text_pp": 25.0,
+    "bootstrap_95_descriptor_pp": [
+      10.0,
+      45.0
+    ],
+    "exact_two_sided_discordance_sign_p": 0.0625,
+    "runtime_smoke_admissible": true
+  }
+}

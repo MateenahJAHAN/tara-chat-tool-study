@@ -4,6 +4,12 @@ A completed exploratory TARA study of Qwen2.5-1.5B-Instruct on public BFCL tasks
 
 **The real model run, raw outputs, analysis, figures and independent integrity audit are available.** This is an AI-assisted working study, not a peer-reviewed publication.
 
+## Follow-up: matched tool applicability
+
+On a new bank of 20 benign scope pairs, the native interface produced more out-of-scope calls on both tested checkpoints: **14/20 to 19/20** for the original Qwen2.5 1.5B model and **0/20 to 10/20** for Qwen3.5 4B. Canonical formatting, exact abstention, and paired scope accuracy were measured separately. This exploratory result is for the tested prompts and interface packages.
+
+[Follow-up results and figures](followup_v2_tool_applicability/RESULTS.md) · [Frozen protocol](followup_v2_tool_applicability/PROTOCOL.md) · [Machine-readable verification](followup_v2_tool_applicability/verification.json)
+
 ## Held-out results
 
 The same 64 held-out requests were evaluated with a text function catalogue and the model's native tool template. There were 32 benchmark-labelled irrelevant requests and 32 relevant requests.

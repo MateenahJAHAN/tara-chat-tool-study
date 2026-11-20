@@ -1,0 +1,118 @@
+{
+  "qwen3-4b": {
+    "status": "incomplete",
+    "records": 80,
+    "errors": [
+      "P09-out/native",
+      "P18-out/native",
+      "P18-out/text",
+      "P03-out/text",
+      "P03-out/native",
+      "P06-in/native",
+      "P06-in/text",
+      "P06-out/text",
+      "P06-out/native",
+      "P08-in/native",
+      "P08-in/text",
+      "P16-out/text",
+      "P16-out/native",
+      "P05-out/native",
+      "P05-out/text",
+      "P20-out/text",
+      "P20-out/native",
+      "P14-out/native",
+      "P14-out/text",
+      "P03-in/text",
+      "P03-in/native",
+      "P18-in/native",
+      "P18-in/text",
+      "P15-out/text",
+      "P15-out/native",
+      "P04-in/native",
+      "P04-in/text",
+      "P14-in/text",
+      "P14-in/native",
+      "P05-in/native",
+      "P05-in/text",
+      "P07-out/text",
+      "P07-out/native",
+      "P10-in/native",
+      "P10-in/text",
+      "P13-in/text",
+      "P13-in/native",
+      "P17-out/native",
+      "P17-out/text",
+      "P19-out/text",
+      "P19-out/native",
+      "P15-in/native",
+      "P15-in/text"
+    ],
+    "missing": []
+  },
+  "qwen3.5-4b": {
+    "status": "complete",
+    "records": 80,
+    "smoke_control_records": [
+      {
+        "call_attempt": true,
+        "exact_abstain": false,
+        "semantic_correct_call": true,
+        "canonical_correct_call": true,
+        "parse_path": "text_json"
+      },
+      {
+        "call_attempt": true,
+        "exact_abstain": false,
+        "semantic_correct_call": true,
+        "canonical_correct_call": true,
+        "parse_path": "native"
+      },
+      {
+        "call_attempt": false,
+        "exact_abstain": false,
+        "semantic_correct_call": false,
+        "canonical_correct_call": false,
+        "parse_path": "none"
+      },
+      {
+        "call_attempt": false,
+        "exact_abstain": true,
+        "semantic_correct_call": false,
+        "canonical_correct_call": false,
+        "parse_path": "none"
+      }
+    ],
+    "conditions": {
+      "text": {
+        "n_pairs": 20,
+        "false_calls": 0,
+        "exact_abstentions": 20,
+        "semantic_correct_calls": 19,
+        "canonical_correct_calls": 18,
+        "scope_pairs_passed": 19,
+        "generation_caps": 0
+      },
+      "native": {
+        "n_pairs": 20,
+        "false_calls": 10,
+        "exact_abstentions": 0,
+        "semantic_correct_calls": 19,
+        "canonical_correct_calls": 19,
+        "scope_pairs_passed": 0,
+        "generation_caps": 0
+      }
+    },
+    "paired_false_calls": {
+      "both": 0,
+      "text_only": 0,
+      "native_only": 10,
+      "neither": 10
+    },
+    "difference_native_minus_text_pp": 50.0,
+    "bootstrap_95_descriptor_pp": [
+      30.0,
+      70.0
+    ],
+    "exact_two_sided_discordance_sign_p": 0.001953125
+  }
+}
