@@ -1,0 +1,26 @@
+TARA BFCL interface-package study: completed exploratory results
+
+The same pinned Qwen2.5-1.5B-Instruct model was evaluated on public BFCL inputs using a text function catalogue and its native tool template. The selected bank contains 128 training, 32 development and 64 heldout items, all in distinct connected components. The primary comparison uses 32 irrelevant heldout items; probe evaluation uses all 64 heldout items. Interventions use a preset subset of eight irrelevant and eight relevant items. Generated function calls were recorded as text; no external function was executed.
+
+Heldout behavior
+Endpoint                              Text catalogue     Native template
+False call attempts, irrelevant       9/32 (28.1%)        16/32 (50.0%)
+Exact NO_CALL, irrelevant             23/32               15/32
+Semantic reference-correct, relevant  23/32               26/32
+Canonical call format, relevant        0/32               31/32
+
+The paired false-call difference is +21.875 percentage points. Its group-resampling descriptor is +6.25 to +37.5 points for this fixed bank. The native template combines more false call attempts with somewhat higher reference correctness and much better protocol formatting. Semantic reference correctness and protocol format are measured separately. Two baseline completions reached the 256-token ceiling and remain in the scheduled denominators.
+
+Probe transfer and controls
+Frozen logistic-probe AUROCs across the two training/test interfaces range from 0.898 to 0.946 on heldout. Query-only logistic AUROC is 0.747. The length-only surface baseline reaches 0.814; the prospectively development-selected overlap comparator reaches 0.775. Every surface baseline and all reported permutation/random controls are retained. The benchmark's category files supply the labels, so source/style information remains a possible explanation. Probe decodability alone does not establish a decision mechanism. All intervals and comparisons are exploratory descriptors of the selected bank.
+
+Steering result
+Text steering failed the fixed development gate and was skipped on heldout. Native steering selected layer 16 and alpha 0.01 using development data only. On heldout, its false calls stayed at 2/8 while relevant semantic correctness fell from 7/8 to 6/8. All six native direction/control configurations were evaluated. The bounded intervention criteria failed. Zero-width false-call resampling descriptors reflect the absence of paired flips; they do not establish equivalence.
+
+Execution and audit
+All 416 main model generations were retained, plus two separate numeric-repeat calibrations. The 64 derived development re-scoring records are copies with revised measurement fields, not new generations. There were no runtime errors. An independent raw-output audit passed 63 mechanical checks, including all 224 heldout decode/parser round-trips, fixed banks, artifact hashes, activations, counts and ledger consistency. That audit did not independently recompute probe AUROCs or establish interval calibration. Raw outputs, fitted parameters, exact source/model/input hashes, code and figures are retained.
+
+Transparent measurement amendment
+The V1 plan and code were publicly tagged before development. Development inspection exposed a scorer error: a complete JSON call with a missing closing tag was being counted semantically incorrect. An explicitly approved V2 correction re-scored all 64 development outputs identically without repeating inference. Original code, outputs, scores and report are preserved. Primary call/abstention counts and strict format/invalid-output diagnostics are unchanged. The amendment and fitted artifacts were publicly frozen at commit 645e581d, tag v0.2-before-heldout, before any heldout output. This development-discovered correction is part of the study's documented history.
+
+The bounded experiment is complete. A larger matched-applicability study would need a separate prospective plan. The present evidence concerns one model, a selected benchmark bank and a whole interface-package comparison; source/style confounding and unknown model-training contamination remain.

@@ -1,0 +1,134 @@
+{
+  "design_id": "BFCL_IFACE_PROBE_V1_OPERATOR_AMENDED",
+  "created_utc": "2026-11-20T01:58:11.159654+00:00",
+  "status": "READY_FOR_ROOT_REVIEW",
+  "verification": {
+    "verified_at_utc": "2026-11-20T01:58:02.782043+00:00",
+    "data": {
+      "BFCL_v4_irrelevance.json": {
+        "sha256": "2b6ed4c2e992cdcf5f1678a701851f944bef7550ee026ed1ddb89efed5be01a6",
+        "git_blob_sha1": "0077629949f2d52734cef2f110b0d040d8c47554"
+      },
+      "BFCL_v4_simple_python.json": {
+        "sha256": "82dd63ba502eb2520c6b5d1d9a5c4b590e03ff261565175561f6228a367d1991",
+        "git_blob_sha1": "356a0db61e54eb1d92d8e10d014463cf2eb513cc"
+      },
+      "BFCL_v4_live_irrelevance.json": {
+        "sha256": "6559fda2beaceb609a2cd2e504c65b4a56cb448e1ef88fddfd199e163d163349",
+        "git_blob_sha1": "547f60220b546ea5c864815dbb310b2f46ec0f43"
+      },
+      "BFCL_v4_live_simple.json": {
+        "sha256": "1af2ac87dca47556db7b7e37e51e28b459a38b594e3c7b3c792b4903598ca0c4",
+        "git_blob_sha1": "e8f4b8d33c07753affc77bfc4a646f94109de5af"
+      },
+      "possible_answer_BFCL_v4_simple_python.json": {
+        "sha256": "90cd5bc653690ee8e459b5b3f3fc9458606f7f3fcbf795bb51b7dc581f8c86dc",
+        "git_blob_sha1": "268c55641a21b51fc15730ce39ce906444a935a1"
+      },
+      "possible_answer_BFCL_v4_live_simple.json": {
+        "sha256": "fec9cfa9744a936f9126981e85a2023da1e63e273eafebc81923a1162fad70ce",
+        "git_blob_sha1": "2c4778cee08e5ce7b236861de9a927d3ea7cde1f"
+      },
+      "BFCL_REPOSITORY_LICENSE": {
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+      }
+    },
+    "model": {
+      "LICENSE": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+      "README.md": "2e1bcd8bd964728a820be709fa0f7b9dd54817a94fd2254c535df70c5e67fada",
+      "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+      "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+      "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  },
+  "exclusion_counts": {
+    "BFCL_v4_simple_python.json": {
+      "eligible": 397,
+      "E6_pii_like": 2,
+      "E3_unsupported_schema_type": 1
+    },
+    "BFCL_v4_irrelevance.json": {
+      "eligible": 240
+    },
+    "BFCL_v4_live_simple.json": {
+      "eligible": 233,
+      "E4_not_english_dominant": 11,
+      "E2_not_single_user_message": 11,
+      "E6_pii_like": 1,
+      "E3_unsupported_schema_type": 2
+    },
+    "BFCL_v4_live_irrelevance.json": {
+      "eligible": 447,
+      "E5_safe_domain": 1,
+      "E4_not_english_dominant": 33,
+      "E1_not_one_function": 376,
+      "E2_not_single_user_message": 50,
+      "E3_unsupported_schema_type": 4,
+      "E7_token_limit": 4,
+      "E6_pii_like": 1
+    }
+  },
+  "n_components": 696,
+  "largest_component": 191,
+  "label_mixed_components": 45,
+  "split": {
+    "pool_sizes": {
+      "native": {
+        "0": 395,
+        "1": 239
+      },
+      "live": {
+        "0": 212,
+        "1": 309
+      }
+    },
+    "selected": {
+      "TRAIN": {
+        "0": {
+          "n": 64,
+          "groups": 64
+        },
+        "1": {
+          "n": 64,
+          "groups": 64
+        }
+      },
+      "DEV": {
+        "0": {
+          "n": 16,
+          "groups": 16
+        },
+        "1": {
+          "n": 16,
+          "groups": 16
+        }
+      },
+      "HELDOUT": {
+        "0": {
+          "n": 32,
+          "groups": 32
+        },
+        "1": {
+          "n": 32,
+          "groups": 32
+        }
+      }
+    },
+    "stop_reasons": [],
+    "calibration_component_members": [
+      "BFCL_v4_irrelevance.json::irrelevance_0",
+      "BFCL_v4_live_irrelevance.json::live_irrelevance_835-326-0",
+      "BFCL_v4_live_irrelevance.json::live_irrelevance_841-331-0",
+      "BFCL_v4_simple_python.json::simple_python_0",
+      "BFCL_v4_simple_python.json::simple_python_11"
+    ],
+    "excluded_calibration_or_overlap": 162,
+    "one_item_per_group_in_all_selected_banks": true
+  },
+  "model_outputs_read": false
+}

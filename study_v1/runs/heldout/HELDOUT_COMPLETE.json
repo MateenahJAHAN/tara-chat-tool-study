@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-20T02:47:22.959731+00:00",
+  "ledger": {
+    "generations": 418,
+    "prefill_forwards": 480,
+    "preflight_model_forwards": 3,
+    "generation_model_forwards": 11533,
+    "prefill_model_forwards": 480,
+    "kl_model_forwards": 136
+  },
+  "steering": {
+    "TEXT_CATALOGUE": "STEERING_GATE_FAILED",
+    "NATIVE_TOOLS": "RUN"
+  }
+}

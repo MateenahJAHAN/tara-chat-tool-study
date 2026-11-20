@@ -1,0 +1,42 @@
+{
+  "created_at_utc": "2026-11-20T03:00:57.718356+00:00",
+  "phase": "DEV",
+  "design_id": "BFCL_IFACE_PROBE_V1_OPERATOR_AMENDED",
+  "split_manifest_sha256": "6e265ee4f4d667077a8e9793c8e2e1be01cd00737c74f04582b0003f2aaa93d9",
+  "authorization_sha256": "cf9524b8999d52173e8e9807c08d9ad1ce5e4f914cf324f32a725d9c40d33f7a",
+  "context_sha256": "ffbcce1b4b631e0bf3e350aedbde3096b822d32a4af32ec5e095565343c5bfcc",
+  "approved_reports": {
+    "reports/behaviour_dev.json": "68568ee2a599d7b6c8b715fbfd6461bf3c5d2e29aec93c8450b659303cfacd87"
+  },
+  "script_sha256": "2c2f4658d2f67ba83004e31cb9752663cd9ffeb459eef4f392ad0441572e037d",
+  "matplotlib_version": "3.10.0",
+  "python_version": "3.12.11",
+  "statistical_unit": "Selected BFCL item/component; paired interfaces are repeated observations, not additional independent items",
+  "caution": "Selected finite bank; exploratory descriptives. Intervals have no population-coverage guarantee.",
+  "scoring_version": "V2_DEV_DISCOVERED_FORMAT_SEMANTIC_SEPARATION",
+  "all_endpoints_retained": true,
+  "missing_or_unrun": [
+    "Heldout probe/control evaluations not authorized/read in DEV phase."
+  ],
+  "outputs": {
+    "01_behaviour_rates.png": "44a40c0ab6871ebcce9f4e59583cdb425ef5b54e79788d56a64b39f103845287",
+    "01_behaviour_rates.pdf": "df0b4660b4dfd432b5f7c4aaa67dbcfaf827ea0234bd00838e51df90c8e730f8",
+    "01_behaviour_rates.svg": "b2f4f197ef45b0d1beb909f2f4d21b2a9a8a4177a63072ded2c9da43d1996dc0",
+    "02_paired_differences.png": "cbf076e36ed9f7001045448af48bf077a80965c57c0bba93345f44ac2015406d",
+    "02_paired_differences.pdf": "c0622572f6c9f4f91d0302e806ff5d3de377b0962e81899a2d50329a7eef0c06",
+    "02_paired_differences.svg": "0d14c2103518ea7c05d62adaa5677840acd525da825d51ff638ee62aaf8fad58",
+    "03_all_endpoint_counts.pdf": "77b2a029fab5258da2a3352184f74f448721f3360da2c17a49dcd2de5c5d65e8",
+    "04_dev_selected_transfer.png": "d406c0b7be071d499c339bebfe6777bfb403c7eb7f86591da272dd2d7d2735be",
+    "04_dev_selected_transfer.pdf": "d28221a027fcaa245c7bba85b6e2b6409f91eabce5cddf239913507e80d50e71",
+    "04_dev_selected_transfer.svg": "a64ab0f3f139770d9e51bd13b8fafb62d173122791c71e1fb73b32be791518fb",
+    "05_dev_query_surface_controls.png": "e5503aefa694fe7df05ae89c9b28cd5c72394a0be9a53e60a6268bda46f124c4",
+    "05_dev_query_surface_controls.pdf": "92f8a89a05cb63bd29b625a77520719c274ec80a43aaa8099a25ed17f184b620",
+    "05_dev_query_surface_controls.svg": "8f4f21370ce59a525ff74301608c2c334a2c83a99006ef42bf277d0a21d14064",
+    "06_steering_status.png": "9978ad414d9fa294f868b5a5d362ed994daa0a2cce318ee83971e1f6a06aa2ef",
+    "06_steering_status.pdf": "eb603b0a3a1db0e0988be569f13de309ee30e9dc1ade2430f3fe4f457cee4922",
+    "06_steering_status.svg": "fd24414f19240d689f7366a9923b9f4de3f37c23cf688d57d62425e0ed2e3b85"
+  },
+  "new_statistical_tests": false,
+  "model_calls": 0,
+  "human_authorship_claim": null
+}

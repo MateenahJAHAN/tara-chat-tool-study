@@ -1,0 +1,111 @@
+{
+  "recorded_at_utc": "2026-11-20T02:38:10.384446+00:00",
+  "local_files_retained": true,
+  "large_arrays_excluded_from_git_bundle": true,
+  "core_features": {
+    "items": 160,
+    "interface_control_feature_sets": 3,
+    "layers": 28,
+    "width": 1536,
+    "unique_capture_vectors": 13440
+  },
+  "training_prefix_arrays_are_storage_duplicates_not_new_inference": true,
+  "files": {
+    "runs/dev/residuals_baseline_NATIVE_TOOLS.npy": {
+      "sha256": "3f99b74dd135bc39374132af58da4218925b61932298b3fcf0d99fc419061c33",
+      "bytes": 27525248,
+      "shape": [
+        160,
+        28,
+        1536
+      ],
+      "dtype": "float32",
+      "duplicate_training_prefix": false
+    },
+    "runs/dev/residuals_baseline_TEXT_CATALOGUE.npy": {
+      "sha256": "9cee9d8371d36940b3923e9bd55bbe93f26635a479adc20500f1d2f25e39386d",
+      "bytes": 27525248,
+      "shape": [
+        160,
+        28,
+        1536
+      ],
+      "dtype": "float32",
+      "duplicate_training_prefix": false
+    },
+    "runs/dev/residuals_query_only_QUERY_ONLY_CONTROL.npy": {
+      "sha256": "e77f45e88f76198cabff6268276c5734494efdd3662d01caec467a52827245db",
+      "bytes": 27525248,
+      "shape": [
+        160,
+        28,
+        1536
+      ],
+      "dtype": "float32",
+      "duplicate_training_prefix": false
+    },
+    "runs/dev/residuals_trainingprefill_NATIVE_TOOLS.npy": {
+      "sha256": "09831573bdd209d6f55dc44b124f8a86e7436797837b09789e1a1853118487cb",
+      "bytes": 22020224,
+      "shape": [
+        128,
+        28,
+        1536
+      ],
+      "dtype": "float32",
+      "duplicate_training_prefix": true
+    },
+    "runs/dev/residuals_trainingprefill_TEXT_CATALOGUE.npy": {
+      "sha256": "5a256743d5a5a5966de8165f30197a71ef3b743aba74503074d02498fb556f74",
+      "bytes": 22020224,
+      "shape": [
+        128,
+        28,
+        1536
+      ],
+      "dtype": "float32",
+      "duplicate_training_prefix": true
+    },
+    "runs/heldout/residuals_baseline_NATIVE_TOOLS.npy": {
+      "sha256": "ec1da0db68eb97515fa7607cd45f5f6bc1bf57ea610fa2c34629f5386deaae0c",
+      "bytes": 11010176,
+      "shape": [
+        64,
+        28,
+        1536
+      ],
+      "dtype": "float32",
+      "duplicate_training_prefix": false
+    },
+    "runs/heldout/residuals_baseline_TEXT_CATALOGUE.npy": {
+      "sha256": "23c3aa33bf8667b1889d319b55c7dace1cac6de31915b948206d99f5a8347a04",
+      "bytes": 11010176,
+      "shape": [
+        64,
+        28,
+        1536
+      ],
+      "dtype": "float32",
+      "duplicate_training_prefix": false
+    },
+    "runs/heldout/residuals_query_only_QUERY_ONLY_CONTROL.npy": {
+      "sha256": "e1642a6da20731ed36a66eb2629eec4035e02efaec615ad7538d0785b40e702f",
+      "bytes": 11010176,
+      "shape": [
+        64,
+        28,
+        1536
+      ],
+      "dtype": "float32",
+      "duplicate_training_prefix": false
+    }
+  },
+  "updated_after_heldout_at_utc": "2026-11-20T03:03:49.136009+00:00",
+  "all_core_features": {
+    "items": 224,
+    "feature_sets": 3,
+    "layers": 28,
+    "width": 1536,
+    "unique_capture_vectors": 18816
+  }
+}

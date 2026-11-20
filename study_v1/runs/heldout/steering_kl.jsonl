@@ -1,0 +1,6 @@
+{"condition": "NATIVE_TOOLS", "config": "mm_plus", "alpha": 0.01, "completion_kl": 1.4227723511339718e-05}
+{"condition": "NATIVE_TOOLS", "config": "mm_minus", "alpha": 0.01, "completion_kl": 1.4692145640538001e-05}
+{"condition": "NATIVE_TOOLS", "config": "permuted", "alpha": 0.01, "completion_kl": 1.1003390083530462e-05}
+{"condition": "NATIVE_TOOLS", "config": "random0", "alpha": 0.01, "completion_kl": 1.050250477874215e-05}
+{"condition": "NATIVE_TOOLS", "config": "random1", "alpha": 0.01, "completion_kl": 1.9177648272972192e-05}
+{"condition": "NATIVE_TOOLS", "config": "random2", "alpha": 0.01, "completion_kl": 4.2407808471978115e-05}

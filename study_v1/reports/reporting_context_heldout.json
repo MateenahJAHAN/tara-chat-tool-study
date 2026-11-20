@@ -1,0 +1,1239 @@
+{
+  "created_at_utc": "2026-11-20T02:56:11.737694+00:00",
+  "phase": "HELDOUT",
+  "design_id": "BFCL_IFACE_PROBE_V1_OPERATOR_AMENDED",
+  "split_manifest_sha256": "6e265ee4f4d667077a8e9793c8e2e1be01cd00737c74f04582b0003f2aaa93d9",
+  "authorization_sha256": "a1e9f21c32342cfaeaeaa613fc5497c20c7276c314912ed07391c73b835b1d0d",
+  "behaviour_report": "reports/behaviour_heldout.json",
+  "scoring_version": "V2_DEV_DISCOVERED_FORMAT_SEMANTIC_SEPARATION",
+  "builder_sha256": "95fcde28697cd1ccace9f4ca8c1f7166ae2b9b09c15cdc3c663cda32bc61d2b6",
+  "status": "ACTUAL_COMPLETED_PHASE_DESCRIPTIVE_COUNTS",
+  "no_new_selection_or_tests": true,
+  "statistical_unit": "Selected BFCL item/component; paired interfaces are repeated observations, not additional independent items",
+  "scope": "Native DEV is selection-used development; live HELDOUT is a separate selected finite bank. No population/safety inference.",
+  "scheduled_counts": {
+    "rows": 64,
+    "groups": 64,
+    "label0": 32,
+    "label1": 32
+  },
+  "scheduled_steering_subset": {
+    "rows": 16,
+    "label0": 8,
+    "label1": 8,
+    "scope": "Frozen subset schedule, not a claim that every optional steering generation ran"
+  },
+  "condition_summaries": {
+    "TEXT_CATALOGUE": {
+      "label0": {
+        "n_scheduled": 32,
+        "n_groups": 32,
+        "endpoints": {
+          "broad_call_attempt": {
+            "k": 27,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "broad_false_call": {
+            "k": 0,
+            "n_boolean": 0,
+            "n_scheduled": 32,
+            "not_applicable": 32,
+            "missing_or_nonboolean": 0
+          },
+          "call_attempt": {
+            "k": 27,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "correct_call": {
+            "k": 23,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "empty_output": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "errored": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "false_call": {
+            "k": 0,
+            "n_boolean": 0,
+            "n_scheduled": 32,
+            "not_applicable": 32,
+            "missing_or_nonboolean": 0
+          },
+          "format_compliant": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "invalid_or_empty": {
+            "k": 29,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "invalid_stop_reason": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "multiple_calls": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "no_call_literal": {
+            "k": 3,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "operational_abstention": {
+            "k": 3,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "parse_error": {
+            "k": 1,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "protocol_format_error": {
+            "k": 27,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "strict_abstention": {
+            "k": 3,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "truncated": {
+            "k": 1,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "unknown_name": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "unknown_output": {
+            "k": 2,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "valid_call": {
+            "k": 26,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          }
+        },
+        "stop_reason_counts": {
+          "eos": 31,
+          "max_new_tokens": 1
+        },
+        "error_records": 0,
+        "scorer_error_records": 0,
+        "n_attempts_distribution": {
+          "1": 27,
+          "0": 5
+        },
+        "validity_issue_counts": {
+          "unknown_name": 1,
+          "args_not_object": 1,
+          "malformed_unwrapped_json": 1
+        },
+        "parser_diagnostic_counts": {
+          "malformed_unwrapped_json": 1
+        },
+        "format_diagnostic_counts": {
+          "unclosed_tag": 23
+        },
+        "attempt_kind_counts": {
+          "tagged": 23,
+          "untagged_json": 4
+        }
+      },
+      "label1": {
+        "n_scheduled": 32,
+        "n_groups": 32,
+        "endpoints": {
+          "broad_call_attempt": {
+            "k": 9,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "broad_false_call": {
+            "k": 9,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "call_attempt": {
+            "k": 9,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "correct_call": {
+            "k": 0,
+            "n_boolean": 0,
+            "n_scheduled": 32,
+            "not_applicable": 32,
+            "missing_or_nonboolean": 0
+          },
+          "empty_output": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "errored": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "false_call": {
+            "k": 9,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "format_compliant": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "invalid_or_empty": {
+            "k": 9,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "invalid_stop_reason": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "multiple_calls": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "no_call_literal": {
+            "k": 23,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "operational_abstention": {
+            "k": 23,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "parse_error": {
+            "k": 1,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "protocol_format_error": {
+            "k": 9,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "strict_abstention": {
+            "k": 23,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "truncated": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "unknown_name": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "unknown_output": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "valid_call": {
+            "k": 8,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          }
+        },
+        "stop_reason_counts": {
+          "eos": 32
+        },
+        "error_records": 0,
+        "scorer_error_records": 0,
+        "n_attempts_distribution": {
+          "0": 23,
+          "1": 9
+        },
+        "validity_issue_counts": {
+          "unknown_name": 1,
+          "args_not_object": 1,
+          "invalid_python:SyntaxError:invalid syntax (<unknown>, line 1)": 1
+        },
+        "parser_diagnostic_counts": {
+          "invalid_python:SyntaxError:invalid syntax (<unknown>, line 1)": 1
+        },
+        "format_diagnostic_counts": {
+          "unclosed_tag": 7
+        },
+        "attempt_kind_counts": {
+          "tagged": 7,
+          "untagged_json": 1,
+          "untagged_python": 1
+        }
+      }
+    },
+    "NATIVE_TOOLS": {
+      "label0": {
+        "n_scheduled": 32,
+        "n_groups": 32,
+        "endpoints": {
+          "broad_call_attempt": {
+            "k": 32,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "broad_false_call": {
+            "k": 0,
+            "n_boolean": 0,
+            "n_scheduled": 32,
+            "not_applicable": 32,
+            "missing_or_nonboolean": 0
+          },
+          "call_attempt": {
+            "k": 32,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "correct_call": {
+            "k": 26,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "empty_output": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "errored": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "false_call": {
+            "k": 0,
+            "n_boolean": 0,
+            "n_scheduled": 32,
+            "not_applicable": 32,
+            "missing_or_nonboolean": 0
+          },
+          "format_compliant": {
+            "k": 31,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "invalid_or_empty": {
+            "k": 2,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "invalid_stop_reason": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "multiple_calls": {
+            "k": 1,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "no_call_literal": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "operational_abstention": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "parse_error": {
+            "k": 1,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "protocol_format_error": {
+            "k": 1,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "strict_abstention": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "truncated": {
+            "k": 1,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "unknown_name": {
+            "k": 1,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "unknown_output": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "valid_call": {
+            "k": 30,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          }
+        },
+        "stop_reason_counts": {
+          "eos": 31,
+          "max_new_tokens": 1
+        },
+        "error_records": 0,
+        "scorer_error_records": 0,
+        "n_attempts_distribution": {
+          "1": 31,
+          "14": 1
+        },
+        "validity_issue_counts": {
+          "enum:$.metrics": 1,
+          "type:$.max_date": 1
+        },
+        "parser_diagnostic_counts": {
+          "arguments_not_object": 14,
+          "noncanonical_tag_payload": 14
+        },
+        "format_diagnostic_counts": {},
+        "attempt_kind_counts": {
+          "tagged": 45
+        }
+      },
+      "label1": {
+        "n_scheduled": 32,
+        "n_groups": 32,
+        "endpoints": {
+          "broad_call_attempt": {
+            "k": 16,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "broad_false_call": {
+            "k": 16,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "call_attempt": {
+            "k": 16,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "correct_call": {
+            "k": 0,
+            "n_boolean": 0,
+            "n_scheduled": 32,
+            "not_applicable": 32,
+            "missing_or_nonboolean": 0
+          },
+          "empty_output": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "errored": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "false_call": {
+            "k": 16,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "format_compliant": {
+            "k": 15,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "invalid_or_empty": {
+            "k": 4,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "invalid_stop_reason": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "multiple_calls": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "no_call_literal": {
+            "k": 15,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "operational_abstention": {
+            "k": 15,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "parse_error": {
+            "k": 1,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "protocol_format_error": {
+            "k": 1,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "strict_abstention": {
+            "k": 15,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "truncated": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "unknown_name": {
+            "k": 0,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "unknown_output": {
+            "k": 1,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "valid_call": {
+            "k": 13,
+            "n_boolean": 32,
+            "n_scheduled": 32,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          }
+        },
+        "stop_reason_counts": {
+          "eos": 32
+        },
+        "error_records": 0,
+        "scorer_error_records": 0,
+        "n_attempts_distribution": {
+          "1": 16,
+          "0": 16
+        },
+        "validity_issue_counts": {
+          "unknown_name": 1,
+          "args_not_object": 1,
+          "invalid_json:JSONDecodeError:Expecting value: line 1 column 47 (char 46)": 1,
+          "noncanonical_tag_payload": 1,
+          "type:$.date": 1,
+          "missing:$.province_id": 1
+        },
+        "parser_diagnostic_counts": {
+          "invalid_json:JSONDecodeError:Expecting value: line 1 column 47 (char 46)": 1,
+          "noncanonical_tag_payload": 1
+        },
+        "format_diagnostic_counts": {},
+        "attempt_kind_counts": {
+          "tagged": 16
+        }
+      }
+    }
+  },
+  "paired_counts": {
+    "label0": {
+      "broad_call_attempt": {
+        "a0_b0": 0,
+        "a0_b1": 5,
+        "a1_b0": 0,
+        "a1_b1": 27,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "broad_false_call": {
+        "a0_b0": 0,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 32,
+        "n_scheduled": 32
+      },
+      "call_attempt": {
+        "a0_b0": 0,
+        "a0_b1": 5,
+        "a1_b0": 0,
+        "a1_b1": 27,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "correct_call": {
+        "a0_b0": 6,
+        "a0_b1": 3,
+        "a1_b0": 0,
+        "a1_b1": 23,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "empty_output": {
+        "a0_b0": 32,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "errored": {
+        "a0_b0": 32,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "false_call": {
+        "a0_b0": 0,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 32,
+        "n_scheduled": 32
+      },
+      "format_compliant": {
+        "a0_b0": 1,
+        "a0_b1": 31,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "invalid_or_empty": {
+        "a0_b0": 2,
+        "a0_b1": 1,
+        "a1_b0": 28,
+        "a1_b1": 1,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "invalid_stop_reason": {
+        "a0_b0": 32,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "multiple_calls": {
+        "a0_b0": 31,
+        "a0_b1": 1,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "no_call_literal": {
+        "a0_b0": 29,
+        "a0_b1": 0,
+        "a1_b0": 3,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "operational_abstention": {
+        "a0_b0": 29,
+        "a0_b1": 0,
+        "a1_b0": 3,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "parse_error": {
+        "a0_b0": 31,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 1,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "protocol_format_error": {
+        "a0_b0": 5,
+        "a0_b1": 0,
+        "a1_b0": 26,
+        "a1_b1": 1,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "strict_abstention": {
+        "a0_b0": 29,
+        "a0_b1": 0,
+        "a1_b0": 3,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "truncated": {
+        "a0_b0": 31,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 1,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "unknown_name": {
+        "a0_b0": 31,
+        "a0_b1": 1,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "unknown_output": {
+        "a0_b0": 30,
+        "a0_b1": 0,
+        "a1_b0": 2,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "valid_call": {
+        "a0_b0": 2,
+        "a0_b1": 4,
+        "a1_b0": 0,
+        "a1_b1": 26,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      }
+    },
+    "label1": {
+      "broad_call_attempt": {
+        "a0_b0": 15,
+        "a0_b1": 8,
+        "a1_b0": 1,
+        "a1_b1": 8,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "broad_false_call": {
+        "a0_b0": 15,
+        "a0_b1": 8,
+        "a1_b0": 1,
+        "a1_b1": 8,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "call_attempt": {
+        "a0_b0": 15,
+        "a0_b1": 8,
+        "a1_b0": 1,
+        "a1_b1": 8,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "correct_call": {
+        "a0_b0": 0,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 32,
+        "n_scheduled": 32
+      },
+      "empty_output": {
+        "a0_b0": 32,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "errored": {
+        "a0_b0": 32,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "false_call": {
+        "a0_b0": 15,
+        "a0_b1": 8,
+        "a1_b0": 1,
+        "a1_b1": 8,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "format_compliant": {
+        "a0_b0": 17,
+        "a0_b1": 15,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "invalid_or_empty": {
+        "a0_b0": 21,
+        "a0_b1": 2,
+        "a1_b0": 7,
+        "a1_b1": 2,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "invalid_stop_reason": {
+        "a0_b0": 32,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "multiple_calls": {
+        "a0_b0": 32,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "no_call_literal": {
+        "a0_b0": 9,
+        "a0_b1": 0,
+        "a1_b0": 8,
+        "a1_b1": 15,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "operational_abstention": {
+        "a0_b0": 9,
+        "a0_b1": 0,
+        "a1_b0": 8,
+        "a1_b1": 15,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "parse_error": {
+        "a0_b0": 30,
+        "a0_b1": 1,
+        "a1_b0": 1,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "protocol_format_error": {
+        "a0_b0": 22,
+        "a0_b1": 1,
+        "a1_b0": 9,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "strict_abstention": {
+        "a0_b0": 9,
+        "a0_b1": 0,
+        "a1_b0": 8,
+        "a1_b1": 15,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "truncated": {
+        "a0_b0": 32,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "unknown_name": {
+        "a0_b0": 32,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "unknown_output": {
+        "a0_b0": 31,
+        "a0_b1": 1,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      },
+      "valid_call": {
+        "a0_b0": 18,
+        "a0_b1": 6,
+        "a1_b0": 1,
+        "a1_b1": 7,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 32
+      }
+    }
+  },
+  "probe_selection": {
+    "MM__TEXT_CATALOGUE": {
+      "layer": 15,
+      "C": null,
+      "dev_auroc": 0.99609375,
+      "dev_bacc": 0.9375,
+      "threshold": -35.55529022216797
+    },
+    "LR__TEXT_CATALOGUE": {
+      "layer": 20,
+      "C": 0.01,
+      "dev_auroc": 1.0,
+      "dev_bacc": 0.9375,
+      "threshold": 0.0
+    },
+    "MM__NATIVE_TOOLS": {
+      "layer": 16,
+      "C": null,
+      "dev_auroc": 0.99609375,
+      "dev_bacc": 0.9375,
+      "threshold": -94.23944091796875
+    },
+    "LR__NATIVE_TOOLS": {
+      "layer": 15,
+      "C": 0.001,
+      "dev_auroc": 0.9921875,
+      "dev_bacc": 0.9375,
+      "threshold": 0.0
+    },
+    "MM__QUERY_ONLY_CONTROL": {
+      "layer": 15,
+      "C": null,
+      "dev_auroc": 0.98828125,
+      "dev_bacc": 0.875,
+      "threshold": -5.8414626121521
+    },
+    "LR__QUERY_ONLY_CONTROL": {
+      "layer": 13,
+      "C": 0.001,
+      "dev_auroc": 0.97265625,
+      "dev_bacc": 0.875,
+      "threshold": 0.0
+    }
+  },
+  "surface_selection": {
+    "length": {
+      "C": 0.01,
+      "dev_auroc": 0.8828125
+    },
+    "overlap": {
+      "C": 0.001,
+      "dev_auroc": 0.9375
+    },
+    "tfidf_query": {
+      "C": 0.001,
+      "dev_auroc": 0.91015625
+    },
+    "tfidf_schema": {
+      "C": 0.001,
+      "dev_auroc": 0.6015625
+    },
+    "tfidf_both": {
+      "C": 0.01,
+      "dev_auroc": 0.71875
+    }
+  },
+  "dev_transfer_matrix_selection_used": {
+    "MM:TEXT_CATALOGUE->TEXT_CATALOGUE": 0.99609375,
+    "MM:TEXT_CATALOGUE->NATIVE_TOOLS": 0.99609375,
+    "MM:NATIVE_TOOLS->TEXT_CATALOGUE": 0.9921875,
+    "MM:NATIVE_TOOLS->NATIVE_TOOLS": 0.99609375,
+    "LR:TEXT_CATALOGUE->TEXT_CATALOGUE": 1.0,
+    "LR:TEXT_CATALOGUE->NATIVE_TOOLS": 0.98828125,
+    "LR:NATIVE_TOOLS->TEXT_CATALOGUE": 0.984375,
+    "LR:NATIVE_TOOLS->NATIVE_TOOLS": 0.9921875
+  },
+  "steering_status": {
+    "TEXT_CATALOGUE": {
+      "entry": {
+        "dev_auroc": 0.99609375,
+        "dev_false_call_rate": 0.125
+      },
+      "entry_pass": true,
+      "layer": 15,
+      "sweep": [
+        {
+          "alpha": 0.01,
+          "sign": 1,
+          "dev_false_call": 0.125,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.5625,
+          "completion_kl": 1.7086708623992308e-05,
+          "eligible": false
+        },
+        {
+          "alpha": 0.01,
+          "sign": -1,
+          "dev_false_call": 0.125,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.5625,
+          "completion_kl": 1.69610918305807e-05,
+          "eligible": false
+        },
+        {
+          "alpha": 0.03,
+          "sign": 1,
+          "dev_false_call": 0.125,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.5625,
+          "completion_kl": 0.00015595709214721865,
+          "eligible": false
+        },
+        {
+          "alpha": 0.03,
+          "sign": -1,
+          "dev_false_call": 0.125,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.5625,
+          "completion_kl": 0.00015172277699093684,
+          "eligible": false
+        }
+      ],
+      "selected": null,
+      "residual_norm_scale": 46.706661224365234,
+      "status": "STEERING_GATE_FAILED",
+      "dev_baseline": {
+        "false_call": 0.125,
+        "correct_call": 1.0,
+        "invalid_or_empty": 0.5625
+      }
+    },
+    "NATIVE_TOOLS": {
+      "entry": {
+        "dev_auroc": 0.99609375,
+        "dev_false_call_rate": 0.375
+      },
+      "entry_pass": true,
+      "layer": 16,
+      "sweep": [
+        {
+          "alpha": 0.01,
+          "sign": 1,
+          "dev_false_call": 0.125,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.0625,
+          "completion_kl": 4.84190647753735e-06,
+          "eligible": true
+        },
+        {
+          "alpha": 0.01,
+          "sign": -1,
+          "dev_false_call": 0.25,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.0625,
+          "completion_kl": 4.557471307009564e-06,
+          "eligible": false
+        },
+        {
+          "alpha": 0.03,
+          "sign": 1,
+          "dev_false_call": 0.125,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.0625,
+          "completion_kl": 4.639152189156448e-05,
+          "eligible": true
+        },
+        {
+          "alpha": 0.03,
+          "sign": -1,
+          "dev_false_call": 0.5,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.0,
+          "completion_kl": 3.884829166622694e-05,
+          "eligible": false
+        }
+      ],
+      "selected": {
+        "alpha": 0.01,
+        "sign": 1
+      },
+      "residual_norm_scale": 49.08722686767578,
+      "status": "SELECTED",
+      "dev_baseline": {
+        "false_call": 0.25,
+        "correct_call": 1.0,
+        "invalid_or_empty": 0.0625
+      }
+    }
+  },
+  "unavailable": [],
+  "input_sha256": {
+    "manifests/split_manifest.json": "6e265ee4f4d667077a8e9793c8e2e1be01cd00737c74f04582b0003f2aaa93d9",
+    "reports/behaviour_heldout.json": "c7ed2e1565d21a6457c13cdfdd93ed3f4535cc9a71d4932671321eedb0bdd611",
+    "PROSPECTIVE_FREEZE_RECORD.json": "6c2600e69594a829ce45428e38589a99a349cce3eeda88066fe3f3ced98f7836",
+    "runs/heldout/generations_baseline_TEXT_CATALOGUE.jsonl": "4b844e7c48a344aa06ecd0281b25c22900f72b2786cc26fcaf26a80a274031ac",
+    "runs/heldout/generations_baseline_NATIVE_TOOLS.jsonl": "74396c22f03a24d53147d2e8ca86986c2370b1e38ff02fbe28d58680f11af1eb",
+    "frozen/selected_params.json": "75d11fd2249d8a4dd8186b4000e26f0558778e83151ce12f1d3c90a65f9ea58c",
+    "frozen/probe_selection.json": "0728accaef521ec32c1f26aa736fb530ad8f3631a6e9386f9cbc0b980a57f9e3"
+  },
+  "counts_definition": "Raw retained boolean scorer values. n_scheduled always includes errors, unknown and truncated outputs; nonapplicable/missing values are separate, never silently dropped."
+}

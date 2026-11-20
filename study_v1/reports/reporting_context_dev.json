@@ -1,0 +1,1211 @@
+{
+  "created_at_utc": "2026-11-20T02:40:14.055143+00:00",
+  "phase": "DEV",
+  "design_id": "BFCL_IFACE_PROBE_V1_OPERATOR_AMENDED",
+  "split_manifest_sha256": "6e265ee4f4d667077a8e9793c8e2e1be01cd00737c74f04582b0003f2aaa93d9",
+  "authorization_sha256": "cf9524b8999d52173e8e9807c08d9ad1ce5e4f914cf324f32a725d9c40d33f7a",
+  "behaviour_report": "reports/behaviour_dev.json",
+  "scoring_version": "V2_DEV_DISCOVERED_FORMAT_SEMANTIC_SEPARATION",
+  "builder_sha256": "95fcde28697cd1ccace9f4ca8c1f7166ae2b9b09c15cdc3c663cda32bc61d2b6",
+  "status": "ACTUAL_COMPLETED_PHASE_DESCRIPTIVE_COUNTS",
+  "no_new_selection_or_tests": true,
+  "statistical_unit": "Selected BFCL item/component; paired interfaces are repeated observations, not additional independent items",
+  "scope": "Native DEV is selection-used development; live HELDOUT is a separate selected finite bank. No population/safety inference.",
+  "scheduled_counts": {
+    "rows": 32,
+    "groups": 32,
+    "label0": 16,
+    "label1": 16
+  },
+  "scheduled_steering_subset": {
+    "rows": 16,
+    "label0": 8,
+    "label1": 8,
+    "scope": "Frozen subset schedule, not a claim that every optional steering generation ran"
+  },
+  "condition_summaries": {
+    "TEXT_CATALOGUE": {
+      "label0": {
+        "n_scheduled": 16,
+        "n_groups": 16,
+        "endpoints": {
+          "broad_call_attempt": {
+            "k": 16,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "broad_false_call": {
+            "k": 0,
+            "n_boolean": 0,
+            "n_scheduled": 16,
+            "not_applicable": 16,
+            "missing_or_nonboolean": 0
+          },
+          "call_attempt": {
+            "k": 16,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "correct_call": {
+            "k": 16,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "empty_output": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "errored": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "false_call": {
+            "k": 0,
+            "n_boolean": 0,
+            "n_scheduled": 16,
+            "not_applicable": 16,
+            "missing_or_nonboolean": 0
+          },
+          "format_compliant": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "invalid_or_empty": {
+            "k": 16,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "invalid_stop_reason": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "multiple_calls": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "no_call_literal": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "operational_abstention": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "parse_error": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "protocol_format_error": {
+            "k": 16,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "strict_abstention": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "truncated": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "unknown_name": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "unknown_output": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "valid_call": {
+            "k": 16,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          }
+        },
+        "stop_reason_counts": {
+          "eos": 16
+        },
+        "error_records": 0,
+        "scorer_error_records": 0,
+        "n_attempts_distribution": {
+          "1": 16
+        },
+        "validity_issue_counts": {},
+        "parser_diagnostic_counts": {},
+        "format_diagnostic_counts": {
+          "unclosed_tag": 16
+        },
+        "attempt_kind_counts": {
+          "tagged": 16
+        }
+      },
+      "label1": {
+        "n_scheduled": 16,
+        "n_groups": 16,
+        "endpoints": {
+          "broad_call_attempt": {
+            "k": 2,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "broad_false_call": {
+            "k": 2,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "call_attempt": {
+            "k": 2,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "correct_call": {
+            "k": 0,
+            "n_boolean": 0,
+            "n_scheduled": 16,
+            "not_applicable": 16,
+            "missing_or_nonboolean": 0
+          },
+          "empty_output": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "errored": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "false_call": {
+            "k": 2,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "format_compliant": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "invalid_or_empty": {
+            "k": 2,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "invalid_stop_reason": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "multiple_calls": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "no_call_literal": {
+            "k": 14,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "operational_abstention": {
+            "k": 14,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "parse_error": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "protocol_format_error": {
+            "k": 2,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "strict_abstention": {
+            "k": 14,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "truncated": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "unknown_name": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "unknown_output": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "valid_call": {
+            "k": 2,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          }
+        },
+        "stop_reason_counts": {
+          "eos": 16
+        },
+        "error_records": 0,
+        "scorer_error_records": 0,
+        "n_attempts_distribution": {
+          "1": 2,
+          "0": 14
+        },
+        "validity_issue_counts": {},
+        "parser_diagnostic_counts": {},
+        "format_diagnostic_counts": {
+          "unclosed_tag": 2
+        },
+        "attempt_kind_counts": {
+          "tagged": 2
+        }
+      }
+    },
+    "NATIVE_TOOLS": {
+      "label0": {
+        "n_scheduled": 16,
+        "n_groups": 16,
+        "endpoints": {
+          "broad_call_attempt": {
+            "k": 16,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "broad_false_call": {
+            "k": 0,
+            "n_boolean": 0,
+            "n_scheduled": 16,
+            "not_applicable": 16,
+            "missing_or_nonboolean": 0
+          },
+          "call_attempt": {
+            "k": 16,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "correct_call": {
+            "k": 16,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "empty_output": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "errored": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "false_call": {
+            "k": 0,
+            "n_boolean": 0,
+            "n_scheduled": 16,
+            "not_applicable": 16,
+            "missing_or_nonboolean": 0
+          },
+          "format_compliant": {
+            "k": 16,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "invalid_or_empty": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "invalid_stop_reason": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "multiple_calls": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "no_call_literal": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "operational_abstention": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "parse_error": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "protocol_format_error": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "strict_abstention": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "truncated": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "unknown_name": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "unknown_output": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "valid_call": {
+            "k": 16,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          }
+        },
+        "stop_reason_counts": {
+          "eos": 16
+        },
+        "error_records": 0,
+        "scorer_error_records": 0,
+        "n_attempts_distribution": {
+          "1": 16
+        },
+        "validity_issue_counts": {},
+        "parser_diagnostic_counts": {},
+        "format_diagnostic_counts": {},
+        "attempt_kind_counts": {
+          "tagged": 16
+        }
+      },
+      "label1": {
+        "n_scheduled": 16,
+        "n_groups": 16,
+        "endpoints": {
+          "broad_call_attempt": {
+            "k": 6,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "broad_false_call": {
+            "k": 6,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "call_attempt": {
+            "k": 6,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "correct_call": {
+            "k": 0,
+            "n_boolean": 0,
+            "n_scheduled": 16,
+            "not_applicable": 16,
+            "missing_or_nonboolean": 0
+          },
+          "empty_output": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "errored": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "false_call": {
+            "k": 6,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "format_compliant": {
+            "k": 6,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "invalid_or_empty": {
+            "k": 2,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "invalid_stop_reason": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "multiple_calls": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "no_call_literal": {
+            "k": 9,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "operational_abstention": {
+            "k": 9,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "parse_error": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "protocol_format_error": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "strict_abstention": {
+            "k": 9,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "truncated": {
+            "k": 0,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "unknown_name": {
+            "k": 1,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "unknown_output": {
+            "k": 1,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          },
+          "valid_call": {
+            "k": 5,
+            "n_boolean": 16,
+            "n_scheduled": 16,
+            "not_applicable": 0,
+            "missing_or_nonboolean": 0
+          }
+        },
+        "stop_reason_counts": {
+          "eos": 16
+        },
+        "error_records": 0,
+        "scorer_error_records": 0,
+        "n_attempts_distribution": {
+          "1": 6,
+          "0": 10
+        },
+        "validity_issue_counts": {
+          "unknown_name": 1,
+          "missing:$.hotel_name": 1,
+          "missing:$.check_in_date": 1,
+          "missing:$.check_out_date": 1,
+          "unknown_arg:$.cuisine": 1,
+          "unknown_arg:$.dietary_restrictions": 1
+        },
+        "parser_diagnostic_counts": {},
+        "format_diagnostic_counts": {},
+        "attempt_kind_counts": {
+          "tagged": 6
+        }
+      }
+    }
+  },
+  "paired_counts": {
+    "label0": {
+      "broad_call_attempt": {
+        "a0_b0": 0,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 16,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "broad_false_call": {
+        "a0_b0": 0,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 16,
+        "n_scheduled": 16
+      },
+      "call_attempt": {
+        "a0_b0": 0,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 16,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "correct_call": {
+        "a0_b0": 0,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 16,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "empty_output": {
+        "a0_b0": 16,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "errored": {
+        "a0_b0": 16,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "false_call": {
+        "a0_b0": 0,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 16,
+        "n_scheduled": 16
+      },
+      "format_compliant": {
+        "a0_b0": 0,
+        "a0_b1": 16,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "invalid_or_empty": {
+        "a0_b0": 0,
+        "a0_b1": 0,
+        "a1_b0": 16,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "invalid_stop_reason": {
+        "a0_b0": 16,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "multiple_calls": {
+        "a0_b0": 16,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "no_call_literal": {
+        "a0_b0": 16,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "operational_abstention": {
+        "a0_b0": 16,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "parse_error": {
+        "a0_b0": 16,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "protocol_format_error": {
+        "a0_b0": 0,
+        "a0_b1": 0,
+        "a1_b0": 16,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "strict_abstention": {
+        "a0_b0": 16,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "truncated": {
+        "a0_b0": 16,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "unknown_name": {
+        "a0_b0": 16,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "unknown_output": {
+        "a0_b0": 16,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "valid_call": {
+        "a0_b0": 0,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 16,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      }
+    },
+    "label1": {
+      "broad_call_attempt": {
+        "a0_b0": 10,
+        "a0_b1": 4,
+        "a1_b0": 0,
+        "a1_b1": 2,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "broad_false_call": {
+        "a0_b0": 10,
+        "a0_b1": 4,
+        "a1_b0": 0,
+        "a1_b1": 2,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "call_attempt": {
+        "a0_b0": 10,
+        "a0_b1": 4,
+        "a1_b0": 0,
+        "a1_b1": 2,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "correct_call": {
+        "a0_b0": 0,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 16,
+        "n_scheduled": 16
+      },
+      "empty_output": {
+        "a0_b0": 16,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "errored": {
+        "a0_b0": 16,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "false_call": {
+        "a0_b0": 10,
+        "a0_b1": 4,
+        "a1_b0": 0,
+        "a1_b1": 2,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "format_compliant": {
+        "a0_b0": 10,
+        "a0_b1": 6,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "invalid_or_empty": {
+        "a0_b0": 12,
+        "a0_b1": 2,
+        "a1_b0": 2,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "invalid_stop_reason": {
+        "a0_b0": 16,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "multiple_calls": {
+        "a0_b0": 16,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "no_call_literal": {
+        "a0_b0": 2,
+        "a0_b1": 0,
+        "a1_b0": 5,
+        "a1_b1": 9,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "operational_abstention": {
+        "a0_b0": 2,
+        "a0_b1": 0,
+        "a1_b0": 5,
+        "a1_b1": 9,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "parse_error": {
+        "a0_b0": 16,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "protocol_format_error": {
+        "a0_b0": 14,
+        "a0_b1": 0,
+        "a1_b0": 2,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "strict_abstention": {
+        "a0_b0": 2,
+        "a0_b1": 0,
+        "a1_b0": 5,
+        "a1_b1": 9,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "truncated": {
+        "a0_b0": 16,
+        "a0_b1": 0,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "unknown_name": {
+        "a0_b0": 15,
+        "a0_b1": 1,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "unknown_output": {
+        "a0_b0": 15,
+        "a0_b1": 1,
+        "a1_b0": 0,
+        "a1_b1": 0,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      },
+      "valid_call": {
+        "a0_b0": 11,
+        "a0_b1": 3,
+        "a1_b0": 0,
+        "a1_b1": 2,
+        "not_applicable_or_missing_pairs": 0,
+        "n_scheduled": 16
+      }
+    }
+  },
+  "probe_selection": {
+    "MM__TEXT_CATALOGUE": {
+      "layer": 15,
+      "C": null,
+      "dev_auroc": 0.99609375,
+      "dev_bacc": 0.9375,
+      "threshold": -35.55529022216797
+    },
+    "LR__TEXT_CATALOGUE": {
+      "layer": 20,
+      "C": 0.01,
+      "dev_auroc": 1.0,
+      "dev_bacc": 0.9375,
+      "threshold": 0.0
+    },
+    "MM__NATIVE_TOOLS": {
+      "layer": 16,
+      "C": null,
+      "dev_auroc": 0.99609375,
+      "dev_bacc": 0.9375,
+      "threshold": -94.23944091796875
+    },
+    "LR__NATIVE_TOOLS": {
+      "layer": 15,
+      "C": 0.001,
+      "dev_auroc": 0.9921875,
+      "dev_bacc": 0.9375,
+      "threshold": 0.0
+    },
+    "MM__QUERY_ONLY_CONTROL": {
+      "layer": 15,
+      "C": null,
+      "dev_auroc": 0.98828125,
+      "dev_bacc": 0.875,
+      "threshold": -5.8414626121521
+    },
+    "LR__QUERY_ONLY_CONTROL": {
+      "layer": 13,
+      "C": 0.001,
+      "dev_auroc": 0.97265625,
+      "dev_bacc": 0.875,
+      "threshold": 0.0
+    }
+  },
+  "surface_selection": {
+    "length": {
+      "C": 0.01,
+      "dev_auroc": 0.8828125
+    },
+    "overlap": {
+      "C": 0.001,
+      "dev_auroc": 0.9375
+    },
+    "tfidf_query": {
+      "C": 0.001,
+      "dev_auroc": 0.91015625
+    },
+    "tfidf_schema": {
+      "C": 0.001,
+      "dev_auroc": 0.6015625
+    },
+    "tfidf_both": {
+      "C": 0.01,
+      "dev_auroc": 0.71875
+    }
+  },
+  "dev_transfer_matrix_selection_used": {
+    "MM:TEXT_CATALOGUE->TEXT_CATALOGUE": 0.99609375,
+    "MM:TEXT_CATALOGUE->NATIVE_TOOLS": 0.99609375,
+    "MM:NATIVE_TOOLS->TEXT_CATALOGUE": 0.9921875,
+    "MM:NATIVE_TOOLS->NATIVE_TOOLS": 0.99609375,
+    "LR:TEXT_CATALOGUE->TEXT_CATALOGUE": 1.0,
+    "LR:TEXT_CATALOGUE->NATIVE_TOOLS": 0.98828125,
+    "LR:NATIVE_TOOLS->TEXT_CATALOGUE": 0.984375,
+    "LR:NATIVE_TOOLS->NATIVE_TOOLS": 0.9921875
+  },
+  "steering_status": {
+    "TEXT_CATALOGUE": {
+      "entry": {
+        "dev_auroc": 0.99609375,
+        "dev_false_call_rate": 0.125
+      },
+      "entry_pass": true,
+      "layer": 15,
+      "sweep": [
+        {
+          "alpha": 0.01,
+          "sign": 1,
+          "dev_false_call": 0.125,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.5625,
+          "completion_kl": 1.7086708623992308e-05,
+          "eligible": false
+        },
+        {
+          "alpha": 0.01,
+          "sign": -1,
+          "dev_false_call": 0.125,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.5625,
+          "completion_kl": 1.69610918305807e-05,
+          "eligible": false
+        },
+        {
+          "alpha": 0.03,
+          "sign": 1,
+          "dev_false_call": 0.125,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.5625,
+          "completion_kl": 0.00015595709214721865,
+          "eligible": false
+        },
+        {
+          "alpha": 0.03,
+          "sign": -1,
+          "dev_false_call": 0.125,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.5625,
+          "completion_kl": 0.00015172277699093684,
+          "eligible": false
+        }
+      ],
+      "selected": null,
+      "residual_norm_scale": 46.706661224365234,
+      "status": "STEERING_GATE_FAILED",
+      "dev_baseline": {
+        "false_call": 0.125,
+        "correct_call": 1.0,
+        "invalid_or_empty": 0.5625
+      }
+    },
+    "NATIVE_TOOLS": {
+      "entry": {
+        "dev_auroc": 0.99609375,
+        "dev_false_call_rate": 0.375
+      },
+      "entry_pass": true,
+      "layer": 16,
+      "sweep": [
+        {
+          "alpha": 0.01,
+          "sign": 1,
+          "dev_false_call": 0.125,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.0625,
+          "completion_kl": 4.84190647753735e-06,
+          "eligible": true
+        },
+        {
+          "alpha": 0.01,
+          "sign": -1,
+          "dev_false_call": 0.25,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.0625,
+          "completion_kl": 4.557471307009564e-06,
+          "eligible": false
+        },
+        {
+          "alpha": 0.03,
+          "sign": 1,
+          "dev_false_call": 0.125,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.0625,
+          "completion_kl": 4.639152189156448e-05,
+          "eligible": true
+        },
+        {
+          "alpha": 0.03,
+          "sign": -1,
+          "dev_false_call": 0.5,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.0,
+          "completion_kl": 3.884829166622694e-05,
+          "eligible": false
+        }
+      ],
+      "selected": {
+        "alpha": 0.01,
+        "sign": 1
+      },
+      "residual_norm_scale": 49.08722686767578,
+      "status": "SELECTED",
+      "dev_baseline": {
+        "false_call": 0.25,
+        "correct_call": 1.0,
+        "invalid_or_empty": 0.0625
+      }
+    }
+  },
+  "unavailable": [],
+  "input_sha256": {
+    "manifests/split_manifest.json": "6e265ee4f4d667077a8e9793c8e2e1be01cd00737c74f04582b0003f2aaa93d9",
+    "reports/behaviour_dev.json": "68568ee2a599d7b6c8b715fbfd6461bf3c5d2e29aec93c8450b659303cfacd87",
+    "PROSPECTIVE_FREEZE_RECORD.json": "6c2600e69594a829ce45428e38589a99a349cce3eeda88066fe3f3ced98f7836",
+    "runs/dev/rescored_v2/generations_baseline_TEXT_CATALOGUE.jsonl": "2f565ff60d9a6ceaa05dfa1f6c6e670e0bbacd5f5881ae8cf87a1b61dced6505",
+    "runs/dev/rescored_v2/generations_baseline_NATIVE_TOOLS.jsonl": "9e3b5699a818f69fbb2ffa55615c0ebc5168bd5c1699f27fbea8e3407c279bc6",
+    "frozen/selected_params.json": "75d11fd2249d8a4dd8186b4000e26f0558778e83151ce12f1d3c90a65f9ea58c",
+    "frozen/probe_selection.json": "0728accaef521ec32c1f26aa736fb530ad8f3631a6e9386f9cbc0b980a57f9e3"
+  },
+  "counts_definition": "Raw retained boolean scorer values. n_scheduled always includes errors, unknown and truncated outputs; nonapplicable/missing values are separate, never silently dropped."
+}

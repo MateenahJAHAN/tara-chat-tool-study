@@ -1,0 +1,553 @@
+Independent heldout raw-output audit
+2026-11-20T02:55:47.755181+00:00
+
+Verdict: PASS
+
+Independent raw-output/frozen-artifact integrity audit. No model inference, refit, publication or private Claude reasoning access. Tokenizer/pure-parser checks and descriptive count arithmetic only. This is separate from scientific result interpretation.
+
+PASS | complete marker/ledger agree
+PASS | full approved frozen/staged hashes
+PASS | approved public freeze recorded
+PASS | approval precedes heldout start
+PASS | start binds approval hash
+PASS | 64/16/32 per-class frozen splits
+PASS | 224 unique groups and disjoint splits
+PASS | C0 IDs excluded
+PASS | preset steering subset8/class
+PASS | expected8 generation files
+PASS | DEV-only steering status
+PASS | generations_baseline_NATIVE_TOOLS.jsonl
+PASS | generations_baseline_TEXT_CATALOGUE.jsonl
+PASS | generations_steer_mm_minus_NATIVE_TOOLS.jsonl
+PASS | generations_steer_mm_plus_NATIVE_TOOLS.jsonl
+PASS | generations_steer_permuted_NATIVE_TOOLS.jsonl
+PASS | generations_steer_random0_NATIVE_TOOLS.jsonl
+PASS | generations_steer_random1_NATIVE_TOOLS.jsonl
+PASS | generations_steer_random2_NATIVE_TOOLS.jsonl
+PASS | heldout metadata_prompt round-trip/integrity
+PASS | heldout decode round-trip/integrity
+PASS | heldout parser round-trip/integrity
+PASS | heldout stop_failure round-trip/integrity
+PASS | heldout numeric round-trip/integrity
+PASS | 224 heldout gens
+PASS | no FAILURE_STOP markers
+PASS | activation runs/dev/residuals_baseline_NATIVE_TOOLS.npy
+PASS | activation runs/dev/residuals_baseline_TEXT_CATALOGUE.npy
+PASS | activation runs/dev/residuals_query_only_QUERY_ONLY_CONTROL.npy
+PASS | activation runs/dev/residuals_trainingprefill_NATIVE_TOOLS.npy
+PASS | activation runs/dev/residuals_trainingprefill_TEXT_CATALOGUE.npy
+PASS | activation runs/heldout/residuals_baseline_NATIVE_TOOLS.npy
+PASS | activation runs/heldout/residuals_baseline_TEXT_CATALOGUE.npy
+PASS | activation runs/heldout/residuals_query_only_QUERY_ONLY_CONTROL.npy
+PASS | 64 query-only heldout prefills
+PASS | query prefills nongenerative/finite
+PASS | finite frozen arrays probe_weights.npz
+PASS | finite frozen arrays control_weights.npz
+PASS | finite frozen arrays steering_vectors.npz
+PASS | finite baseline JSON
+PASS | originalDEV TEXT_CATALOGUE
+PASS | rescoredDEV TEXT_CATALOGUE
+PASS | originalDEV NATIVE_TOOLS
+PASS | rescoredDEV NATIVE_TOOLS
+PASS | 64 DEV rescored copies preserve original generation
+PASS | DEVsteer generations_mm_a0.01_s-1_NATIVE_TOOLS.jsonl
+PASS | DEVsteer generations_mm_a0.01_s-1_TEXT_CATALOGUE.jsonl
+PASS | DEVsteer generations_mm_a0.01_s1_NATIVE_TOOLS.jsonl
+PASS | DEVsteer generations_mm_a0.01_s1_TEXT_CATALOGUE.jsonl
+PASS | DEVsteer generations_mm_a0.03_s-1_NATIVE_TOOLS.jsonl
+PASS | DEVsteer generations_mm_a0.03_s-1_TEXT_CATALOGUE.jsonl
+PASS | DEVsteer generations_mm_a0.03_s1_NATIVE_TOOLS.jsonl
+PASS | DEVsteer generations_mm_a0.03_s1_TEXT_CATALOGUE.jsonl
+PASS | generation ledger accounting
+PASS | 416 raw decode/error consistency and preflight identity
+PASS | generation forward/token accounting
+PASS | 480 prefill forward accounting
+PASS | six native KL summaries
+PASS | behavior report raw counts and subset differences
+PASS | behavior descriptive status
+PASS | probe report n64 matrix
+PASS | probe report finite JSON
+PASS | protected artifacts unchanged during audit
+
+Concise independent raw recap
+On 32 irrelevant items per interface, false calls were 9/32 in TEXT_CATALOGUE and 16/32 in NATIVE_TOOLS. On 32 relevant items, V2 semantic correctness was 23/32 versus 26/32, and protocol-format compliance was 0/32 versus 31/32. On the fixed native steering subset, false calls stayed 2/8 and relevant correctness moved from 7/8 to 6/8. These are observed counts, not a general safety or causal conclusion.
+
+Probe-report scope
+The probe report's 10 matrix sample counts and numeric finiteness were checked. Probe AUROCs and bootstrap interval values were not independently recomputed. The behavior report check covers raw endpoint counts and fixed-subset point differences, not interval calibration. The recorded approved public commit was not separately queried on GitHub in this audit.
+
+Raw descriptive counts
+{
+  "generations_baseline_NATIVE_TOOLS.jsonl": {
+    "0": {
+      "n_scheduled": 32,
+      "false_call": {
+        "k": 0,
+        "n": 0
+      },
+      "correct_call": {
+        "k": 26,
+        "n": 32
+      },
+      "invalid_or_empty": {
+        "k": 2,
+        "n": 32
+      },
+      "format_compliant": {
+        "k": 31,
+        "n": 32
+      },
+      "truncated": {
+        "k": 1,
+        "n": 32
+      },
+      "errored": {
+        "k": 0,
+        "n": 32
+      }
+    },
+    "1": {
+      "n_scheduled": 32,
+      "false_call": {
+        "k": 16,
+        "n": 32
+      },
+      "correct_call": {
+        "k": 0,
+        "n": 0
+      },
+      "invalid_or_empty": {
+        "k": 4,
+        "n": 32
+      },
+      "format_compliant": {
+        "k": 15,
+        "n": 32
+      },
+      "truncated": {
+        "k": 0,
+        "n": 32
+      },
+      "errored": {
+        "k": 0,
+        "n": 32
+      }
+    }
+  },
+  "generations_baseline_TEXT_CATALOGUE.jsonl": {
+    "0": {
+      "n_scheduled": 32,
+      "false_call": {
+        "k": 0,
+        "n": 0
+      },
+      "correct_call": {
+        "k": 23,
+        "n": 32
+      },
+      "invalid_or_empty": {
+        "k": 29,
+        "n": 32
+      },
+      "format_compliant": {
+        "k": 0,
+        "n": 32
+      },
+      "truncated": {
+        "k": 1,
+        "n": 32
+      },
+      "errored": {
+        "k": 0,
+        "n": 32
+      }
+    },
+    "1": {
+      "n_scheduled": 32,
+      "false_call": {
+        "k": 9,
+        "n": 32
+      },
+      "correct_call": {
+        "k": 0,
+        "n": 0
+      },
+      "invalid_or_empty": {
+        "k": 9,
+        "n": 32
+      },
+      "format_compliant": {
+        "k": 0,
+        "n": 32
+      },
+      "truncated": {
+        "k": 0,
+        "n": 32
+      },
+      "errored": {
+        "k": 0,
+        "n": 32
+      }
+    }
+  },
+  "generations_steer_mm_minus_NATIVE_TOOLS.jsonl": {
+    "0": {
+      "n_scheduled": 8,
+      "false_call": {
+        "k": 0,
+        "n": 0
+      },
+      "correct_call": {
+        "k": 7,
+        "n": 8
+      },
+      "invalid_or_empty": {
+        "k": 0,
+        "n": 8
+      },
+      "format_compliant": {
+        "k": 8,
+        "n": 8
+      },
+      "truncated": {
+        "k": 0,
+        "n": 8
+      },
+      "errored": {
+        "k": 0,
+        "n": 8
+      }
+    },
+    "1": {
+      "n_scheduled": 8,
+      "false_call": {
+        "k": 2,
+        "n": 8
+      },
+      "correct_call": {
+        "k": 0,
+        "n": 0
+      },
+      "invalid_or_empty": {
+        "k": 1,
+        "n": 8
+      },
+      "format_compliant": {
+        "k": 2,
+        "n": 8
+      },
+      "truncated": {
+        "k": 0,
+        "n": 8
+      },
+      "errored": {
+        "k": 0,
+        "n": 8
+      }
+    }
+  },
+  "generations_steer_mm_plus_NATIVE_TOOLS.jsonl": {
+    "0": {
+      "n_scheduled": 8,
+      "false_call": {
+        "k": 0,
+        "n": 0
+      },
+      "correct_call": {
+        "k": 6,
+        "n": 8
+      },
+      "invalid_or_empty": {
+        "k": 0,
+        "n": 8
+      },
+      "format_compliant": {
+        "k": 8,
+        "n": 8
+      },
+      "truncated": {
+        "k": 0,
+        "n": 8
+      },
+      "errored": {
+        "k": 0,
+        "n": 8
+      }
+    },
+    "1": {
+      "n_scheduled": 8,
+      "false_call": {
+        "k": 2,
+        "n": 8
+      },
+      "correct_call": {
+        "k": 0,
+        "n": 0
+      },
+      "invalid_or_empty": {
+        "k": 1,
+        "n": 8
+      },
+      "format_compliant": {
+        "k": 2,
+        "n": 8
+      },
+      "truncated": {
+        "k": 0,
+        "n": 8
+      },
+      "errored": {
+        "k": 0,
+        "n": 8
+      }
+    }
+  },
+  "generations_steer_permuted_NATIVE_TOOLS.jsonl": {
+    "0": {
+      "n_scheduled": 8,
+      "false_call": {
+        "k": 0,
+        "n": 0
+      },
+      "correct_call": {
+        "k": 7,
+        "n": 8
+      },
+      "invalid_or_empty": {
+        "k": 0,
+        "n": 8
+      },
+      "format_compliant": {
+        "k": 8,
+        "n": 8
+      },
+      "truncated": {
+        "k": 0,
+        "n": 8
+      },
+      "errored": {
+        "k": 0,
+        "n": 8
+      }
+    },
+    "1": {
+      "n_scheduled": 8,
+      "false_call": {
+        "k": 2,
+        "n": 8
+      },
+      "correct_call": {
+        "k": 0,
+        "n": 0
+      },
+      "invalid_or_empty": {
+        "k": 1,
+        "n": 8
+      },
+      "format_compliant": {
+        "k": 2,
+        "n": 8
+      },
+      "truncated": {
+        "k": 0,
+        "n": 8
+      },
+      "errored": {
+        "k": 0,
+        "n": 8
+      }
+    }
+  },
+  "generations_steer_random0_NATIVE_TOOLS.jsonl": {
+    "0": {
+      "n_scheduled": 8,
+      "false_call": {
+        "k": 0,
+        "n": 0
+      },
+      "correct_call": {
+        "k": 6,
+        "n": 8
+      },
+      "invalid_or_empty": {
+        "k": 0,
+        "n": 8
+      },
+      "format_compliant": {
+        "k": 8,
+        "n": 8
+      },
+      "truncated": {
+        "k": 0,
+        "n": 8
+      },
+      "errored": {
+        "k": 0,
+        "n": 8
+      }
+    },
+    "1": {
+      "n_scheduled": 8,
+      "false_call": {
+        "k": 2,
+        "n": 8
+      },
+      "correct_call": {
+        "k": 0,
+        "n": 0
+      },
+      "invalid_or_empty": {
+        "k": 1,
+        "n": 8
+      },
+      "format_compliant": {
+        "k": 2,
+        "n": 8
+      },
+      "truncated": {
+        "k": 0,
+        "n": 8
+      },
+      "errored": {
+        "k": 0,
+        "n": 8
+      }
+    }
+  },
+  "generations_steer_random1_NATIVE_TOOLS.jsonl": {
+    "0": {
+      "n_scheduled": 8,
+      "false_call": {
+        "k": 0,
+        "n": 0
+      },
+      "correct_call": {
+        "k": 7,
+        "n": 8
+      },
+      "invalid_or_empty": {
+        "k": 0,
+        "n": 8
+      },
+      "format_compliant": {
+        "k": 8,
+        "n": 8
+      },
+      "truncated": {
+        "k": 0,
+        "n": 8
+      },
+      "errored": {
+        "k": 0,
+        "n": 8
+      }
+    },
+    "1": {
+      "n_scheduled": 8,
+      "false_call": {
+        "k": 2,
+        "n": 8
+      },
+      "correct_call": {
+        "k": 0,
+        "n": 0
+      },
+      "invalid_or_empty": {
+        "k": 1,
+        "n": 8
+      },
+      "format_compliant": {
+        "k": 2,
+        "n": 8
+      },
+      "truncated": {
+        "k": 0,
+        "n": 8
+      },
+      "errored": {
+        "k": 0,
+        "n": 8
+      }
+    }
+  },
+  "generations_steer_random2_NATIVE_TOOLS.jsonl": {
+    "0": {
+      "n_scheduled": 8,
+      "false_call": {
+        "k": 0,
+        "n": 0
+      },
+      "correct_call": {
+        "k": 7,
+        "n": 8
+      },
+      "invalid_or_empty": {
+        "k": 0,
+        "n": 8
+      },
+      "format_compliant": {
+        "k": 8,
+        "n": 8
+      },
+      "truncated": {
+        "k": 0,
+        "n": 8
+      },
+      "errored": {
+        "k": 0,
+        "n": 8
+      }
+    },
+    "1": {
+      "n_scheduled": 8,
+      "false_call": {
+        "k": 2,
+        "n": 8
+      },
+      "correct_call": {
+        "k": 0,
+        "n": 0
+      },
+      "invalid_or_empty": {
+        "k": 1,
+        "n": 8
+      },
+      "format_compliant": {
+        "k": 2,
+        "n": 8
+      },
+      "truncated": {
+        "k": 0,
+        "n": 8
+      },
+      "errored": {
+        "k": 0,
+        "n": 8
+      }
+    }
+  }
+}
+
+Reports checked
+{
+  "behavior": {
+    "path": "study_v1/reports/behaviour_heldout.json",
+    "sha256": "c7ed2e1565d21a6457c13cdfdd93ed3f4535cc9a71d4932671321eedb0bdd611",
+    "counts_checked": true
+  },
+  "probes": {
+    "path": "study_v1/reports/heldout_probe_results.json",
+    "sha256": "c97762b58aa81211ef856bc84b0431581ed1a396ecac69db4184d573ec0ad74d",
+    "matrix_entries": 10
+  }
+}
+
+Limits
+- Integrity checks do not prove absence of undisclosed off-record experiments.
+- Decode checks validate saved IDs/text, not a model rerun.
+- Parser checks reproduce frozen scoring, not independent human adjudication.
+- KL summaries checked for identity/presence/finite values, without regenerated logits.
+- Source/style confounding, one-model and finite-bank interpretation limits remain.
+
+Exact hashes and check details are in HELDOUT_INDEPENDENT_AUDIT.json.
+
+Public copy: local machine-directory prefixes replaced by portable study_v1 paths; original private audit retained with its SHA256 in the JSON copy.

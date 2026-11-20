@@ -1,0 +1,25 @@
+{
+  "started_at_utc": "2026-11-20T02:42:07.725515+00:00",
+  "phase": "One frozen heldout execution after public V2/code/fitted freeze",
+  "public_commit_before_heldout": "645e581dfbedd142845a3ac8d8afa46682212873",
+  "public_tag_before_heldout": "v0.2-before-heldout",
+  "root_approval_sha256": "21ecda0c15c72f534ce33b46c9d864afa1c70e8d6d8ea7e6cc35fe4a398789b1",
+  "scheduled_baseline_generations": 128,
+  "scheduled_native_steering_generations": 96,
+  "scheduled_text_steering_generations": 0,
+  "scheduled_query_only_prefills": 64,
+  "heldout_unique_items": 64,
+  "primary_irrelevant_groups": 32,
+  "native_steering_subset_items": 16,
+  "native_steering_subset_per_class": 8,
+  "no_retuning_replacement_or_retries": true,
+  "command": [
+    ".venv/bin/python",
+    "-B",
+    "main_v1/proposal/code/run.py",
+    "--study-root",
+    "main_v1",
+    "--phase",
+    "heldout"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "completed_at_utc": "2026-11-20T03:03:49.107065+00:00",
+  "study_status": "COMPLETED_BOUNDED_EXPLORATORY_STUDY",
+  "planned_science_executed": true,
+  "additional_model_runs_needed_for_this_protocol": false,
+  "phases": {
+    "source_and_methods_lead": "Actual ClaudeCodeOpus5.5Max completed",
+    "train_dev": "complete",
+    "dev_steering": "complete;TEXT failed gate,NATIVE selected",
+    "heldout_inference": "complete",
+    "frozen_probe_control_evaluation": "complete",
+    "descriptive_analysis": "complete",
+    "independent_raw_audit": "PASS63checks; mechanical scope only",
+    "publication": "Root to publish final audited bundle; no journal/preprint claim"
+  },
+  "counts": {
+    "selected_items_and_distinct_groups": 224,
+    "train_items": 128,
+    "dev_items": 32,
+    "heldout_items": 64,
+    "main_generations": 416,
+    "separate_numeric_repeats": 2,
+    "ledger_generations": 418,
+    "derived_rescore_records_not_generations": 64,
+    "runtime_errors": 0,
+    "truncated_main_generations": 2,
+    "explicit_prefill_forwards": 480,
+    "KL_model_forwards": 136,
+    "generation_model_forwards": 11533
+  },
+  "statistical_units": {
+    "primary_irrelevant_heldout_items_and_groups": 32,
+    "probe_heldout_items": 64,
+    "native_intervention_subset_irrelevant": 8,
+    "native_intervention_subset_relevant": 8
+  },
+  "heldout_primary": {
+    "ci_b_minus_a": {
+      "mean": 0.21875,
+      "lo": 0.0625,
+      "hi": 0.375,
+      "n_items": 32,
+      "n_groups": 32,
+      "degenerate": false,
+      "interpretation": "descriptive group-resampling interval for this finite bank; no population coverage guarantee"
+    },
+    "discordant_pairs": {
+      "a0_b1": 8,
+      "a1_b0": 1
+    },
+    "rate_a": 0.28125,
+    "rate_b": 0.5
+  },
+  "report_hashes": {
+    "behaviour": "c7ed2e1565d21a6457c13cdfdd93ed3f4535cc9a71d4932671321eedb0bdd611",
+    "probes": "c97762b58aa81211ef856bc84b0431581ed1a396ecac69db4184d573ec0ad74d",
+    "independent_audit_original": "de97788c849d7b2aba9003489535c1e1b7f1c9177f69e58eb937d48d711f5462"
+  },
+  "model_inference_repeated_for_measurement_amendment": false,
+  "root_public_before_heldout": {
+    "commit": "645e581dfbedd142845a3ac8d8afa46682212873",
+    "tag": "v0.2-before-heldout"
+  },
+  "interpretation": "One-model, input-selected finite BFCL bank. Category/source/style confounding and contamination remain. Native template is a whole-interface-package contrast. High probe decodability is not mechanism/intent/knowledge proof; native steering showed no transferred false-call benefit and lost one relevant correct call."
+}

@@ -1,0 +1,52 @@
+phase,condition,label,status_family,status,count
+HELDOUT,TEXT_CATALOGUE,label0,stop_reason_counts,eos,31
+HELDOUT,TEXT_CATALOGUE,label0,stop_reason_counts,max_new_tokens,1
+HELDOUT,TEXT_CATALOGUE,label0,n_attempts_distribution,1,27
+HELDOUT,TEXT_CATALOGUE,label0,n_attempts_distribution,0,5
+HELDOUT,TEXT_CATALOGUE,label0,validity_issue_counts,unknown_name,1
+HELDOUT,TEXT_CATALOGUE,label0,validity_issue_counts,args_not_object,1
+HELDOUT,TEXT_CATALOGUE,label0,validity_issue_counts,malformed_unwrapped_json,1
+HELDOUT,TEXT_CATALOGUE,label0,parser_diagnostic_counts,malformed_unwrapped_json,1
+HELDOUT,TEXT_CATALOGUE,label0,format_diagnostic_counts,unclosed_tag,23
+HELDOUT,TEXT_CATALOGUE,label0,attempt_kind_counts,tagged,23
+HELDOUT,TEXT_CATALOGUE,label0,attempt_kind_counts,untagged_json,4
+HELDOUT,TEXT_CATALOGUE,label0,record_status,error_records,0
+HELDOUT,TEXT_CATALOGUE,label0,record_status,scorer_error_records,0
+HELDOUT,TEXT_CATALOGUE,label1,stop_reason_counts,eos,32
+HELDOUT,TEXT_CATALOGUE,label1,n_attempts_distribution,0,23
+HELDOUT,TEXT_CATALOGUE,label1,n_attempts_distribution,1,9
+HELDOUT,TEXT_CATALOGUE,label1,validity_issue_counts,unknown_name,1
+HELDOUT,TEXT_CATALOGUE,label1,validity_issue_counts,args_not_object,1
+HELDOUT,TEXT_CATALOGUE,label1,validity_issue_counts,"invalid_python:SyntaxError:invalid syntax (<unknown>, line 1)",1
+HELDOUT,TEXT_CATALOGUE,label1,parser_diagnostic_counts,"invalid_python:SyntaxError:invalid syntax (<unknown>, line 1)",1
+HELDOUT,TEXT_CATALOGUE,label1,format_diagnostic_counts,unclosed_tag,7
+HELDOUT,TEXT_CATALOGUE,label1,attempt_kind_counts,tagged,7
+HELDOUT,TEXT_CATALOGUE,label1,attempt_kind_counts,untagged_json,1
+HELDOUT,TEXT_CATALOGUE,label1,attempt_kind_counts,untagged_python,1
+HELDOUT,TEXT_CATALOGUE,label1,record_status,error_records,0
+HELDOUT,TEXT_CATALOGUE,label1,record_status,scorer_error_records,0
+HELDOUT,NATIVE_TOOLS,label0,stop_reason_counts,eos,31
+HELDOUT,NATIVE_TOOLS,label0,stop_reason_counts,max_new_tokens,1
+HELDOUT,NATIVE_TOOLS,label0,n_attempts_distribution,1,31
+HELDOUT,NATIVE_TOOLS,label0,n_attempts_distribution,14,1
+HELDOUT,NATIVE_TOOLS,label0,validity_issue_counts,enum:$.metrics,1
+HELDOUT,NATIVE_TOOLS,label0,validity_issue_counts,type:$.max_date,1
+HELDOUT,NATIVE_TOOLS,label0,parser_diagnostic_counts,arguments_not_object,14
+HELDOUT,NATIVE_TOOLS,label0,parser_diagnostic_counts,noncanonical_tag_payload,14
+HELDOUT,NATIVE_TOOLS,label0,attempt_kind_counts,tagged,45
+HELDOUT,NATIVE_TOOLS,label0,record_status,error_records,0
+HELDOUT,NATIVE_TOOLS,label0,record_status,scorer_error_records,0
+HELDOUT,NATIVE_TOOLS,label1,stop_reason_counts,eos,32
+HELDOUT,NATIVE_TOOLS,label1,n_attempts_distribution,1,16
+HELDOUT,NATIVE_TOOLS,label1,n_attempts_distribution,0,16
+HELDOUT,NATIVE_TOOLS,label1,validity_issue_counts,unknown_name,1
+HELDOUT,NATIVE_TOOLS,label1,validity_issue_counts,args_not_object,1
+HELDOUT,NATIVE_TOOLS,label1,validity_issue_counts,invalid_json:JSONDecodeError:Expecting value: line 1 column 47 (char 46),1
+HELDOUT,NATIVE_TOOLS,label1,validity_issue_counts,noncanonical_tag_payload,1
+HELDOUT,NATIVE_TOOLS,label1,validity_issue_counts,type:$.date,1
+HELDOUT,NATIVE_TOOLS,label1,validity_issue_counts,missing:$.province_id,1
+HELDOUT,NATIVE_TOOLS,label1,parser_diagnostic_counts,invalid_json:JSONDecodeError:Expecting value: line 1 column 47 (char 46),1
+HELDOUT,NATIVE_TOOLS,label1,parser_diagnostic_counts,noncanonical_tag_payload,1
+HELDOUT,NATIVE_TOOLS,label1,attempt_kind_counts,tagged,16
+HELDOUT,NATIVE_TOOLS,label1,record_status,error_records,0
+HELDOUT,NATIVE_TOOLS,label1,record_status,scorer_error_records,0

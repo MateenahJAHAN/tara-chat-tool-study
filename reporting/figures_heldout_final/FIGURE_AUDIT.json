@@ -1,0 +1,41 @@
+{
+  "created_at_utc": "2026-11-20T03:00:58.279456+00:00",
+  "phase": "HELDOUT",
+  "design_id": "BFCL_IFACE_PROBE_V1_OPERATOR_AMENDED",
+  "split_manifest_sha256": "6e265ee4f4d667077a8e9793c8e2e1be01cd00737c74f04582b0003f2aaa93d9",
+  "authorization_sha256": "a1e9f21c32342cfaeaeaa613fc5497c20c7276c314912ed07391c73b835b1d0d",
+  "context_sha256": "4bb094581369603d6111ede9c3f1d33debcde3d402b1d8a18a43bd98daf4a056",
+  "approved_reports": {
+    "reports/behaviour_heldout.json": "c7ed2e1565d21a6457c13cdfdd93ed3f4535cc9a71d4932671321eedb0bdd611",
+    "reports/heldout_probe_results.json": "c97762b58aa81211ef856bc84b0431581ed1a396ecac69db4184d573ec0ad74d"
+  },
+  "script_sha256": "2c2f4658d2f67ba83004e31cb9752663cd9ffeb459eef4f392ad0441572e037d",
+  "matplotlib_version": "3.10.0",
+  "python_version": "3.12.11",
+  "statistical_unit": "Selected BFCL item/component; paired interfaces are repeated observations, not additional independent items",
+  "caution": "Selected finite bank; exploratory descriptives. Intervals have no population-coverage guarantee.",
+  "scoring_version": "V2_DEV_DISCOVERED_FORMAT_SEMANTIC_SEPARATION",
+  "all_endpoints_retained": true,
+  "missing_or_unrun": [],
+  "outputs": {
+    "01_behaviour_rates.png": "cabbc6d37b2747438bc0763e04f9ff4bd6add3886e0b334a83754d7fe8fedad4",
+    "01_behaviour_rates.pdf": "6761afb0207993af48bb953a7b1f778c0fa8a4dba441abe8fcbd5074921ed710",
+    "01_behaviour_rates.svg": "6b902650471f72877f6480d9dfb989a749473de5a7be3c87001981d30a63f5dc",
+    "02_paired_differences.png": "c0e64697f9e34bcadf88e7cc5cd62f5a3e06e1fa57e2517c7aee3f3acdfc10ae",
+    "02_paired_differences.pdf": "0a600498c578b57ba8c72af2a3f41f36a714a286c09e9fa884e7ff5526597d7c",
+    "02_paired_differences.svg": "56ef0c5c02c78cc6340234a9578fda4241672629722f7d2d2d0e66b763b3da62",
+    "03_all_endpoint_counts.pdf": "9601da36e22778d43156f8bf4ab7ef75cd21052eb08fe79666a07e1a9c305529",
+    "04_probe_transfer.png": "c7a86584cc0f6319afba134079138a9f96f6b9531eecfed8fe074086cae7b8e5",
+    "04_probe_transfer.pdf": "29049940bf576b0995023de7647ade3f29c292b6f382decfadcff3c83428c5d7",
+    "04_probe_transfer.svg": "d315b144f8e13c4528a4a1deeb8f18aaf95898df3dd44de31bac9819147875a9",
+    "05_query_surface_controls.png": "21ec5189b02968b76369cc4fac81f6c174c3d26f19ec2730d406152a89058cf3",
+    "05_query_surface_controls.pdf": "b9cf8d0e9ebd6f31e5397cf05e555284ba9fefb2e99144ef1a34dd5a9318fb22",
+    "05_query_surface_controls.svg": "6791a18323c3f1aff028e03406ed953e69ee2c5cb256da30733f9d8c7b3a0b88",
+    "06_steering_status.png": "4d10da50467f3cdbbac256f35472c0bc723ec34ccf740e1f0e5ff4a8ac8ffd51",
+    "06_steering_status.pdf": "a32d26986c62d391788a11444d028739ef5864ea69b7a772fc2eec6b336e0735",
+    "06_steering_status.svg": "8a8ef904a990f2ec98c93f0d4b0a30d0a6132154e2d812c2e028301319b5b147"
+  },
+  "new_statistical_tests": false,
+  "model_calls": 0,
+  "human_authorship_claim": null
+}

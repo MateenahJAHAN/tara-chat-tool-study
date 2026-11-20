@@ -1,0 +1,780 @@
+{
+  "split": "HELDOUT",
+  "score_version": "V2_DEV_DISCOVERED_FORMAT_SEMANTIC_SEPARATION",
+  "status": "HELDOUT_FINITE_BANK_DESCRIPTIVE",
+  "rates": {
+    "TEXT_CATALOGUE": {
+      "label0": {
+        "n_scheduled": 32,
+        "operational_abstention": {
+          "k": 3,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.03240155104567083,
+            0.24218154876313192
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "strict_abstention": {
+          "k": 3,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.03240155104567083,
+            0.24218154876313192
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "call_attempt": {
+          "k": 27,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.6824585025525295,
+            0.9313557976092527
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "valid_call": {
+          "k": 26,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.6469084465243861,
+            0.9111045536226888
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "correct_call": {
+          "k": 23,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.5462549043349592,
+            0.8443541957679932
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "format_compliant": {
+          "k": 0,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.0,
+            0.10717919976468034
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "parse_error": {
+          "k": 1,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.00553786010270331,
+            0.15744263967668448
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "unknown_name": {
+          "k": 0,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.0,
+            0.10717919976468034
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "empty_output": {
+          "k": 0,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.0,
+            0.10717919976468034
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "truncated": {
+          "k": 1,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.00553786010270331,
+            0.15744263967668448
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "errored": {
+          "k": 0,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.0,
+            0.10717919976468034
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        }
+      },
+      "label1": {
+        "n_scheduled": 32,
+        "false_call": {
+          "k": 9,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.15564580423200683,
+            0.45374509566504084
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "broad_false_call": {
+          "k": 9,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.15564580423200683,
+            0.45374509566504084
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "operational_abstention": {
+          "k": 23,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.5462549043349592,
+            0.8443541957679932
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "strict_abstention": {
+          "k": 23,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.5462549043349592,
+            0.8443541957679932
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "call_attempt": {
+          "k": 9,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.15564580423200683,
+            0.45374509566504084
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "valid_call": {
+          "k": 8,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.1325240085114254,
+            0.4210655913709147
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "format_compliant": {
+          "k": 0,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.0,
+            0.10717919976468034
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "parse_error": {
+          "k": 1,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.00553786010270331,
+            0.15744263967668448
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "unknown_name": {
+          "k": 0,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.0,
+            0.10717919976468034
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "empty_output": {
+          "k": 0,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.0,
+            0.10717919976468034
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "truncated": {
+          "k": 0,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.0,
+            0.10717919976468034
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "errored": {
+          "k": 0,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.0,
+            0.10717919976468034
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        }
+      }
+    },
+    "NATIVE_TOOLS": {
+      "label0": {
+        "n_scheduled": 32,
+        "operational_abstention": {
+          "k": 0,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.0,
+            0.10717919976468034
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "strict_abstention": {
+          "k": 0,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.0,
+            0.10717919976468034
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "call_attempt": {
+          "k": 32,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.8928208002353198,
+            1.0000000000000002
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "valid_call": {
+          "k": 30,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.7985287670813637,
+            0.982689433124541
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "correct_call": {
+          "k": 26,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.6469084465243861,
+            0.9111045536226888
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "format_compliant": {
+          "k": 31,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.8425573603233156,
+            0.9944621398972968
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "parse_error": {
+          "k": 1,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.00553786010270331,
+            0.15744263967668448
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "unknown_name": {
+          "k": 1,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.00553786010270331,
+            0.15744263967668448
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "empty_output": {
+          "k": 0,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.0,
+            0.10717919976468034
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "truncated": {
+          "k": 1,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.00553786010270331,
+            0.15744263967668448
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "errored": {
+          "k": 0,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.0,
+            0.10717919976468034
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        }
+      },
+      "label1": {
+        "n_scheduled": 32,
+        "false_call": {
+          "k": 16,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.33630882754048685,
+            0.6636911724595131
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "broad_false_call": {
+          "k": 16,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.33630882754048685,
+            0.6636911724595131
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "operational_abstention": {
+          "k": 15,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.30869386997660414,
+            0.6355048300086883
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "strict_abstention": {
+          "k": 15,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.30869386997660414,
+            0.6355048300086883
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "call_attempt": {
+          "k": 16,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.33630882754048685,
+            0.6636911724595131
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "valid_call": {
+          "k": 13,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.255196347429215,
+            0.5773997525266625
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "format_compliant": {
+          "k": 15,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.30869386997660414,
+            0.6355048300086883
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "parse_error": {
+          "k": 1,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.00553786010270331,
+            0.15744263967668448
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "unknown_name": {
+          "k": 0,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.0,
+            0.10717919976468034
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "empty_output": {
+          "k": 0,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.0,
+            0.10717919976468034
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "truncated": {
+          "k": 0,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.0,
+            0.10717919976468034
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        },
+        "errored": {
+          "k": 0,
+          "n": 32,
+          "descriptive_wilson_binomial_reference95": [
+            0.0,
+            0.10717919976468034
+          ],
+          "scope": "conditional descriptive binomial-reference interval; selected finite bank"
+        }
+      }
+    }
+  },
+  "primary_false_call_native_minus_text": {
+    "ci_b_minus_a": {
+      "mean": 0.21875,
+      "lo": 0.0625,
+      "hi": 0.375,
+      "n_items": 32,
+      "n_groups": 32,
+      "degenerate": false,
+      "interpretation": "descriptive group-resampling interval for this finite bank; no population coverage guarantee"
+    },
+    "discordant_pairs": {
+      "a0_b1": 8,
+      "a1_b0": 1
+    },
+    "rate_a": 0.28125,
+    "rate_b": 0.5
+  },
+  "primary_verdict": "observed_finite_bank_paired_difference_descriptive_only",
+  "confirmatory_claim": false,
+  "secondary": {
+    "S1_operational_abstention": {
+      "ci_b_minus_a": {
+        "mean": -0.25,
+        "lo": -0.40625,
+        "hi": -0.125,
+        "n_items": 32,
+        "n_groups": 32,
+        "degenerate": false,
+        "interpretation": "descriptive group-resampling interval for this finite bank; no population coverage guarantee"
+      },
+      "discordant_pairs": {
+        "a0_b1": 0,
+        "a1_b0": 8
+      },
+      "rate_a": 0.71875,
+      "rate_b": 0.46875,
+      "claim": false,
+      "scope": "descriptive fixed-bank secondary endpoint; no confirmatory p-value"
+    },
+    "S2_correct_call": {
+      "ci_b_minus_a": {
+        "mean": 0.09375,
+        "lo": 0.0,
+        "hi": 0.1875,
+        "n_items": 32,
+        "n_groups": 32,
+        "degenerate": false,
+        "interpretation": "descriptive group-resampling interval for this finite bank; no population coverage guarantee"
+      },
+      "discordant_pairs": {
+        "a0_b1": 3,
+        "a1_b0": 0
+      },
+      "rate_a": 0.71875,
+      "rate_b": 0.8125,
+      "claim": false,
+      "scope": "descriptive fixed-bank secondary endpoint; no confirmatory p-value"
+    },
+    "S3_call_rate_relevant": {
+      "ci_b_minus_a": {
+        "mean": 0.15625,
+        "lo": 0.03125,
+        "hi": 0.28125,
+        "n_items": 32,
+        "n_groups": 32,
+        "degenerate": false,
+        "interpretation": "descriptive group-resampling interval for this finite bank; no population coverage guarantee"
+      },
+      "discordant_pairs": {
+        "a0_b1": 5,
+        "a1_b0": 0
+      },
+      "rate_a": 0.84375,
+      "rate_b": 1.0,
+      "claim": false,
+      "scope": "descriptive fixed-bank secondary endpoint; no confirmatory p-value"
+    },
+    "S4_format_compliance_among_attempts": {
+      "ci_b_minus_a": {
+        "mean": 0.9629629629629629,
+        "lo": 0.8888888888888888,
+        "hi": 1.0,
+        "n_items": 27,
+        "n_groups": 27,
+        "degenerate": false,
+        "interpretation": "descriptive group-resampling interval for this finite bank; no population coverage guarantee"
+      },
+      "discordant_pairs": {
+        "a0_b1": 26,
+        "a1_b0": 0
+      },
+      "rate_a": 0.0,
+      "rate_b": 0.9629629629629629,
+      "claim": false,
+      "scope": "descriptive fixed-bank secondary endpoint; no confirmatory p-value"
+    }
+  },
+  "steering": {
+    "NATIVE_TOOLS": {
+      "configs": {
+        "mm_minus": {
+          "false_call_reduction": {
+            "ci_b_minus_a": {
+              "mean": 0.0,
+              "lo": 0.0,
+              "hi": 0.0,
+              "n_items": 8,
+              "n_groups": 8,
+              "degenerate": true,
+              "interpretation": "descriptive group-resampling interval for this finite bank; no population coverage guarantee"
+            },
+            "discordant_pairs": {
+              "a0_b1": 0,
+              "a1_b0": 0
+            },
+            "rate_a": 0.25,
+            "rate_b": 0.25
+          },
+          "correct_call_change": {
+            "ci_b_minus_a": {
+              "mean": 0.0,
+              "lo": 0.0,
+              "hi": 0.0,
+              "n_items": 8,
+              "n_groups": 8,
+              "degenerate": true,
+              "interpretation": "descriptive group-resampling interval for this finite bank; no population coverage guarantee"
+            },
+            "discordant_pairs": {
+              "a0_b1": 0,
+              "a1_b0": 0
+            },
+            "rate_a": 0.875,
+            "rate_b": 0.875
+          },
+          "invalid_increase": 0.0
+        },
+        "mm_plus": {
+          "false_call_reduction": {
+            "ci_b_minus_a": {
+              "mean": 0.0,
+              "lo": 0.0,
+              "hi": 0.0,
+              "n_items": 8,
+              "n_groups": 8,
+              "degenerate": true,
+              "interpretation": "descriptive group-resampling interval for this finite bank; no population coverage guarantee"
+            },
+            "discordant_pairs": {
+              "a0_b1": 0,
+              "a1_b0": 0
+            },
+            "rate_a": 0.25,
+            "rate_b": 0.25
+          },
+          "correct_call_change": {
+            "ci_b_minus_a": {
+              "mean": -0.125,
+              "lo": -0.375,
+              "hi": 0.0,
+              "n_items": 8,
+              "n_groups": 8,
+              "degenerate": false,
+              "interpretation": "descriptive group-resampling interval for this finite bank; no population coverage guarantee"
+            },
+            "discordant_pairs": {
+              "a0_b1": 0,
+              "a1_b0": 1
+            },
+            "rate_a": 0.875,
+            "rate_b": 0.75
+          },
+          "invalid_increase": 0.0
+        },
+        "permuted": {
+          "false_call_reduction": {
+            "ci_b_minus_a": {
+              "mean": 0.0,
+              "lo": 0.0,
+              "hi": 0.0,
+              "n_items": 8,
+              "n_groups": 8,
+              "degenerate": true,
+              "interpretation": "descriptive group-resampling interval for this finite bank; no population coverage guarantee"
+            },
+            "discordant_pairs": {
+              "a0_b1": 0,
+              "a1_b0": 0
+            },
+            "rate_a": 0.25,
+            "rate_b": 0.25
+          },
+          "correct_call_change": {
+            "ci_b_minus_a": {
+              "mean": 0.0,
+              "lo": 0.0,
+              "hi": 0.0,
+              "n_items": 8,
+              "n_groups": 8,
+              "degenerate": true,
+              "interpretation": "descriptive group-resampling interval for this finite bank; no population coverage guarantee"
+            },
+            "discordant_pairs": {
+              "a0_b1": 0,
+              "a1_b0": 0
+            },
+            "rate_a": 0.875,
+            "rate_b": 0.875
+          },
+          "invalid_increase": 0.0
+        },
+        "random0": {
+          "false_call_reduction": {
+            "ci_b_minus_a": {
+              "mean": 0.0,
+              "lo": 0.0,
+              "hi": 0.0,
+              "n_items": 8,
+              "n_groups": 8,
+              "degenerate": true,
+              "interpretation": "descriptive group-resampling interval for this finite bank; no population coverage guarantee"
+            },
+            "discordant_pairs": {
+              "a0_b1": 0,
+              "a1_b0": 0
+            },
+            "rate_a": 0.25,
+            "rate_b": 0.25
+          },
+          "correct_call_change": {
+            "ci_b_minus_a": {
+              "mean": -0.125,
+              "lo": -0.375,
+              "hi": 0.0,
+              "n_items": 8,
+              "n_groups": 8,
+              "degenerate": false,
+              "interpretation": "descriptive group-resampling interval for this finite bank; no population coverage guarantee"
+            },
+            "discordant_pairs": {
+              "a0_b1": 0,
+              "a1_b0": 1
+            },
+            "rate_a": 0.875,
+            "rate_b": 0.75
+          },
+          "invalid_increase": 0.0
+        },
+        "random1": {
+          "false_call_reduction": {
+            "ci_b_minus_a": {
+              "mean": 0.0,
+              "lo": 0.0,
+              "hi": 0.0,
+              "n_items": 8,
+              "n_groups": 8,
+              "degenerate": true,
+              "interpretation": "descriptive group-resampling interval for this finite bank; no population coverage guarantee"
+            },
+            "discordant_pairs": {
+              "a0_b1": 0,
+              "a1_b0": 0
+            },
+            "rate_a": 0.25,
+            "rate_b": 0.25
+          },
+          "correct_call_change": {
+            "ci_b_minus_a": {
+              "mean": 0.0,
+              "lo": 0.0,
+              "hi": 0.0,
+              "n_items": 8,
+              "n_groups": 8,
+              "degenerate": true,
+              "interpretation": "descriptive group-resampling interval for this finite bank; no population coverage guarantee"
+            },
+            "discordant_pairs": {
+              "a0_b1": 0,
+              "a1_b0": 0
+            },
+            "rate_a": 0.875,
+            "rate_b": 0.875
+          },
+          "invalid_increase": 0.0
+        },
+        "random2": {
+          "false_call_reduction": {
+            "ci_b_minus_a": {
+              "mean": 0.0,
+              "lo": 0.0,
+              "hi": 0.0,
+              "n_items": 8,
+              "n_groups": 8,
+              "degenerate": true,
+              "interpretation": "descriptive group-resampling interval for this finite bank; no population coverage guarantee"
+            },
+            "discordant_pairs": {
+              "a0_b1": 0,
+              "a1_b0": 0
+            },
+            "rate_a": 0.25,
+            "rate_b": 0.25
+          },
+          "correct_call_change": {
+            "ci_b_minus_a": {
+              "mean": 0.0,
+              "lo": 0.0,
+              "hi": 0.0,
+              "n_items": 8,
+              "n_groups": 8,
+              "degenerate": true,
+              "interpretation": "descriptive group-resampling interval for this finite bank; no population coverage guarantee"
+            },
+            "discordant_pairs": {
+              "a0_b1": 0,
+              "a1_b0": 0
+            },
+            "rate_a": 0.875,
+            "rate_b": 0.875
+          },
+          "invalid_increase": 0.0
+        }
+      },
+      "completion_kl": {
+        "mm_plus": 1.4227723511339718e-05,
+        "mm_minus": 1.4692145640538001e-05,
+        "permuted": 1.1003390083530462e-05,
+        "random0": 1.050250477874215e-05,
+        "random1": 1.9177648272972192e-05,
+        "random2": 4.2407808471978115e-05
+      },
+      "bounded_intervention_criteria_met": false,
+      "confirmatory_claim": false
+    }
+  },
+  "caveats": [
+    "benchmark-defined labels",
+    "interface-package effect, not tool availability alone",
+    "not official BFCL scoring",
+    "contamination unknown",
+    "all endpoints exploratory/descriptive; finite selected bank and small steering subset",
+    "no equivalence or general safety inference"
+  ]
+}

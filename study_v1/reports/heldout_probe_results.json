@@ -1,0 +1,387 @@
+{
+  "matrix": {
+    "MM:TEXT_CATALOGUE->TEXT_CATALOGUE": {
+      "auroc": 0.8134765625,
+      "ci": {
+        "lo": 0.7028129492266115,
+        "hi": 0.9083832785987959,
+        "skipped": 0
+      },
+      "bacc": 0.765625,
+      "n": 64
+    },
+    "MM:TEXT_CATALOGUE->NATIVE_TOOLS": {
+      "auroc": 0.826171875,
+      "ci": {
+        "lo": 0.7235269252628588,
+        "hi": 0.9152709359605911,
+        "skipped": 0
+      },
+      "bacc": 0.765625,
+      "n": 64
+    },
+    "LR:TEXT_CATALOGUE->TEXT_CATALOGUE": {
+      "auroc": 0.9345703125,
+      "ci": {
+        "lo": 0.8699421665217811,
+        "hi": 0.980295566502463,
+        "skipped": 0
+      },
+      "bacc": 0.859375,
+      "n": 64
+    },
+    "LR:TEXT_CATALOGUE->NATIVE_TOOLS": {
+      "auroc": 0.9462890625,
+      "ci": {
+        "lo": 0.8856304985337243,
+        "hi": 0.9897497497497497,
+        "skipped": 0
+      },
+      "bacc": 0.90625,
+      "n": 64
+    },
+    "MM:NATIVE_TOOLS->TEXT_CATALOGUE": {
+      "auroc": 0.8095703125,
+      "ci": {
+        "lo": 0.6923766751886075,
+        "hi": 0.9042033235581622,
+        "skipped": 0
+      },
+      "bacc": 0.734375,
+      "n": 64
+    },
+    "MM:NATIVE_TOOLS->NATIVE_TOOLS": {
+      "auroc": 0.8642578125,
+      "ci": {
+        "lo": 0.7683253628092338,
+        "hi": 0.9463160464638156,
+        "skipped": 0
+      },
+      "bacc": 0.75,
+      "n": 64
+    },
+    "LR:NATIVE_TOOLS->TEXT_CATALOGUE": {
+      "auroc": 0.8984375,
+      "ci": {
+        "lo": 0.8134500572000573,
+        "hi": 0.9613095238095237,
+        "skipped": 0
+      },
+      "bacc": 0.8125,
+      "n": 64
+    },
+    "LR:NATIVE_TOOLS->NATIVE_TOOLS": {
+      "auroc": 0.91796875,
+      "ci": {
+        "lo": 0.8422464128613322,
+        "hi": 0.9705930099312452,
+        "skipped": 0
+      },
+      "bacc": 0.84375,
+      "n": 64
+    },
+    "MM:QUERY_ONLY_CONTROL->QUERY_ONLY_CONTROL": {
+      "auroc": 0.6494140625,
+      "ci": {
+        "lo": 0.5053812904472134,
+        "hi": 0.7813938993566175,
+        "skipped": 0
+      },
+      "bacc": 0.546875,
+      "n": 64
+    },
+    "LR:QUERY_ONLY_CONTROL->QUERY_ONLY_CONTROL": {
+      "auroc": 0.7470703125,
+      "ci": {
+        "lo": 0.6113186266648338,
+        "hi": 0.8631620522109135,
+        "skipped": 0
+      },
+      "bacc": 0.703125,
+      "n": 64
+    }
+  },
+  "controls": {
+    "MM__TEXT_CATALOGUE": {
+      "permuted_label": {
+        "n": 20,
+        "median": 0.58154296875,
+        "max": 0.8662109375,
+        "frac_ge_observed": 0.1
+      },
+      "random_direction": {
+        "n": 20,
+        "median": 0.4912109375,
+        "max": 0.6455078125,
+        "frac_ge_observed": 0.0
+      }
+    },
+    "LR__TEXT_CATALOGUE": {
+      "permuted_label": {
+        "n": 20,
+        "median": 0.51611328125,
+        "max": 0.7744140625,
+        "frac_ge_observed": 0.0
+      },
+      "random_direction": null
+    },
+    "MM__NATIVE_TOOLS": {
+      "permuted_label": {
+        "n": 20,
+        "median": 0.6884765625,
+        "max": 0.8994140625,
+        "frac_ge_observed": 0.1
+      },
+      "random_direction": {
+        "n": 20,
+        "median": 0.4814453125,
+        "max": 0.81640625,
+        "frac_ge_observed": 0.0
+      }
+    },
+    "LR__NATIVE_TOOLS": {
+      "permuted_label": {
+        "n": 20,
+        "median": 0.50390625,
+        "max": 0.8271484375,
+        "frac_ge_observed": 0.0
+      },
+      "random_direction": null
+    },
+    "MM__QUERY_ONLY_CONTROL": {
+      "permuted_label": {
+        "n": 20,
+        "median": 0.5625,
+        "max": 0.7841796875,
+        "frac_ge_observed": 0.4
+      },
+      "random_direction": {
+        "n": 20,
+        "median": 0.466796875,
+        "max": 0.7216796875,
+        "frac_ge_observed": 0.15
+      }
+    },
+    "LR__QUERY_ONLY_CONTROL": {
+      "permuted_label": {
+        "n": 20,
+        "median": 0.5,
+        "max": 0.759765625,
+        "frac_ge_observed": 0.05
+      },
+      "random_direction": null
+    }
+  },
+  "baselines": {
+    "length": {
+      "auroc": 0.814453125,
+      "ci": {
+        "lo": 0.7011600956425175,
+        "hi": 0.9113473845398204,
+        "skipped": 0
+      },
+      "dev_auroc": 0.8828125
+    },
+    "overlap": {
+      "auroc": 0.775390625,
+      "ci": {
+        "lo": 0.656389811738649,
+        "hi": 0.8871089931573801,
+        "skipped": 0
+      },
+      "dev_auroc": 0.9375
+    },
+    "tfidf_query": {
+      "auroc": 0.328125,
+      "ci": {
+        "lo": 0.20194648692810452,
+        "hi": 0.46192535072244617,
+        "skipped": 0
+      },
+      "dev_auroc": 0.91015625
+    },
+    "tfidf_schema": {
+      "auroc": 0.595703125,
+      "ci": {
+        "lo": 0.4573363095238095,
+        "hi": 0.7292323615663274,
+        "skipped": 0
+      },
+      "dev_auroc": 0.6015625
+    },
+    "tfidf_both": {
+      "auroc": 0.5166015625,
+      "ci": {
+        "lo": 0.37318077672127387,
+        "hi": 0.6606620012870013,
+        "skipped": 0
+      },
+      "dev_auroc": 0.71875
+    }
+  },
+  "beyond_surface": {
+    "MM__TEXT_CATALOGUE->TEXT_CATALOGUE": {
+      "best_dev_baseline": "overlap",
+      "auroc_diff": 0.0380859375,
+      "ci": [
+        -0.0995220588235294,
+        0.16320325328407218
+      ],
+      "verdict": "overlapping_or_nonpositive_descriptive_interval",
+      "confirmatory_claim": false
+    },
+    "MM__TEXT_CATALOGUE->NATIVE_TOOLS": {
+      "best_dev_baseline": "overlap",
+      "auroc_diff": 0.05078125,
+      "ci": [
+        -0.09309335197266233,
+        0.1862085868830291
+      ],
+      "verdict": "overlapping_or_nonpositive_descriptive_interval",
+      "confirmatory_claim": false
+    },
+    "LR__TEXT_CATALOGUE->TEXT_CATALOGUE": {
+      "best_dev_baseline": "overlap",
+      "auroc_diff": 0.1591796875,
+      "ci": [
+        0.04998987854251016,
+        0.27432979854854833
+      ],
+      "verdict": "positive_descriptive_bootstrap_interval",
+      "confirmatory_claim": false
+    },
+    "LR__TEXT_CATALOGUE->NATIVE_TOOLS": {
+      "best_dev_baseline": "overlap",
+      "auroc_diff": 0.1708984375,
+      "ci": [
+        0.0588184584178498,
+        0.2877227011494252
+      ],
+      "verdict": "positive_descriptive_bootstrap_interval",
+      "confirmatory_claim": false
+    },
+    "MM__NATIVE_TOOLS->TEXT_CATALOGUE": {
+      "best_dev_baseline": "overlap",
+      "auroc_diff": 0.0341796875,
+      "ci": [
+        -0.09853460349657114,
+        0.16423391866940257
+      ],
+      "verdict": "overlapping_or_nonpositive_descriptive_interval",
+      "confirmatory_claim": false
+    },
+    "MM__NATIVE_TOOLS->NATIVE_TOOLS": {
+      "best_dev_baseline": "overlap",
+      "auroc_diff": 0.0888671875,
+      "ci": [
+        -0.03541937301166489,
+        0.2147573821195143
+      ],
+      "verdict": "overlapping_or_nonpositive_descriptive_interval",
+      "confirmatory_claim": false
+    },
+    "LR__NATIVE_TOOLS->TEXT_CATALOGUE": {
+      "best_dev_baseline": "overlap",
+      "auroc_diff": 0.123046875,
+      "ci": [
+        0.006811666628482403,
+        0.24024024024024015
+      ],
+      "verdict": "positive_descriptive_bootstrap_interval",
+      "confirmatory_claim": false
+    },
+    "LR__NATIVE_TOOLS->NATIVE_TOOLS": {
+      "best_dev_baseline": "overlap",
+      "auroc_diff": 0.142578125,
+      "ci": [
+        0.02647058823529413,
+        0.26190886699507393
+      ],
+      "verdict": "positive_descriptive_bootstrap_interval",
+      "confirmatory_claim": false
+    },
+    "MM__QUERY_ONLY_CONTROL->QUERY_ONLY_CONTROL": {
+      "best_dev_baseline": "overlap",
+      "auroc_diff": -0.1259765625,
+      "ci": [
+        -0.29259726019594445,
+        0.036635625930059444
+      ],
+      "verdict": "overlapping_or_nonpositive_descriptive_interval",
+      "confirmatory_claim": false
+    },
+    "LR__QUERY_ONLY_CONTROL->QUERY_ONLY_CONTROL": {
+      "best_dev_baseline": "overlap",
+      "auroc_diff": -0.0283203125,
+      "ci": [
+        -0.17206769776876263,
+        0.10516648065476182
+      ],
+      "verdict": "overlapping_or_nonpositive_descriptive_interval",
+      "confirmatory_claim": false
+    }
+  },
+  "layer_curves_descriptive": {
+    "TEXT_CATALOGUE": [
+      0.6962890625,
+      0.623046875,
+      0.517578125,
+      0.490234375,
+      0.439453125,
+      0.4072265625,
+      0.3955078125,
+      0.4921875,
+      0.455078125,
+      0.44921875,
+      0.6064453125,
+      0.6181640625,
+      0.6904296875,
+      0.751953125,
+      0.767578125,
+      0.8134765625,
+      0.794921875,
+      0.8623046875,
+      0.8916015625,
+      0.896484375,
+      0.9033203125,
+      0.9033203125,
+      0.9072265625,
+      0.9033203125,
+      0.90625,
+      0.90234375,
+      0.8955078125,
+      0.8837890625
+    ],
+    "NATIVE_TOOLS": [
+      0.7041015625,
+      0.654296875,
+      0.4111328125,
+      0.3671875,
+      0.3037109375,
+      0.3515625,
+      0.3447265625,
+      0.4052734375,
+      0.4091796875,
+      0.4033203125,
+      0.498046875,
+      0.533203125,
+      0.5673828125,
+      0.6884765625,
+      0.720703125,
+      0.8291015625,
+      0.8642578125,
+      0.8876953125,
+      0.912109375,
+      0.92578125,
+      0.94140625,
+      0.9404296875,
+      0.9375,
+      0.94140625,
+      0.939453125,
+      0.9375,
+      0.939453125,
+      0.9423828125
+    ]
+  },
+  "note": "All probe numbers and finite-bank group bootstrap intervals are exploratory/descriptive, including selected layers. Every fitted probe, baseline, permutation and random control was frozen before heldout; layer curves are descriptive. Benchmark source/style confounding remains."
+}

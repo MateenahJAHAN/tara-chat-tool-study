@@ -1,0 +1,1250 @@
+{
+  "audit_utc": "2026-11-20T02:55:47.755181+00:00",
+  "status": "PASS",
+  "scope": "Independent raw-output/frozen-artifact integrity audit. No model inference, refit, publication or private Claude reasoning access. Tokenizer/pure-parser checks and descriptive count arithmetic only. This is separate from scientific result interpretation.",
+  "checks": [
+    {
+      "check": "complete marker/ledger agree",
+      "pass": true,
+      "detail": {
+        "generations": 418,
+        "prefill_forwards": 480,
+        "preflight_model_forwards": 3,
+        "generation_model_forwards": 11533,
+        "prefill_model_forwards": 480,
+        "kl_model_forwards": 136
+      }
+    },
+    {
+      "check": "full approved frozen/staged hashes",
+      "pass": true,
+      "detail": {
+        "hashes": {
+          "code_tree_sha256": "28871eaab6dbad6aae4f4d37f71356a1fc45b80d60f18871ba2fd1366a09614a",
+          "config_sha256": "7887091f2ab2c484d364602423bce467165a21bcdebe1e19f0c0548695a1aac8",
+          "split_manifest_sha256": "6e265ee4f4d667077a8e9793c8e2e1be01cd00737c74f04582b0003f2aaa93d9",
+          "model_manifest_sha256": "f412a185d8af4ed396f1c078da54058e09e31af0aee851f4aeacf7014003be40",
+          "parser_sha256": "95ce0db46651069e4ac64c837b401405b76209b3562d96759f68d1d9712209be",
+          "selected_params_sha256": "75d11fd2249d8a4dd8186b4000e26f0558778e83151ce12f1d3c90a65f9ea58c",
+          "dev_record_sha256": "dcc6db9e9933f0a6d0d799e051ad2d9006cb6d1fbb8f68a266cbfb0bad0b1372"
+        },
+        "problems": [],
+        "actual_fitted_files_and_DEV_record_rehashed": true,
+        "staged_data_and_model_bytes_rehashed": true
+      }
+    },
+    {
+      "check": "approved public freeze recorded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "approval precedes heldout start",
+      "pass": true,
+      "detail": {
+        "approval": "2026-11-20T02:41:12.255228+00:00",
+        "start": "2026-11-20T02:42:22.047543+00:00",
+        "completion": "2026-11-20T02:47:22.959731+00:00"
+      }
+    },
+    {
+      "check": "start binds approval hash",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "64/16/32 per-class frozen splits",
+      "pass": true,
+      "detail": {
+        "TRAIN": {
+          "0": 64,
+          "1": 64
+        },
+        "DEV": {
+          "0": 16,
+          "1": 16
+        },
+        "HELDOUT": {
+          "0": 32,
+          "1": 32
+        }
+      }
+    },
+    {
+      "check": "224 unique groups and disjoint splits",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "C0 IDs excluded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "preset steering subset8/class",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "expected8 generation files",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "DEV-only steering status",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "generations_baseline_NATIVE_TOOLS.jsonl",
+      "pass": true,
+      "detail": {
+        "rows": 64,
+        "expected": 64,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "generations_baseline_TEXT_CATALOGUE.jsonl",
+      "pass": true,
+      "detail": {
+        "rows": 64,
+        "expected": 64,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "generations_steer_mm_minus_NATIVE_TOOLS.jsonl",
+      "pass": true,
+      "detail": {
+        "rows": 16,
+        "expected": 16,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "generations_steer_mm_plus_NATIVE_TOOLS.jsonl",
+      "pass": true,
+      "detail": {
+        "rows": 16,
+        "expected": 16,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "generations_steer_permuted_NATIVE_TOOLS.jsonl",
+      "pass": true,
+      "detail": {
+        "rows": 16,
+        "expected": 16,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "generations_steer_random0_NATIVE_TOOLS.jsonl",
+      "pass": true,
+      "detail": {
+        "rows": 16,
+        "expected": 16,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "generations_steer_random1_NATIVE_TOOLS.jsonl",
+      "pass": true,
+      "detail": {
+        "rows": 16,
+        "expected": 16,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "generations_steer_random2_NATIVE_TOOLS.jsonl",
+      "pass": true,
+      "detail": {
+        "rows": 16,
+        "expected": 16,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "heldout metadata_prompt round-trip/integrity",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "heldout decode round-trip/integrity",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "heldout parser round-trip/integrity",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "heldout stop_failure round-trip/integrity",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "heldout numeric round-trip/integrity",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "224 heldout gens",
+      "pass": true,
+      "detail": {
+        "baseline": 128,
+        "steering": 96
+      }
+    },
+    {
+      "check": "no FAILURE_STOP markers",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "activation runs/dev/residuals_baseline_NATIVE_TOOLS.npy",
+      "pass": true,
+      "detail": {
+        "file": "runs/dev/residuals_baseline_NATIVE_TOOLS.npy",
+        "shape": [
+          160,
+          28,
+          1536
+        ],
+        "dtype": "float32",
+        "finite": true
+      }
+    },
+    {
+      "check": "activation runs/dev/residuals_baseline_TEXT_CATALOGUE.npy",
+      "pass": true,
+      "detail": {
+        "file": "runs/dev/residuals_baseline_TEXT_CATALOGUE.npy",
+        "shape": [
+          160,
+          28,
+          1536
+        ],
+        "dtype": "float32",
+        "finite": true
+      }
+    },
+    {
+      "check": "activation runs/dev/residuals_query_only_QUERY_ONLY_CONTROL.npy",
+      "pass": true,
+      "detail": {
+        "file": "runs/dev/residuals_query_only_QUERY_ONLY_CONTROL.npy",
+        "shape": [
+          160,
+          28,
+          1536
+        ],
+        "dtype": "float32",
+        "finite": true
+      }
+    },
+    {
+      "check": "activation runs/dev/residuals_trainingprefill_NATIVE_TOOLS.npy",
+      "pass": true,
+      "detail": {
+        "file": "runs/dev/residuals_trainingprefill_NATIVE_TOOLS.npy",
+        "shape": [
+          128,
+          28,
+          1536
+        ],
+        "dtype": "float32",
+        "finite": true
+      }
+    },
+    {
+      "check": "activation runs/dev/residuals_trainingprefill_TEXT_CATALOGUE.npy",
+      "pass": true,
+      "detail": {
+        "file": "runs/dev/residuals_trainingprefill_TEXT_CATALOGUE.npy",
+        "shape": [
+          128,
+          28,
+          1536
+        ],
+        "dtype": "float32",
+        "finite": true
+      }
+    },
+    {
+      "check": "activation runs/heldout/residuals_baseline_NATIVE_TOOLS.npy",
+      "pass": true,
+      "detail": {
+        "file": "runs/heldout/residuals_baseline_NATIVE_TOOLS.npy",
+        "shape": [
+          64,
+          28,
+          1536
+        ],
+        "dtype": "float32",
+        "finite": true
+      }
+    },
+    {
+      "check": "activation runs/heldout/residuals_baseline_TEXT_CATALOGUE.npy",
+      "pass": true,
+      "detail": {
+        "file": "runs/heldout/residuals_baseline_TEXT_CATALOGUE.npy",
+        "shape": [
+          64,
+          28,
+          1536
+        ],
+        "dtype": "float32",
+        "finite": true
+      }
+    },
+    {
+      "check": "activation runs/heldout/residuals_query_only_QUERY_ONLY_CONTROL.npy",
+      "pass": true,
+      "detail": {
+        "file": "runs/heldout/residuals_query_only_QUERY_ONLY_CONTROL.npy",
+        "shape": [
+          64,
+          28,
+          1536
+        ],
+        "dtype": "float32",
+        "finite": true
+      }
+    },
+    {
+      "check": "64 query-only heldout prefills",
+      "pass": true,
+      "detail": {
+        "rows": 64,
+        "expected": 64,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "query prefills nongenerative/finite",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "finite frozen arrays probe_weights.npz",
+      "pass": true,
+      "detail": {
+        "arrays": 102
+      }
+    },
+    {
+      "check": "finite frozen arrays control_weights.npz",
+      "pass": true,
+      "detail": {
+        "arrays": 420
+      }
+    },
+    {
+      "check": "finite frozen arrays steering_vectors.npz",
+      "pass": true,
+      "detail": {
+        "arrays": 10
+      }
+    },
+    {
+      "check": "finite baseline JSON",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "originalDEV TEXT_CATALOGUE",
+      "pass": true,
+      "detail": {
+        "rows": 32,
+        "expected": 32,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "rescoredDEV TEXT_CATALOGUE",
+      "pass": true,
+      "detail": {
+        "rows": 32,
+        "expected": 32,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "originalDEV NATIVE_TOOLS",
+      "pass": true,
+      "detail": {
+        "rows": 32,
+        "expected": 32,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "rescoredDEV NATIVE_TOOLS",
+      "pass": true,
+      "detail": {
+        "rows": 32,
+        "expected": 32,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "64 DEV rescored copies preserve original generation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "DEVsteer generations_mm_a0.01_s-1_NATIVE_TOOLS.jsonl",
+      "pass": true,
+      "detail": {
+        "rows": 16,
+        "expected": 16,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "DEVsteer generations_mm_a0.01_s-1_TEXT_CATALOGUE.jsonl",
+      "pass": true,
+      "detail": {
+        "rows": 16,
+        "expected": 16,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "DEVsteer generations_mm_a0.01_s1_NATIVE_TOOLS.jsonl",
+      "pass": true,
+      "detail": {
+        "rows": 16,
+        "expected": 16,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "DEVsteer generations_mm_a0.01_s1_TEXT_CATALOGUE.jsonl",
+      "pass": true,
+      "detail": {
+        "rows": 16,
+        "expected": 16,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "DEVsteer generations_mm_a0.03_s-1_NATIVE_TOOLS.jsonl",
+      "pass": true,
+      "detail": {
+        "rows": 16,
+        "expected": 16,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "DEVsteer generations_mm_a0.03_s-1_TEXT_CATALOGUE.jsonl",
+      "pass": true,
+      "detail": {
+        "rows": 16,
+        "expected": 16,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "DEVsteer generations_mm_a0.03_s1_NATIVE_TOOLS.jsonl",
+      "pass": true,
+      "detail": {
+        "rows": 16,
+        "expected": 16,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "DEVsteer generations_mm_a0.03_s1_TEXT_CATALOGUE.jsonl",
+      "pass": true,
+      "detail": {
+        "rows": 16,
+        "expected": 16,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "generation ledger accounting",
+      "pass": true,
+      "detail": {
+        "numeric_preflight": 2,
+        "dev_baseline": 64,
+        "dev_steering": 128,
+        "heldout": 224,
+        "total": 418
+      }
+    },
+    {
+      "check": "416 raw decode/error consistency and preflight identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "generation forward/token accounting",
+      "pass": true,
+      "detail": {
+        "sum_tokens": 11533,
+        "ledger": 11533
+      }
+    },
+    {
+      "check": "480 prefill forward accounting",
+      "pass": true,
+      "detail": 480
+    },
+    {
+      "check": "six native KL summaries",
+      "pass": true,
+      "detail": [
+        {
+          "condition": "NATIVE_TOOLS",
+          "config": "mm_plus",
+          "alpha": 0.01,
+          "completion_kl": 1.4227723511339718e-05
+        },
+        {
+          "condition": "NATIVE_TOOLS",
+          "config": "mm_minus",
+          "alpha": 0.01,
+          "completion_kl": 1.4692145640538001e-05
+        },
+        {
+          "condition": "NATIVE_TOOLS",
+          "config": "permuted",
+          "alpha": 0.01,
+          "completion_kl": 1.1003390083530462e-05
+        },
+        {
+          "condition": "NATIVE_TOOLS",
+          "config": "random0",
+          "alpha": 0.01,
+          "completion_kl": 1.050250477874215e-05
+        },
+        {
+          "condition": "NATIVE_TOOLS",
+          "config": "random1",
+          "alpha": 0.01,
+          "completion_kl": 1.9177648272972192e-05
+        },
+        {
+          "condition": "NATIVE_TOOLS",
+          "config": "random2",
+          "alpha": 0.01,
+          "completion_kl": 4.2407808471978115e-05
+        }
+      ]
+    },
+    {
+      "check": "behavior report raw counts and subset differences",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "behavior descriptive status",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "probe report n64 matrix",
+      "pass": true,
+      "detail": {
+        "entries": 10
+      }
+    },
+    {
+      "check": "probe report finite JSON",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "protected artifacts unchanged during audit",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "blockers": [],
+  "raw_recounts": {
+    "generations_baseline_NATIVE_TOOLS.jsonl": {
+      "0": {
+        "n_scheduled": 32,
+        "false_call": {
+          "k": 0,
+          "n": 0
+        },
+        "correct_call": {
+          "k": 26,
+          "n": 32
+        },
+        "invalid_or_empty": {
+          "k": 2,
+          "n": 32
+        },
+        "format_compliant": {
+          "k": 31,
+          "n": 32
+        },
+        "truncated": {
+          "k": 1,
+          "n": 32
+        },
+        "errored": {
+          "k": 0,
+          "n": 32
+        }
+      },
+      "1": {
+        "n_scheduled": 32,
+        "false_call": {
+          "k": 16,
+          "n": 32
+        },
+        "correct_call": {
+          "k": 0,
+          "n": 0
+        },
+        "invalid_or_empty": {
+          "k": 4,
+          "n": 32
+        },
+        "format_compliant": {
+          "k": 15,
+          "n": 32
+        },
+        "truncated": {
+          "k": 0,
+          "n": 32
+        },
+        "errored": {
+          "k": 0,
+          "n": 32
+        }
+      }
+    },
+    "generations_baseline_TEXT_CATALOGUE.jsonl": {
+      "0": {
+        "n_scheduled": 32,
+        "false_call": {
+          "k": 0,
+          "n": 0
+        },
+        "correct_call": {
+          "k": 23,
+          "n": 32
+        },
+        "invalid_or_empty": {
+          "k": 29,
+          "n": 32
+        },
+        "format_compliant": {
+          "k": 0,
+          "n": 32
+        },
+        "truncated": {
+          "k": 1,
+          "n": 32
+        },
+        "errored": {
+          "k": 0,
+          "n": 32
+        }
+      },
+      "1": {
+        "n_scheduled": 32,
+        "false_call": {
+          "k": 9,
+          "n": 32
+        },
+        "correct_call": {
+          "k": 0,
+          "n": 0
+        },
+        "invalid_or_empty": {
+          "k": 9,
+          "n": 32
+        },
+        "format_compliant": {
+          "k": 0,
+          "n": 32
+        },
+        "truncated": {
+          "k": 0,
+          "n": 32
+        },
+        "errored": {
+          "k": 0,
+          "n": 32
+        }
+      }
+    },
+    "generations_steer_mm_minus_NATIVE_TOOLS.jsonl": {
+      "0": {
+        "n_scheduled": 8,
+        "false_call": {
+          "k": 0,
+          "n": 0
+        },
+        "correct_call": {
+          "k": 7,
+          "n": 8
+        },
+        "invalid_or_empty": {
+          "k": 0,
+          "n": 8
+        },
+        "format_compliant": {
+          "k": 8,
+          "n": 8
+        },
+        "truncated": {
+          "k": 0,
+          "n": 8
+        },
+        "errored": {
+          "k": 0,
+          "n": 8
+        }
+      },
+      "1": {
+        "n_scheduled": 8,
+        "false_call": {
+          "k": 2,
+          "n": 8
+        },
+        "correct_call": {
+          "k": 0,
+          "n": 0
+        },
+        "invalid_or_empty": {
+          "k": 1,
+          "n": 8
+        },
+        "format_compliant": {
+          "k": 2,
+          "n": 8
+        },
+        "truncated": {
+          "k": 0,
+          "n": 8
+        },
+        "errored": {
+          "k": 0,
+          "n": 8
+        }
+      }
+    },
+    "generations_steer_mm_plus_NATIVE_TOOLS.jsonl": {
+      "0": {
+        "n_scheduled": 8,
+        "false_call": {
+          "k": 0,
+          "n": 0
+        },
+        "correct_call": {
+          "k": 6,
+          "n": 8
+        },
+        "invalid_or_empty": {
+          "k": 0,
+          "n": 8
+        },
+        "format_compliant": {
+          "k": 8,
+          "n": 8
+        },
+        "truncated": {
+          "k": 0,
+          "n": 8
+        },
+        "errored": {
+          "k": 0,
+          "n": 8
+        }
+      },
+      "1": {
+        "n_scheduled": 8,
+        "false_call": {
+          "k": 2,
+          "n": 8
+        },
+        "correct_call": {
+          "k": 0,
+          "n": 0
+        },
+        "invalid_or_empty": {
+          "k": 1,
+          "n": 8
+        },
+        "format_compliant": {
+          "k": 2,
+          "n": 8
+        },
+        "truncated": {
+          "k": 0,
+          "n": 8
+        },
+        "errored": {
+          "k": 0,
+          "n": 8
+        }
+      }
+    },
+    "generations_steer_permuted_NATIVE_TOOLS.jsonl": {
+      "0": {
+        "n_scheduled": 8,
+        "false_call": {
+          "k": 0,
+          "n": 0
+        },
+        "correct_call": {
+          "k": 7,
+          "n": 8
+        },
+        "invalid_or_empty": {
+          "k": 0,
+          "n": 8
+        },
+        "format_compliant": {
+          "k": 8,
+          "n": 8
+        },
+        "truncated": {
+          "k": 0,
+          "n": 8
+        },
+        "errored": {
+          "k": 0,
+          "n": 8
+        }
+      },
+      "1": {
+        "n_scheduled": 8,
+        "false_call": {
+          "k": 2,
+          "n": 8
+        },
+        "correct_call": {
+          "k": 0,
+          "n": 0
+        },
+        "invalid_or_empty": {
+          "k": 1,
+          "n": 8
+        },
+        "format_compliant": {
+          "k": 2,
+          "n": 8
+        },
+        "truncated": {
+          "k": 0,
+          "n": 8
+        },
+        "errored": {
+          "k": 0,
+          "n": 8
+        }
+      }
+    },
+    "generations_steer_random0_NATIVE_TOOLS.jsonl": {
+      "0": {
+        "n_scheduled": 8,
+        "false_call": {
+          "k": 0,
+          "n": 0
+        },
+        "correct_call": {
+          "k": 6,
+          "n": 8
+        },
+        "invalid_or_empty": {
+          "k": 0,
+          "n": 8
+        },
+        "format_compliant": {
+          "k": 8,
+          "n": 8
+        },
+        "truncated": {
+          "k": 0,
+          "n": 8
+        },
+        "errored": {
+          "k": 0,
+          "n": 8
+        }
+      },
+      "1": {
+        "n_scheduled": 8,
+        "false_call": {
+          "k": 2,
+          "n": 8
+        },
+        "correct_call": {
+          "k": 0,
+          "n": 0
+        },
+        "invalid_or_empty": {
+          "k": 1,
+          "n": 8
+        },
+        "format_compliant": {
+          "k": 2,
+          "n": 8
+        },
+        "truncated": {
+          "k": 0,
+          "n": 8
+        },
+        "errored": {
+          "k": 0,
+          "n": 8
+        }
+      }
+    },
+    "generations_steer_random1_NATIVE_TOOLS.jsonl": {
+      "0": {
+        "n_scheduled": 8,
+        "false_call": {
+          "k": 0,
+          "n": 0
+        },
+        "correct_call": {
+          "k": 7,
+          "n": 8
+        },
+        "invalid_or_empty": {
+          "k": 0,
+          "n": 8
+        },
+        "format_compliant": {
+          "k": 8,
+          "n": 8
+        },
+        "truncated": {
+          "k": 0,
+          "n": 8
+        },
+        "errored": {
+          "k": 0,
+          "n": 8
+        }
+      },
+      "1": {
+        "n_scheduled": 8,
+        "false_call": {
+          "k": 2,
+          "n": 8
+        },
+        "correct_call": {
+          "k": 0,
+          "n": 0
+        },
+        "invalid_or_empty": {
+          "k": 1,
+          "n": 8
+        },
+        "format_compliant": {
+          "k": 2,
+          "n": 8
+        },
+        "truncated": {
+          "k": 0,
+          "n": 8
+        },
+        "errored": {
+          "k": 0,
+          "n": 8
+        }
+      }
+    },
+    "generations_steer_random2_NATIVE_TOOLS.jsonl": {
+      "0": {
+        "n_scheduled": 8,
+        "false_call": {
+          "k": 0,
+          "n": 0
+        },
+        "correct_call": {
+          "k": 7,
+          "n": 8
+        },
+        "invalid_or_empty": {
+          "k": 0,
+          "n": 8
+        },
+        "format_compliant": {
+          "k": 8,
+          "n": 8
+        },
+        "truncated": {
+          "k": 0,
+          "n": 8
+        },
+        "errored": {
+          "k": 0,
+          "n": 8
+        }
+      },
+      "1": {
+        "n_scheduled": 8,
+        "false_call": {
+          "k": 2,
+          "n": 8
+        },
+        "correct_call": {
+          "k": 0,
+          "n": 0
+        },
+        "invalid_or_empty": {
+          "k": 1,
+          "n": 8
+        },
+        "format_compliant": {
+          "k": 2,
+          "n": 8
+        },
+        "truncated": {
+          "k": 0,
+          "n": 8
+        },
+        "errored": {
+          "k": 0,
+          "n": 8
+        }
+      }
+    }
+  },
+  "activation_banks": [
+    {
+      "file": "runs/dev/residuals_baseline_NATIVE_TOOLS.npy",
+      "shape": [
+        160,
+        28,
+        1536
+      ],
+      "dtype": "float32",
+      "finite": true
+    },
+    {
+      "file": "runs/dev/residuals_baseline_TEXT_CATALOGUE.npy",
+      "shape": [
+        160,
+        28,
+        1536
+      ],
+      "dtype": "float32",
+      "finite": true
+    },
+    {
+      "file": "runs/dev/residuals_query_only_QUERY_ONLY_CONTROL.npy",
+      "shape": [
+        160,
+        28,
+        1536
+      ],
+      "dtype": "float32",
+      "finite": true
+    },
+    {
+      "file": "runs/dev/residuals_trainingprefill_NATIVE_TOOLS.npy",
+      "shape": [
+        128,
+        28,
+        1536
+      ],
+      "dtype": "float32",
+      "finite": true
+    },
+    {
+      "file": "runs/dev/residuals_trainingprefill_TEXT_CATALOGUE.npy",
+      "shape": [
+        128,
+        28,
+        1536
+      ],
+      "dtype": "float32",
+      "finite": true
+    },
+    {
+      "file": "runs/heldout/residuals_baseline_NATIVE_TOOLS.npy",
+      "shape": [
+        64,
+        28,
+        1536
+      ],
+      "dtype": "float32",
+      "finite": true
+    },
+    {
+      "file": "runs/heldout/residuals_baseline_TEXT_CATALOGUE.npy",
+      "shape": [
+        64,
+        28,
+        1536
+      ],
+      "dtype": "float32",
+      "finite": true
+    },
+    {
+      "file": "runs/heldout/residuals_query_only_QUERY_ONLY_CONTROL.npy",
+      "shape": [
+        64,
+        28,
+        1536
+      ],
+      "dtype": "float32",
+      "finite": true
+    }
+  ],
+  "reports_checked": {
+    "behavior": {
+      "path": "study_v1/reports/behaviour_heldout.json",
+      "sha256": "c7ed2e1565d21a6457c13cdfdd93ed3f4535cc9a71d4932671321eedb0bdd611",
+      "counts_checked": true
+    },
+    "probes": {
+      "path": "study_v1/reports/heldout_probe_results.json",
+      "sha256": "c97762b58aa81211ef856bc84b0431581ed1a396ecac69db4184d573ec0ad74d",
+      "matrix_entries": 10,
+      "scope": "Checked 10 matrix sample counts and JSON finiteness against raw/activation banks; AUC/CI values were not independently recomputed."
+    }
+  },
+  "protected_file_hashes": {
+    "approvals/root-heldout-approval.json": "21ecda0c15c72f534ce33b46c9d864afa1c70e8d6d8ea7e6cc35fe4a398789b1",
+    "frozen/DEV_LEDGER_AT_FREEZE.json": "e42bdd525e3027362d8f9f68061ba6d480e16aae80b7fbacf312d9ae82df69e7",
+    "frozen/baseline_models.json": "150adf1837f4f4cda33cd53c675bc80b562407cb7b17befeed7439815aa2dfe1",
+    "frozen/control_weights.npz": "85dc0463e3baa72e9e504e2df556e02cdabc42a19c9e248c07d37409f8c31112",
+    "frozen/hash_record.json": "9edfef6bbd4912826944797884986eb12df928d2bb1cc7e49f92d735261aada1",
+    "frozen/probe_selection.json": "0728accaef521ec32c1f26aa736fb530ad8f3631a6e9386f9cbc0b980a57f9e3",
+    "frozen/probe_weights.npz": "4c0ad0c31b87d2d73e5eda8d230474e54e85e93c924d639689393a6476cf93a1",
+    "frozen/selected_params.json": "75d11fd2249d8a4dd8186b4000e26f0558778e83151ce12f1d3c90a65f9ea58c",
+    "frozen/steering_vectors.npz": "b66c581e99bcd592b47eefc098b75504d2cf5ea117064beecdf7f019e3a40df8",
+    "manifests/split_manifest.json": "6e265ee4f4d667077a8e9793c8e2e1be01cd00737c74f04582b0003f2aaa93d9",
+    "proposal/code/analysis.py": "9ae33da3734e19966d8073fc94be218cd2673a45113728a9bb93c76a842ad882",
+    "proposal/code/common.py": "120dd2fc6cf9958d6c5463b3a65cf4aadf0dfe388d3c678a8cd48aa9cc1fa4b7",
+    "proposal/code/gate.py": "cf5130280212bdcd82f0a76e01feb7b776fa24a980fa55979a3d0d43210b9791",
+    "proposal/code/group_selection.py": "8b4df7f9b89843e2cd51ab93cf3b471abff314eaaf2028bc624c1f1a6c1238af",
+    "proposal/code/grouping.py": "9d4eec518bc2e2c97ecfc8cc9227a7893aecbb5e3cd7df6c18d4187a880eddd8",
+    "proposal/code/parser.py": "95ce0db46651069e4ac64c837b401405b76209b3562d96759f68d1d9712209be",
+    "proposal/code/prepare.py": "392b5ff7dce15124b0e17feb69acfb3b6f63c8220795b19cbb3e7c66b4d26984",
+    "proposal/code/probes.py": "20dd1f14855c48699aa7c2815c525f04988e4f97ad9b95a0b56872398c0e82e8",
+    "proposal/code/rescore_dev.py": "8f380f26f74fdf882787762a390381945d07f18d4018109e940d39ec02d6954d",
+    "proposal/code/run.py": "d71689eb80ffb6c6e2489506c7ca2869bdf369b9d57fdae20f392da310ca29cf",
+    "proposal/code/runtime.py": "5d28e5909caa97f3e3b37e8834d8123254b842562787141d25a1bd521cf41648",
+    "proposal/config/study_config.json": "7887091f2ab2c484d364602423bce467165a21bcdebe1e19f0c0548695a1aac8",
+    "runs/heldout/HELDOUT_COMPLETE.json": "ea91b14b34d124840b4294538e6deb1e2dbac69d9d178fc56241e882241cb240",
+    "runs/heldout/HELDOUT_STARTED.json": "6fe7ae6d1d5bad91aeadea6eb843156342da4305a587fe01038013089f9243e3",
+    "runs/heldout/RUNTIME.json": "0a97cd05461672a3fe13296178e3be4fedbd88eb76a5b4c9c5e0b8146d7c8fda",
+    "runs/heldout/generations_baseline_NATIVE_TOOLS.jsonl": "74396c22f03a24d53147d2e8ca86986c2370b1e38ff02fbe28d58680f11af1eb",
+    "runs/heldout/generations_baseline_TEXT_CATALOGUE.jsonl": "4b844e7c48a344aa06ecd0281b25c22900f72b2786cc26fcaf26a80a274031ac",
+    "runs/heldout/generations_steer_mm_minus_NATIVE_TOOLS.jsonl": "34017fa6101e759d54e3e70e439ed1bf327be254a01250cc9091c727fbc2a6ba",
+    "runs/heldout/generations_steer_mm_plus_NATIVE_TOOLS.jsonl": "f3077adc7ba1663190e68180b7b8e6c3bef41ca100c73bb3b9c8fc75372a9a32",
+    "runs/heldout/generations_steer_permuted_NATIVE_TOOLS.jsonl": "fd3d98367aacf48dff89728f815a6d0bf11f9b0cdb2338fd000d03cb798a6c54",
+    "runs/heldout/generations_steer_random0_NATIVE_TOOLS.jsonl": "da030e0b3909aef1f4410b95d275e51156a8e553054c4620ddf3a750d134d790",
+    "runs/heldout/generations_steer_random1_NATIVE_TOOLS.jsonl": "1e694ba00bc9681d1fa8a185c34551dfa382cdadc50b6ca591ca72e239053f90",
+    "runs/heldout/generations_steer_random2_NATIVE_TOOLS.jsonl": "0fe27e6a8ad5215400ee7a9e2fa16e0cc25b5d4fd12200f5a3c01fa38bb031e6",
+    "runs/heldout/prefill_query_only_QUERY_ONLY_CONTROL.jsonl": "5e02d0fb16ab17482bd28dc1f80b7d21a7c5ff5816238debbb671bee4df40d3e",
+    "runs/heldout/residuals_baseline_NATIVE_TOOLS.index.json": "1639a33b3563f81180f025012a7fe1b733caaf60cc6879d1b5a131db7cffa720",
+    "runs/heldout/residuals_baseline_NATIVE_TOOLS.npy": "ec1da0db68eb97515fa7607cd45f5f6bc1bf57ea610fa2c34629f5386deaae0c",
+    "runs/heldout/residuals_baseline_TEXT_CATALOGUE.index.json": "1639a33b3563f81180f025012a7fe1b733caaf60cc6879d1b5a131db7cffa720",
+    "runs/heldout/residuals_baseline_TEXT_CATALOGUE.npy": "23c3aa33bf8667b1889d319b55c7dace1cac6de31915b948206d99f5a8347a04",
+    "runs/heldout/residuals_query_only_QUERY_ONLY_CONTROL.index.json": "1639a33b3563f81180f025012a7fe1b733caaf60cc6879d1b5a131db7cffa720",
+    "runs/heldout/residuals_query_only_QUERY_ONLY_CONTROL.npy": "e1642a6da20731ed36a66eb2629eec4035e02efaec615ad7538d0785b40e702f",
+    "runs/heldout/steering_kl.jsonl": "368ad615700d01d31d49154963f72d7cdd9741db2537ddfe01b5fb17ee6190e2"
+  },
+  "script_sha256": "855c9aa8067d0f35c495830fe3dd59ccdcf9e990b217dc1d151ad2514c245393",
+  "limits": [
+    "Integrity checks do not prove absence of undisclosed off-record experiments.",
+    "Decode checks validate saved IDs/text, not a model rerun.",
+    "Parser checks reproduce frozen scoring, not independent human adjudication.",
+    "KL summaries checked for identity/presence/finite values, without regenerated logits.",
+    "Source/style confounding, one-model and finite-bank interpretation limits remain.",
+    "Probe AUROCs and bootstrap intervals were not independently recomputed; the behavior checks compare endpoint counts and paired point differences, not interval calibration.",
+    "The approved public commit is recorded in the approval file; this audit did not separately query the remote GitHub tag."
+  ],
+  "independently_recounted_outcome_summary": {
+    "baseline": {
+      "irrelevant_false_calls": {
+        "TEXT_CATALOGUE": {
+          "k": 9,
+          "n": 32
+        },
+        "NATIVE_TOOLS": {
+          "k": 16,
+          "n": 32
+        }
+      },
+      "relevant_V2_semantic_correct_calls": {
+        "TEXT_CATALOGUE": {
+          "k": 23,
+          "n": 32
+        },
+        "NATIVE_TOOLS": {
+          "k": 26,
+          "n": 32
+        }
+      },
+      "relevant_protocol_format_compliance": {
+        "TEXT_CATALOGUE": {
+          "k": 0,
+          "n": 32
+        },
+        "NATIVE_TOOLS": {
+          "k": 31,
+          "n": 32
+        }
+      }
+    },
+    "preset_native_mm_plus_subset": {
+      "irrelevant_false_calls_before": {
+        "k": 2,
+        "n": 8
+      },
+      "irrelevant_false_calls_after": {
+        "k": 2,
+        "n": 8
+      },
+      "relevant_correct_calls_before": {
+        "k": 7,
+        "n": 8
+      },
+      "relevant_correct_calls_after": {
+        "k": 6,
+        "n": 8
+      }
+    },
+    "interpretation": "Observed frozen-parser counts only. Broad causal, mechanism or safety conclusions are outside this integrity audit."
+  },
+  "public_copy_provenance": {
+    "original_private_audit_sha256": "de97788c849d7b2aba9003489535c1e1b7f1c9177f69e58eb937d48d711f5462",
+    "derivation": "Only exact local machine-directory prefix changed to portable study_v1 path; findings, checks and numbers unchanged",
+    "redacted_prefix_occurrences": 2
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "prepared_at_utc": "2026-11-20T02:29:55.002795+00:00",
+  "status": "ACTUAL_AUTHORIZED_DEV_RENDER_COMPLETE_HELDOUT_UNREAD",
+  "phase_authorization_received": "DEV only",
+  "actual_dev_reports_read": true,
+  "actual_heldout_reports_read": false,
+  "actual_raw_generation_files_read": "Only explicitly authorized DEV rescored_v2 baseline banks",
+  "models_or_network_calls": 0,
+  "research_figures_created": 6,
+  "frozen_code_or_environment_edits": 0,
+  "plotting_environment": {
+    "python_version": "3.12.11",
+    "matplotlib": "3.10.0",
+    "Agg_import_verified": true,
+    "packages_installed": 0,
+    "other_python_3_11": "Matplotlib3.10.3 metadata present but pyplot import fails: missing dateutil; not used",
+    "interpreter_description": "Existing Python3.12.11 base interpreter; local path omitted from public metadata"
+  },
+  "tests": {
+    "syntax_pass": true,
+    "authorization_denominator_test_methods": 6,
+    "all_pass": true,
+    "default_modes_read_no_results": true,
+    "no_synthetic_research_figure_rendered": true,
+    "public_machine_home_guard": true
+  },
+  "source_schema_sha256": {
+    "proposal/code/analysis.py": "9ae33da3734e19966d8073fc94be218cd2673a45113728a9bb93c76a842ad882",
+    "proposal/code/probes.py": "20dd1f14855c48699aa7c2815c525f04988e4f97ad9b95a0b56872398c0e82e8",
+    "proposal/code/run.py": "d71689eb80ffb6c6e2489506c7ca2869bdf369b9d57fdae20f392da310ca29cf",
+    "proposal/PROSPECTIVE_DESIGN.json": "2ea29d1b64f56272d995d29f72cd5f2b935a3af7acddad19658a24f1dc98b001",
+    "proposal/config/study_config.json": "7887091f2ab2c484d364602423bce467165a21bcdebe1e19f0c0548695a1aac8"
+  },
+  "reporting_source_sha256": {
+    "build_reporting_context.py": "95fcde28697cd1ccace9f4ca8c1f7166ae2b9b09c15cdc3c663cda32bc61d2b6",
+    "make_figures.py": "6e2b2e1a37dcb24ef02674a58117c41807ba0b62d01660ecc44a6ea9a250d4c5",
+    "reporting_io.py": "99f898004d3a70838090fa2f6a091b501dac43c226bbc3627ec07b7b8e6a4453",
+    "test_reporting_guards.py": "a8f177be89806ae087b3f05d42d2bb58cfa9beffa2bc2fd1dbc18e8bdc7ab8e0"
+  },
+  "actual_execution_policy": "Builder and plotter require explicit matching completed-phase authorization. HELDOUT additionally verifies actual root approval/completion hashes before outcomes. Parent supplies authority only after reports exist.",
+  "derived_score_support": "Authorization may name exact versioned behaviour report and SHA-bound derived scored banks, preserving original outputs/scores; scripts never rescore or rerun the model.",
+  "planned_artifacts": [
+    "actual endpoint rates/raw k/n with existing descriptive intervals",
+    "all raw paired00/01/10/11 counts and paired descriptors",
+    "all scorer endpoints/statuses CSV and multipagePDF, including zero/missing/unrun",
+    "actual selected2x2 probe transfer/query/surface/permutation/random summaries",
+    "actual steering selection/gate-failed reasons and reported candidates, no imputed positive result"
+  ],
+  "limitations": [
+    "Actual DEV figure PNGs and all3 endpoint PDF pages visually inspected; heldout rendering remains unrun and unauthorized.",
+    "Uses existing reported intervals, no new inferential tests/selection; finite-bank labels do not imply population coverage.",
+    "No human authorship or personal-course-completion inference is made."
+  ],
+  "public_privacy": {
+    "absolute_main_root": "local authorization only",
+    "public_binding": [
+      "design_id",
+      "split_manifest_sha256"
+    ],
+    "public_python_metadata": [
+      "python_version",
+      "matplotlib_version"
+    ],
+    "private_authorizations": "local-only; never publish"
+  },
+  "updated_at_utc": "2026-11-20T02:47:30.505683+00:00",
+  "public_metadata_scan": {
+    "README_machine_home_paths": false,
+    "READINESS_machine_home_paths": false,
+    "absolute_paths_kept_only_in_local_authority": true
+  },
+  "rendered_files": 16
+}
