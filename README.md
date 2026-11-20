@@ -1,78 +1,62 @@
-# Function applicability across text and native tool interfaces
+# Does the tool format change when a model calls a tool?
 
-A completed exploratory TARA study of Qwen2.5-1.5B-Instruct on public BFCL tasks. It compares function selection and abstention across two interface packages, then tests cross-interface probes and a development-selected steering intervention.
+On 32 [Berkeley Function Calling Leaderboard (BFCL)](https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard) test requests where no tool applied, Qwen2.5-1.5B-Instruct tried to call a tool **16 times with its built-in tool format and 9 times with a tool list written in the prompt**. A second experiment, using 20 pairs of requests that differ by one word, found more false calls with the built-in format on both models tested.
 
-**The real model run, raw outputs, analysis, figures and independent integrity audit are available.** This is an AI-assisted working study, not a peer-reviewed publication.
+<a id="held-out-results"></a>
 
-## Follow-up: matched tool applicability
+## First experiment · BFCL requests
 
-On a new bank of 20 benign scope pairs, the native interface produced more out-of-scope calls on both tested checkpoints: **14/20 to 19/20** for the original Qwen2.5 1.5B model and **0/20 to 10/20** for Qwen3.5 4B. Canonical formatting, exact abstention, and paired scope accuracy were measured separately. This exploratory result is for the tested prompts and interface packages.
+Both formats used the same 64 test requests. BFCL labels say a listed tool applies to 32 requests and none applies to the other 32.
 
-[Follow-up results and figures](followup_v2_tool_applicability/RESULTS.md) · [Frozen protocol](followup_v2_tool_applicability/PROTOCOL.md) · [Machine-readable verification](followup_v2_tool_applicability/verification.json)
-
-![False calls, correct calls, formatting and scope-pair outcomes on the matched bank](followup_v2_tool_applicability/figures/endpoint_counts.png)
-
-[Matched scope-pair design](followup_v2_tool_applicability/figures/study_design.svg)
-
-## Held-out results
-
-The same 64 held-out requests were evaluated with a text function catalogue and the model's native tool template. There were 32 benchmark-labelled irrelevant requests and 32 relevant requests.
-
-| Endpoint | Text catalogue | Native template |
+| Measure | Text list | Built-in format |
 |---|---:|---:|
-| False call attempts on irrelevant requests | 9/32 (28.1%) | 16/32 (50.0%) |
-| Exact `NO_CALL` on irrelevant requests | 23/32 | 15/32 |
-| Semantic reference correctness on relevant requests | 23/32 | 26/32 |
-| Canonical call format on relevant requests | 0/32 | 31/32 |
+| Tried to call a tool when none applied | 9/32 | 16/32 |
+| Returned exactly `NO_CALL` when no tool applied | 23/32 | 15/32 |
+| Returned the right function and arguments when a tool applied | 23/32 | 26/32 |
+| Used the expected call format when a tool applied | 0/32 | 31/32 |
 
-The paired false-call difference was **+21.875 percentage points** for the native interface package. A group-resampling descriptor spans +6.25 to +37.5 points for this selected bank. Two baseline completions reached the token ceiling and remain in the denominators. Semantic correctness and protocol formatting are separate endpoints.
+The built-in format produced about 22 percentage points more false calls. Resampling the test groups gave a range of about 6 to 38 points for this set of requests. Two outputs reached the token limit and are included in the counts. [First experiment results](study_v1/RESULTS.txt)
 
-![Held-out behaviour and denominators](reporting/figures_heldout_final/01_behaviour_rates.png)
+![False calls and correct calls by tool format](reporting/figures_heldout_final/01_behaviour_rates.png)
 
-Frozen logistic probes reached held-out AUROCs of 0.898–0.946 across the two interfaces. Query-only logistic AUROC was 0.747 and the length-only surface baseline reached 0.814. The category source files supply the labels, so source/style cues remain a possible explanation; decodability does not establish a decision mechanism.
+<a id="follow-up-matched-tool-applicability"></a>
 
-The native steering configuration selected on development **did not transfer successfully**: false calls stayed at 2/8 and relevant semantic correctness fell from 7/8 to 6/8. All six scheduled native direction/control configurations are retained. Text steering failed the development gate and was skipped on held-out data.
+## Second experiment · Requests that differ by one word
 
-## Read the evidence
+Each pair changes a single word that determines whether a listed tool applies. The 20 pairs use five kinds of fictitious tool.
 
-- [Results and limitations](study_v1/RESULTS.txt)
-- [Behaviour report](study_v1/reports/behaviour_heldout.json) and [probe/control report](study_v1/reports/heldout_probe_results.json)
-- [Raw held-out outputs](study_v1/runs/heldout/) and [development records](study_v1/runs/dev/)
-- [Held-out figures](reporting/figures_heldout_final/) and [development figures](reporting/figures_dev_final/)
-- [Independent audit: 63 mechanical checks](study_v1/reviews/HELDOUT_INDEPENDENT_AUDIT_PUBLIC.txt)
-- [Exact public-file hashes](COMPLETED_PUBLIC_MANIFEST.json)
+| Model | False calls with the built-in format | False calls with the text list |
+|---|---:|---:|
+| Qwen2.5 1.5B | 19/20 | 14/20 |
+| Qwen3.5 4B | 10/20 | 0/20 |
 
-The audit verified all 224 held-out decode/parser round-trips, planned item banks, finite activation arrays, frozen artifacts, raw counts and ledger totals. It did not independently recompute probe AUROCs or validate interval calibration.
+[Second experiment results](followup_v2_tool_applicability/RESULTS.md) · [How the requests were paired](followup_v2_tool_applicability/figures/study_design.svg)
 
-## Design and execution
+![False calls, correct calls and formatting for both models and tool formats](followup_v2_tool_applicability/figures/endpoint_counts.png)
 
-The pinned bank contains 128 training, 32 development and 64 held-out items from 224 distinct query/function/schema connected components. Training used activation prefills. The complete run retained **416 main generations plus two numeric-repeat calibrations**; 224 generations were held-out baselines/interventions. No external function or API was executed.
+## What the probes and steering showed
 
-- Model: [Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct), revision `989aa7980e4cf806f80c7fef2b1adb7bc71aa306`, float32/MPS, eager attention.
-- Data: [Berkeley Function Calling Leaderboard](https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard), pinned gorilla commit `6ea57973c7a6097fd7c5915698c54c17c5b1b6c8`.
-- Methods: paired interface packages, residual-stream mean/logistic probes, query/length/schema/lexical controls, permutation/random controls, and development-gated activation steering.
-- Course context: linear probes, model steering and evaluation in the [ARENA curriculum](https://github.com/ARENA-education/ARENA_materials). The implementation is original; course notebooks are not redistributed here.
+Logistic probes on model activations reached test-set AUROCs of 0.898–0.946 across training and test formats. A baseline using only prompt length reached 0.814. BFCL's relevant and irrelevant requests came from different files, so the probes may have picked up differences in wording or style.
 
-This estimates an interface-package difference on a selected benchmark bank. Source and category cues, unknown benchmark contamination, and small intervention subsets limit the conclusions. The matched follow-up uses a separate bank and adds a second checkpoint.
+The built-in format's steering settings were chosen on development data. On the test subset, false calls stayed at 2/8 and correct calls on relevant requests fell from 7/8 to 6/8. Steering with the text list fell short of the development criteria, so it was tested only on the development set. [Probe and control results](study_v1/reports/heldout_probe_results.json)
 
-## Freeze history and measurement correction
+The formats differ in how tools are presented and how calls are written. The second experiment used hand-written requests, and the two models ran on different software and at different precision. The results compare formats within each model on these requests. Neither experiment executed the tools.
 
-The [V1 protocol/code](https://github.com/MateenahJAHAN/tara-chat-tool-study/tree/v0.1-prospective-plan) were publicly tagged before development. Development inspection found a scorer error: complete valid JSON calls missing only their closing tool tag had been marked semantically incorrect.
+## Reproducing the results
 
-The documented [V2 measurement amendment](study_v1/MEASUREMENT_AMENDMENT_V2.json) rescored all 64 development outputs without repeating inference. Original code, outputs, scores and reports are preserved. Primary call-attempt counts and strict-format diagnostics did not change. The amended scorer and fitted artifacts were publicly frozen at [commit 645e581d / tag v0.2-before-heldout](https://github.com/MateenahJAHAN/tara-chat-tool-study/tree/v0.2-before-heldout) before any held-out output. This development-discovered correction is part of the study history.
+- **BFCL experiment** · [Setup guide](study_v1/proposal/README.txt), [requirements](study_v1/proposal/requirements.txt), [scores](study_v1/reports/behaviour_heldout.json), [test outputs](study_v1/runs/heldout/) and [development records](study_v1/runs/dev/). It used [Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/tree/989aa7980e4cf806f80c7fef2b1adb7bc71aa306) in float32 on MPS with eager attention, with BFCL at [revision `6ea5797`](https://github.com/ShishirPatil/gorilla/tree/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8). The split used 128 training, 32 development and 64 test requests, grouped by shared query, function or schema.
+- **Scoring fix** · A development check found that a complete JSON call missing its closing tool tag was scored as semantically wrong. The fix rescored 64 development outputs. Call-attempt and strict-format counts stayed the same. The fix was [tagged before the test run](https://github.com/MateenahJAHAN/tara-chat-tool-study/tree/v0.2-before-heldout). [Scoring change and affected measures](study_v1/MEASUREMENT_AMENDMENT_V2.json)
+- **Paired-request experiment** · The [original protocol](followup_v2_tool_applicability/PROTOCOL.md) specified Qwen3-4B and Qwen3.5-4B. Qwen3-4B reached the length limit on the setup checks, so the [documented amendment](followup_v2_tool_applicability/AMENDMENT_QWEN25.md) replaced it with Qwen2.5-1.5B. [Requests and tool definitions](followup_v2_tool_applicability/bank.json) · [Check results and checksums](followup_v2_tool_applicability/verification.json).
+- **Files and checks** · [Independent checks of the saved outputs](study_v1/reviews/HELDOUT_INDEPENDENT_AUDIT_PUBLIC.txt), [file checksums](COMPLETED_PUBLIC_MANIFEST.json), [development figures](reporting/figures_dev_final/) and [early test run](development_calibration/README.md). The checks covered the saved output counts and parsing. Probe AUROC was outside their scope. Full reproduction requires locally staged model weights and data. Fitted probes are included. Checksums identify the large activation files produced during the run.
 
-## Reproduction and provenance
-
-The [operator guide](study_v1/proposal/README.txt), [pinned requirements](study_v1/proposal/requirements.txt), [source/config](study_v1/proposal/), split manifests and model/data hashes identify what ran. Pure scoring and integrity tests can be run with:
+The scoring tests run without the model.
 
 ```sh
 python -m unittest discover -s study_v1/proposal/tests
 ```
 
-Live reproduction requires the pinned model/data staged locally and a fresh workspace; the recorded held-out gate binds the original frozen artifacts. Model weights and large NPY activation banks are excluded from Git; activation hashes and fitted probes/control weights are retained. The earlier [development calibration](development_calibration/README.md) includes four real generations, an exact reproduction and the retained float16 failure.
+The study used methods covered by the [ARENA curriculum](https://github.com/ARENA-education/ARENA_materials). The scores use the project scorer. BFCL publishes its own leaderboard scores. Upstream model and dataset licences apply.
 
-## Contributions
+## Use of AI tools
 
-Claude Code Opus 5.5 drafted the original design and implementation. Operators reviewed and amended the code, ran the model, scored the outputs, and audited the records. Claude Fable 5.2 reviewed the follow-up design. Mateenah’s individual role in the design, implementation, analysis, and writing remains to be confirmed for a manuscript contribution statement. [Original study provenance](study_v1/AI_ASSISTANCE_PROVENANCE.json) · [Follow-up verification](followup_v2_tool_applicability/verification.json)
-
-Upstream models and benchmark data retain their own licences. This repository makes no official BFCL-score or new-mechanism claim.
+Claude Code Opus 5.5 drafted the original study design and code. The project record documents code review, model runs, scoring and checks. Claude Fable 5.2 reviewed the second experiment's design. [Original study record](study_v1/AI_ASSISTANCE_PROVENANCE.json) · [Second experiment record](followup_v2_tool_applicability/verification.json)
