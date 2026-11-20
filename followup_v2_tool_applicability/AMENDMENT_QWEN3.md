@@ -1,0 +1,7 @@
+# Runtime amendment before a second Qwen3 run
+
+The Qwen3-4B smoke control record exposed an incompatible bundled chat template. The installed template opened a thinking block unconditionally. The four controls hit the 96-token limit and yielded no final answer in either interface. The requested `enable_thinking: false` setting therefore had no effect. Qwen3.5-4B's template did honor the setting; its run is unaffected.
+
+Keep the entire first Qwen3 request/response record and report its output caps explicitly. Re-run the identical frozen bank and controls on the same Qwen3 weights and llama.cpp build after a one-block template change. The template now honors the existing flag by closing the empty thinking block before generation. Request bytes apart from local server identifier, schedules, scoring, seeds and maximum tokens stay the same. This is a runtime-corrected replication on the same authored bank. The amendment rationale comes from the two smoke prompts and inspection of the emitted template. The original Qwen3 outputs remain available as a failed runtime control.
+
+Analytic policy was frozen before the amended model's first outputs. To compare the models, use the Qwen3 run with the non-thinking template alongside the original Qwen3.5 run, provided the amended Qwen3 controls complete without hitting the output cap and both interfaces produce the expected structured call on the applicable control. Report exact abstention failures without changing the scorer. Report the original Qwen3 metrics separately as runtime diagnostics.
