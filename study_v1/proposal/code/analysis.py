@@ -10,6 +10,7 @@ import numpy as np
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import common  # noqa: E402
 import gate  # noqa: E402
+from run import dev_score_directory  # noqa: E402
 
 RATE_KEYS = ["false_call", "broad_false_call", "operational_abstention", "strict_abstention", "call_attempt", "valid_call",
              "correct_call", "format_compliant", "parse_error", "unknown_name", "empty_output", "truncated", "errored"]
@@ -84,7 +85,7 @@ def main():
         if not (d / "HELDOUT_COMPLETE.json").exists():
             raise RuntimeError("STOP: heldout incomplete")
     else:
-        d = root / "runs" / "dev"
+        d = dev_score_directory(root, cfg)
     keep = lambda recs: {u: r for u, r in recs.items() if r["split"] == args.split}  # noqa: E731
     text = keep(load(d / "generations_baseline_TEXT_CATALOGUE.jsonl"))
     nat = keep(load(d / "generations_baseline_NATIVE_TOOLS.jsonl"))
@@ -94,7 +95,7 @@ def main():
         raise RuntimeError("STOP: incomplete/mismatched frozen baseline bank")
     steering_expected = {x["uid"] for x in manifest if x["split"] == args.split and x["steering_subset"]}
     B, seed = A["bootstrap_B"], A["bootstrap_seed"]
-    rep = {"split": args.split, "status": "HELDOUT_FINITE_BANK_DESCRIPTIVE" if args.split == "HELDOUT" else "DEVELOPMENT_DESCRIPTIVE",
+    rep = {"split": args.split, "score_version": cfg["measurement_version"], "status": "HELDOUT_FINITE_BANK_DESCRIPTIVE" if args.split == "HELDOUT" else "DEVELOPMENT_DESCRIPTIVE",
            "rates": {"TEXT_CATALOGUE": rates(text), "NATIVE_TOOLS": rates(nat)}}
     prim = paired(text, nat, "false_call", 1, B, seed)
     rep["primary_false_call_native_minus_text"] = prim

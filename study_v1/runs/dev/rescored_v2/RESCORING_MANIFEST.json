@@ -1,0 +1,220 @@
+{
+  "phase": "DEV_ONLY_DERIVED_RESCORING",
+  "created_at_utc": "2026-11-20T02:29:42.289633+00:00",
+  "score_version": "V2_DEV_DISCOVERED_FORMAT_SEMANTIC_SEPARATION",
+  "scorer_sha256": "95ce0db46651069e4ac64c837b401405b76209b3562d96759f68d1d9712209be",
+  "source_script_sha256": "8f380f26f74fdf882787762a390381945d07f18d4018109e940d39ec02d6954d",
+  "raw_outputs_overwritten": false,
+  "inference_repeated": false,
+  "heldout_read": false,
+  "files": {
+    "generations_baseline_TEXT_CATALOGUE.jsonl": {
+      "original_sha256": "6acebde0a3be5181e45d4daadd537f2035dfa1a3ccdcd99a87db350b10a9f989",
+      "derived_sha256": "2f565ff60d9a6ceaa05dfa1f6c6e670e0bbacd5f5881ae8cf87a1b61dced6505",
+      "records": 32,
+      "semantically_changed_records": [
+        {
+          "uid": "BFCL_v4_irrelevance.json::irrelevance_109",
+          "changed_fields": [
+            "parse_error",
+            "valid_call",
+            "validity_issues",
+            "parser_diagnostics"
+          ]
+        },
+        {
+          "uid": "BFCL_v4_irrelevance.json::irrelevance_185",
+          "changed_fields": [
+            "parse_error",
+            "valid_call",
+            "validity_issues",
+            "parser_diagnostics"
+          ]
+        },
+        {
+          "uid": "BFCL_v4_simple_python.json::simple_python_123",
+          "changed_fields": [
+            "parse_error",
+            "valid_call",
+            "validity_issues",
+            "correct_call",
+            "parser_diagnostics"
+          ]
+        },
+        {
+          "uid": "BFCL_v4_simple_python.json::simple_python_173",
+          "changed_fields": [
+            "parse_error",
+            "valid_call",
+            "validity_issues",
+            "correct_call",
+            "parser_diagnostics"
+          ]
+        },
+        {
+          "uid": "BFCL_v4_simple_python.json::simple_python_198",
+          "changed_fields": [
+            "parse_error",
+            "valid_call",
+            "validity_issues",
+            "correct_call",
+            "parser_diagnostics"
+          ]
+        },
+        {
+          "uid": "BFCL_v4_simple_python.json::simple_python_199",
+          "changed_fields": [
+            "parse_error",
+            "valid_call",
+            "validity_issues",
+            "correct_call",
+            "parser_diagnostics"
+          ]
+        },
+        {
+          "uid": "BFCL_v4_simple_python.json::simple_python_226",
+          "changed_fields": [
+            "parse_error",
+            "valid_call",
+            "validity_issues",
+            "correct_call",
+            "parser_diagnostics"
+          ]
+        },
+        {
+          "uid": "BFCL_v4_simple_python.json::simple_python_268",
+          "changed_fields": [
+            "parse_error",
+            "valid_call",
+            "validity_issues",
+            "correct_call",
+            "parser_diagnostics"
+          ]
+        },
+        {
+          "uid": "BFCL_v4_simple_python.json::simple_python_322",
+          "changed_fields": [
+            "parse_error",
+            "valid_call",
+            "validity_issues",
+            "correct_call",
+            "parser_diagnostics"
+          ]
+        },
+        {
+          "uid": "BFCL_v4_simple_python.json::simple_python_33",
+          "changed_fields": [
+            "parse_error",
+            "valid_call",
+            "validity_issues",
+            "correct_call",
+            "parser_diagnostics"
+          ]
+        },
+        {
+          "uid": "BFCL_v4_simple_python.json::simple_python_335",
+          "changed_fields": [
+            "parse_error",
+            "valid_call",
+            "validity_issues",
+            "correct_call",
+            "parser_diagnostics"
+          ]
+        },
+        {
+          "uid": "BFCL_v4_simple_python.json::simple_python_336",
+          "changed_fields": [
+            "parse_error",
+            "valid_call",
+            "validity_issues",
+            "correct_call",
+            "parser_diagnostics"
+          ]
+        },
+        {
+          "uid": "BFCL_v4_simple_python.json::simple_python_340",
+          "changed_fields": [
+            "parse_error",
+            "valid_call",
+            "validity_issues",
+            "correct_call",
+            "parser_diagnostics"
+          ]
+        },
+        {
+          "uid": "BFCL_v4_simple_python.json::simple_python_382",
+          "changed_fields": [
+            "parse_error",
+            "valid_call",
+            "validity_issues",
+            "correct_call",
+            "parser_diagnostics"
+          ]
+        },
+        {
+          "uid": "BFCL_v4_simple_python.json::simple_python_399",
+          "changed_fields": [
+            "parse_error",
+            "valid_call",
+            "validity_issues",
+            "correct_call",
+            "parser_diagnostics"
+          ]
+        },
+        {
+          "uid": "BFCL_v4_simple_python.json::simple_python_47",
+          "changed_fields": [
+            "parse_error",
+            "valid_call",
+            "validity_issues",
+            "correct_call",
+            "parser_diagnostics"
+          ]
+        },
+        {
+          "uid": "BFCL_v4_simple_python.json::simple_python_5",
+          "changed_fields": [
+            "parse_error",
+            "valid_call",
+            "validity_issues",
+            "correct_call",
+            "parser_diagnostics"
+          ]
+        },
+        {
+          "uid": "BFCL_v4_simple_python.json::simple_python_98",
+          "changed_fields": [
+            "parse_error",
+            "valid_call",
+            "validity_issues",
+            "correct_call",
+            "parser_diagnostics"
+          ]
+        }
+      ]
+    },
+    "generations_baseline_NATIVE_TOOLS.jsonl": {
+      "original_sha256": "8a2fbfecb686fa52f37011afee1b94bb284cc9e8a681157ec6a0fdccaec1bac3",
+      "derived_sha256": "9e3b5699a818f69fbb2ffa55615c0ebc5168bd5c1699f27fbea8e3407c279bc6",
+      "records": 32,
+      "semantically_changed_records": []
+    }
+  },
+  "checked_invariant_fields": [
+    "call_attempt",
+    "false_call",
+    "broad_false_call",
+    "strict_abstention",
+    "operational_abstention",
+    "format_compliant",
+    "invalid_or_empty",
+    "unknown_name",
+    "empty_output",
+    "truncated",
+    "errored",
+    "multiple_calls"
+  ],
+  "total_records": 64,
+  "invariants_all_pass": true,
+  "status": "PASS"
+}

@@ -1,0 +1,28 @@
+{
+  "started_at_utc": "2026-11-20T02:30:38.427990+00:00",
+  "phase": "Root-authorized bounded DEV steering after approved V2 measurement amendment",
+  "score_version": "V2_DEV_DISCOVERED_FORMAT_SEMANTIC_SEPARATION",
+  "code_tree_sha256": "28871eaab6dbad6aae4f4d37f71356a1fc45b80d60f18871ba2fd1366a09614a",
+  "config_sha256": "7887091f2ab2c484d364602423bce467165a21bcdebe1e19f0c0548695a1aac8",
+  "max_new_generations": 128,
+  "alphas": [
+    0.01,
+    0.03
+  ],
+  "signs": [
+    1,
+    -1
+  ],
+  "subset_per_class": 8,
+  "heldout_allowed": false,
+  "automatic_retries": 0,
+  "command": [
+    ".venv/bin/python",
+    "-B",
+    "main_v1/proposal/code/run.py",
+    "--study-root",
+    "main_v1",
+    "--phase",
+    "dev-steer"
+  ]
+}

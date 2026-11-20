@@ -8,7 +8,7 @@ When a request does not match the available function, does the same model abstai
 
 ## Current status
 
-The [prospective protocol, code, split manifest and tests](study_v1/) are now frozen before main inference, following actual Claude Code Opus 5.5 Max implementation and independent source review. **The substantive held-out experiment has not run yet.** Development is authorized; held-out execution requires a separate review of the fitted artifacts. Failed checks and negative outcomes will be retained.
+The [prospective protocol, code, split manifest and tests](study_v1/) are now frozen before main inference, following actual Claude Code Opus 5.5 Max implementation and independent source review. **The substantive held-out experiment has not run yet.** Development is complete; the selected fitted artifacts and the explicit development-discovered measurement amendment are now frozen before held-out execution. Failed checks and negative outcomes will be retained.
 
 The proposed data are the published [Berkeley Function Calling Leaderboard](https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard) relevance/irrelevance tasks, with a separate live-data evaluation and controls for source, length and function-schema effects. The candidate open-weight model is Qwen2.5-1.5B-Instruct; exact revisions, licenses and selection rules will be recorded in the protocol.
 
@@ -21,6 +21,12 @@ The [fresh reproduction record](development_calibration/reproduction_R2/README.t
 ## Prospective main study
 
 The fixed bank contains 128 training, 32 development and 64 held-out tasks, balanced by source label and drawn from 224 distinct query/function/schema groups. Training uses activation prefills; development and held-out behaviour are separate. The bounded schedule allows up to 512 planned generations plus two numeric-calibration repeats, with a hard cap of 600 attempts. Optional steering remains conditional on the predeclared development gates. The analysis reports finite-bank descriptive estimates and uncertainty.
+
+## Development amendment and held-out freeze
+
+The [V2 measurement amendment](study_v1/MEASUREMENT_AMENDMENT_V2.json) separates semantic call utility from strict tool-tag formatting. Development inspection exposed an implementation error: a complete valid JSON call lacking only its closing tool tag had been treated as semantically incorrect. All 64 original outputs/scores are preserved; separately derived rescoring records are hash-linked. Primary call-attempt counts and strict-format diagnostics did not change. No development inference was repeated.
+
+All probe, surface-control and steering weights were fitted/selected using training and development data only. Text steering failed its development gate. Native steering selected layer 16 and alpha 0.01. These are selection results; the held-out baseline/probe/control and 96 native-steering generations have not run at this commit. The original public tag remains available.
 
 ## Methods and scope
 

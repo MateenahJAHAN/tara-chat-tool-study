@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-11-20T02:33:18.596108+00:00",
+  "ledger": {
+    "generations": 194,
+    "prefill_forwards": 416,
+    "preflight_model_forwards": 3,
+    "generation_model_forwards": 4791,
+    "prefill_model_forwards": 416,
+    "kl_model_forwards": 80
+  },
+  "files": {
+    "RUNTIME.json": "c2a280b841a48506cfc4d0a1148e26f40d4fbf9642e905949dc27974bee230a4",
+    "generations_baseline_NATIVE_TOOLS.jsonl": "8a2fbfecb686fa52f37011afee1b94bb284cc9e8a681157ec6a0fdccaec1bac3",
+    "generations_baseline_TEXT_CATALOGUE.jsonl": "6acebde0a3be5181e45d4daadd537f2035dfa1a3ccdcd99a87db350b10a9f989",
+    "prefill_query_only_QUERY_ONLY_CONTROL.jsonl": "b63303b515e6dd55cb80c75a7ce6474b6d0879c8f122d079c9b3170da9e296d0",
+    "prefill_trainingprefill_NATIVE_TOOLS.jsonl": "5ad6ead24194c6b8ec101dcab375241217c6baaf536e384379d1687586f124bf",
+    "prefill_trainingprefill_TEXT_CATALOGUE.jsonl": "b40bb8a3300565b9cc6509a61bb36134d8152225a9478a02d12a8573c4805626",
+    "rescored_v2/RESCORING_MANIFEST.json": "bcf99e005b48e6b68cd88fd6972d4d1f1bab2c656c83f0f9e2ffb02c753eac42",
+    "rescored_v2/generations_baseline_NATIVE_TOOLS.jsonl": "9e3b5699a818f69fbb2ffa55615c0ebc5168bd5c1699f27fbea8e3407c279bc6",
+    "rescored_v2/generations_baseline_TEXT_CATALOGUE.jsonl": "2f565ff60d9a6ceaa05dfa1f6c6e670e0bbacd5f5881ae8cf87a1b61dced6505",
+    "residuals_baseline_NATIVE_TOOLS.index.json": "90757dfbbdb980d04d15f31cdd4f6f3cf93574e635fbf400b37501f0ca992686",
+    "residuals_baseline_NATIVE_TOOLS.npy": "3f99b74dd135bc39374132af58da4218925b61932298b3fcf0d99fc419061c33",
+    "residuals_baseline_TEXT_CATALOGUE.index.json": "90757dfbbdb980d04d15f31cdd4f6f3cf93574e635fbf400b37501f0ca992686",
+    "residuals_baseline_TEXT_CATALOGUE.npy": "9cee9d8371d36940b3923e9bd55bbe93f26635a479adc20500f1d2f25e39386d",
+    "residuals_query_only_QUERY_ONLY_CONTROL.index.json": "8ca6b036829a59df3e4a3c6f07e840250f7f786f582a60bc5a1aec9f16985c2d",
+    "residuals_query_only_QUERY_ONLY_CONTROL.npy": "e77f45e88f76198cabff6268276c5734494efdd3662d01caec467a52827245db",
+    "residuals_trainingprefill_NATIVE_TOOLS.index.json": "7e2aaa4a46f76b0755d6f05f1cde32612f7312d20e219d71174f3c74a21a60d7",
+    "residuals_trainingprefill_NATIVE_TOOLS.npy": "09831573bdd209d6f55dc44b124f8a86e7436797837b09789e1a1853118487cb",
+    "residuals_trainingprefill_TEXT_CATALOGUE.index.json": "7e2aaa4a46f76b0755d6f05f1cde32612f7312d20e219d71174f3c74a21a60d7",
+    "residuals_trainingprefill_TEXT_CATALOGUE.npy": "5a256743d5a5a5966de8165f30197a71ef3b743aba74503074d02498fb556f74",
+    "schedule.json": "cec38f0581ccf5a624c4f37070ad7fc50a33f6c9787723fcb428badedfc73169",
+    "steering/generations_mm_a0.01_s-1_NATIVE_TOOLS.jsonl": "f76812ac8217cae63c3d264d2d0941c541e8b750717f08186a950b85caa74355",
+    "steering/generations_mm_a0.01_s-1_TEXT_CATALOGUE.jsonl": "f9b7a8698adbcb2bd2953ef957b09ac781820e491217a947f8236403c78d7d9e",
+    "steering/generations_mm_a0.01_s1_NATIVE_TOOLS.jsonl": "0c16252f3082c9b1e08081e2dcaa0349a6ba1be3c59d387a840228f747f30eb1",
+    "steering/generations_mm_a0.01_s1_TEXT_CATALOGUE.jsonl": "43905dda8157d5fedd9dfb30b5ef93cbaad3f6da3b7084a1d6f9e95222a576a7",
+    "steering/generations_mm_a0.03_s-1_NATIVE_TOOLS.jsonl": "e422963704374b022be0f284e4a0ae90eb33459cc48e17fb353bb53b71fc617a",
+    "steering/generations_mm_a0.03_s-1_TEXT_CATALOGUE.jsonl": "acf18952d1d9ccf98b92fe65c1206cc03795a2e2b64f814270759619df6b8f93",
+    "steering/generations_mm_a0.03_s1_NATIVE_TOOLS.jsonl": "8e628b57048a2ed0f80fdb72c0117924d674a75237dc4e1f3f4347bc4eaf7e8c",
+    "steering/generations_mm_a0.03_s1_TEXT_CATALOGUE.jsonl": "322cb30afe7844e73bf8d18fb6158547ecf847021e0cb958a5d4d6ad6065a9c3"
+  },
+  "heldout_outputs_accessed": false
+}

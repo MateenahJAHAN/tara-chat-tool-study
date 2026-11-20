@@ -1,0 +1,18 @@
+{
+  "approved_method_recorded_at_utc": "2026-11-20T02:27:05.232513+00:00",
+  "authority": "Root collaboration approval in this session after DEV_SCORING_ISSUE.json disclosure",
+  "phase": "DEVELOPMENT_DISCOVERED_BEFORE_HELDOUT",
+  "original_public_tag": "v0.1-prospective-plan",
+  "original_public_commit": "13ccb3a",
+  "original_parser_sha256": "aaa3c2c1a5ee236269b975c8603d48538740e06426214313b1b379e2539e3fe3",
+  "candidate_parser_sha256": "95ce0db46651069e4ac64c837b401405b76209b3562d96759f68d1d9712209be",
+  "method": "Complete finite duplicate-free strict JSON name/arguments payload with only missing closing tool tag may receive semantic name/argument/reference credit. Strict protocol format and invalid-output diagnostics stay unchanged. No credit for incomplete/embedded/Python/extra-call/unknown-name/invalid-argument cases.",
+  "original_outputs_scores_reports": "version_history/v1_before_dev_measurement_amendment; original baseline JSONL paths remain byte-identical",
+  "derived_scores_directory": "runs/dev/rescored_v2",
+  "rescoring_scope": "All64development outputs, identically; no additional inference",
+  "model_inputs_groups_weights_vectors_unchanged": true,
+  "probe_fitting_unchanged": "Uses only fixed labels/activations, so no new layer/C/control fitting or selection",
+  "development_outputs_seen_before_amendment": 64,
+  "heldout_outputs_seen": 0,
+  "independent_review": "Candidate delta reviewed by parent operator, authored/tested by independent scoring reviewer;21original+8new candidate methods pass; full integration tests follow"
+}

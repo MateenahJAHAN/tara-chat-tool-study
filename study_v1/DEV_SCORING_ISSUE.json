@@ -1,0 +1,27 @@
+{
+  "recorded_at_utc": "2026-11-20T02:23:27.855483+00:00",
+  "issue_id": "DEV_SCORER_FORMAT_SEMANTIC_001",
+  "status": "CANDIDATE_CORRECTION_PENDING_ROOT_METHOD_APPROVAL",
+  "discovered_after_actual_development_generations": 64,
+  "discovered_before_dev_steering": true,
+  "heldout_generations": 0,
+  "frozen_original_parser_sha256": "aaa3c2c1a5ee236269b975c8603d48538740e06426214313b1b379e2539e3fe3",
+  "original_raw_scored_file_sha256": {
+    "generations_baseline_TEXT_CATALOGUE.jsonl": "6acebde0a3be5181e45d4daadd537f2035dfa1a3ccdcd99a87db350b10a9f989",
+    "generations_baseline_NATIVE_TOOLS.jsonl": "8a2fbfecb686fa52f37011afee1b94bb284cc9e8a681157ec6a0fdccaec1bac3"
+  },
+  "old_behaviour_report_sha256": "28d66420d390da32609226334069d6b27e168eddb093883d0bd8aee48bb7fa63",
+  "observed_relevant_TEXT_cases": 16,
+  "observed_error": "Complete finite valid JSON name/object arguments, EOS, absent closing tool tag => unclosed_tag contaminates semantic parse_error/valid_call/correct_call. Protocol format legitimately invalid.",
+  "intended_contract": "Keep semantic argument/reference utility separate from protocol format as stated in original frozen design. Primary any-call attempt endpoint already counts all such attempts.",
+  "candidate_change": "Classify unclosed_tag alone as a format diagnostic when a complete payload parsed; preserve strict format_compliant and invalid_or_empty. Incomplete JSON and other semantic errors remain invalid.",
+  "no_planned_change": [
+    "model/weights/runtime/dtype",
+    "input IDs/groups/splits/prompts",
+    "generation decoding",
+    "primary call-attempt detection",
+    "probe labels/layer/C-selection rules",
+    "raw generated tokens or activations"
+  ],
+  "retention": "Preserve old parser/tests/report/raw scored copies. Re-score same raw outputs to a new derived version; no model rerun. Explicitly development-discovered amendment, not retrospectively declared pre-outcome."
+}

@@ -1,0 +1,51 @@
+test_fixed_artifact_tree_hashes (test_fitted_gate.FittedArtifactGate.test_fixed_artifact_tree_hashes) ... ok
+test_missing_or_changed_root_approval_rejected (test_fitted_gate.FittedArtifactGate.test_missing_or_changed_root_approval_rejected) ... ok
+test_mutated_dev_measurement_rejected (test_fitted_gate.FittedArtifactGate.test_mutated_dev_measurement_rejected) ... ok
+test_mutated_fitted_weights_rejected (test_fitted_gate.FittedArtifactGate.test_mutated_fitted_weights_rejected) ... ok
+test_bad_payload_values_still_invalid_or_incorrect (test_format_only_amendment.FormatOnlyAmendmentTests.test_bad_payload_values_still_invalid_or_incorrect) ... ok
+test_complete_closed_control (test_format_only_amendment.FormatOnlyAmendmentTests.test_complete_closed_control) ... ok
+test_complete_payload_missing_close_is_format_only (test_format_only_amendment.FormatOnlyAmendmentTests.test_complete_payload_missing_close_is_format_only) ... ok
+test_extra_call_or_text_is_not_excused_by_missing_close (test_format_only_amendment.FormatOnlyAmendmentTests.test_extra_call_or_text_is_not_excused_by_missing_close) ... ok
+test_incomplete_json_is_semantic_failure (test_format_only_amendment.FormatOnlyAmendmentTests.test_incomplete_json_is_semantic_failure) ... ok
+test_non_eos_never_correct (test_format_only_amendment.FormatOnlyAmendmentTests.test_non_eos_never_correct) ... ok
+test_primary_attempt_unchanged (test_format_only_amendment.FormatOnlyAmendmentTests.test_primary_attempt_unchanged) ... ok
+test_unclosed_python_embedded_or_alias_is_not_exempt (test_format_only_amendment.FormatOnlyAmendmentTests.test_unclosed_python_embedded_or_alias_is_not_exempt) ... ok
+test_duplicate_uid_rejected (test_group_selection.GroupSelectionChecks.test_duplicate_uid_rejected) ... ok
+test_group_cap_global_and_exact_balance (test_group_selection.GroupSelectionChecks.test_group_cap_global_and_exact_balance) ... ok
+test_matching_reassigns_shared_group (test_group_selection.GroupSelectionChecks.test_matching_reassigns_shared_group) ... ok
+test_mixed_group_not_double_counted (test_group_selection.GroupSelectionChecks.test_mixed_group_not_double_counted) ... ok
+test_order_invariance (test_group_selection.GroupSelectionChecks.test_order_invariance) ... ok
+test_zero_quota (test_group_selection.GroupSelectionChecks.test_zero_quota) ... ok
+test_BFCL_inspired_normalization_and_nested_reference (test_parser.ParserRegressionTests.test_BFCL_inspired_normalization_and_nested_reference) ... ok
+test_bool_enum_is_not_integer_recursively (test_parser.ParserRegressionTests.test_bool_enum_is_not_integer_recursively) ... ok
+test_bounded_total_error_records (test_parser.ParserRegressionTests.test_bounded_total_error_records) ... ok
+test_canonical_control (test_parser.ParserRegressionTests.test_canonical_control) ... ok
+test_chained_or_computed_expression_not_valid_prefix (test_parser.ParserRegressionTests.test_chained_or_computed_expression_not_valid_prefix) ... ok
+test_duplicate_json_and_nonfinite_rejected (test_parser.ParserRegressionTests.test_duplicate_json_and_nonfinite_rejected) ... ok
+test_exact_abstention_only (test_parser.ParserRegressionTests.test_exact_abstention_only) ... ok
+test_invalid_aggregate_includes_known_invalid_classes (test_parser.ParserRegressionTests.test_invalid_aggregate_includes_known_invalid_classes) ... ok
+test_known_C0_optional_reference (test_parser.ParserRegressionTests.test_known_C0_optional_reference) ... ok
+test_large_integer_reference_does_not_collapse (test_parser.ParserRegressionTests.test_large_integer_reference_does_not_collapse) ... ok
+test_legacy_API_shape (test_parser.ParserRegressionTests.test_legacy_API_shape) ... ok
+test_lossy_python_is_invalid (test_parser.ParserRegressionTests.test_lossy_python_is_invalid) ... ok
+test_malformed_unwrapped_intents (test_parser.ParserRegressionTests.test_malformed_unwrapped_intents) ... ok
+test_name_agnostic_primary (test_parser.ParserRegressionTests.test_name_agnostic_primary) ... ok
+test_no_generated_execution (test_parser.ParserRegressionTests.test_no_generated_execution) ... ok
+test_no_nested_argument_double_count (test_parser.ParserRegressionTests.test_no_nested_argument_double_count) ... ok
+test_non_eos_cannot_abstain (test_parser.ParserRegressionTests.test_non_eos_cannot_abstain) ... ok
+test_only_whole_canonical_block_format (test_parser.ParserRegressionTests.test_only_whole_canonical_block_format) ... ok
+test_recursive_schema (test_parser.ParserRegressionTests.test_recursive_schema) ... ok
+test_unknown_and_malformed_schemas_fail_closed (test_parser.ParserRegressionTests.test_unknown_and_malformed_schemas_fail_closed) ... ok
+test_whole_output_multiple_encodings (test_parser.ParserRegressionTests.test_whole_output_multiple_encodings) ... ok
+test_nonfinite_activation_row_cannot_be_dropped (test_runtime_and_probe_state.FittedStateChecks.test_nonfinite_activation_row_cannot_be_dropped) ... ok
+test_serialized_surface_models_reconstruct_scores (test_runtime_and_probe_state.FittedStateChecks.test_serialized_surface_models_reconstruct_scores) ... ok
+test_nonfinite_first_logits_stop (test_runtime_and_probe_state.RuntimeGuards.test_nonfinite_first_logits_stop) ... ok
+test_nonfinite_kl_stops (test_runtime_and_probe_state.RuntimeGuards.test_nonfinite_kl_stops) ... ok
+test_nonfinite_later_decode_stops (test_runtime_and_probe_state.RuntimeGuards.test_nonfinite_later_decode_stops) ... ok
+test_nonfinite_residual_stops_prefill (test_runtime_and_probe_state.RuntimeGuards.test_nonfinite_residual_stops_prefill) ... ok
+test_old_scores_require_complete_hashed_derivation (test_score_version_consumers.ExplicitScoreVersion.test_old_scores_require_complete_hashed_derivation) ... ok
+
+----------------------------------------------------------------------
+Ran 46 tests in 0.060s
+
+OK

@@ -621,10 +621,21 @@ def _score(text, stop_reason, tool, label, possible_answer):
         raise ParseFailure("output_size_limit")
     attempts, broad_extra = extract_attempts(body, {tool["function"]["name"]})
     one = attempts[0] if len(attempts) == 1 else None
-    parser_errors = [error for attempt in attempts for error in attempt["errors"]]
     issues = validity_issues(one["name"], one["args"], tool) if one else None
+    # DEV-discovered, prospectively approved semantic/format separation is
+    # deliberately narrow: only one complete strict JSON name/arguments object
+    # with valid catalogue/schema fields can excuse its missing close delimiter.
+    format_only_unclosed = bool(one and body.startswith(TAG_OPEN) and one["kind"] == "tagged" and not one["closed"]
+                               and one["strict_json"] and one["parse_mode"] == "json"
+                               and one["keys"] == ["arguments", "name"]
+                               and isinstance(one["name"], str) and isinstance(one["args"], dict)
+                               and one["errors"] == ["unclosed_tag"] and not issues)
+    parser_errors = [error for attempt in attempts for error in attempt["errors"]
+                     if not (attempt is one and format_only_unclosed and error == "unclosed_tag")]
+    format_errors = ["unclosed_tag"] if format_only_unclosed else []
     if one and one["errors"]:
-        issues = list(issues or []) + list(one["errors"])
+        issues = list(issues or []) + [error for error in one["errors"]
+                                      if not (format_only_unclosed and error == "unclosed_tag")]
     exact_no_call = body == "NO_CALL"
     unknown = bool(body) and not attempts and not exact_no_call
     format_ok = _format_compliant(body, attempts)
@@ -654,6 +665,7 @@ def _score(text, stop_reason, tool, label, possible_answer):
         "invalid_or_empty": bool(invalid), "unknown_output": unknown,
         "protocol_format_error": bool(attempts) and not format_ok,
         "parser_diagnostics": parser_errors, "scorer_error": None,
+        "format_diagnostics": format_errors,
         "invalid_stop_reason": invalid_stop,
     }
 

@@ -1,0 +1,166 @@
+{
+  "design_id": "BFCL_IFACE_PROBE_V1_OPERATOR_AMENDED",
+  "created_utc": "2026-11-20T02:33:18.587988+00:00",
+  "probe_selection_sha256": "0728accaef521ec32c1f26aa736fb530ad8f3631a6e9386f9cbc0b980a57f9e3",
+  "probe_weights_sha256": "4c0ad0c31b87d2d73e5eda8d230474e54e85e93c924d639689393a6476cf93a1",
+  "baseline_models_sha256": "150adf1837f4f4cda33cd53c675bc80b562407cb7b17befeed7439815aa2dfe1",
+  "control_weights_sha256": "85dc0463e3baa72e9e504e2df556e02cdabc42a19c9e248c07d37409f8c31112",
+  "steering_vectors_sha256": "b66c581e99bcd592b47eefc098b75504d2cf5ea117064beecdf7f019e3a40df8",
+  "probe_selection": {
+    "MM__TEXT_CATALOGUE": {
+      "layer": 15,
+      "C": null,
+      "dev_auroc": 0.99609375,
+      "dev_bacc": 0.9375,
+      "threshold": -35.55529022216797
+    },
+    "LR__TEXT_CATALOGUE": {
+      "layer": 20,
+      "C": 0.01,
+      "dev_auroc": 1.0,
+      "dev_bacc": 0.9375,
+      "threshold": 0.0
+    },
+    "MM__NATIVE_TOOLS": {
+      "layer": 16,
+      "C": null,
+      "dev_auroc": 0.99609375,
+      "dev_bacc": 0.9375,
+      "threshold": -94.23944091796875
+    },
+    "LR__NATIVE_TOOLS": {
+      "layer": 15,
+      "C": 0.001,
+      "dev_auroc": 0.9921875,
+      "dev_bacc": 0.9375,
+      "threshold": 0.0
+    },
+    "MM__QUERY_ONLY_CONTROL": {
+      "layer": 15,
+      "C": null,
+      "dev_auroc": 0.98828125,
+      "dev_bacc": 0.875,
+      "threshold": -5.8414626121521
+    },
+    "LR__QUERY_ONLY_CONTROL": {
+      "layer": 13,
+      "C": 0.001,
+      "dev_auroc": 0.97265625,
+      "dev_bacc": 0.875,
+      "threshold": 0.0
+    }
+  },
+  "steering": {
+    "TEXT_CATALOGUE": {
+      "entry": {
+        "dev_auroc": 0.99609375,
+        "dev_false_call_rate": 0.125
+      },
+      "entry_pass": true,
+      "layer": 15,
+      "sweep": [
+        {
+          "alpha": 0.01,
+          "sign": 1,
+          "dev_false_call": 0.125,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.5625,
+          "completion_kl": 1.7086708623992308e-05,
+          "eligible": false
+        },
+        {
+          "alpha": 0.01,
+          "sign": -1,
+          "dev_false_call": 0.125,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.5625,
+          "completion_kl": 1.69610918305807e-05,
+          "eligible": false
+        },
+        {
+          "alpha": 0.03,
+          "sign": 1,
+          "dev_false_call": 0.125,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.5625,
+          "completion_kl": 0.00015595709214721865,
+          "eligible": false
+        },
+        {
+          "alpha": 0.03,
+          "sign": -1,
+          "dev_false_call": 0.125,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.5625,
+          "completion_kl": 0.00015172277699093684,
+          "eligible": false
+        }
+      ],
+      "selected": null,
+      "residual_norm_scale": 46.706661224365234,
+      "status": "STEERING_GATE_FAILED",
+      "dev_baseline": {
+        "false_call": 0.125,
+        "correct_call": 1.0,
+        "invalid_or_empty": 0.5625
+      }
+    },
+    "NATIVE_TOOLS": {
+      "entry": {
+        "dev_auroc": 0.99609375,
+        "dev_false_call_rate": 0.375
+      },
+      "entry_pass": true,
+      "layer": 16,
+      "sweep": [
+        {
+          "alpha": 0.01,
+          "sign": 1,
+          "dev_false_call": 0.125,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.0625,
+          "completion_kl": 4.84190647753735e-06,
+          "eligible": true
+        },
+        {
+          "alpha": 0.01,
+          "sign": -1,
+          "dev_false_call": 0.25,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.0625,
+          "completion_kl": 4.557471307009564e-06,
+          "eligible": false
+        },
+        {
+          "alpha": 0.03,
+          "sign": 1,
+          "dev_false_call": 0.125,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.0625,
+          "completion_kl": 4.639152189156448e-05,
+          "eligible": true
+        },
+        {
+          "alpha": 0.03,
+          "sign": -1,
+          "dev_false_call": 0.5,
+          "dev_correct_call": 1.0,
+          "dev_invalid_or_empty": 0.0,
+          "completion_kl": 3.884829166622694e-05,
+          "eligible": false
+        }
+      ],
+      "selected": {
+        "alpha": 0.01,
+        "sign": 1
+      },
+      "residual_norm_scale": 49.08722686767578,
+      "status": "SELECTED",
+      "dev_baseline": {
+        "false_call": 0.25,
+        "correct_call": 1.0,
+        "invalid_or_empty": 0.0625
+      }
+    }
+  }
+}

@@ -259,5 +259,7 @@
     "numpy": "2.3.5",
     "scikit-learn": "1.9.1",
     "safetensors": "0.7.0"
-  }
+  },
+  "measurement_version": "V2_DEV_DISCOVERED_FORMAT_SEMANTIC_SEPARATION",
+  "dev_scores_subdirectory": "rescored_v2"
 }

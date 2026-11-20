@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-20T02:16:57.818391+00:00",
+  "actual_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dtype": "torch.float32",
+  "device": "mps:0",
+  "attention": "eager",
+  "package_versions": {
+    "torch": "2.15.0",
+    "transformers": "5.2.0",
+    "numpy": "2.3.5",
+    "scikit-learn": "1.9.1",
+    "safetensors": "0.7.0"
+  },
+  "model_weights_changed": false,
+  "external_functions_executed": false
+}

@@ -1,0 +1,7 @@
+{
+  "calibration_only_id": "simple_python_0",
+  "rendered_prompt": "<|im_start|>system\nDecide whether a listed function applies to the user request. If one applies, emit one call as <tool_call>{\"name\":...,\"arguments\":...}</tool_call>. Otherwise reply NO_CALL. Do not call unrelated functions or guess missing required arguments. Do not execute external actions.\nFunction catalogue (JSON):\n{\"type\": \"function\", \"function\": {\"name\": \"calculate_triangle_area\", \"description\": \"Calculate the area of a triangle given its base and height.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"base\": {\"type\": \"integer\", \"description\": \"The base of the triangle.\"}, \"height\": {\"type\": \"integer\", \"description\": \"The height of the triangle.\"}, \"unit\": {\"type\": \"string\", \"description\": \"The unit of measure (defaults to 'units' if not specified)\"}}, \"required\": [\"base\", \"height\"]}}}<|im_end|>\n<|im_start|>user\nFind the area of a triangle with a base of 10 units and height of 5 units.<|im_end|>\n<|im_start|>assistant\n",
+  "prompt_sha256": "42e590c3ccd21f5ea746ede07229ef6803b7947e0b91f3d9d015c82731cd3f3a",
+  "generation_repeats": 2,
+  "not_in_main_bank": true
+}

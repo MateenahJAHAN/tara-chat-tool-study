@@ -1,0 +1,79 @@
+{
+  "recorded_at_utc": "2026-11-20T02:25:15.792000+00:00",
+  "phase": "Dev-only fitting completed before parser semantic/format amendment",
+  "source_code_tree_at_fit": "4257b4575385c8c60f50b14af0dde461ac4ff853d75a8418c2bfef1cd57cd02e",
+  "heldout_used": false,
+  "fitting_uses": "Frozen source-category labels and activations only; generated-output scores are not probe fitting/selection inputs",
+  "fitted_files_sha256": {
+    "baseline_models.json": "150adf1837f4f4cda33cd53c675bc80b562407cb7b17befeed7439815aa2dfe1",
+    "probe_weights.npz": "4c0ad0c31b87d2d73e5eda8d230474e54e85e93c924d639689393a6476cf93a1",
+    "probe_selection.json": "0728accaef521ec32c1f26aa736fb530ad8f3631a6e9386f9cbc0b980a57f9e3",
+    "control_weights.npz": "85dc0463e3baa72e9e504e2df556e02cdabc42a19c9e248c07d37409f8c31112"
+  },
+  "selected": {
+    "MM__TEXT_CATALOGUE": {
+      "layer": 15,
+      "C": null,
+      "dev_auroc": 0.99609375,
+      "dev_bacc": 0.9375,
+      "threshold": -35.55529022216797
+    },
+    "LR__TEXT_CATALOGUE": {
+      "layer": 20,
+      "C": 0.01,
+      "dev_auroc": 1.0,
+      "dev_bacc": 0.9375,
+      "threshold": 0.0
+    },
+    "MM__NATIVE_TOOLS": {
+      "layer": 16,
+      "C": null,
+      "dev_auroc": 0.99609375,
+      "dev_bacc": 0.9375,
+      "threshold": -94.23944091796875
+    },
+    "LR__NATIVE_TOOLS": {
+      "layer": 15,
+      "C": 0.001,
+      "dev_auroc": 0.9921875,
+      "dev_bacc": 0.9375,
+      "threshold": 0.0
+    },
+    "MM__QUERY_ONLY_CONTROL": {
+      "layer": 15,
+      "C": null,
+      "dev_auroc": 0.98828125,
+      "dev_bacc": 0.875,
+      "threshold": -5.8414626121521
+    },
+    "LR__QUERY_ONLY_CONTROL": {
+      "layer": 13,
+      "C": 0.001,
+      "dev_auroc": 0.97265625,
+      "dev_bacc": 0.875,
+      "threshold": 0.0
+    }
+  },
+  "baselines": {
+    "length": {
+      "C": 0.01,
+      "dev_auroc": 0.8828125
+    },
+    "overlap": {
+      "C": 0.001,
+      "dev_auroc": 0.9375
+    },
+    "tfidf_query": {
+      "C": 0.001,
+      "dev_auroc": 0.91015625
+    },
+    "tfidf_schema": {
+      "C": 0.001,
+      "dev_auroc": 0.6015625
+    },
+    "tfidf_both": {
+      "C": 0.01,
+      "dev_auroc": 0.71875
+    }
+  }
+}

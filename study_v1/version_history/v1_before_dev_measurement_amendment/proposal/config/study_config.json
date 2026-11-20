@@ -1,0 +1,263 @@
+{
+  "design_id": "BFCL_IFACE_PROBE_V1_OPERATOR_AMENDED",
+  "model": {
+    "id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "files_sha256": {
+      "LICENSE": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+      "README.md": "2e1bcd8bd964728a820be709fa0f7b9dd54817a94fd2254c535df70c5e67fada",
+      "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+      "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+      "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "dtype": "float32",
+    "device": "mps",
+    "attn_implementation": "eager",
+    "eos_token_ids": [
+      151645,
+      151643
+    ],
+    "tool_call_token_id": 151657,
+    "no_token_id": 8996,
+    "max_new_tokens": 256,
+    "max_input_tokens": 2048,
+    "n_layers": 28,
+    "width": 1536,
+    "hook_identity_tol": 0.001
+  },
+  "data": {
+    "files": {
+      "BFCL_v4_irrelevance.json": {
+        "sha256": "2b6ed4c2e992cdcf5f1678a701851f944bef7550ee026ed1ddb89efed5be01a6",
+        "git_blob_sha1": "0077629949f2d52734cef2f110b0d040d8c47554",
+        "rows": 240
+      },
+      "BFCL_v4_simple_python.json": {
+        "sha256": "82dd63ba502eb2520c6b5d1d9a5c4b590e03ff261565175561f6228a367d1991",
+        "git_blob_sha1": "356a0db61e54eb1d92d8e10d014463cf2eb513cc",
+        "rows": 400
+      },
+      "BFCL_v4_live_irrelevance.json": {
+        "sha256": "6559fda2beaceb609a2cd2e504c65b4a56cb448e1ef88fddfd199e163d163349",
+        "git_blob_sha1": "547f60220b546ea5c864815dbb310b2f46ec0f43",
+        "rows": 884
+      },
+      "BFCL_v4_live_simple.json": {
+        "sha256": "1af2ac87dca47556db7b7e37e51e28b459a38b594e3c7b3c792b4903598ca0c4",
+        "git_blob_sha1": "e8f4b8d33c07753affc77bfc4a646f94109de5af",
+        "rows": 258
+      },
+      "possible_answer_BFCL_v4_simple_python.json": {
+        "sha256": "90cd5bc653690ee8e459b5b3f3fc9458606f7f3fcbf795bb51b7dc581f8c86dc",
+        "git_blob_sha1": "268c55641a21b51fc15730ce39ce906444a935a1",
+        "rows": 400
+      },
+      "possible_answer_BFCL_v4_live_simple.json": {
+        "sha256": "fec9cfa9744a936f9126981e85a2023da1e63e273eafebc81923a1162fad70ce",
+        "git_blob_sha1": "2c4778cee08e5ce7b236861de9a927d3ea7cde1f",
+        "rows": 258
+      },
+      "BFCL_REPOSITORY_LICENSE": {
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "rows": null
+      }
+    },
+    "native_sources": {
+      "BFCL_v4_simple_python.json": 0,
+      "BFCL_v4_irrelevance.json": 1
+    },
+    "live_sources": {
+      "BFCL_v4_live_simple.json": 0,
+      "BFCL_v4_live_irrelevance.json": 1
+    },
+    "possible_answers": {
+      "BFCL_v4_simple_python.json": "possible_answer_BFCL_v4_simple_python.json",
+      "BFCL_v4_live_simple.json": "possible_answer_BFCL_v4_live_simple.json"
+    },
+    "calibration_ids": [
+      "simple_python_0",
+      "irrelevance_0"
+    ]
+  },
+  "prompt": {
+    "rule": "Decide whether a listed function applies to the user request. If one applies, emit one call as <tool_call>{\"name\":...,\"arguments\":...}</tool_call>. Otherwise reply NO_CALL. Do not call unrelated functions or guess missing required arguments. Do not execute external actions.",
+    "text_header": "\nFunction catalogue (JSON):\n",
+    "query_only_placeholder": "(no functions listed)",
+    "type_map": {
+      "dict": "object",
+      "float": "number",
+      "tuple": "array"
+    },
+    "standard_types": [
+      "object",
+      "number",
+      "array",
+      "string",
+      "integer",
+      "boolean",
+      "null"
+    ]
+  },
+  "eligibility": {
+    "ascii_letter_min_frac": 0.95,
+    "safe_domain_patterns": [
+      "\\b(pathogens?|bio-?weapons?|biological weapons?|chemical weapons?|nerve agents?|sarin|novichok|ricin|anthrax|botulinum|smallpox|ebola|toxin synthesis|gain[- ]of[- ]function|weaponi[sz]\\w*|uranium enrichment|enriched uranium|dirty bomb|nuclear weapons?)\\b",
+      "\\b(explosives?|detonat\\w*|bombs?|grenades?|firearms?|ammunition|silencers?|ghost guns?)\\b",
+      "\\b(suicide|self[- ]harm|kill (myself|yourself|someone|him|her|them)|murder\\w*)\\b",
+      "\\b(porn\\w*|nsfw|sexual\\w*|nude\\w*)\\b",
+      "\\b(malware|ransomware|keyloggers?|exploits?|phishing|ddos|botnets?|sql injection|backdoors?|brute[- ]force)\\b",
+      "\\b(methamphetamine|fentanyl|synthesi[sz]e (drugs|meth|cocaine|heroin))\\b"
+    ],
+    "pii_query_patterns": [
+      "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}",
+      "\\b\\d{3}-\\d{2}-\\d{4}\\b"
+    ],
+    "secret_patterns": [
+      "\\b(sk-[A-Za-z0-9]{16,}|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{20,}|xox[baprs]-[A-Za-z0-9-]{10,}|AIza[0-9A-Za-z_\\-]{20,})"
+    ]
+  },
+  "grouping": {
+    "jaccard_min": 0.9,
+    "jaccard_min_shared": null,
+    "overlap_min": null,
+    "overlap_min_shared": null,
+    "tail_min_len": null,
+    "live_id_provenance_link": false,
+    "stopwords": [
+      "a",
+      "an",
+      "the",
+      "of",
+      "to",
+      "in",
+      "on",
+      "for",
+      "and",
+      "or",
+      "is",
+      "are",
+      "was",
+      "be",
+      "with",
+      "by",
+      "at",
+      "as",
+      "from",
+      "that",
+      "this",
+      "it",
+      "its",
+      "what",
+      "which",
+      "who",
+      "how",
+      "me",
+      "my",
+      "i",
+      "you",
+      "your",
+      "we",
+      "our",
+      "can",
+      "could",
+      "please",
+      "would",
+      "will",
+      "do",
+      "does",
+      "give",
+      "get",
+      "find",
+      "tell",
+      "show",
+      "about",
+      "into",
+      "if",
+      "there",
+      "their",
+      "than",
+      "then",
+      "so",
+      "some",
+      "any",
+      "all",
+      "using",
+      "use",
+      "given"
+    ],
+    "method": "NFKC/casefold exact query OR full namespaced function OR canonical full function/parameter schema; numeric-normalized token trigram Jaccard>=0.90 at>=8words"
+  },
+  "splits": {
+    "per_group_item_cap": 1,
+    "native_train_per_class": 64,
+    "native_dev_per_class": 16,
+    "dev_pool_min_per_class": 16,
+    "heldout_per_class_target": 32,
+    "heldout_per_class_minimum": 32,
+    "heldout_min_groups_per_class": 32,
+    "seed_split": 20261119,
+    "seed_selection": 20261120
+  },
+  "probes": {
+    "C_grid": [
+      0.001,
+      0.01,
+      0.1,
+      1.0
+    ],
+    "lr_max_iter": 5000,
+    "n_permutations": 20,
+    "permutation_seed_base": 20261200,
+    "n_random_directions": 20,
+    "random_direction_seed_base": 20261400,
+    "bootstrap_B": 2000,
+    "bootstrap_seed": 20261500,
+    "matched_subset_min_per_class": 10
+  },
+  "steering": {
+    "entry_min_dev_auroc": 0.75,
+    "entry_min_dev_false_call_rate": 0.1,
+    "alphas": [
+      0.01,
+      0.03
+    ],
+    "signs": [
+      1,
+      -1
+    ],
+    "min_false_call_reduction": 0.1,
+    "max_correct_call_drop": 0.1,
+    "max_invalid_increase": 0.05,
+    "max_completion_kl": 0.1,
+    "n_random_controls": 3,
+    "random_seed_base": 20261300,
+    "permuted_seed": 20261200,
+    "subset_per_class": 8,
+    "subset_seed": 20261121
+  },
+  "analysis": {
+    "bootstrap_B": 2000,
+    "bootstrap_seed": 20261500,
+    "alpha": 0.05,
+    "confirmatory_claims": false,
+    "scope": "Finite selected bank, descriptive paired group-resampling intervals only"
+  },
+  "caps": {
+    "hard_total_generations": 600,
+    "planned_main_generation_maximum": 512,
+    "training_generations": 0
+  },
+  "calibration_policy": "All C0 connected components CALIBRATION_ONLY, outside all main banks",
+  "runtime_versions": {
+    "torch": "2.15.0",
+    "transformers": "5.2.0",
+    "numpy": "2.3.5",
+    "scikit-learn": "1.9.1",
+    "safetensors": "0.7.0"
+  }
+}

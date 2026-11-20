@@ -1,6 +1,6 @@
 {
   "design_id": "BFCL_IFACE_PROBE_V1_OPERATOR_AMENDED",
-  "status": "OPERATOR_AMENDED_PROSPECTIVE_READY_FOR_ROOT_REVIEW_NOT_EXECUTION_APPROVAL",
+  "status": "V2_MEASUREMENT_AMENDMENT_AFTER_DEV_BEFORE_HELDOUT",
   "written_utc": "2026-11-20",
   "author_role": "Actual Opus5.5 Max draft lead, independently reviewed and amended by operators before any main inference; human authorship/contributions will be confirmed before any manuscript release",
   "title": "Does a native tool-template interface package change false function calls on BFCL irrelevance items, and do applicability probes transfer across interfaces and sources?",
@@ -125,7 +125,7 @@
     "operational_abstention": "Exact trimmed NO_CALL alone, EOS termination, no error/truncation; arbitrary no-detected-call text is a separate unknown/no-attempt diagnostic",
     "strict_abstention": "Same exact NO_CALL criterion; no substring credit",
     "valid_call": "parsed name in supplied catalogue, required args present, no unknown args, JSON-schema type/enum checks pass",
-    "correct_call": "Exactly one completely parsed semantically valid catalogue call matching pinned possible_answer under documented BFCL-inspired normalization/optional/nested-alternative rules. This is project-specific, not official BFCL scoring.",
+    "correct_call": "Exactly one semantically valid EOS-terminated catalogue call matching pinned possible_answer under BFCL-inspired normalization/optional/nested-alternative rules. A complete finite duplicate-free canonical JSON payload may qualify if its only defect is missing closing tool tag; protocol format/strict invalid-output remain separately failed. Incomplete payloads, extra calls, unknown names and invalid arguments do not qualify.",
     "format_compliant": "Whole cleaned body is exactly one complete canonical tagged JSON name/arguments object. Exact NO_CALL is recorded separately as strict abstention, not a formatted call.",
     "status_fields": "stop_reason (eos|max_new_tokens|error), empty_output, parse_error, unknown_name, multiple_calls; errors stay in denominators"
   },
@@ -222,5 +222,19 @@
     "generation cap reached (remaining jobs recorded as not run)"
   ],
   "amended_at_utc": "2026-11-20T02:04:05.254780+00:00",
-  "amendment_authority": "ROOT_METHOD_AMENDMENTS.json"
+  "amendment_authority": "ROOT_METHOD_AMENDMENTS.json",
+  "measurement_version": "V2_DEV_DISCOVERED_FORMAT_SEMANTIC_SEPARATION",
+  "measurement_amended_at_utc": "2026-11-20T02:32:53.707081+00:00",
+  "development_outputs_seen_at_amendment": 64,
+  "heldout_outputs_seen_at_amendment": 0,
+  "measurement_amendment": {
+    "original_pre_main_public_commit": "13ccb3a",
+    "original_tag": "v0.1-prospective-plan",
+    "record": "MEASUREMENT_AMENDMENT_V2.json",
+    "trigger": "Actual DEV inspection exposed implementation conflation of complete JSON argument correctness with a missing closing protocol tag",
+    "scope": "One complete finite duplicate-free strict JSON name/arguments payload, valid known name/schema arguments, and sole unclosed_tag diagnostic may get semantic utility credit. Strict format/invalid and any-call/abstention unchanged.",
+    "retention": "Original code/tag, all64raw outputs/original scores and original report retained. All64derived scores independently versioned and hash-bound; no inference rerun.",
+    "unchanged": "Input IDs/groups/splits, model/weights/dtype/decoding, primary endpoint, layer/C/probe/control weights and fixed steering schedule.",
+    "interpretation": "The entire study is not immutable or formally preregistered; this is an explicit development-discovered correction before heldout."
+  }
 }

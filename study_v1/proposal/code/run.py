@@ -21,6 +21,30 @@ def manifest_items(root, splits):
     return [x for x in m["items"] if x["split"] in splits]
 
 
+def dev_score_directory(root, cfg):
+    """Historical V1 outputs require explicit derived V2; fresh V2 reruns use their own scores."""
+    d = Path(root) / "runs/dev"
+    derived = d / cfg["dev_scores_subdirectory"]
+    if derived.exists():
+        manifest_path = derived / "RESCORING_MANIFEST.json"
+        if not manifest_path.exists():
+            raise RuntimeError("STOP: derived rescoring is incomplete")
+        m = common.read_json(manifest_path)
+        if m["status"] != "PASS" or m["score_version"] != cfg["measurement_version"]:
+            raise RuntimeError("STOP: wrong derived measurement version")
+        if m["scorer_sha256"] != common.sha256_file(common.CODE_DIR / "parser.py"):
+            raise RuntimeError("STOP: derived scorer source changed")
+        for filename, record in m["files"].items():
+            if common.sha256_file(derived / filename) != record["derived_sha256"]:
+                raise RuntimeError("STOP: derived scoring artifact changed")
+        return derived
+    for condition in common.CONDITIONS:
+        rows = common.read_jsonl(d / f"generations_baseline_{condition}.jsonl")
+        if not rows or any(row.get("score_version") != cfg["measurement_version"] for row in rows):
+            raise RuntimeError("STOP: historical scores need explicit V2 rescoring")
+    return d
+
+
 class Ledger:
     def __init__(self, root, cfg):
         self.path = Path(root) / "runs" / "GENERATION_LEDGER.json"
@@ -63,6 +87,7 @@ def run_items(model, tok, items, cond, cfg, out_dir, tag, ledger, capture=False,
             text, rec = "", {**rec, "generated_ids": [], "generated_text": "", "stop_reason": "error", "error": repr(exc)}
             if capture:
                 resid.append(np.full((cfg["model"]["n_layers"], cfg["model"]["width"]), np.nan, np.float32))
+        rec["score_version"] = cfg["measurement_version"]
         rec["score"] = outparser.score(text, rec["stop_reason"], it["tool"], it["label"], it["possible_answer"])
         common.append_jsonl(out_dir / f"generations_{tag}_{cond}.jsonl", rec)
         recs.append(rec)
@@ -213,7 +238,7 @@ def main():
         steering_weights = {}
         s, steering = cfg["steering"], {}
         for cond in common.CONDITIONS:
-            base_all = [r for r in common.read_jsonl(dev_dir / f"generations_baseline_{cond}.jsonl") if r["split"] == "DEV"]
+            base_all = [r for r in common.read_jsonl(dev_score_directory(root, cfg) / f"generations_baseline_{cond}.jsonl") if r["split"] == "DEV"]
             subset_uids = {x["uid"] for x in dev}
             base = [r for r in base_all if r["uid"] in subset_uids]
             mm = sel["selected"][f"MM__{cond}"]

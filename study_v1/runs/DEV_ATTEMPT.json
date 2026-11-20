@@ -1,0 +1,20 @@
+{
+  "started_at_utc": "2026-11-20T02:16:47.917428+00:00",
+  "phase": "Real frozen native train/dev only",
+  "public_prospective_commit": "13ccb3a",
+  "scheduled_training_generations": 0,
+  "scheduled_dev_generations": 64,
+  "scheduled_training_catalogue_prefills": 256,
+  "scheduled_query_only_prefills": 160,
+  "heldout_inference": false,
+  "automatic_retries": 0,
+  "command": [
+    ".venv/bin/python",
+    "-B",
+    "main_v1/proposal/code/run.py",
+    "--study-root",
+    "main_v1",
+    "--phase",
+    "dev-run"
+  ]
+}

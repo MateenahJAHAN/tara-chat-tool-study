@@ -1,0 +1,48 @@
+{
+  "verified_at_utc": "2026-11-20T02:20:31.680216+00:00",
+  "status": "PASS",
+  "actual_development_generations": 64,
+  "training_generations": 0,
+  "feature_sets": [
+    {
+      "feature_set": "TEXT_CATALOGUE",
+      "shape": [
+        160,
+        28,
+        1536
+      ],
+      "finite": true,
+      "unique_items": 160
+    },
+    {
+      "feature_set": "NATIVE_TOOLS",
+      "shape": [
+        160,
+        28,
+        1536
+      ],
+      "finite": true,
+      "unique_items": 160
+    },
+    {
+      "feature_set": "QUERY_ONLY_CONTROL",
+      "shape": [
+        160,
+        28,
+        1536
+      ],
+      "finite": true,
+      "unique_items": 160
+    }
+  ],
+  "retained_residual_vectors": 13440,
+  "scalar_values": 20643840,
+  "heldout_model_outputs_seen": 0,
+  "ledger": {
+    "generations": 66,
+    "prefill_forwards": 416,
+    "preflight_model_forwards": 3,
+    "generation_model_forwards": 1602,
+    "prefill_model_forwards": 416
+  }
+}

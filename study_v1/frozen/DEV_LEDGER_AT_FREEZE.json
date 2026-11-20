@@ -1,0 +1,8 @@
+{
+  "generations": 194,
+  "prefill_forwards": 416,
+  "preflight_model_forwards": 3,
+  "generation_model_forwards": 4791,
+  "prefill_model_forwards": 416,
+  "kl_model_forwards": 80
+}

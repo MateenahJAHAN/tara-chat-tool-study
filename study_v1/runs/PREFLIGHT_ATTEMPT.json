@@ -1,0 +1,22 @@
+{
+  "started_at_utc": "2026-11-20T02:16:11.054248+00:00",
+  "public_prospective_commit": "13ccb3a",
+  "public_tag": "v0.1-prospective-plan",
+  "root_dev_approval_sha256": "e159c25def55c4d73774142cbee4448dc4094590ddb9b22c11ad6c21b2b18387",
+  "source_hashes": {
+    "code_tree_sha256": "4257b4575385c8c60f50b14af0dde461ac4ff853d75a8418c2bfef1cd57cd02e",
+    "config_sha256": "7798c38c3a258ccb33d66a3ab7f279cdc58925fcf9b3624790252049556c22f2",
+    "split_manifest_sha256": "6e265ee4f4d667077a8e9793c8e2e1be01cd00737c74f04582b0003f2aaa93d9"
+  },
+  "command": [
+    ".venv/bin/python",
+    "-B",
+    "main_v1/proposal/code/run.py",
+    "--study-root",
+    "main_v1",
+    "--phase",
+    "preflight"
+  ],
+  "automatic_retries": 0,
+  "heldout_allowed": false
+}

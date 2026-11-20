@@ -1,5 +1,5 @@
 {
-  "study_status": "prospective main code/input freeze; development authorized; heldout not yet authorized",
+  "study_status": "development complete; V2 measurement amendment and fitted artifacts frozen before heldout",
   "main_heldout_inference_started": false,
   "research_question": "Function applicability across text and native tool interfaces",
   "initialization": "AI-assisted; not a claim of unaided personal work",
@@ -26,5 +26,27 @@
     "dev": 32,
     "heldout": 64,
     "unique_groups": 224
+  },
+  "measurement_version": "V2_DEV_DISCOVERED_FORMAT_SEMANTIC_SEPARATION",
+  "development_counts": {
+    "baseline_generations": 64,
+    "steering_generations": 128,
+    "numeric_repeats": 2,
+    "total_consumed": 194,
+    "rescoring_is_not_generation": 64
+  },
+  "heldout_schedule": {
+    "baseline": 128,
+    "native_steering": 96,
+    "text_steering": 0
+  },
+  "frozen_hashes": {
+    "code_tree_sha256": "28871eaab6dbad6aae4f4d37f71356a1fc45b80d60f18871ba2fd1366a09614a",
+    "config_sha256": "7887091f2ab2c484d364602423bce467165a21bcdebe1e19f0c0548695a1aac8",
+    "split_manifest_sha256": "6e265ee4f4d667077a8e9793c8e2e1be01cd00737c74f04582b0003f2aaa93d9",
+    "model_manifest_sha256": "f412a185d8af4ed396f1c078da54058e09e31af0aee851f4aeacf7014003be40",
+    "parser_sha256": "95ce0db46651069e4ac64c837b401405b76209b3562d96759f68d1d9712209be",
+    "selected_params_sha256": "75d11fd2249d8a4dd8186b4000e26f0558778e83151ce12f1d3c90a65f9ea58c",
+    "dev_record_sha256": "dcc6db9e9933f0a6d0d799e051ad2d9006cb6d1fbb8f68a266cbfb0bad0b1372"
   }
 }

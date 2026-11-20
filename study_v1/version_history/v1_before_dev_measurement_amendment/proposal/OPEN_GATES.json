@@ -1,0 +1,11 @@
+{
+  "design_id": "BFCL_IFACE_PROBE_V1_OPERATOR_AMENDED",
+  "root_prospective_code_review": "PENDING",
+  "input_count_gate": "PASS64/16/32perclass",
+  "synthetic_regression_gate": "PENDING_FINAL_AMENDED_SOURCE_TESTS",
+  "numeric_manual_runtime_preflight": "NOT_RUN",
+  "train_dev_and_selection": "NOT_RUN",
+  "root_fitted_hash_review": "NOT_RUN",
+  "heldout_execution": "LOCKED_NO_APPROVAL",
+  "main_model_outputs_seen": 0
+}
