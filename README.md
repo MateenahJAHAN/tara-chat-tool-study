@@ -10,6 +10,10 @@ On a new bank of 20 benign scope pairs, the native interface produced more out-o
 
 [Follow-up results and figures](followup_v2_tool_applicability/RESULTS.md) · [Frozen protocol](followup_v2_tool_applicability/PROTOCOL.md) · [Machine-readable verification](followup_v2_tool_applicability/verification.json)
 
+![False calls, correct calls, formatting and scope-pair outcomes on the matched bank](followup_v2_tool_applicability/figures/endpoint_counts.png)
+
+[Matched scope-pair design](followup_v2_tool_applicability/figures/study_design.svg)
+
 ## Held-out results
 
 The same 64 held-out requests were evaluated with a text function catalogue and the model's native tool template. There were 32 benchmark-labelled irrelevant requests and 32 relevant requests.
@@ -49,7 +53,7 @@ The pinned bank contains 128 training, 32 development and 64 held-out items from
 - Methods: paired interface packages, residual-stream mean/logistic probes, query/length/schema/lexical controls, permutation/random controls, and development-gated activation steering.
 - Course context: linear probes, model steering and evaluation in the [ARENA curriculum](https://github.com/ARENA-education/ARENA_materials). The implementation is original; course notebooks are not redistributed here.
 
-This estimates a whole interface-package difference on a finite selected benchmark bank. It does not isolate tool availability, establish general agent safety or support a clinical result. Source/category confounding, unknown benchmark contamination, small intervention subsets and exploratory uncertainty limit the conclusions. A larger matched-applicability study requires a separate prospective plan.
+This estimates an interface-package difference on a selected benchmark bank. Source and category cues, unknown benchmark contamination, and small intervention subsets limit the conclusions. The matched follow-up uses a separate bank and adds a second checkpoint.
 
 ## Freeze history and measurement correction
 
@@ -67,6 +71,8 @@ python -m unittest discover -s study_v1/proposal/tests
 
 Live reproduction requires the pinned model/data staged locally and a fresh workspace; the recorded held-out gate binds the original frozen artifacts. Model weights and large NPY activation banks are excluded from Git; activation hashes and fitted probes/control weights are retained. The earlier [development calibration](development_calibration/README.md) includes four real generations, an exact reproduction and the retained float16 failure.
 
-Actual Claude Code **Opus 5.5 with Max effort** drafted the research design and initial implementation. Independent operators reviewed and amended the code, ran the local open-weight model, scored outputs and audited the records. [AI-assistance provenance](study_v1/AI_ASSISTANCE_PROVENANCE.json) separates that work from Mateenah's personal contributions; a human contribution statement remains necessary before manuscript submission. Private prompts, reasoning streams, account settings and course files are excluded.
+## Contributions
+
+Claude Code Opus 5.5 drafted the original design and implementation. Operators reviewed and amended the code, ran the model, scored the outputs, and audited the records. Claude Fable 5.2 reviewed the follow-up design. Mateenah’s individual role in the design, implementation, analysis, and writing remains to be confirmed for a manuscript contribution statement. [Original study provenance](study_v1/AI_ASSISTANCE_PROVENANCE.json) · [Follow-up verification](followup_v2_tool_applicability/verification.json)
 
 Upstream models and benchmark data retain their own licences. This repository makes no official BFCL-score or new-mechanism claim.
