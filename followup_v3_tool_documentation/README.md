@@ -7,7 +7,7 @@ With published descriptions and original names, Qwen generated a schema-valid ca
 
 A model answering a request for East should abstain if a service covers only West, even when its manual was written in East. This experiment changes those two addresses independently and checks both the decision and the arguments of the resulting call.
 
-[Research paper](manuscript.md) · [Supplementary methods and results](supplement.md) · [Original TARA participant study](https://github.com/MateenahJAHAN/tara-chat-tool-study/tree/b0676becc8354be9849c165db6276f35ce0709ca)
+[Paper and supplement (PDF)](TARA_Tool_Applicability.pdf) · [Manuscript source](manuscript.md) · [Supplementary methods and results](supplement.md) · [Original TARA participant study](https://github.com/MateenahJAHAN/tara-chat-tool-study/tree/b0676becc8354be9849c165db6276f35ce0709ca)
 
 ## Two checkpoints, the same 512 requests
 
