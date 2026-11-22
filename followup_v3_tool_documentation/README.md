@@ -1,17 +1,20 @@
 # When a tool’s documentation address matches the request
 
-## Test on external documentation
+A service can cover West even when its manual was written in East. Would a model call that service for a request about East? We varied the service district and the documentation office independently, then repeated the office test with published tool descriptions.
 
-With published descriptions and original names, Qwen generated a schema-valid call to a distractor in 3/60 presentations and SmolLM2 in 24/60. Across 12 external location questions, changing only the office city produced one fewer distractor attempt in each model. Full instructions, independently authored descriptions and all model replies are available. [External study and figures](independent_descriptions/README.md) · [Blinded responses](independent_descriptions/TARA_Blind_Review.zip)
+[Paper and supplement (PDF)](TARA_Tool_Applicability.pdf) · [Manuscript](manuscript.md) · [Supplementary methods and results](supplement.md) · [Original TARA participant study](https://github.com/MateenahJAHAN/tara-chat-tool-study/tree/b0676becc8354be9849c165db6276f35ce0709ca)
 
+<a id="test-on-external-documentation"></a>
 
-A model answering a request for East should abstain if a service covers only West, even when its manual was written in East. This experiment changes those two addresses independently and checks both the decision and the arguments of the resulting call.
+## External documentation
 
-[Paper and supplement (PDF)](TARA_Tool_Applicability.pdf) · [Manuscript source](manuscript.md) · [Supplementary methods and results](supplement.md) · [Original TARA participant study](https://github.com/MateenahJAHAN/tara-chat-tool-study/tree/b0676becc8354be9849c165db6276f35ce0709ca)
+On 12 city questions from BFCL and When2Call, matching the documentation office to the requested city changed false attempts from 4/12 to 3/12 for Qwen2.5 and from 7/12 to 6/12 for SmolLM2. In the single-tool test, Qwen and SmolLM2 generated schema-valid calls to an unrelated function in 3/60 and 24/60 presentations under the original function name. [Questions, results and figures](independent_descriptions/README.md) · [Blinded responses](independent_descriptions/TARA_Blind_Review.zip)
 
-## Two checkpoints, the same 512 requests
+<a id="two-checkpoints-the-same-512-requests"></a>
 
-Changing only the office district converted 70/128 Qwen2.5 decisions from abstention to a false call. SmolLM2 attempted calls in both conditions on all 128 pairs. Both checkpoints returned the correct arguments for all 256 in-scope requests.
+## Fictional directories
+
+Each model saw the same 512 requests. When the service was out of scope, changing only the office district converted 70 of 128 paired Qwen2.5 decisions from abstention to a false call. SmolLM2 tried to call in both conditions on all 128 pairs. Each model returned the correct function and arguments on all 256 in-scope requests.
 
 ![Attempted calls by model, vocabulary, field order and district match](calls_by_scope.png)
 

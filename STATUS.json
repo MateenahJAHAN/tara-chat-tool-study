@@ -1,7 +1,14 @@
 {
-  "study_status": "development complete; V2 measurement amendment and fitted artifacts frozen before heldout",
-  "main_heldout_inference_started": false,
-  "research_question": "Function applicability across text and native tool interfaces",
+  "study_status": "Completed BFCL format study, matched-request study and documentation-address follow-up",
+  "main_heldout_inference_started": true,
+  "research_question": "When do language models attempt a call to a tool that cannot answer the request?",
+  "main_heldout_record": "study_v1/runs/heldout/HELDOUT_COMPLETE.json",
+  "results": {
+    "bfcl_formats": "study_v1/RESULTS.txt",
+    "matched_requests": "followup_v2_tool_applicability/RESULTS.md",
+    "documentation_address": "followup_v3_tool_documentation/README.md",
+    "external_descriptions": "followup_v3_tool_documentation/independent_descriptions/README.md"
+  },
   "initialization": "AI-assisted; not a claim of unaided personal work",
   "existing_engineering_pilot_pooled": false,
   "development_calibration": {

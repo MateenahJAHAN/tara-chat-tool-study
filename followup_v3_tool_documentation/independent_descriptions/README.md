@@ -6,7 +6,7 @@ With one unrelated tool offered under its published name, Qwen2.5-1.5B attempted
 
 We gave each model the actual reference function or one of the distractors that appeared with it in the source catalogue. Each presentation was repeated with the function name replaced by `lookup_function`. This isolates the contribution of the name while keeping the description and argument schema fixed. Function names, top-level descriptions and questions were screened against the earlier TARA manifests. None matched after case and punctuation normalization, including the rendered earlier scope substitutions. [Source manifests](sources.json) · [Overlap checks](holdout_check.json). The final bank includes 23 distinct questions, 23 function names, 63 distinct description texts, and 65 distinct full schemas. Twelve of the 23 questions concern movies. Each model completed 166 single-tool presentations. The published name and masked name are two presentations of the same example.
 
-| Checkpoint | Name | Reference selected | Reference + valid args¹ | Distractor attempts | Named distractor | Distractor rate² | Exact NO_CALL / other, distractors |
+| Checkpoint | Name | Reference selected | Reference + valid args¹ | Distractor attempts | Named distractor | Mean distractor rate per question² | Exact NO_CALL / other, distractors |
 |---|---|---|---|---|---|---|---|
 | Qwen2.5-1.5B | Source | 21/23 | 14/23 | 3/60 | 3/60 | 4.3% | 57 / 0 |
 | Qwen2.5-1.5B | Masked | 21/23 | 13/23 | 4/60 | 4/60 | 4.3% | 56 / 0 |
