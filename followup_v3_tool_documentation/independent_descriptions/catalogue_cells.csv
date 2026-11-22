@@ -1,0 +1,9 @@
+model,present,matches,n,calls,abstain,other,selected_offered,selected_reference,schema_and_reference,length
+qwen,False,False,12,4,8,0,4,0,0,0
+qwen,False,True,12,3,9,0,3,0,0,0
+qwen,True,False,12,11,1,0,11,10,5,0
+qwen,True,True,12,11,1,0,11,10,6,0
+smol,False,False,12,7,2,3,5,0,0,2
+smol,False,True,12,6,3,3,5,0,0,1
+smol,True,False,12,11,0,1,11,8,4,0
+smol,True,True,12,10,0,2,10,8,4,1

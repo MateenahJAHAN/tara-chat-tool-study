@@ -1,0 +1,28 @@
+{
+  "started_utc": "2026-11-22T00:19:46.537947+00:00",
+  "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dtype": "float32",
+  "device": "mps",
+  "attention": "eager",
+  "generation": {
+    "max_new_tokens": 72,
+    "do_sample": false,
+    "use_cache": true,
+    "pad_token_id": 151643,
+    "eos_token_id": [
+      151645,
+      151643
+    ],
+    "transformers_version": "5.2.0"
+  },
+  "sources_sha256": {
+    "ACTION_PROTOCOL.md": "894d40216c69961aea697f78e0c5289d7373587a6c5a85019a9db05e5c77770e",
+    "run_actions.py": "1475e11239353ba398adcd53fe06e875c33da6097d9278544d26860bdced21bf",
+    "run.py": "c9807ab5ef74443200a8be4a08f97b2629ac16556eb07e19099a2f5820886546",
+    "bank_spec.json": "0f60a4dce0f0d478179a72f33d41c38ceab611e44ace770121da73dfa2e13f6f"
+  },
+  "completed_utc": "2026-11-22T00:21:28.252914+00:00",
+  "elapsed_seconds": 101.71573837497272,
+  "raw_sha256": "bf7dd6d046eba2b4bd61191b26d3b6030430bd4ab1ba7230798927bc5f511dbe"
+}

@@ -1,0 +1,4 @@
+# Preserve the CRLF form of archived output from Python's CSV writer.
+*.csv -text whitespace=trailing-space,space-before-tab,cr-at-eol
+# Preserve the upstream license verbatim, including its final blank line.
+independent_descriptions/WHEN2CALL_DATA_LICENSE -text whitespace=-blank-at-eof

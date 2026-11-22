@@ -1,0 +1,44 @@
+{
+  "started_utc": "2026-11-22T00:15:35.979501+00:00",
+  "device": "mps",
+  "dtype": "float32",
+  "attention": "eager",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+  "model_files_sha256": {
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "sources_sha256": {
+    "PROTOCOL.md": "7f19b976abaca7fec6d7f1659be931c49db67afcadc7b46364453795421bd631",
+    "bank_spec.json": "0f60a4dce0f0d478179a72f33d41c38ceab611e44ace770121da73dfa2e13f6f",
+    "run.py": "c9807ab5ef74443200a8be4a08f97b2629ac16556eb07e19099a2f5820886546"
+  },
+  "versions": {
+    "torch": "2.15.0",
+    "transformers": "5.2.0",
+    "python": "3.12.11"
+  },
+  "letter_ids": [
+    32,
+    33
+  ],
+  "family_order": [
+    "library_hours",
+    "ferry_schedule",
+    "park_closure",
+    "museum_tickets",
+    "bus_fares",
+    "recycling_days",
+    "pool_hours",
+    "market_dates"
+  ],
+  "completed_utc": "2026-11-22T00:19:36.769799+00:00",
+  "elapsed_seconds": 247.10380791593343,
+  "raw_sha256": "6ef65a1c2a31f5c8cd3f13015236e231d578c4b03919d28e59994a0a1fbc8395"
+}

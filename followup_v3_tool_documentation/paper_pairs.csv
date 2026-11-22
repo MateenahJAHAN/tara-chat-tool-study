@@ -1,0 +1,17 @@
+model,vocabulary,office_first,endpoint,pairs,positive,negative,same,difference
+Qwen2.5,compass,False,attempt,32,32,0,0,1.0
+Qwen2.5,compass,False,exact,32,32,0,0,1.0
+Qwen2.5,compass,True,attempt,32,32,0,0,1.0
+Qwen2.5,compass,True,exact,32,32,0,0,1.0
+Qwen2.5,tree,False,attempt,32,4,0,28,0.125
+Qwen2.5,tree,False,exact,32,4,0,28,0.125
+Qwen2.5,tree,True,attempt,32,2,0,30,0.0625
+Qwen2.5,tree,True,exact,32,2,0,30,0.0625
+SmolLM2,compass,False,attempt,32,0,0,32,0.0
+SmolLM2,compass,False,exact,32,0,0,32,0.0
+SmolLM2,compass,True,attempt,32,0,0,32,0.0
+SmolLM2,compass,True,exact,32,0,13,19,-0.40625
+SmolLM2,tree,False,attempt,32,0,0,32,0.0
+SmolLM2,tree,False,exact,32,0,0,32,0.0
+SmolLM2,tree,True,attempt,32,0,0,32,0.0
+SmolLM2,tree,True,exact,32,1,14,17,-0.40625

@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-22T02:52:15.884516+00:00",
+  "files": {
+    "prepare.py": "432fe592de24e52b93e9c1c3baba92084726585a98d31c29308fa41133b8cd8b",
+    "run.py": "cbfaf5fb0ddb774866602adcf96b21d1ce2da07bb8c57c1b6335ec0eb9c2c21f",
+    "PROTOCOL.md": "0a79bced07dba26caffd309521e8405888456bd2c026c9782c1825f6a1e19b43",
+    "bank.jsonl": "82eb90c05701ce1169f15ae74f5a34eed969dd27c87999cd61d6e8b57fb8e789",
+    "sources.json": "714116d567e59bbd951ff7bc33e66b36dc8cb4a59a1988d7983e55bfd5823cb9"
+  }
+}

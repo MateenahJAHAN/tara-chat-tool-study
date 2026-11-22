@@ -42,6 +42,12 @@ The built-in format's steering settings were chosen on development data. On the 
 
 The formats differ in how tools are presented and how calls are written. The second experiment used hand-written requests, and the two models ran on different software and at different precision. The results compare formats within each model on these requests. Neither experiment executed the tools.
 
+## Third experiment · Does the documentation office change the call?
+
+In fictional directories, changing only the district where documentation was written induced 70 false calls in 128 paired Qwen requests. That effect did not transfer to the 12 city questions from BFCL and When2Call. Matching the office to the requested city changed Qwen's false-call count from four to three and SmolLM2's from seven to six. With a single unrelated function under its original name, the models supplied schema-valid calls on 3/60 and 24/60 presentations, respectively. No tool was executed. [Study and raw results](followup_v3_tool_documentation/README.md) · [External questions and scoring rules](followup_v3_tool_documentation/independent_descriptions/README.md)
+
+![Wrong-tool calls for the same twelve questions when the documentation office changed](followup_v3_tool_documentation/independent_descriptions/catalogue_office_pairs.png)
+
 ## Reproducing the results
 
 - **BFCL experiment** · [Setup guide](study_v1/proposal/README.txt), [requirements](study_v1/proposal/requirements.txt), [scores](study_v1/reports/behaviour_heldout.json), [test outputs](study_v1/runs/heldout/) and [development records](study_v1/runs/dev/). It used [Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/tree/989aa7980e4cf806f80c7fef2b1adb7bc71aa306) in float32 on MPS with eager attention, with BFCL at [revision `6ea5797`](https://github.com/ShishirPatil/gorilla/tree/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8). The split used 128 training, 32 development and 64 test requests, grouped by shared query, function or schema.

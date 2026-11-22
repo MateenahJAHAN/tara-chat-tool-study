@@ -1,0 +1,29 @@
+{
+  "raw_records": 768,
+  "controls": {
+    "archive_baseline": 128,
+    "identity_to_recipient": 128,
+    "service_embedding_to_donor": 128,
+    "office_embedding_to_donor": 128,
+    "mismatches": []
+  },
+  "independent_parser_unclassified": [],
+  "complete_sequences_changed_against_recipient": {
+    "baseline": 0,
+    "identity": 0,
+    "block_service": 0,
+    "block_office": 1,
+    "embed_service": 64,
+    "embed_office": 64
+  },
+  "first_token_top_two_logits_changed_against_recipient": {
+    "baseline": 0,
+    "identity": 0,
+    "block_service": 128,
+    "block_office": 128,
+    "embed_service": 128,
+    "embed_office": 128
+  },
+  "seconds": 356.2847886669915,
+  "raw_sha256": "f1c37f9e38b4ae0f56fd2f6702aa53c239dbcb4b26a941ed3af9f611bf7467d0"
+}

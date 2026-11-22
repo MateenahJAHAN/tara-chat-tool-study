@@ -1,0 +1,10 @@
+[
+  ["library_hours","look up library opening hours","the library opening hours"],
+  ["ferry_schedule","look up ferry departure times","the ferry departure times"],
+  ["park_closure","look up public park closures","the public park closures"],
+  ["museum_tickets","look up museum ticket prices","the museum ticket prices"],
+  ["bus_fares","look up local bus fares","the local bus fares"],
+  ["recycling_days","look up recycling collection days","the recycling collection days"],
+  ["pool_hours","look up swimming pool hours","the swimming pool hours"],
+  ["market_dates","look up street market dates","the street market dates"]
+]

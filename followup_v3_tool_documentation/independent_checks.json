@@ -1,0 +1,11 @@
+{
+  "judgment_rows_recounted": 512,
+  "action_rows_recounted": 256,
+  "baseline_contrast_recomputed_from_cell_means": 0.33838748559355736,
+  "patch_contrast_recomputed_from_logits": 0.1315291179344058,
+  "generated_forms": {
+    "literal abstention": 32,
+    "exact JSON or tagged JSON": 224
+  },
+  "other_or_inexact_strings": []
+}

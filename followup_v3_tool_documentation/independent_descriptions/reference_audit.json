@@ -1,0 +1,257 @@
+[
+  {
+    "id": "live_multiple_299-130-8",
+    "target": "Hotels_2_SearchHouse",
+    "n_jointly_valid": 2,
+    "example": [
+      {
+        "where_to": "Sydney, Australia",
+        "has_laundry_service": "True",
+        "number_of_adults": 3
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_315-132-5",
+    "target": "Movies_3_FindMovies",
+    "n_jointly_valid": 2,
+    "example": [
+      {
+        "directed_by": "Herbert Ross",
+        "cast": "James Shapkoff III"
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_325-132-15",
+    "target": "Movies_3_FindMovies",
+    "n_jointly_valid": 4,
+    "example": [
+      {
+        "directed_by": "Riley Stearns"
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_353-133-17",
+    "target": "Music_3_LookupMusic",
+    "n_jointly_valid": 2,
+    "example": [
+      {
+        "album": "Halcyon",
+        "genre": "Pop",
+        "year": 2016
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_370-134-15",
+    "target": "Movies_3_FindMovies",
+    "n_jointly_valid": 1,
+    "example": [
+      {
+        "directed_by": "Jim Henson",
+        "genre": "Fantasy",
+        "cast": "Danny John-Jules"
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_373-134-18",
+    "target": "Movies_3_FindMovies",
+    "n_jointly_valid": 1,
+    "example": [
+      {
+        "directed_by": "Jagan Shakti",
+        "genre": "Action",
+        "cast": "Sanjay Kapoor"
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_424-141-13",
+    "target": "Movies_1_FindMovies",
+    "n_jointly_valid": 1,
+    "example": [
+      {
+        "location": "San Bruno, CA",
+        "theater_name": "Century at Tanforan and XD",
+        "genre": "Sci-fi"
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_455-145-6",
+    "target": "Travel_1_FindAttractions",
+    "n_jointly_valid": 2,
+    "example": [
+      {
+        "location": "London, UK",
+        "free_entry": "True",
+        "category": "Park"
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_517-150-5",
+    "target": "Movies_1_FindMovies",
+    "n_jointly_valid": 2,
+    "example": [
+      {
+        "location": "Los Angeles, CA",
+        "genre": "Supernatural",
+        "show_type": "regular"
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_521-150-9",
+    "target": "Movies_1_FindMovies",
+    "n_jointly_valid": 2,
+    "example": [
+      {
+        "location": "Sonoma, CA",
+        "genre": "Family",
+        "show_type": "3d"
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_529-151-5",
+    "target": "Events_3_FindEvents",
+    "n_jointly_valid": 1,
+    "example": [
+      {
+        "event_type": "Music",
+        "city": "Los Angeles, CA",
+        "date": "04/07/2023"
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_531-151-7",
+    "target": "Events_3_FindEvents",
+    "n_jointly_valid": 2,
+    "example": [
+      {
+        "event_type": "Music",
+        "city": "Philadelphia, PA"
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_576-156-2",
+    "target": "Services_1_FindProvider",
+    "n_jointly_valid": 1,
+    "example": [
+      {
+        "city": "Berkeley, CA",
+        "is_unisex": true
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_588-157-9",
+    "target": "Media_3_FindMovies",
+    "n_jointly_valid": 1,
+    "example": [
+      {
+        "genre": "Horror",
+        "starring": "Arthur Lowe"
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_592-157-13",
+    "target": "Media_3_FindMovies",
+    "n_jointly_valid": 1,
+    "example": [
+      {
+        "genre": "Offbeat",
+        "starring": "Inbal Amirav"
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_614-159-7",
+    "target": "Events_3_FindEvents",
+    "n_jointly_valid": 2,
+    "example": [
+      {
+        "event_type": "Music",
+        "city": "Portland, OR"
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_653-161-21",
+    "target": "Music_3_LookupMusic",
+    "n_jointly_valid": 4,
+    "example": [
+      {
+        "album": "Halcyon",
+        "year": "2012"
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_669-162-11",
+    "target": "Events_3_FindEvents",
+    "n_jointly_valid": 1,
+    "example": [
+      {
+        "event_type": "Music",
+        "city": "New York, NY",
+        "date": "2023-03-07"
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_693-164-9",
+    "target": "Movies_3_FindMovies",
+    "n_jointly_valid": 2,
+    "example": [
+      {
+        "genre": "Drama",
+        "cast": "Utkarsh Ambudkar"
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_696-164-12",
+    "target": "Movies_3_FindMovies",
+    "n_jointly_valid": 2,
+    "example": [
+      {
+        "genre": "Mystery",
+        "cast": "Noah Gaynor"
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_716-165-3",
+    "target": "Hotels_2_SearchHouse",
+    "n_jointly_valid": 8,
+    "example": [
+      {
+        "where_to": "Austin, TX"
+      }
+    ]
+  },
+  {
+    "id": "live_multiple_750-169-5",
+    "target": "Media_3_FindMovies",
+    "n_jointly_valid": 0,
+    "example": []
+  },
+  {
+    "id": "live_multiple_772-171-5",
+    "target": "Services_1_FindProvider",
+    "n_jointly_valid": 2,
+    "example": [
+      {
+        "city": "Fremont, CA"
+      }
+    ]
+  }
+]

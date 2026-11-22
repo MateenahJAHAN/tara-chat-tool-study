@@ -1,0 +1,53 @@
+{
+  "Qwen2.5": {
+    "full_responses": 512,
+    "format_counts": {
+      "literal abstention": 70,
+      "exact JSON": 442
+    },
+    "capped": 0,
+    "unclassified": 0,
+    "in_scope_exact": 256,
+    "out_of_scope_exact": 186,
+    "out_of_scope_attempts": 186,
+    "source_sha256": "566a152abf7584126452bd2f7b6e35f68fa0df263a4d0049888e7decc5864c54",
+    "attempt_paired": {
+      "pairs": 128,
+      "positive": 70,
+      "negative": 0,
+      "same": 58
+    },
+    "exact_paired": {
+      "pairs": 128,
+      "positive": 70,
+      "negative": 0,
+      "same": 58
+    }
+  },
+  "SmolLM2": {
+    "full_responses": 512,
+    "format_counts": {
+      "exact JSON": 474,
+      "district nested under properties": 38
+    },
+    "capped": 0,
+    "unclassified": 0,
+    "in_scope_exact": 256,
+    "out_of_scope_exact": 218,
+    "out_of_scope_attempts": 256,
+    "source_sha256": "614c27ae993bba39f08f0e415c5cab27a2d4b5f681c1c56b69b79eb5f70c625f",
+    "attempt_paired": {
+      "pairs": 128,
+      "positive": 0,
+      "negative": 0,
+      "same": 128
+    },
+    "exact_paired": {
+      "pairs": 128,
+      "positive": 1,
+      "negative": 27,
+      "same": 100
+    }
+  },
+  "matched_rendered_prompts": 512
+}

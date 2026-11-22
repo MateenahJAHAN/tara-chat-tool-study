@@ -1,0 +1,34 @@
+{
+  "start_utc": "2026-11-22T01:10:03.438288+00:00",
+  "weights_sha256": "f55217be716b6a997b97b9d8d7eb6fad02e00858f5010ec24f64603c3a98a0e8",
+  "revision": "31b70e2e869a7173562077fd711b654946d38674",
+  "source_sha256": "566a152abf7584126452bd2f7b6e35f68fa0df263a4d0049888e7decc5864c54",
+  "torch": "2.15.0",
+  "transformers": "5.2.0",
+  "device": "mps",
+  "dtype": "float32",
+  "attention": "eager",
+  "batch_size": 12,
+  "generation": {
+    "max_new_tokens": 72,
+    "do_sample": false,
+    "use_cache": true,
+    "pad_token_id": 2,
+    "eos_token_id": [
+      2
+    ],
+    "transformers_version": "5.2.0"
+  },
+  "files": {
+    "REPLICATION_PROTOCOL.md": "179647a24d6fe63ea2cc29012e015aa446b558dd4baf2d1cefe5ac33e3aaa2e1",
+    "run_replication.py": "1be6061270421ff107def75f614b469e68dc1408a8ddc53970e3640f23fbe901",
+    "run_actions.py": "1475e11239353ba398adcd53fe06e875c33da6097d9278544d26860bdced21bf"
+  },
+  "tokenizer_files": {
+    "config.json": "994f50b16abb4ae00880baefe03c10260b5bd608d2bf586f7056ca05a534feea",
+    "tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+    "tokenizer_config.json": "4ec77d44f62efeb38d7e044a1db318f6a939438425312dfa333b8382dbad98df"
+  },
+  "end_utc": "2026-11-22T01:13:09.675853+00:00",
+  "raw_sha256": "614c27ae993bba39f08f0e415c5cab27a2d4b5f681c1c56b69b79eb5f70c625f"
+}
