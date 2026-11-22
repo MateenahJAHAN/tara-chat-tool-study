@@ -1,0 +1,13 @@
+# Does the office-only error survive a change of order and vocabulary?
+
+November 21, 2026, New York. Written after the original TARA extension and before this transfer run. The original result is known. Some conditions below repeat the original experiment exactly, by design.
+
+The original bank alternated the service and documentation-office field order across service and district and used East, West, North and South. Within an individual service and requested district, it had only one order. This follow-up crosses both orders within every card and adds four new place names. The tool and request wording, system instruction, generation limits, checkpoint, interface and scoring rule stay fixed.
+
+Use all eight services. Vocabulary 1 uses target/alternative East–West, West–East, North–South and South–North. Vocabulary 2 uses Cedar–Maple, Maple–Cedar, Birch–Pine and Pine–Birch, respectively. Name pairs are assigned to matching target slots for paired comparisons. Independently cross the service and documentation-office match flags with both field orders. Run the inline tool format on the complete 8 × 2 vocabularies × 4 requests × 2 field orders × 4 match combinations = 512 prompts, with greedy decoding, 72 new tokens, float32 and the original official Qwen2.5-1.5B-Instruct checkpoint. Each prompt is an independent forward/generation context. No external functions are connected.
+
+For each vocabulary and order report all four call-attempt counts out of 32, plus correct in-scope argument calls, literal abstentions, unclassified outputs and capped generations. Primary quantity is false-call rate when only the office matches minus false-call rate when neither field matches; both cards request the same service in the same district and have the same coverage. Count the paired transitions in both directions when switching field order within each vocabulary and switching vocabulary within each field order. No significance test over generated variants. List all family-specific results and the acceptably formatted outputs among the false attempts.
+
+For the 128 repeated cards in the historical compass vocabulary, verify that rendered prompts match archived inline prompts byte for byte. Report generation agreement and any mismatched rows, including caps or scorer differences. Save token IDs and all raw generations for every prompt.
+
+If field order or the old place names accounted for the earlier failure, the office-only excess should shrink in at least one transfer condition. Persistence across this grid would narrow the rival explanations. All grids still share a schema template, task nouns and checkpoint. Results under new words and orders do not estimate failure frequency in natural documentation or other models.

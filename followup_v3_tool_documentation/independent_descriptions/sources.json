@@ -1,0 +1,39 @@
+{
+  "counts": {
+    "upstream_positive_live_multiple": 81,
+    "target_in_prespecified_domains": 32,
+    "version_changed_question_excluded": 7,
+    "eligible_questions": 23,
+    "target_pairings": 23,
+    "distractor_pairings": 60,
+    "mixed_search_and_play_excluded": 2
+  },
+  "distinct_schemas": 65,
+  "source_files": [
+    [
+      "maj_tara_external_when2call.jsonl",
+      "https://raw.githubusercontent.com/NVIDIA/When2Call/ecc8d42388e91ab37e7e737d48e16e8ecea3d1dc/data/test/when2call_test_llm_judge.jsonl",
+      "0b710578e3b02479e5acf5688140ec5edf71383fa5c093481c7536b57fd13b25"
+    ],
+    [
+      "maj_bfcl_live_multiple_tara.json",
+      "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_live_multiple.json",
+      "fd8ccfad4d911420d0e3341dbe2fff77d1d341da934248b9bb2bda24ab3a10c8"
+    ],
+    [
+      "maj_bfcl_live_multiple_answers_tara.json",
+      "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/possible_answer/BFCL_v4_live_multiple.json",
+      "97e90d59c5bd76c55a2920ce93e5566e9046307d3f558578f085f9d3a56c3084"
+    ]
+  ],
+  "prior_study_files": {
+    "tara-chat-tool-study/study_v1/manifests/split_manifest.json": "6e265ee4f4d667077a8e9793c8e2e1be01cd00737c74f04582b0003f2aaa93d9",
+    "tara-chat-tool-study/study_v1/version_history/input_bank_001_before_schema_support_screen/manifests/split_manifest.json": "c885cde7978859d6b125bdf42dcbc4892715e149a29914bf1afc785bbddceb0f",
+    "tara-chat-tool-study/development_calibration/data/BFCL_v4_irrelevance.json": "1a775d4129f5363491a1c0a48876a113972dd967ff644eec16294f9613ec931f",
+    "tara-chat-tool-study/development_calibration/data/BFCL_v4_simple_python.json": "9208f93fb0939c43255773e90d5f15a6362f5701891cbcb917a505195d89c5e4",
+    "tara-chat-tool-study/followup_v2_tool_applicability/bank.json": "df087e895e8a70fbcd7cff87db4a2693effe207eb4b58e5816a7a106f8adefff",
+    "research_advances_2026-11-21/TARA/transfer_01/raw.jsonl": "566a152abf7584126452bd2f7b6e35f68fa0df263a4d0049888e7decc5864c54",
+    "research_advances_2026-11-21/TARA/bank_spec.json": "0f60a4dce0f0d478179a72f33d41c38ceab611e44ace770121da73dfa2e13f6f"
+  },
+  "bank_sha256": "82eb90c05701ce1169f15ae74f5a34eed969dd27c87999cd61d6e8b57fb8e789"
+}

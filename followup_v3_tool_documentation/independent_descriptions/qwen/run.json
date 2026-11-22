@@ -1,0 +1,32 @@
+{
+  "start": "2026-11-22T02:52:41.246740+00:00",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+  "freeze_sha256": "cd7e5aeef28afcc2cf97767ae076111c4b5808dd26a2f45a28756bc11f143eaa",
+  "torch": "2.15.0",
+  "transformers": "5.2.0",
+  "device": "mps",
+  "dtype": "float32",
+  "attention": "eager",
+  "batch_size": 12,
+  "generation": {
+    "max_new_tokens": 96,
+    "do_sample": false,
+    "use_cache": true,
+    "pad_token_id": 151643,
+    "eos_token_id": [
+      151645,
+      151643
+    ],
+    "transformers_version": "5.2.0"
+  },
+  "tokenizer_files": {
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670"
+  },
+  "end": "2026-11-22T02:57:41.929503+00:00",
+  "raw_sha256": "fca6c127fbf18967d35caf15ffa7f8205a915af55bf55ba89df210afdb2807bd",
+  "n": 166
+}

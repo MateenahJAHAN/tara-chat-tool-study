@@ -1,0 +1,29 @@
+{
+  "started_utc": "2026-11-22T00:23:47.134775+00:00",
+  "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "device": "mps",
+  "dtype": "float32",
+  "attention": "eager",
+  "source_raw_sha256": "bf7dd6d046eba2b4bd61191b26d3b6030430bd4ab1ba7230798927bc5f511dbe",
+  "generation": {
+    "max_new_tokens": 72,
+    "do_sample": false,
+    "use_cache": true,
+    "pad_token_id": 151643,
+    "eos_token_id": [
+      151645,
+      151643
+    ],
+    "transformers_version": "5.2.0"
+  },
+  "code_plan_sha256": {
+    "run.py": "c9807ab5ef74443200a8be4a08f97b2629ac16556eb07e19099a2f5820886546",
+    "run_actions.py": "1475e11239353ba398adcd53fe06e875c33da6097d9278544d26860bdced21bf",
+    "run_transfer.py": "3d311f754a1a31367dfd7c7f12426989e260992ad54b24656653d718bf40940f",
+    "TRANSFER_PROTOCOL.md": "04fab6484f73a0a1871a21c3ec8aa7782ca6e194e5fc20b1263aa4517fa2161b",
+    "bank_spec.json": "0f60a4dce0f0d478179a72f33d41c38ceab611e44ace770121da73dfa2e13f6f"
+  },
+  "completed_utc": "2026-11-22T00:26:16.566817+00:00",
+  "raw_sha256": "566a152abf7584126452bd2f7b6e35f68fa0df263a4d0049888e7decc5864c54"
+}

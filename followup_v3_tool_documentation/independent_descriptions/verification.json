@@ -1,0 +1,142 @@
+{
+  "literal_model_name_mentions_in_blind_replies": [],
+  "raw_records_checked": 428,
+  "reviewer_rows_verified": 428,
+  "independent_parse_counts": {
+    "single/qwen/distractor/masked": {
+      "abstain": 56,
+      "target_name_and_object": 4,
+      "call": 4
+    },
+    "single/qwen/distractor/original": {
+      "abstain": 57,
+      "target_name_and_object": 3,
+      "call": 3
+    },
+    "single/qwen/target/masked": {
+      "call": 21,
+      "target_name_and_object": 21,
+      "abstain": 2
+    },
+    "single/qwen/target/original": {
+      "call": 21,
+      "target_name_and_object": 21,
+      "abstain": 2
+    },
+    "single/smol/distractor/masked": {
+      "call": 58,
+      "target_name_and_object": 55,
+      "abstain": 2
+    },
+    "single/smol/distractor/original": {
+      "call": 48,
+      "target_name_and_object": 40,
+      "abstain": 12
+    },
+    "single/smol/target/masked": {
+      "call": 23,
+      "target_name_and_object": 21
+    },
+    "single/smol/target/original": {
+      "call": 23,
+      "target_name_and_object": 21
+    },
+    "catalogue/qwen/False/True": {
+      "abstain": 9,
+      "target_name_and_object": 0,
+      "call": 3
+    },
+    "catalogue/qwen/False/False": {
+      "abstain": 8,
+      "target_name_and_object": 0,
+      "call": 4
+    },
+    "catalogue/qwen/True/False": {
+      "call": 11,
+      "target_name_and_object": 10,
+      "abstain": 1
+    },
+    "catalogue/qwen/True/True": {
+      "call": 11,
+      "target_name_and_object": 10,
+      "abstain": 1
+    },
+    "catalogue/smol/False/False": {
+      "call": 9,
+      "target_name_and_object": 0,
+      "abstain": 2,
+      "other": 1
+    },
+    "catalogue/smol/False/True": {
+      "call": 8,
+      "target_name_and_object": 0,
+      "abstain": 3,
+      "other": 1
+    },
+    "catalogue/smol/True/False": {
+      "call": 12,
+      "target_name_and_object": 8
+    },
+    "catalogue/smol/True/True": {
+      "call": 11,
+      "target_name_and_object": 8,
+      "other": 1
+    }
+  },
+  "strict_and_permissive_differences": [
+    {
+      "model": "smol",
+      "id": "live_multiple_531-151-7/present0/match0",
+      "primary": "other",
+      "permissive": "call",
+      "primary_named": "False",
+      "permissive_named": false,
+      "reply": "[{\"name\": \"Events_3_BuyEventTickets\", \"arguments\": {\"event_name\": \"Music event in Philadelphia\", \"number_of_tickets\": 1, \"date\": \"2022-09-15\", \"city\": \"Philadelphia, PA\"}}]"
+    },
+    {
+      "model": "smol",
+      "id": "live_multiple_531-151-7/present0/match1",
+      "primary": "other",
+      "permissive": "call",
+      "primary_named": "False",
+      "permissive_named": false,
+      "reply": "[{\"name\": \"Events_3_BuyEventTickets\", \"arguments\": {\"event_name\": \"Music event in Philadelphia\", \"number_of_tickets\": 1, \"date\": \"2022-09-15\", \"city\": \"Philadelphia, PA\"}}]"
+    },
+    {
+      "model": "smol",
+      "id": "live_multiple_299-130-8/present0/match1",
+      "primary": "other",
+      "permissive": "call",
+      "primary_named": "False",
+      "permissive_named": false,
+      "reply": "[{\"name\": \"Hotels_2_BookHouse\", \"arguments\": {\"where_to\": \"Sydney, Australia\", \"number_of_adults\": 3, \"check_in_date\": \"01/01/2022\", \"check_out_date\": \"01/05/2022\"}}]"
+    },
+    {
+      "model": "smol",
+      "id": "live_multiple_299-130-8/present0/match0",
+      "primary": "other",
+      "permissive": "call",
+      "primary_named": "False",
+      "permissive_named": false,
+      "reply": "[{\"name\": \"Hotels_2_BookHouse\", \"arguments\": {\"where_to\": \"Sydney, Australia\", \"number_of_adults\": 3, \"check_in_date\": \"01/01/2022\", \"check_out_date\": \"01/05/2022\"}}]"
+    },
+    {
+      "model": "smol",
+      "id": "live_multiple_716-165-3/present1/match1",
+      "primary": "other",
+      "permissive": "call",
+      "primary_named": "False",
+      "permissive_named": false,
+      "reply": "[{\"name\": \"Hotels_2_BookHouse\", \"arguments\": {\"where_to\": \"Austin, TX\", \"number_of_adults\": 0, \"check_in_date\": \"04/23/2023\", \"check_out_date\": \"04/27/2023\"}}]"
+    },
+    {
+      "model": "smol",
+      "id": "live_multiple_716-165-3/present1/match0",
+      "primary": "other",
+      "permissive": "call",
+      "primary_named": "False",
+      "permissive_named": false,
+      "reply": "[{\"name\": \"Hotels_2_BookHouse\", \"arguments\": {\"where_to\": \"Austin, TX\", \"number_of_adults\": 0, \"check_in_date\": \"04/23/2023\", \"check_out_date\": \"04/27/2023\"}}]"
+    }
+  ]
+}

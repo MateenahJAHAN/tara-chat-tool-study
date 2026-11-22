@@ -1,0 +1,24 @@
+{
+  "commit": "b0676becc8354be9849c165db6276f35ce0709ca",
+  "manifest_files": 179,
+  "manifest_mismatches": [],
+  "bfcl_from_saved_scores": {
+    "NATIVE_TOOLS": {
+      "all": 64,
+      "out_of_scope": 32,
+      "attempts": 16
+    },
+    "TEXT_CATALOGUE": {
+      "all": 64,
+      "out_of_scope": 32,
+      "attempts": 9
+    }
+  },
+  "matched_scores_reparsed_including_controls": 168,
+  "matched_false_calls_out_of_20": {
+    "qwen2.5-1.5b text": 14,
+    "qwen2.5-1.5b native": 19,
+    "qwen3.5-4b text": 0,
+    "qwen3.5-4b native": 10
+  }
+}

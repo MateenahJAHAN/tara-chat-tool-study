@@ -1,0 +1,9 @@
+contrast,vocabulary,office_first,n,no_to_call,call_to_no,both_call,neither_call
+office matched versus neither,compass,False,32,32,0,0,0
+office matched versus neither,compass,True,32,32,0,0,0
+office matched versus neither,tree,False,32,4,0,28,0
+office matched versus neither,tree,True,32,2,0,30,0
+office first versus service first,compass,,32,0,0,32,0
+office first versus service first,tree,,32,0,0,32,0
+tree versus compass,,False,32,0,0,32,0
+tree versus compass,,True,32,0,0,32,0

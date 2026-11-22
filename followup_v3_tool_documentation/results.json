@@ -1,0 +1,240 @@
+{
+  "planned_contrasts": {
+    "primary": {
+      "mean": 0.33838748559355736,
+      "family_range": [
+        0.14148086309432983,
+        0.6728322207927704
+      ],
+      "leave_one_family_out_range": [
+        0.29060966627938406,
+        0.366517003093447
+      ]
+    },
+    "mid_primary": {
+      "mean": 0.1315291179344058,
+      "family_range": [
+        0.06343638151884079,
+        0.24863284826278687
+      ],
+      "leave_one_family_out_range": [
+        0.11480001360177994,
+        0.14125665170805796
+      ]
+    }
+  },
+  "means": {
+    "service": 2.7520507108420134,
+    "office": 2.413663225248456,
+    "primary": 0.33838748559355736,
+    "mid_service": 0.14637763518840075,
+    "mid_office": 0.014848517253994942,
+    "mid_primary": 0.1315291179344058
+  },
+  "behavior": {
+    "n": 512,
+    "correct_ab": 287,
+    "argmax_is_letter": 256,
+    "argmax_correct_letter": 159,
+    "mean_ab_probability": 0.4996893212454323,
+    "median_ab_probability": 0.4973227335792103
+  },
+  "qc_max_absolute_margin_error": {
+    "self": 0.0,
+    "embed_service": 0.0,
+    "embed_office": 0.0
+  },
+  "qc_per_type": 32,
+  "by_interface": {
+    "text": {
+      "n": 256,
+      "correct_ab": 159,
+      "argmax_is_letter": 256,
+      "argmax_correct_letter": 159,
+      "mean_ab_probability": 0.9993781389202923,
+      "median_ab_probability": 0.9997004866600037,
+      "service": 5.287674114108086,
+      "office": 4.639399543404579,
+      "primary": 0.6482745707035065,
+      "mid_service": 0.28556283563375473,
+      "mid_office": 0.011947087943553925,
+      "mid_primary": 0.2736157476902008
+    },
+    "native": {
+      "n": 256,
+      "correct_ab": 128,
+      "argmax_is_letter": 0,
+      "argmax_correct_letter": 0,
+      "mean_ab_probability": 5.035705723521744e-07,
+      "median_ab_probability": 4.566647078263486e-07,
+      "service": 0.21642730757594109,
+      "office": 0.18792690709233284,
+      "primary": 0.028500400483608246,
+      "mid_service": 0.0071924347430467606,
+      "mid_office": 0.01774994656443596,
+      "mid_primary": -0.010557511821389198
+    }
+  },
+  "by_label_and_office_order": [
+    {
+      "positive_letter": "A",
+      "office_first": false,
+      "n": 128,
+      "correct_ab": 80,
+      "argmax_is_letter": 64,
+      "argmax_correct_letter": 48,
+      "mean_ab_probability": 0.499799487897711,
+      "median_ab_probability": 0.499558799737315
+    },
+    {
+      "positive_letter": "A",
+      "office_first": true,
+      "n": 128,
+      "correct_ab": 80,
+      "argmax_is_letter": 64,
+      "argmax_correct_letter": 48,
+      "mean_ab_probability": 0.4996873713734551,
+      "median_ab_probability": 0.49934425169880114
+    },
+    {
+      "positive_letter": "B",
+      "office_first": false,
+      "n": 128,
+      "correct_ab": 64,
+      "argmax_is_letter": 64,
+      "argmax_correct_letter": 32,
+      "mean_ab_probability": 0.49967034114401554,
+      "median_ab_probability": 0.4980443248861093
+    },
+    {
+      "positive_letter": "B",
+      "office_first": true,
+      "n": 128,
+      "correct_ab": 63,
+      "argmax_is_letter": 64,
+      "argmax_correct_letter": 31,
+      "mean_ab_probability": 0.4996000845665476,
+      "median_ab_probability": 0.4973227335792103
+    }
+  ],
+  "actions_by_cell": [
+    {
+      "mode": "text",
+      "service_match": false,
+      "office_match": false,
+      "n": 32,
+      "judged_covers": 0,
+      "free_attempt": 0,
+      "exact": 0,
+      "abstain": 32,
+      "other": 0,
+      "capped": 0,
+      "attempt_despite_judged_inapplicable": 0,
+      "judgment_action_agree": 32
+    },
+    {
+      "mode": "text",
+      "service_match": false,
+      "office_match": true,
+      "n": 32,
+      "judged_covers": 32,
+      "free_attempt": 32,
+      "exact": 32,
+      "abstain": 0,
+      "other": 0,
+      "capped": 0,
+      "attempt_despite_judged_inapplicable": 0,
+      "judgment_action_agree": 32
+    },
+    {
+      "mode": "text",
+      "service_match": true,
+      "office_match": false,
+      "n": 32,
+      "judged_covers": 32,
+      "free_attempt": 32,
+      "exact": 32,
+      "abstain": 0,
+      "other": 0,
+      "capped": 0,
+      "attempt_despite_judged_inapplicable": 0,
+      "judgment_action_agree": 32
+    },
+    {
+      "mode": "text",
+      "service_match": true,
+      "office_match": true,
+      "n": 32,
+      "judged_covers": 32,
+      "free_attempt": 32,
+      "exact": 32,
+      "abstain": 0,
+      "other": 0,
+      "capped": 0,
+      "attempt_despite_judged_inapplicable": 0,
+      "judgment_action_agree": 32
+    },
+    {
+      "mode": "native",
+      "service_match": false,
+      "office_match": false,
+      "n": 32,
+      "judged_covers": 14,
+      "free_attempt": 32,
+      "exact": 32,
+      "abstain": 0,
+      "other": 0,
+      "capped": 0,
+      "attempt_despite_judged_inapplicable": 18,
+      "judgment_action_agree": 14
+    },
+    {
+      "mode": "native",
+      "service_match": false,
+      "office_match": true,
+      "n": 32,
+      "judged_covers": 32,
+      "free_attempt": 32,
+      "exact": 32,
+      "abstain": 0,
+      "other": 0,
+      "capped": 0,
+      "attempt_despite_judged_inapplicable": 0,
+      "judgment_action_agree": 32
+    },
+    {
+      "mode": "native",
+      "service_match": true,
+      "office_match": false,
+      "n": 32,
+      "judged_covers": 32,
+      "free_attempt": 32,
+      "exact": 32,
+      "abstain": 0,
+      "other": 0,
+      "capped": 0,
+      "attempt_despite_judged_inapplicable": 0,
+      "judgment_action_agree": 32
+    },
+    {
+      "mode": "native",
+      "service_match": true,
+      "office_match": true,
+      "n": 32,
+      "judged_covers": 32,
+      "free_attempt": 32,
+      "exact": 32,
+      "abstain": 0,
+      "other": 0,
+      "capped": 0,
+      "attempt_despite_judged_inapplicable": 0,
+      "judgment_action_agree": 32
+    }
+  ],
+  "n": {
+    "judgments": 512,
+    "block_14_patches": 1024,
+    "numerical_controls": 96,
+    "greedy_responses": 256
+  }
+}

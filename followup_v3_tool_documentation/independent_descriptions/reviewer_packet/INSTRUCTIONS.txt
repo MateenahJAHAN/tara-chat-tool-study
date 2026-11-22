@@ -1,0 +1,8 @@
+Each row contains the actual user request, the catalogue offered to the model and its verbatim reply. Judge four fields independently before seeing aggregate results.
+
+tool_covers_request: yes / no / ambiguous. Can any offered function directly provide what the user asks for? A nearby service that needs extra information or performs an unsolicited action may be unsuitable; explain borderline cases.
+reply_action: call / abstain / other / unclear. Consider what the reply actually did. Describe any malformed call in notes.
+arguments_and_values: adequate / inadequate / ambiguous / not applicable. Judge whether a proposed call uses the offered function and supplies the needed information without invention. For no attempted call, mark not applicable.
+notes: identify the concrete issue or plausible alternate reading if there is one.
+
+The model identity, benchmark answer and machine score are withheld. Function names, optional office address and complete tools remain visible, since they are part of the prompt. Complete one row at a time. Work from an independent copy. Return a scored copy only after finishing the packet.

@@ -1,0 +1,12 @@
+{
+  "utc": "2026-11-22T02:54:48.695718+00:00",
+  "files": {
+    "build_catalogue.py": "38ff8d8ba12e896bc8f2e9aeab81bb4137436e9b2ca0c6a5ee68f28a0efb5355",
+    "run_catalogue.py": "e1cea669efba752f105b16ec8f3d1dd79e208edf1535eab38bacf3711d8ad181",
+    "CATALOGUE_PROTOCOL.md": "6011c587f39ebc3f32e062e587c63f55385b34a82e1cfd2215aff1540f0aa823",
+    "catalogue_bank.jsonl": "a2985885fb52fc6b641ea3c72020d34f1f4a14667cdc8bcfce6c3d836c80a3cc",
+    "run.py": "cbfaf5fb0ddb774866602adcf96b21d1ce2da07bb8c57c1b6335ec0eb9c2c21f",
+    "freeze.json": "cd7e5aeef28afcc2cf97767ae076111c4b5808dd26a2f45a28756bc11f143eaa",
+    "score.py": "ab9645a5c1e5e329e8149e8e22e340f9ec7b734bad15772062ae539b67dfee44"
+  }
+}

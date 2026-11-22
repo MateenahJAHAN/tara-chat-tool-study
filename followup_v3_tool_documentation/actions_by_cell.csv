@@ -1,0 +1,9 @@
+mode,service_match,office_match,n,judged_covers,free_attempt,exact,abstain,other,capped,attempt_despite_judged_inapplicable,judgment_action_agree
+text,False,False,32,0,0,0,32,0,0,0,32
+text,False,True,32,32,32,32,0,0,0,0,32
+text,True,False,32,32,32,32,0,0,0,0,32
+text,True,True,32,32,32,32,0,0,0,0,32
+native,False,False,32,14,32,32,0,0,0,18,14
+native,False,True,32,32,32,32,0,0,0,0,32
+native,True,False,32,32,32,32,0,0,0,0,32
+native,True,True,32,32,32,32,0,0,0,0,32

@@ -1,0 +1,348 @@
+model,id,source_id,present,matches,kind,selected_offered,selected_target,schema_valid,target_schema_and_ref,finish,reply
+qwen,live_multiple_299-130-8/present0/match1,live_multiple_299-130-8,False,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_531-151-7/present0/match0,live_multiple_531-151-7,False,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_531-151-7/present0/match1,live_multiple_531-151-7,False,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_299-130-8/present0/match0,live_multiple_299-130-8,False,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_529-151-5/present0/match0,live_multiple_529-151-5,False,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_529-151-5/present0/match1,live_multiple_529-151-5,False,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_531-151-7/present1/match0,live_multiple_531-151-7,True,False,call,True,True,True,True,stop,"{
+  ""name"": ""Events_3_FindEvents"",
+  ""arguments"": {
+    ""event_type"": ""Music"",
+    ""city"": ""Philadelphia, PA""
+  }
+}"
+qwen,live_multiple_531-151-7/present1/match1,live_multiple_531-151-7,True,True,call,True,True,True,True,stop,"{
+  ""name"": ""Events_3_FindEvents"",
+  ""arguments"": {
+    ""event_type"": ""Music"",
+    ""city"": ""Philadelphia, PA""
+  }
+}"
+qwen,live_multiple_529-151-5/present1/match0,live_multiple_529-151-5,True,False,call,True,True,True,True,stop,"{
+  ""name"": ""Events_3_FindEvents"",
+  ""arguments"": {
+    ""event_type"": ""Music"",
+    ""city"": ""Los Angeles, CA"",
+    ""date"": ""04/07/2023""
+  }
+}"
+qwen,live_multiple_529-151-5/present1/match1,live_multiple_529-151-5,True,True,call,True,True,True,True,stop,"{
+  ""name"": ""Events_3_FindEvents"",
+  ""arguments"": {
+    ""event_type"": ""Music"",
+    ""city"": ""Los Angeles, CA"",
+    ""date"": ""04/07/2023""
+  }
+}"
+qwen,live_multiple_299-130-8/present1/match1,live_multiple_299-130-8,True,True,call,True,True,True,True,stop,"{
+  ""name"": ""Hotels_2_SearchHouse"",
+  ""arguments"": {
+    ""where_to"": ""Sydney, Australia"",
+    ""has_laundry_service"": ""True"",
+    ""number_of_adults"": 3,
+    ""rating"": 0
+  }
+}"
+qwen,live_multiple_299-130-8/present1/match0,live_multiple_299-130-8,True,False,call,True,True,True,False,stop,"{
+  ""name"": ""Hotels_2_SearchHouse"",
+  ""arguments"": {
+    ""where_to"": ""Sydney, Australia"",
+    ""has_laundry_service"": ""True"",
+    ""number_of_adults"": 3,
+    ""rating"": 4.0
+  }
+}"
+qwen,live_multiple_424-141-13/present0/match0,live_multiple_424-141-13,False,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_424-141-13/present0/match1,live_multiple_424-141-13,False,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_716-165-3/present0/match1,live_multiple_716-165-3,False,True,call,True,False,True,False,stop,"{
+  ""name"": ""Hotels_2_BookHouse"",
+  ""arguments"": {
+    ""where_to"": ""Austin, TX"",
+    ""number_of_adults"": 0,
+    ""check_in_date"": """",
+    ""check_out_date"": """"
+  }
+}"
+qwen,live_multiple_716-165-3/present0/match0,live_multiple_716-165-3,False,False,call,True,False,True,False,stop,"{
+  ""name"": ""Hotels_2_BookHouse"",
+  ""arguments"": {
+    ""where_to"": ""Austin, TX"",
+    ""number_of_adults"": 0,
+    ""check_in_date"": """",
+    ""check_out_date"": """"
+  }
+}"
+qwen,live_multiple_614-159-7/present0/match1,live_multiple_614-159-7,False,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_614-159-7/present0/match0,live_multiple_614-159-7,False,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_424-141-13/present1/match0,live_multiple_424-141-13,True,False,call,True,True,False,False,stop,"{
+  ""name"": ""Movies_1_FindMovies"",
+  ""arguments"": {
+    ""location"": ""San Bruno, CA"",
+    ""theater_name"": ""Century at Tanforan"",
+    ""genre"": ""Science Fiction""
+  }
+}"
+qwen,live_multiple_424-141-13/present1/match1,live_multiple_424-141-13,True,True,call,True,True,False,False,stop,"{
+  ""name"": ""Movies_1_FindMovies"",
+  ""arguments"": {
+    ""location"": ""San Bruno, CA"",
+    ""theater_name"": ""Century at Tanforan"",
+    ""genre"": ""Science Fiction""
+  }
+}"
+qwen,live_multiple_716-165-3/present1/match1,live_multiple_716-165-3,True,True,call,True,True,True,True,stop,"{
+  ""name"": ""Hotels_2_SearchHouse"",
+  ""arguments"": {
+    ""where_to"": ""Austin, TX""
+  }
+}"
+qwen,live_multiple_716-165-3/present1/match0,live_multiple_716-165-3,True,False,call,True,True,True,True,stop,"{
+  ""name"": ""Hotels_2_SearchHouse"",
+  ""arguments"": {
+    ""where_to"": ""Austin, TX""
+  }
+}"
+qwen,live_multiple_614-159-7/present1/match1,live_multiple_614-159-7,True,True,call,True,True,True,True,stop,"{
+  ""name"": ""Events_3_FindEvents"",
+  ""arguments"": {
+    ""event_type"": ""Music"",
+    ""city"": ""Portland, OR""
+  }
+}"
+qwen,live_multiple_614-159-7/present1/match0,live_multiple_614-159-7,True,False,call,True,True,True,True,stop,"{
+  ""name"": ""Events_3_FindEvents"",
+  ""arguments"": {
+    ""event_type"": ""Music"",
+    ""city"": ""Portland, OR""
+  }
+}"
+qwen,live_multiple_772-171-5/present0/match0,live_multiple_772-171-5,False,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_772-171-5/present0/match1,live_multiple_772-171-5,False,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_576-156-2/present0/match0,live_multiple_576-156-2,False,False,call,True,False,True,False,stop,"{
+  ""name"": ""Services_1_BookAppointment"",
+  ""arguments"": {
+    ""stylist_name"": """",
+    ""appointment_time"": """",
+    ""appointment_date"": """"
+  }
+}"
+qwen,live_multiple_576-156-2/present0/match1,live_multiple_576-156-2,False,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_517-150-5/present0/match0,live_multiple_517-150-5,False,False,call,True,False,True,False,stop,"{
+  ""name"": ""Movies_1_BuyMovieTickets"",
+  ""arguments"": {
+    ""movie_name"": ""Supernatural"",
+    ""number_of_tickets"": 1,
+    ""show_date"": ""2023-10-01"",
+    ""location"": ""Los Angeles, CA"",
+    ""show_time"": ""19:00""
+  }
+}"
+qwen,live_multiple_517-150-5/present0/match1,live_multiple_517-150-5,False,True,call,True,False,True,False,stop,"{
+  ""name"": ""Movies_1_BuyMovieTickets"",
+  ""arguments"": {
+    ""movie_name"": ""Supernatural"",
+    ""number_of_tickets"": 1,
+    ""show_date"": ""2023-10-01"",
+    ""location"": ""Los Angeles, CA"",
+    ""show_time"": ""19:00""
+  }
+}"
+qwen,live_multiple_772-171-5/present1/match0,live_multiple_772-171-5,True,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_521-150-9/present0/match0,live_multiple_521-150-9,False,False,call,True,False,True,False,stop,"{
+  ""name"": ""Movies_1_GetTimesForMovie"",
+  ""arguments"": {
+    ""movie_name"": ""Family Fun"",
+    ""location"": ""Sonoma, CA"",
+    ""show_date"": ""2023-10-05"",
+    ""show_type"": ""3d""
+  }
+}"
+qwen,live_multiple_521-150-9/present0/match1,live_multiple_521-150-9,False,True,call,True,False,False,False,stop,"{
+  ""name"": ""Movies_1_GetTimesForMovie"",
+  ""arguments"": {
+    ""movie_name"": ""Family Fun"",
+    ""location"": ""Sonoma, CA"",
+    ""show_date"": ""2023-04-01"",
+    ""show_type"": ""3D""
+  }
+}"
+qwen,live_multiple_772-171-5/present1/match1,live_multiple_772-171-5,True,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_576-156-2/present1/match0,live_multiple_576-156-2,True,False,call,True,True,True,False,stop,"{
+  ""name"": ""Services_1_FindProvider"",
+  ""arguments"": {
+    ""city"": ""Berkeley""
+  }
+}"
+qwen,live_multiple_576-156-2/present1/match1,live_multiple_576-156-2,True,True,call,True,True,True,False,stop,"{
+  ""name"": ""Services_1_FindProvider"",
+  ""arguments"": {
+    ""city"": ""Berkeley""
+  }
+}"
+qwen,live_multiple_455-145-6/present0/match1,live_multiple_455-145-6,False,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_455-145-6/present0/match0,live_multiple_455-145-6,False,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_517-150-5/present1/match0,live_multiple_517-150-5,True,False,call,True,True,True,False,stop,"{
+  ""name"": ""Movies_1_FindMovies"",
+  ""arguments"": {
+    ""location"": ""Los Angeles, CA"",
+    ""genre"": ""Supernatural""
+  }
+}"
+qwen,live_multiple_517-150-5/present1/match1,live_multiple_517-150-5,True,True,call,True,True,True,False,stop,"{
+  ""name"": ""Movies_1_FindMovies"",
+  ""arguments"": {
+    ""location"": ""Los Angeles, CA"",
+    ""genre"": ""Supernatural""
+  }
+}"
+qwen,live_multiple_521-150-9/present1/match0,live_multiple_521-150-9,True,False,call,True,False,True,False,stop,"{
+  ""name"": ""Movies_1_GetTimesForMovie"",
+  ""arguments"": {
+    ""movie_name"": ""Family Movie"",
+    ""location"": ""Sonoma, CA"",
+    ""show_date"": ""2023-10-01"",
+    ""show_type"": ""3d""
+  }
+}"
+qwen,live_multiple_521-150-9/present1/match1,live_multiple_521-150-9,True,True,call,True,False,True,False,stop,"{
+  ""name"": ""Movies_1_GetTimesForMovie"",
+  ""arguments"": {
+    ""movie_name"": ""Family Movie"",
+    ""location"": ""Sonoma, CA"",
+    ""show_date"": ""2023-10-01"",
+    ""show_type"": ""3d""
+  }
+}"
+qwen,live_multiple_455-145-6/present1/match1,live_multiple_455-145-6,True,True,call,True,True,True,False,stop,"{
+  ""name"": ""Travel_1_FindAttractions"",
+  ""arguments"": {
+    ""location"": ""London, UK"",
+    ""free_entry"": ""True""
+  }
+}"
+qwen,live_multiple_455-145-6/present1/match0,live_multiple_455-145-6,True,False,call,True,True,True,False,stop,"{
+  ""name"": ""Travel_1_FindAttractions"",
+  ""arguments"": {
+    ""location"": ""London, UK"",
+    ""free_entry"": ""True"",
+    ""category"": ""dontcare"",
+    ""good_for_kids"": ""dontcare""
+  }
+}"
+qwen,live_multiple_669-162-11/present0/match0,live_multiple_669-162-11,False,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_669-162-11/present0/match1,live_multiple_669-162-11,False,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_669-162-11/present1/match0,live_multiple_669-162-11,True,False,call,True,True,True,True,stop,"{
+  ""name"": ""Events_3_FindEvents"",
+  ""arguments"": {
+    ""event_type"": ""Music"",
+    ""city"": ""New York, NY"",
+    ""date"": ""2023-03-07""
+  }
+}"
+qwen,live_multiple_669-162-11/present1/match1,live_multiple_669-162-11,True,True,call,True,True,True,True,stop,"{
+  ""name"": ""Events_3_FindEvents"",
+  ""arguments"": {
+    ""event_type"": ""Music"",
+    ""city"": ""New York, NY"",
+    ""date"": ""2023-03-07""
+  }
+}"
+smol,live_multiple_531-151-7/present0/match0,live_multiple_531-151-7,False,False,other,False,False,False,False,stop,"[{""name"": ""Events_3_BuyEventTickets"", ""arguments"": {""event_name"": ""Music event in Philadelphia"", ""number_of_tickets"": 1, ""date"": ""2022-09-15"", ""city"": ""Philadelphia, PA""}}]"
+smol,live_multiple_531-151-7/present0/match1,live_multiple_531-151-7,False,True,other,False,False,False,False,stop,"[{""name"": ""Events_3_BuyEventTickets"", ""arguments"": {""event_name"": ""Music event in Philadelphia"", ""number_of_tickets"": 1, ""date"": ""2022-09-15"", ""city"": ""Philadelphia, PA""}}]"
+smol,live_multiple_529-151-5/present0/match0,live_multiple_529-151-5,False,False,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_299-130-8/present0/match1,live_multiple_299-130-8,False,True,other,False,False,False,False,stop,"[{""name"": ""Hotels_2_BookHouse"", ""arguments"": {""where_to"": ""Sydney, Australia"", ""number_of_adults"": 3, ""check_in_date"": ""01/01/2022"", ""check_out_date"": ""01/05/2022""}}]"
+smol,live_multiple_529-151-5/present0/match1,live_multiple_529-151-5,False,True,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_299-130-8/present0/match0,live_multiple_299-130-8,False,False,other,False,False,False,False,stop,"[{""name"": ""Hotels_2_BookHouse"", ""arguments"": {""where_to"": ""Sydney, Australia"", ""number_of_adults"": 3, ""check_in_date"": ""01/01/2022"", ""check_out_date"": ""01/05/2022""}}]"
+smol,live_multiple_531-151-7/present1/match0,live_multiple_531-151-7,True,False,call,True,True,True,True,stop,"{""name"": ""Events_3_FindEvents"", ""arguments"": {""event_type"": ""Music"", ""city"": ""Philadelphia, PA""}}"
+smol,live_multiple_531-151-7/present1/match1,live_multiple_531-151-7,True,True,call,True,True,True,True,stop,"{""name"": ""Events_3_FindEvents"", ""arguments"": {""event_type"": ""Music"", ""city"": ""Philadelphia, PA""}}"
+smol,live_multiple_529-151-5/present1/match0,live_multiple_529-151-5,True,False,call,True,True,True,True,stop,"{""name"": ""Events_3_FindEvents"", ""arguments"": {""event_type"": ""Music"", ""city"": ""Los Angeles, CA"", ""date"": ""04/07/2023""}}"
+smol,live_multiple_529-151-5/present1/match1,live_multiple_529-151-5,True,True,call,True,True,True,True,stop,"{""name"": ""Events_3_FindEvents"", ""arguments"": {""event_type"": ""Music"", ""city"": ""Los Angeles, CA"", ""date"": ""04/07/2023""}}"
+smol,live_multiple_299-130-8/present1/match1,live_multiple_299-130-8,True,True,call,True,True,True,False,stop,"{
+  ""name"": ""Hotels_2_SearchHouse"",
+  ""arguments"": {
+    ""where_to"": ""Sydney, Australia"",
+    ""has_laundry_service"": ""True"",
+    ""number_of_adults"": 3,
+    ""rating"": 4.5
+  }
+}"
+smol,live_multiple_299-130-8/present1/match0,live_multiple_299-130-8,True,False,call,True,True,True,False,stop,"{
+  ""name"": ""Hotels_2_SearchHouse"",
+  ""arguments"": {
+    ""where_to"": ""Sydney, Australia"",
+    ""has_laundry_service"": ""True"",
+    ""number_of_adults"": 3,
+    ""rating"": 4.5
+  }
+}"
+smol,live_multiple_424-141-13/present0/match0,live_multiple_424-141-13,False,False,call,True,False,True,False,stop,"{
+  ""name"": ""Movies_1_GetTimesForMovie"",
+  ""arguments"": {
+    ""movie_name"": ""Blade Runner 2049"",
+    ""location"": ""San Bruno, CA"",
+    ""show_date"": ""2023-04-15""
+  }
+}"
+smol,live_multiple_424-141-13/present0/match1,live_multiple_424-141-13,False,True,call,True,False,True,False,stop,"{
+  ""name"": ""Movies_1_GetTimesForMovie"",
+  ""arguments"": {
+    ""movie_name"": ""Blade Runner 2049"",
+    ""location"": ""San Bruno, CA"",
+    ""show_date"": ""2023-04-15""
+  }
+}"
+smol,live_multiple_716-165-3/present0/match1,live_multiple_716-165-3,False,True,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_716-165-3/present0/match0,live_multiple_716-165-3,False,False,call,True,False,True,False,stop,"{""name"": ""Hotels_2_BookHouse"", ""arguments"": {""where_to"": ""Austin, TX"", ""number_of_adults"": 0, ""check_in_date"": ""04/23/2023"", ""check_out_date"": ""04/27/2023""}}"
+smol,live_multiple_614-159-7/present0/match1,live_multiple_614-159-7,False,True,call,True,False,True,False,stop,"{""name"": ""Events_3_BuyEventTickets"", ""arguments"": {""event_name"": ""Portland Music Festival"", ""number_of_tickets"": 1, ""date"": ""2023-10-15"", ""city"": ""Portland, OR""}}"
+smol,live_multiple_614-159-7/present0/match0,live_multiple_614-159-7,False,False,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_716-165-3/present1/match1,live_multiple_716-165-3,True,True,other,False,False,False,False,stop,"[{""name"": ""Hotels_2_BookHouse"", ""arguments"": {""where_to"": ""Austin, TX"", ""number_of_adults"": 0, ""check_in_date"": ""04/23/2023"", ""check_out_date"": ""04/27/2023""}}]"
+smol,live_multiple_716-165-3/present1/match0,live_multiple_716-165-3,True,False,other,False,False,False,False,stop,"[{""name"": ""Hotels_2_BookHouse"", ""arguments"": {""where_to"": ""Austin, TX"", ""number_of_adults"": 0, ""check_in_date"": ""04/23/2023"", ""check_out_date"": ""04/27/2023""}}]"
+smol,live_multiple_424-141-13/present1/match0,live_multiple_424-141-13,True,False,call,True,False,True,False,stop,"{
+  ""name"": ""Movies_1_GetTimesForMovie"",
+  ""arguments"": {
+    ""movie_name"": ""Blade Runner 2049"",
+    ""location"": ""San Bruno, CA"",
+    ""show_date"": ""2023-04-15""
+  }
+}"
+smol,live_multiple_424-141-13/present1/match1,live_multiple_424-141-13,True,True,call,True,False,True,False,stop,"{
+  ""name"": ""Movies_1_GetTimesForMovie"",
+  ""arguments"": {
+    ""movie_name"": ""Interstellar"",
+    ""location"": ""San Bruno, CA"",
+    ""show_date"": ""2023-04-15""
+  }
+}"
+smol,live_multiple_614-159-7/present1/match1,live_multiple_614-159-7,True,True,call,True,True,True,False,stop,"{""name"": ""Events_3_FindEvents"", ""arguments"": {""event_type"": ""Music"", ""city"": ""Portland, OR"", ""date"": ""2023-07-25""}}"
+smol,live_multiple_614-159-7/present1/match0,live_multiple_614-159-7,True,False,call,True,True,True,False,stop,"{""name"": ""Events_3_FindEvents"", ""arguments"": {""event_type"": ""Music"", ""city"": ""Portland, OR"", ""date"": ""2023-07-25""}}"
+smol,live_multiple_772-171-5/present0/match0,live_multiple_772-171-5,False,False,call,True,False,True,False,stop,"{""name"": ""Services_1_BookAppointment"", ""arguments"": {""stylist_name"": ""Fremont Salon"", ""appointment_time"": ""14:00"", ""appointment_date"": ""2022-07-26"", ""service_type"": ""haircut"", ""contact_number"": ""123-456-7890"", ""confirmation_email"": true}}"
+smol,live_multiple_772-171-5/present0/match1,live_multiple_772-171-5,False,True,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_576-156-2/present0/match0,live_multiple_576-156-2,False,False,other,False,False,False,False,stop,"Sorry, but I can't assist with that."
+smol,live_multiple_576-156-2/present0/match1,live_multiple_576-156-2,False,True,other,False,False,False,False,stop,"Sorry, but I can't assist with that."
+smol,live_multiple_517-150-5/present0/match0,live_multiple_517-150-5,False,False,call,True,False,True,False,stop,"{""name"": ""Movies_1_GetTimesForMovie"", ""arguments"": {""movie_name"": ""Supernatural"", ""location"": ""Los Angeles, CA"", ""show_date"": ""2023-03-15"", ""theater_name"": ""The Hollywood"", ""show_type"": ""regular""}}"
+smol,live_multiple_517-150-5/present0/match1,live_multiple_517-150-5,False,True,call,True,False,True,False,stop,"{""name"": ""Movies_1_GetTimesForMovie"", ""arguments"": {""movie_name"": ""Supernatural"", ""location"": ""Los Angeles, CA"", ""show_date"": ""2023-03-15"", ""theater_name"": ""Any Theater"", ""show_type"": ""regular""}}"
+smol,live_multiple_521-150-9/present0/match0,live_multiple_521-150-9,False,False,call,True,False,False,False,stop,"{""name"": ""Movies_1_GetTimesForMovie"", ""arguments"": {""movie_name"": ""Finding Nemo"", ""location"": ""Sonoma, CA"", ""show_date"": ""2022-03-15"", ""theater_name"": ""Sonoma Cinema"", ""show_type"": ""3D""}}"
+smol,live_multiple_521-150-9/present0/match1,live_multiple_521-150-9,False,True,call,True,False,False,False,stop,"{""name"": ""Movies_1_GetTimesForMovie"", ""arguments"": {""movie_name"": ""Finding Nemo"", ""location"": ""Sonoma, CA"", ""show_date"": ""2022-03-15"", ""theater_name"": ""Sonoma Cinema"", ""show_type"": ""3D""}}"
+smol,live_multiple_772-171-5/present1/match0,live_multiple_772-171-5,True,False,call,True,False,True,False,stop,"{""name"": ""Services_1_BookAppointment"", ""arguments"": {""stylist_name"": ""Fremont Salon"", ""appointment_time"": ""14:00"", ""appointment_date"": ""2022-07-26""}}"
+smol,live_multiple_772-171-5/present1/match1,live_multiple_772-171-5,True,True,call,True,True,True,False,stop,"{""name"": ""Services_1_FindProvider"", ""arguments"": {""city"": ""Fremont""}}"
+smol,live_multiple_576-156-2/present1/match0,live_multiple_576-156-2,True,False,call,True,True,True,True,stop,"{""name"": ""Services_1_FindProvider"", ""arguments"": {""city"": ""Berkeley, CA"", ""is_unisex"": true}}"
+smol,live_multiple_576-156-2/present1/match1,live_multiple_576-156-2,True,True,call,True,True,True,True,stop,"{""name"": ""Services_1_FindProvider"", ""arguments"": {""city"": ""Berkeley, CA"", ""is_unisex"": true}}"
+smol,live_multiple_455-145-6/present0/match1,live_multiple_455-145-6,False,True,call,True,False,False,False,stop,"{""name"": ""Flights_4_SearchRoundtripFlights"", ""arguments"": {""origin_airport"": ""LHR"", ""destination_airport"": ""LHR"", ""departure_date"": ""2023-03-15"", ""return_date"": null, ""seating_class"": ""Economy"", ""number_of_tickets"": 1, ""airlines"": ""dontcare""}}"
+smol,live_multiple_455-145-6/present0/match0,live_multiple_455-145-6,False,False,call,False,False,False,False,length,"{""name"":""Flights_4_SearchRoundtripFlights"",""description"":""Search for roundtrip flights based on origin, destination, dates, seating class, and other preferences."",""parameters"":{""type"":""object"",""properties"":{""origin_airport"":{""type"":""string"",""description"":""The IATA airport code or name of the city to depart from, such as 'JFK' for John F. Kennedy International Airport.""},""destination_airport"":{"""
+smol,live_multiple_517-150-5/present1/match0,live_multiple_517-150-5,True,False,call,True,True,True,True,stop,"{""name"": ""Movies_1_FindMovies"", ""arguments"": {""location"": ""Los Angeles, CA"", ""theater_name"": ""dontcare"", ""genre"": ""Supernatural"", ""show_type"": ""regular""}}"
+smol,live_multiple_517-150-5/present1/match1,live_multiple_517-150-5,True,True,call,True,True,True,True,stop,"{""name"": ""Movies_1_FindMovies"", ""arguments"": {""location"": ""Los Angeles, CA"", ""theater_name"": ""dontcare"", ""genre"": ""Supernatural"", ""show_type"": ""regular""}}"
+smol,live_multiple_521-150-9/present1/match0,live_multiple_521-150-9,True,False,call,True,False,False,False,stop,"{""name"": ""Movies_1_GetTimesForMovie"", ""arguments"": {""movie_name"": ""Finding Nemo"", ""location"": ""Sonoma, CA"", ""show_date"": ""2022-03-15"", ""theater_name"": ""Sonoma Cinema"", ""show_type"": ""3D""}}"
+smol,live_multiple_521-150-9/present1/match1,live_multiple_521-150-9,True,True,other,False,False,False,False,length,"The function catalogue does not have a direct function to search for a family-friendly movie available in 3D format at theaters in Sonoma, CA. However, you can use the following function to search for movies in 3D format at theaters in Sonoma, CA:
+
+```
+Movies_1_GetTimesForMovie(
+    movie_name='Family-friendly movie',
+    location='Sonoma, CA',
+    show_date='20"
+smol,live_multiple_455-145-6/present1/match1,live_multiple_455-145-6,True,True,call,True,False,False,False,stop,"{""name"": ""Flights_4_SearchRoundtripFlights"", ""arguments"": {""origin_airport"": ""London"", ""destination_airport"": ""London"", ""departure_date"": ""2023-03-15"", ""return_date"": null, ""seating_class"": ""Economy"", ""number_of_tickets"": 1, ""airlines"": ""dontcare""}}"
+smol,live_multiple_455-145-6/present1/match0,live_multiple_455-145-6,True,False,call,True,True,False,False,stop,"{""name"": ""Travel_1_FindAttractions"", ""arguments"": {""location"": ""London, UK"", ""free_entry"": ""True"", ""category"": ""Garden"", ""good_for_kids"": ""True""}}"
+smol,live_multiple_669-162-11/present0/match0,live_multiple_669-162-11,False,False,call,False,False,False,False,length,"{""name"": ""Events_3_FindEvent"",""description"": ""Search for events in a specified city on a given date."", ""parameters"": {""city"": {""description"": ""The name of the city where the event is taking place."", ""type"": ""str"", ""default"": ""New York""}, ""date"": {""description"": ""The date of the event in the format 'YYYY-MM-DD'."", ""type"": ""str"", ""default"": ""2"
+smol,live_multiple_669-162-11/present0/match1,live_multiple_669-162-11,False,True,call,False,False,False,False,length,"{""name"": ""Events_3_FindEvent"",""description"": ""Search for events in a specified city on a given date."", ""parameters"": {""city"": {""description"": ""The name of the city to search for events."", ""type"": ""str"", ""default"": ""New York""}, ""date"": {""description"": ""The date for which to search events in the format 'YYYY-MM-DD'."", ""type"": ""str"", ""default"": ""2"
+smol,live_multiple_669-162-11/present1/match0,live_multiple_669-162-11,True,False,call,True,True,False,False,stop,"{""name"": ""Events_3_FindEvents"", ""arguments"": {""event_name"": ""Music"", ""city"": ""New York"", ""date"": ""2023-03-07""}}"
+smol,live_multiple_669-162-11/present1/match1,live_multiple_669-162-11,True,True,call,True,True,False,False,stop,"{""name"": ""Events_3_FindEvents"", ""arguments"": {""event_name"": ""Music"", ""city"": ""New York"", ""date"": ""2023-03-07""}}"

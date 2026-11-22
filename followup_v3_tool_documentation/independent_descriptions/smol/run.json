@@ -1,0 +1,31 @@
+{
+  "start": "2026-11-22T02:57:57.460819+00:00",
+  "model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "revision": "31b70e2e869a7173562077fd711b654946d38674",
+  "weights_sha256": "f55217be716b6a997b97b9d8d7eb6fad02e00858f5010ec24f64603c3a98a0e8",
+  "freeze_sha256": "cd7e5aeef28afcc2cf97767ae076111c4b5808dd26a2f45a28756bc11f143eaa",
+  "torch": "2.15.0",
+  "transformers": "5.2.0",
+  "device": "mps",
+  "dtype": "float32",
+  "attention": "eager",
+  "batch_size": 12,
+  "generation": {
+    "max_new_tokens": 96,
+    "do_sample": false,
+    "use_cache": true,
+    "pad_token_id": 2,
+    "eos_token_id": [
+      2
+    ],
+    "transformers_version": "5.2.0"
+  },
+  "tokenizer_files": {
+    "tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+    "tokenizer_config.json": "4ec77d44f62efeb38d7e044a1db318f6a939438425312dfa333b8382dbad98df",
+    "config.json": "994f50b16abb4ae00880baefe03c10260b5bd608d2bf586f7056ca05a534feea"
+  },
+  "end": "2026-11-22T03:05:21.056001+00:00",
+  "raw_sha256": "28e515c1abcf5510ae1d1088e17c21edd74bddba4382b7e10b4f14c51cee3951",
+  "n": 166
+}

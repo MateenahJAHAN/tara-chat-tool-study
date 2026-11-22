@@ -1,0 +1,17 @@
+stage,model,role,condition,n,attempt,unclassified,attempts_with_incomplete_json,n_length,schema_echo,echo_incomplete,echo_verbatim,named_plus_args,schema_valid,plain_json_dispatchable,no_call_name_marker
+catalogue,qwen,distractor,other_city,12,4,0,0,0,0,0,0,4,4,4,0
+catalogue,qwen,distractor,same_city,12,3,0,0,0,0,0,0,3,2,2,0
+catalogue,qwen,target,other_city,12,11,0,0,0,0,0,0,11,10,10,0
+catalogue,qwen,target,same_city,12,11,0,0,0,0,0,0,11,10,10,0
+catalogue,smol,distractor,other_city,12,7,3,2,2,2,2,1,7,6,4,0
+catalogue,smol,distractor,same_city,12,6,3,1,1,1,1,0,7,5,3,0
+catalogue,smol,target,other_city,12,11,1,0,0,0,0,0,12,9,8,0
+catalogue,smol,target,same_city,12,10,2,0,1,0,0,0,11,9,8,0
+single,qwen,distractor,masked,60,4,0,0,0,0,0,0,4,4,4,0
+single,qwen,distractor,original,60,3,0,0,0,0,0,0,3,3,3,0
+single,qwen,target,masked,23,21,0,0,0,0,0,0,21,18,18,0
+single,qwen,target,original,23,21,0,0,0,0,0,0,21,18,18,0
+single,smol,distractor,masked,60,58,0,3,3,3,3,3,55,38,38,0
+single,smol,distractor,original,60,48,0,6,5,4,4,4,40,24,24,0
+single,smol,target,masked,23,23,0,1,1,2,1,2,21,15,15,0
+single,smol,target,original,23,23,0,2,2,2,2,2,21,17,17,0

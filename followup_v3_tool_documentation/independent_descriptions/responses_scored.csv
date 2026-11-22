@@ -1,0 +1,679 @@
+model,id,source_id,naming,role,same_namespace,kind,expected_name_and_object,schema_valid,reference_match,schema_and_reference,finish,reply
+qwen,live_multiple_588-157-9/Media_3_PlayMovie/masked,live_multiple_588-157-9,masked,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_588-157-9/Media_3_PlayMovie/original,live_multiple_588-157-9,original,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_653-161-21/Media_3_PlayMovie/masked,live_multiple_653-161-21,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_592-157-13/Media_3_PlayMovie/masked,live_multiple_592-157-13,masked,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_653-161-21/Media_3_PlayMovie/original,live_multiple_653-161-21,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_592-157-13/Media_3_PlayMovie/original,live_multiple_592-157-13,original,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_750-169-5/Media_3_PlayMovie/masked,live_multiple_750-169-5,masked,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_353-133-17/Media_3_PlayMovie/masked,live_multiple_353-133-17,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_750-169-5/Media_3_PlayMovie/original,live_multiple_750-169-5,original,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_353-133-17/Media_3_PlayMovie/original,live_multiple_353-133-17,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_588-157-9/Media_3_FindMovies/masked,live_multiple_588-157-9,masked,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""genre"": ""Horror"",
+    ""starring"": ""Arthur Lowe""
+  }
+}"
+qwen,live_multiple_576-156-2/Services_1_FindProvider/masked,live_multiple_576-156-2,masked,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""city"": ""Berkeley, CA"",
+    ""is_unisex"": true
+  }
+}"
+qwen,live_multiple_588-157-9/Media_3_FindMovies/original,live_multiple_588-157-9,original,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""Media_3_FindMovies"",
+  ""arguments"": {
+    ""genre"": ""Horror"",
+    ""starring"": ""Arthur Lowe""
+  }
+}"
+qwen,live_multiple_576-156-2/Services_1_FindProvider/original,live_multiple_576-156-2,original,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""Services_1_FindProvider"",
+  ""arguments"": {
+    ""city"": ""Berkeley, CA"",
+    ""is_unisex"": true
+  }
+}"
+qwen,live_multiple_653-161-21/Media_3_FindMovies/masked,live_multiple_653-161-21,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_592-157-13/Media_3_FindMovies/masked,live_multiple_592-157-13,masked,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""genre"": ""Offbeat"",
+    ""starring"": ""Inbal Amirav""
+  }
+}"
+qwen,live_multiple_653-161-21/Media_3_FindMovies/original,live_multiple_653-161-21,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_592-157-13/Media_3_FindMovies/original,live_multiple_592-157-13,original,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""Media_3_FindMovies"",
+  ""arguments"": {
+    ""genre"": ""Offbeat"",
+    ""starring"": ""Inbal Amirav""
+  }
+}"
+qwen,live_multiple_373-134-18/Music_3_PlayMedia/masked,live_multiple_373-134-18,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_576-156-2/Services_1_BookAppointment/masked,live_multiple_576-156-2,masked,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_772-171-5/Services_1_FindProvider/masked,live_multiple_772-171-5,masked,target,True,call,True,True,False,False,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""city"": ""Fremont"",
+    ""is_unisex"": false
+  }
+}"
+qwen,live_multiple_373-134-18/Music_3_PlayMedia/original,live_multiple_373-134-18,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_772-171-5/Services_1_FindProvider/original,live_multiple_772-171-5,original,target,True,call,True,True,False,False,stop,"{
+  ""name"": ""Services_1_FindProvider"",
+  ""arguments"": {
+    ""city"": ""Fremont"",
+    ""is_unisex"": false
+  }
+}"
+qwen,live_multiple_370-134-15/Music_3_PlayMedia/masked,live_multiple_370-134-15,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_576-156-2/Services_1_BookAppointment/original,live_multiple_576-156-2,original,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_370-134-15/Music_3_PlayMedia/original,live_multiple_370-134-15,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_531-151-7/Events_3_FindEvents/masked,live_multiple_531-151-7,masked,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""event_type"": ""Music"",
+    ""city"": ""Philadelphia, PA""
+  }
+}"
+qwen,live_multiple_531-151-7/Events_3_FindEvents/original,live_multiple_531-151-7,original,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""Events_3_FindEvents"",
+  ""arguments"": {
+    ""event_type"": ""Music"",
+    ""city"": ""Philadelphia, PA""
+  }
+}"
+qwen,live_multiple_353-133-17/Media_3_FindMovies/masked,live_multiple_353-133-17,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_529-151-5/Events_3_FindEvents/masked,live_multiple_529-151-5,masked,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""event_type"": ""Music"",
+    ""city"": ""Los Angeles, CA"",
+    ""date"": ""04/07/2023""
+  }
+}"
+qwen,live_multiple_696-164-12/Events_3_FindEvents/masked,live_multiple_696-164-12,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_750-169-5/Media_3_FindMovies/masked,live_multiple_750-169-5,masked,target,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_353-133-17/Media_3_FindMovies/original,live_multiple_353-133-17,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_529-151-5/Events_3_FindEvents/original,live_multiple_529-151-5,original,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""Events_3_FindEvents"",
+  ""arguments"": {
+    ""event_type"": ""Music"",
+    ""city"": ""Los Angeles, CA"",
+    ""date"": ""04/07/2023""
+  }
+}"
+qwen,live_multiple_614-159-7/Events_3_FindEvents/masked,live_multiple_614-159-7,masked,target,True,call,True,True,False,False,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""event_type"": ""Music"",
+    ""city"": ""Portland, OR"",
+    ""date"": ""2023-10-05""
+  }
+}"
+qwen,live_multiple_696-164-12/Events_3_FindEvents/original,live_multiple_696-164-12,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_750-169-5/Media_3_FindMovies/original,live_multiple_750-169-5,original,target,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_693-164-9/Events_3_FindEvents/masked,live_multiple_693-164-9,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_614-159-7/Events_3_FindEvents/original,live_multiple_614-159-7,original,target,True,call,True,True,False,False,stop,"{
+  ""name"": ""Events_3_FindEvents"",
+  ""arguments"": {
+    ""event_type"": ""Music"",
+    ""city"": ""Portland, OR"",
+    ""date"": ""2023-10-05""
+  }
+}"
+qwen,live_multiple_455-145-6/Hotels_2_BookHouse/masked,live_multiple_455-145-6,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_693-164-9/Events_3_FindEvents/original,live_multiple_693-164-9,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_299-130-8/Hotels_2_BookHouse/masked,live_multiple_299-130-8,masked,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_353-133-17/Music_3_PlayMedia/masked,live_multiple_353-133-17,masked,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_531-151-7/Events_3_BuyEventTickets/masked,live_multiple_531-151-7,masked,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_614-159-7/Events_3_BuyEventTickets/masked,live_multiple_614-159-7,masked,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_517-150-5/Music_3_PlayMedia/masked,live_multiple_517-150-5,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_353-133-17/Music_3_PlayMedia/original,live_multiple_353-133-17,original,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_455-145-6/Hotels_2_BookHouse/original,live_multiple_455-145-6,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_517-150-5/Music_3_PlayMedia/original,live_multiple_517-150-5,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_521-150-9/Music_3_PlayMedia/masked,live_multiple_521-150-9,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_299-130-8/Hotels_2_BookHouse/original,live_multiple_299-130-8,original,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_531-151-7/Events_3_BuyEventTickets/original,live_multiple_531-151-7,original,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_614-159-7/Events_3_BuyEventTickets/original,live_multiple_614-159-7,original,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_529-151-5/Events_3_BuyEventTickets/masked,live_multiple_529-151-5,masked,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_521-150-9/Music_3_PlayMedia/original,live_multiple_521-150-9,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_669-162-11/Events_3_BuyEventTickets/masked,live_multiple_669-162-11,masked,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_750-169-5/Music_3_PlayMedia/masked,live_multiple_750-169-5,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_653-161-21/Music_3_PlayMedia/masked,live_multiple_653-161-21,masked,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_750-169-5/Music_3_PlayMedia/original,live_multiple_750-169-5,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_529-151-5/Events_3_BuyEventTickets/original,live_multiple_529-151-5,original,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_653-161-21/Music_3_PlayMedia/original,live_multiple_653-161-21,original,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_669-162-11/Events_3_FindEvents/masked,live_multiple_669-162-11,masked,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""event_type"": ""Music"",
+    ""city"": ""New York, NY"",
+    ""date"": ""2023-03-07""
+  }
+}"
+qwen,live_multiple_669-162-11/Events_3_BuyEventTickets/original,live_multiple_669-162-11,original,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_669-162-11/Events_3_FindEvents/original,live_multiple_669-162-11,original,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""Events_3_FindEvents"",
+  ""arguments"": {
+    ""event_type"": ""Music"",
+    ""city"": ""New York, NY"",
+    ""date"": ""2023-03-07""
+  }
+}"
+qwen,live_multiple_716-165-3/Hotels_2_SearchHouse/masked,live_multiple_716-165-3,masked,target,True,call,True,True,False,False,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""where_to"": ""Austin, TX"",
+    ""has_laundry_service"": ""dontcare"",
+    ""number_of_adults"": 2,
+    ""rating"": 4.0
+  }
+}"
+qwen,live_multiple_315-132-5/Movies_3_FindMovies/masked,live_multiple_315-132-5,masked,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""directed_by"": ""Herbert Ross"",
+    ""cast"": ""James Shapkoff III""
+  }
+}"
+qwen,live_multiple_325-132-15/Movies_3_FindMovies/masked,live_multiple_325-132-15,masked,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""directed_by"": ""Riley Stearns""
+  }
+}"
+qwen,live_multiple_716-165-3/Hotels_2_SearchHouse/original,live_multiple_716-165-3,original,target,True,call,True,True,False,False,stop,"{
+  ""name"": ""Hotels_2_SearchHouse"",
+  ""arguments"": {
+    ""where_to"": ""Austin, TX"",
+    ""has_laundry_service"": ""dontcare"",
+    ""number_of_adults"": 2,
+    ""rating"": 4.0
+  }
+}"
+qwen,live_multiple_315-132-5/Movies_3_FindMovies/original,live_multiple_315-132-5,original,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""Movies_3_FindMovies"",
+  ""arguments"": {
+    ""directed_by"": ""Herbert Ross"",
+    ""cast"": ""James Shapkoff III""
+  }
+}"
+qwen,live_multiple_696-164-12/Events_3_BuyEventTickets/masked,live_multiple_696-164-12,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_325-132-15/Movies_3_FindMovies/original,live_multiple_325-132-15,original,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""Movies_3_FindMovies"",
+  ""arguments"": {
+    ""directed_by"": ""Riley Stearns""
+  }
+}"
+qwen,live_multiple_614-159-7/Hotels_4_ReserveHotel/masked,live_multiple_614-159-7,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_669-162-11/Hotels_4_ReserveHotel/masked,live_multiple_669-162-11,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_693-164-9/Events_3_BuyEventTickets/masked,live_multiple_693-164-9,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_696-164-12/Events_3_BuyEventTickets/original,live_multiple_696-164-12,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_373-134-18/Movies_3_FindMovies/masked,live_multiple_373-134-18,masked,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""directed_by"": ""Jagan Shakti"",
+    ""cast"": ""Sanjay Kapoor"",
+    ""genre"": ""Action""
+  }
+}"
+qwen,live_multiple_614-159-7/Hotels_4_ReserveHotel/original,live_multiple_614-159-7,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_614-159-7/Hotels_4_SearchHotel/masked,live_multiple_614-159-7,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_669-162-11/Hotels_4_ReserveHotel/original,live_multiple_669-162-11,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_669-162-11/Hotels_4_SearchHotel/masked,live_multiple_669-162-11,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_373-134-18/Movies_3_FindMovies/original,live_multiple_373-134-18,original,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""Movies_3_FindMovies"",
+  ""arguments"": {
+    ""directed_by"": ""Jagan Shakti"",
+    ""cast"": ""Sanjay Kapoor"",
+    ""genre"": ""Action""
+  }
+}"
+qwen,live_multiple_693-164-9/Events_3_BuyEventTickets/original,live_multiple_693-164-9,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_370-134-15/Movies_3_FindMovies/masked,live_multiple_370-134-15,masked,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""directed_by"": ""Jim Henson"",
+    ""genre"": ""Fantasy"",
+    ""cast"": ""Danny John-Jules""
+  }
+}"
+qwen,live_multiple_614-159-7/Hotels_4_SearchHotel/original,live_multiple_614-159-7,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_669-162-11/Hotels_4_SearchHotel/original,live_multiple_669-162-11,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_370-134-15/Movies_3_FindMovies/original,live_multiple_370-134-15,original,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""Movies_3_FindMovies"",
+  ""arguments"": {
+    ""directed_by"": ""Jim Henson"",
+    ""genre"": ""Fantasy"",
+    ""cast"": ""Danny John-Jules""
+  }
+}"
+qwen,live_multiple_455-145-6/Hotels_2_SearchHouse/masked,live_multiple_455-145-6,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_576-156-2/Movies_1_GetTimesForMovie/masked,live_multiple_576-156-2,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_696-164-12/Movies_3_FindMovies/masked,live_multiple_696-164-12,masked,target,True,call,True,True,False,False,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""directed_by"": ""dontcare"",
+    ""genre"": ""dontcare"",
+    ""cast"": ""Noah Gaynor""
+  }
+}"
+qwen,live_multiple_772-171-5/Restaurants_2_ReserveRestaurant/masked,live_multiple_772-171-5,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_455-145-6/Hotels_2_SearchHouse/original,live_multiple_455-145-6,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_716-165-3/Hotels_2_BookHouse/masked,live_multiple_716-165-3,masked,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_576-156-2/Movies_1_GetTimesForMovie/original,live_multiple_576-156-2,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_669-162-11/Buses_3_FindBus/masked,live_multiple_669-162-11,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_696-164-12/Movies_3_FindMovies/original,live_multiple_696-164-12,original,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""Movies_3_FindMovies"",
+  ""arguments"": {
+    ""genre"": ""Mystery"",
+    ""cast"": ""Noah Gaynor""
+  }
+}"
+qwen,live_multiple_576-156-2/Movies_1_FindMovies/masked,live_multiple_576-156-2,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_693-164-9/Movies_3_FindMovies/masked,live_multiple_693-164-9,masked,target,True,call,True,False,True,False,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""directed_by"": ""dontcare"",
+    ""genre"": ""drama"",
+    ""cast"": ""Utkarsh Ambudkar""
+  }
+}"
+qwen,live_multiple_772-171-5/Restaurants_2_ReserveRestaurant/original,live_multiple_772-171-5,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_576-156-2/Movies_1_FindMovies/original,live_multiple_576-156-2,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_669-162-11/Buses_3_FindBus/original,live_multiple_669-162-11,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_716-165-3/Hotels_2_BookHouse/original,live_multiple_716-165-3,original,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_693-164-9/Movies_3_FindMovies/original,live_multiple_693-164-9,original,target,True,call,True,False,True,False,stop,"{
+  ""name"": ""Movies_3_FindMovies"",
+  ""arguments"": {
+    ""directed_by"": ""dontcare"",
+    ""genre"": ""drama"",
+    ""cast"": ""Utkarsh Ambudkar""
+  }
+}"
+qwen,live_multiple_424-141-13/Movies_1_FindMovies/masked,live_multiple_424-141-13,masked,target,True,call,True,False,False,False,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""location"": ""San Bruno, CA"",
+    ""theater_name"": ""Century at Tanforan"",
+    ""genre"": ""Science Fiction"",
+    ""show_type"": ""regular""
+  }
+}"
+qwen,live_multiple_517-150-5/Movies_1_GetTimesForMovie/masked,live_multiple_517-150-5,masked,distractor,True,call,True,True,False,False,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""movie_name"": ""Supernatural"",
+    ""location"": ""Los Angeles, CA"",
+    ""show_date"": ""2023-10-05""
+  }
+}"
+qwen,live_multiple_424-141-13/Movies_1_FindMovies/original,live_multiple_424-141-13,original,target,True,call,True,False,False,False,stop,"{
+  ""name"": ""Movies_1_FindMovies"",
+  ""arguments"": {
+    ""location"": ""San Bruno, CA"",
+    ""theater_name"": ""Century at Tanforan"",
+    ""genre"": ""Science Fiction"",
+    ""show_type"": ""regular""
+  }
+}"
+qwen,live_multiple_521-150-9/Movies_1_GetTimesForMovie/masked,live_multiple_521-150-9,masked,distractor,True,call,True,True,False,False,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""movie_name"": ""Toy Story 4"",
+    ""location"": ""Sonoma, CA"",
+    ""show_date"": ""2023-10-05"",
+    ""theater_name"": """",
+    ""show_type"": ""3d""
+  }
+}"
+qwen,live_multiple_315-132-5/Restaurants_2_ReserveRestaurant/masked,live_multiple_315-132-5,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_576-156-2/Movies_1_BuyMovieTickets/masked,live_multiple_576-156-2,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_325-132-15/Restaurants_2_ReserveRestaurant/masked,live_multiple_325-132-15,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_424-141-13/Movies_1_GetTimesForMovie/masked,live_multiple_424-141-13,masked,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_517-150-5/Movies_1_GetTimesForMovie/original,live_multiple_517-150-5,original,distractor,True,call,True,True,False,False,stop,"{
+  ""name"": ""Movies_1_GetTimesForMovie"",
+  ""arguments"": {
+    ""movie_name"": ""Supernatural"",
+    ""location"": ""Los Angeles, CA"",
+    ""show_date"": ""2023-04-05""
+  }
+}"
+qwen,live_multiple_521-150-9/Movies_1_GetTimesForMovie/original,live_multiple_521-150-9,original,distractor,True,call,True,True,False,False,stop,"{
+  ""name"": ""Movies_1_GetTimesForMovie"",
+  ""arguments"": {
+    ""movie_name"": ""Toy Story 4"",
+    ""location"": ""Sonoma, CA"",
+    ""show_date"": ""2023-10-05"",
+    ""show_type"": ""3d""
+  }
+}"
+qwen,live_multiple_315-132-5/Restaurants_2_ReserveRestaurant/original,live_multiple_315-132-5,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_576-156-2/Movies_1_BuyMovieTickets/original,live_multiple_576-156-2,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_325-132-15/Restaurants_2_ReserveRestaurant/original,live_multiple_325-132-15,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_424-141-13/Movies_1_GetTimesForMovie/original,live_multiple_424-141-13,original,distractor,True,call,True,True,False,False,stop,"{
+  ""name"": ""Movies_1_GetTimesForMovie"",
+  ""arguments"": {
+    ""movie_name"": ""Scientific Fiction"",
+    ""location"": ""San Bruno, CA"",
+    ""show_date"": ""2023-04-15"",
+    ""theater_name"": ""Century"",
+    ""show_type"": ""regular""
+  }
+}"
+qwen,live_multiple_424-141-13/Movies_1_BuyMovieTickets/masked,live_multiple_424-141-13,masked,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_353-133-17/Music_3_LookupMusic/masked,live_multiple_353-133-17,masked,target,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_517-150-5/Movies_1_BuyMovieTickets/masked,live_multiple_517-150-5,masked,distractor,True,call,True,True,False,False,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""movie_name"": ""Supernatural"",
+    ""number_of_tickets"": 1,
+    ""show_date"": ""2023-04-15"",
+    ""location"": ""Los Angeles, CA"",
+    ""show_time"": ""19:00""
+  }
+}"
+qwen,live_multiple_299-130-8/Hotels_2_SearchHouse/masked,live_multiple_299-130-8,masked,target,True,call,True,True,False,False,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""where_to"": ""Sydney, Australia"",
+    ""has_laundry_service"": ""True"",
+    ""number_of_adults"": 3,
+    ""rating"": 4.0
+  }
+}"
+qwen,live_multiple_424-141-13/Movies_1_BuyMovieTickets/original,live_multiple_424-141-13,original,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_521-150-9/Movies_1_BuyMovieTickets/masked,live_multiple_521-150-9,masked,distractor,True,call,True,True,False,False,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""movie_name"": ""Toy Story 4"",
+    ""number_of_tickets"": 1,
+    ""show_date"": ""2023-04-15"",
+    ""location"": ""Sonoma, CA"",
+    ""show_time"": ""15:00"",
+    ""show_type"": ""3d""
+  }
+}"
+qwen,live_multiple_353-133-17/Music_3_LookupMusic/original,live_multiple_353-133-17,original,target,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_517-150-5/Movies_1_BuyMovieTickets/original,live_multiple_517-150-5,original,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_669-162-11/Buses_3_BuyBusTicket/masked,live_multiple_669-162-11,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_299-130-8/Hotels_2_SearchHouse/original,live_multiple_299-130-8,original,target,True,call,True,True,False,False,stop,"{
+  ""name"": ""Hotels_2_SearchHouse"",
+  ""arguments"": {
+    ""where_to"": ""Sydney, Australia"",
+    ""has_laundry_service"": ""True"",
+    ""number_of_adults"": 3,
+    ""rating"": 4.0
+  }
+}"
+qwen,live_multiple_521-150-9/Movies_1_BuyMovieTickets/original,live_multiple_521-150-9,original,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_517-150-5/Movies_1_FindMovies/masked,live_multiple_517-150-5,masked,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""location"": ""Los Angeles, CA"",
+    ""genre"": ""Supernatural"",
+    ""show_type"": ""regular""
+  }
+}"
+qwen,live_multiple_669-162-11/Buses_3_BuyBusTicket/original,live_multiple_669-162-11,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_517-150-5/Movies_1_FindMovies/original,live_multiple_517-150-5,original,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""Movies_1_FindMovies"",
+  ""arguments"": {
+    ""location"": ""Los Angeles, CA"",
+    ""genre"": ""Supernatural"",
+    ""show_type"": ""regular""
+  }
+}"
+qwen,live_multiple_521-150-9/Movies_1_FindMovies/masked,live_multiple_521-150-9,masked,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""location"": ""Sonoma, CA"",
+    ""genre"": ""Family"",
+    ""show_type"": ""3d""
+  }
+}"
+qwen,live_multiple_521-150-9/Movies_1_FindMovies/original,live_multiple_521-150-9,original,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""Movies_1_FindMovies"",
+  ""arguments"": {
+    ""location"": ""Sonoma, CA"",
+    ""genre"": ""Family"",
+    ""show_type"": ""3d""
+  }
+}"
+qwen,live_multiple_455-145-6/Flights_4_SearchOnewayFlight/masked,live_multiple_455-145-6,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_373-134-18/Music_3_LookupMusic/masked,live_multiple_373-134-18,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_772-171-5/Services_1_BookAppointment/masked,live_multiple_772-171-5,masked,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_455-145-6/Flights_4_SearchOnewayFlight/original,live_multiple_455-145-6,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_370-134-15/Music_3_LookupMusic/masked,live_multiple_370-134-15,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_373-134-18/Music_3_LookupMusic/original,live_multiple_373-134-18,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_772-171-5/Services_1_BookAppointment/original,live_multiple_772-171-5,original,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_716-165-3/Travel_1_FindAttractions/masked,live_multiple_716-165-3,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_517-150-5/Music_3_LookupMusic/masked,live_multiple_517-150-5,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_370-134-15/Music_3_LookupMusic/original,live_multiple_370-134-15,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_521-150-9/Music_3_LookupMusic/masked,live_multiple_521-150-9,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_716-165-3/Travel_1_FindAttractions/original,live_multiple_716-165-3,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_517-150-5/Music_3_LookupMusic/original,live_multiple_517-150-5,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_521-150-9/Music_3_LookupMusic/original,live_multiple_521-150-9,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_772-171-5/Restaurants_2_FindRestaurants/masked,live_multiple_772-171-5,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_772-171-5/Restaurants_2_FindRestaurants/original,live_multiple_772-171-5,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_750-169-5/Travel_1_FindAttractions/masked,live_multiple_750-169-5,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_653-161-21/Music_3_LookupMusic/masked,live_multiple_653-161-21,masked,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""artist"": ""dontcare"",
+    ""album"": ""Halcyon"",
+    ""genre"": ""dontcare"",
+    ""year"": ""2012""
+  }
+}"
+qwen,live_multiple_750-169-5/Travel_1_FindAttractions/original,live_multiple_750-169-5,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_455-145-6/Travel_1_FindAttractions/masked,live_multiple_455-145-6,masked,target,True,call,True,False,False,False,stop,"{
+  ""name"": ""lookup_function"",
+  ""arguments"": {
+    ""location"": ""London, UK"",
+    ""free_entry"": ""True"",
+    ""category"": ""Garden"",
+    ""good_for_kids"": ""dontcare""
+  }
+}"
+qwen,live_multiple_455-145-6/Travel_1_FindAttractions/original,live_multiple_455-145-6,original,target,True,call,True,False,False,False,stop,"{
+  ""name"": ""Travel_1_FindAttractions"",
+  ""arguments"": {
+    ""location"": ""London, UK"",
+    ""free_entry"": ""True"",
+    ""category"": ""Garden"",
+    ""good_for_kids"": ""dontcare""
+  }
+}"
+qwen,live_multiple_653-161-21/Music_3_LookupMusic/original,live_multiple_653-161-21,original,target,True,call,True,True,True,True,stop,"{
+  ""name"": ""Music_3_LookupMusic"",
+  ""arguments"": {
+    ""artist"": ""dontcare"",
+    ""album"": ""Halcyon"",
+    ""genre"": ""dontcare"",
+    ""year"": ""2012""
+  }
+}"
+qwen,live_multiple_669-162-11/Flights_4_SearchOnewayFlight/masked,live_multiple_669-162-11,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_455-145-6/Flights_4_SearchRoundtripFlights/masked,live_multiple_455-145-6,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_669-162-11/Flights_4_SearchOnewayFlight/original,live_multiple_669-162-11,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_669-162-11/Flights_4_SearchRoundtripFlights/masked,live_multiple_669-162-11,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_455-145-6/Flights_4_SearchRoundtripFlights/original,live_multiple_455-145-6,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_669-162-11/Flights_4_SearchRoundtripFlights/original,live_multiple_669-162-11,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_750-169-5/Music_3_LookupMusic/masked,live_multiple_750-169-5,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_750-169-5/Music_3_LookupMusic/original,live_multiple_750-169-5,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_315-132-5/Restaurants_2_FindRestaurants/masked,live_multiple_315-132-5,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_325-132-15/Restaurants_2_FindRestaurants/masked,live_multiple_325-132-15,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_315-132-5/Restaurants_2_FindRestaurants/original,live_multiple_315-132-5,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+qwen,live_multiple_325-132-15/Restaurants_2_FindRestaurants/original,live_multiple_325-132-15,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_588-157-9/Media_3_PlayMovie/masked,live_multiple_588-157-9,masked,distractor,True,call,True,True,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""title"":""Arthur Lowe"",""subtitle_language"":""English""}}"
+smol,live_multiple_588-157-9/Media_3_PlayMovie/original,live_multiple_588-157-9,original,distractor,True,call,False,False,False,False,length,"{""name"":""Media_3_PlayMovie"",""description"":""Stream the selected movie online with the option to choose from a variety of subtitle languages."",""parameters"":{""type"":""object"",""properties"":{""title"":{""type"":""string"",""description"":""The name of the movie to be streamed.""},""subtitle_language"":{""type"":""string"",""description"":""The preferred language for the movie subtitles.""}},""required"":[""title"",""subtitle_language""]"
+smol,live_multiple_653-161-21/Media_3_PlayMovie/masked,live_multiple_653-161-21,masked,distractor,False,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""title"": ""Halcyon"", ""subtitle_language"": ""English""}}"
+smol,live_multiple_592-157-13/Media_3_PlayMovie/masked,live_multiple_592-157-13,masked,distractor,True,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""title"": ""Offbeat genre movies starring Inbal Amirav""}}"
+smol,live_multiple_653-161-21/Media_3_PlayMovie/original,live_multiple_653-161-21,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_592-157-13/Media_3_PlayMovie/original,live_multiple_592-157-13,original,distractor,True,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_750-169-5/Media_3_PlayMovie/masked,live_multiple_750-169-5,masked,distractor,True,call,True,True,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""title"":""Madge Brindley""}}"
+smol,live_multiple_353-133-17/Media_3_PlayMovie/masked,live_multiple_353-133-17,masked,distractor,False,call,True,True,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""title"":""Halcyon"",""subtitle_language"":""English""}}"
+smol,live_multiple_750-169-5/Media_3_PlayMovie/original,live_multiple_750-169-5,original,distractor,True,call,True,True,False,False,stop,"{""name"":""Media_3_PlayMovie"",""arguments"":{""title"":""Madam and the Professor"",""subtitle_language"":""English""}}"
+smol,live_multiple_353-133-17/Media_3_PlayMovie/original,live_multiple_353-133-17,original,distractor,False,call,True,True,False,False,stop,"{""name"":""Media_3_PlayMovie"",""arguments"":{""title"":""Halcyon"",""subtitle_language"":""English""}}"
+smol,live_multiple_588-157-9/Media_3_FindMovies/masked,live_multiple_588-157-9,masked,target,True,call,True,True,True,True,stop,"{""name"":""lookup_function"",""arguments"":{""genre"":""Horror"",""starring"":""Arthur Lowe""}}"
+smol,live_multiple_576-156-2/Services_1_FindProvider/masked,live_multiple_576-156-2,masked,target,True,call,True,True,True,True,stop,"{""name"":""lookup_function"",""arguments"":{""city"":""Berkeley, CA"",""is_unisex"":true}}"
+smol,live_multiple_588-157-9/Media_3_FindMovies/original,live_multiple_588-157-9,original,target,True,call,True,True,True,True,stop,"{""name"":""Media_3_FindMovies"",""arguments"":{""genre"":""Horror"",""starring"":""Arthur Lowe""}}"
+smol,live_multiple_576-156-2/Services_1_FindProvider/original,live_multiple_576-156-2,original,target,True,call,True,True,True,True,stop,"{""name"":""Services_1_FindProvider"",""arguments"":{""city"":""Berkeley, CA"",""is_unisex"":true}}"
+smol,live_multiple_653-161-21/Media_3_FindMovies/masked,live_multiple_653-161-21,masked,distractor,False,call,True,False,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""genre"": ""Rock"", ""starring"": ""Foo Fighters""}}"
+smol,live_multiple_592-157-13/Media_3_FindMovies/masked,live_multiple_592-157-13,masked,target,True,call,False,False,False,False,stop,"{""name"":""lookup_function"",""description"":""Explore movies online based on your preferences including genre and starring actors."",""parameters"":{""type"":""object"",""properties"":{""genre"":{""type"":""string"",""description"":""The genre of the movies to explore.""},""starring"":{""type"":""string"",""description"":""The actors or actresses starring in the movie. Use 'any' to indicate no preference.""}},""required"":[""genre"",""starring""]}}"
+smol,live_multiple_653-161-21/Media_3_FindMovies/original,live_multiple_653-161-21,original,distractor,False,call,True,False,False,False,stop,"{""name"": ""Media_3_FindMovies"", ""arguments"": {""genre"": ""Music"", ""starring"": ""Halcyon"", ""year"": ""2012""}}"
+smol,live_multiple_592-157-13/Media_3_FindMovies/original,live_multiple_592-157-13,original,target,True,call,False,False,False,False,length,"{""name"":""Media_3_FindMovies"",""description"":""Explore movies online based on your preferences including genre and starring actors."",""parameters"":{""type"":""object"",""properties"":{""genre"":{""type"":""string"",""description"":""The genre of the movies to explore.""},""starring"":{""type"":""string"",""description"":""The actors or actresses starring in the movie. Use 'any' to indicate no preference.""}},""required"":[""genre"",""starring"
+smol,live_multiple_772-171-5/Services_1_FindProvider/masked,live_multiple_772-171-5,masked,target,True,call,True,True,True,True,stop,"{""name"": ""lookup_function"", ""arguments"": {""city"": ""Fremont, CA""}}"
+smol,live_multiple_373-134-18/Music_3_PlayMedia/masked,live_multiple_373-134-18,masked,distractor,False,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""track"": ""Sanjay Kapoor"", ""artist"": ""Jagan Shakti"", ""device"": ""Living room"", ""album"": ""Any Action Movie""}}"
+smol,live_multiple_772-171-5/Services_1_FindProvider/original,live_multiple_772-171-5,original,target,True,call,True,True,True,True,stop,"{""name"": ""Services_1_FindProvider"", ""arguments"": {""city"": ""Fremont, CA""}}"
+smol,live_multiple_373-134-18/Music_3_PlayMedia/original,live_multiple_373-134-18,original,distractor,False,call,True,True,False,False,stop,"{""name"": ""Music_3_PlayMedia"", ""arguments"": {""track"": ""Sanjay Kapoor"", ""artist"": ""Sanjay Kapoor"", ""device"": ""Living room"", ""album"": ""Jagan Shakti's Action Movies""}}"
+smol,live_multiple_370-134-15/Music_3_PlayMedia/masked,live_multiple_370-134-15,masked,distractor,False,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""track"": ""Danny John-Jules"", ""artist"": ""Jim Henson"", ""device"": ""Living room"", ""album"": ""Any Album""}}"
+smol,live_multiple_531-151-7/Events_3_FindEvents/masked,live_multiple_531-151-7,masked,target,True,call,True,False,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""event_type"":""Music"",""city"":""Philadelphia, PA"",""date"":null}}"
+smol,live_multiple_353-133-17/Media_3_FindMovies/masked,live_multiple_353-133-17,masked,distractor,False,call,True,False,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""genre"":""Pop"",""starring"":""All"",""year"":2023,""album"":""Halcyon""}}"
+smol,live_multiple_370-134-15/Music_3_PlayMedia/original,live_multiple_370-134-15,original,distractor,False,call,True,True,False,False,stop,"{""name"": ""Music_3_PlayMedia"", ""arguments"": {""track"": ""Fantasy Movies with Danny John-Jules"", ""artist"": ""Jim Henson"", ""device"": ""Kitchen"", ""album"": ""Jim Henson's Collection""}}"
+smol,live_multiple_531-151-7/Events_3_FindEvents/original,live_multiple_531-151-7,original,target,True,call,True,True,True,True,stop,"{""name"": ""Events_3_FindEvents"", ""arguments"": {""event_type"": ""Music"", ""city"": ""Philadelphia, PA""}}"
+smol,live_multiple_576-156-2/Services_1_BookAppointment/masked,live_multiple_576-156-2,masked,distractor,True,call,True,True,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""stylist_name"":""Berkeley Hair Salon"",""appointment_time"":""14:00"",""appointment_date"":""2023-04-15""}}"
+smol,live_multiple_696-164-12/Events_3_FindEvents/masked,live_multiple_696-164-12,masked,distractor,False,call,True,False,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""event_type"": ""Mystery"", ""city"": ""Los Angeles, CA"", ""date"": ""01/01/2022""}}"
+smol,live_multiple_750-169-5/Media_3_FindMovies/masked,live_multiple_750-169-5,masked,target,True,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""genre"": ""Comedy-drama"", ""starring"": ""Madge Brindley""}}"
+smol,live_multiple_353-133-17/Media_3_FindMovies/original,live_multiple_353-133-17,original,distractor,False,call,True,False,False,False,stop,"{""name"":""Media_3_FindMovies"",""arguments"":{""genre"":""Pop"",""starring"":""All"",""year"":2023,""album"":""Halcyon""}}"
+smol,live_multiple_529-151-5/Events_3_FindEvents/masked,live_multiple_529-151-5,masked,target,True,call,True,True,True,True,stop,"{""name"": ""lookup_function"", ""arguments"": {""event_type"": ""Music"", ""city"": ""Los Angeles, CA"", ""date"": ""04/07/2023""}}"
+smol,live_multiple_696-164-12/Events_3_FindEvents/original,live_multiple_696-164-12,original,distractor,False,call,True,False,False,False,stop,"{""name"": ""Events_3_FindEvents"", ""arguments"": {""event_type"": ""Mystery"", ""city"": ""Los Angeles, CA"", ""date"": ""2022-01-01""}}"
+smol,live_multiple_529-151-5/Events_3_FindEvents/original,live_multiple_529-151-5,original,target,True,call,True,True,True,True,stop,"{""name"": ""Events_3_FindEvents"", ""arguments"": {""event_type"": ""Music"", ""city"": ""Los Angeles, CA"", ""date"": ""04/07/2023""}}"
+smol,live_multiple_576-156-2/Services_1_BookAppointment/original,live_multiple_576-156-2,original,distractor,True,call,True,True,False,False,stop,"{""name"":""Services_1_BookAppointment"",""arguments"":{""stylist_name"":""Unisex Hair Salon"",""appointment_time"":""14:00"",""appointment_date"":""2023-04-15""}}"
+smol,live_multiple_693-164-9/Events_3_FindEvents/masked,live_multiple_693-164-9,masked,distractor,False,call,True,False,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""event_type"": ""drama"", ""city"": ""Mumbai, IN""}}"
+smol,live_multiple_750-169-5/Media_3_FindMovies/original,live_multiple_750-169-5,original,target,True,call,True,True,False,False,stop,"{""name"": ""Media_3_FindMovies"", ""arguments"": {""genre"": ""Comedy-drama"", ""starring"": ""Madge Brindley""}}"
+smol,live_multiple_614-159-7/Events_3_FindEvents/masked,live_multiple_614-159-7,masked,target,True,call,True,True,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""event_type"":""Music"",""city"":""Portland, OR"",""date"":""this weekend""}}"
+smol,live_multiple_693-164-9/Events_3_FindEvents/original,live_multiple_693-164-9,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_614-159-7/Events_3_FindEvents/original,live_multiple_614-159-7,original,target,True,call,True,True,False,False,stop,"{""name"":""Events_3_FindEvents"",""arguments"":{""event_type"":""Music"",""city"":""Portland, OR"",""date"":""this weekend""}}"
+smol,live_multiple_353-133-17/Music_3_PlayMedia/masked,live_multiple_353-133-17,masked,distractor,True,call,True,True,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""track"":""Halcyon"",""artist"":""2023"",""device"":""Patio"",""album"":""dontcare""}}"
+smol,live_multiple_531-151-7/Events_3_BuyEventTickets/masked,live_multiple_531-151-7,masked,distractor,True,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""event_name"": ""Music event"", ""number_of_tickets"": 1, ""date"": ""2022-07-25"", ""city"": ""Philadelphia, PA""}}"
+smol,live_multiple_614-159-7/Events_3_BuyEventTickets/masked,live_multiple_614-159-7,masked,distractor,True,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""event_name"": ""concerts"", ""number_of_tickets"": 0, ""date"": ""2023-07-25"", ""city"": ""Portland, OR""}}"
+smol,live_multiple_517-150-5/Music_3_PlayMedia/masked,live_multiple_517-150-5,masked,distractor,False,call,True,False,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""track"": ""Supernatural"", ""artist"": ""Supernatural"", ""device"": ""Living room speaker"", ""album"": ""Supernatural""}}"
+smol,live_multiple_353-133-17/Music_3_PlayMedia/original,live_multiple_353-133-17,original,distractor,True,call,True,True,False,False,stop,"{""name"":""Music_3_PlayMedia"",""arguments"":{""track"":""Halcyon"",""artist"":""2023"",""device"":""Living room"",""album"":""dontcare""}}"
+smol,live_multiple_517-150-5/Music_3_PlayMedia/original,live_multiple_517-150-5,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_455-145-6/Hotels_2_BookHouse/masked,live_multiple_455-145-6,masked,distractor,False,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""where_to"": ""London, UK"", ""number_of_adults"": 0, ""check_in_date"": ""2022-03-15"", ""check_out_date"": ""2022-03-20""}}"
+smol,live_multiple_521-150-9/Music_3_PlayMedia/masked,live_multiple_521-150-9,masked,distractor,False,call,True,False,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""track"": ""Finding Nemo"", ""artist"": ""Finding Nemo"", ""device"": ""Sonoma, CA"", ""album"": ""dontcare""}}"
+smol,live_multiple_531-151-7/Events_3_BuyEventTickets/original,live_multiple_531-151-7,original,distractor,True,call,True,True,False,False,stop,"{""name"": ""Events_3_BuyEventTickets"", ""arguments"": {""event_name"": ""Music event in Philadelphia"", ""number_of_tickets"": 1, ""date"": ""2022-12-01"", ""city"": ""Philadelphia, PA""}}"
+smol,live_multiple_614-159-7/Events_3_BuyEventTickets/original,live_multiple_614-159-7,original,distractor,True,call,True,True,False,False,stop,"{""name"": ""Events_3_BuyEventTickets"", ""arguments"": {""event_name"": ""Portland Music Festival"", ""number_of_tickets"": 1, ""date"": ""2023-07-25"", ""city"": ""Portland, OR""}}"
+smol,live_multiple_750-169-5/Music_3_PlayMedia/masked,live_multiple_750-169-5,masked,distractor,False,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""track"": ""Madge Brindley movie"", ""artist"": ""Madge Brindley"", ""device"": ""Living room"", ""album"": ""Madge Brindley movie album""}}"
+smol,live_multiple_529-151-5/Events_3_BuyEventTickets/masked,live_multiple_529-151-5,masked,distractor,True,call,True,True,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""event_name"":""Music event"",""number_of_tickets"":0,""date"":""2023-04-07"",""city"":""Los Angeles, CA""}}"
+smol,live_multiple_653-161-21/Music_3_PlayMedia/masked,live_multiple_653-161-21,masked,distractor,True,call,True,True,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""track"":""Halcyon"",""artist"":""Unknown"",""device"":""Living room"",""album"":""2012""}}"
+smol,live_multiple_669-162-11/Events_3_BuyEventTickets/masked,live_multiple_669-162-11,masked,distractor,True,call,True,True,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""event_name"":""Music event"",""number_of_tickets"":1,""date"":""03/07/2023"",""city"":""New York, NY""}}"
+smol,live_multiple_299-130-8/Hotels_2_BookHouse/masked,live_multiple_299-130-8,masked,distractor,True,call,True,True,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""where_to"":""Sydney, Australia"",""number_of_adults"":3,""check_in_date"":""01/01/2022"",""check_out_date"":""31/12/2022""}}"
+smol,live_multiple_521-150-9/Music_3_PlayMedia/original,live_multiple_521-150-9,original,distractor,False,call,True,False,False,False,stop,"{""name"": ""Music_3_PlayMedia"", ""arguments"": {""track"": ""Finding Nemo"", ""artist"": ""Finding Nemo"", ""device"": ""Theater"", ""album"": ""Finding Nemo""}}"
+smol,live_multiple_750-169-5/Music_3_PlayMedia/original,live_multiple_750-169-5,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_455-145-6/Hotels_2_BookHouse/original,live_multiple_455-145-6,original,distractor,False,call,False,False,False,False,stop,"{""name"": ""get_gardens_by_location"", ""arguments"": {""location"": ""London, UK""}}"
+smol,live_multiple_653-161-21/Music_3_PlayMedia/original,live_multiple_653-161-21,original,distractor,True,call,False,False,False,False,stop,"{""name"":""Music_3_PlayMedia"",""arguments"":{""track"":""Halcyon"",""artist"",""any"",""device"":""Living room"",""album"":""2012""}}"
+smol,live_multiple_669-162-11/Events_3_FindEvents/masked,live_multiple_669-162-11,masked,target,True,call,True,True,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""event_type"":""Music"",""city"":""New York"",""date"":""2023-03-07""}}"
+smol,live_multiple_529-151-5/Events_3_BuyEventTickets/original,live_multiple_529-151-5,original,distractor,True,call,True,True,False,False,stop,"{""name"": ""Events_3_BuyEventTickets"", ""arguments"": {""event_name"": ""Music"", ""number_of_tickets"": 1, ""date"": ""2023-04-07"", ""city"": ""Los Angeles, CA""}}"
+smol,live_multiple_299-130-8/Hotels_2_BookHouse/original,live_multiple_299-130-8,original,distractor,True,call,True,True,False,False,stop,"{""name"":""Hotels_2_BookHouse"",""arguments"":{""where_to"":""Sydney, Australia"",""number_of_adults"":3,""check_in_date"":""01/01/2022"",""check_out_date"":""01/05/2022""}}"
+smol,live_multiple_669-162-11/Events_3_BuyEventTickets/original,live_multiple_669-162-11,original,distractor,True,call,True,True,False,False,stop,"{""name"":""Events_3_BuyEventTickets"",""arguments"":{""event_name"":""Music Event"",""number_of_tickets"":1,""date"":""03/07/2023"",""city"":""New York, NY""}}"
+smol,live_multiple_669-162-11/Events_3_FindEvents/original,live_multiple_669-162-11,original,target,True,call,True,True,True,True,stop,"{""name"":""Events_3_FindEvents"",""arguments"":{""event_type"":""Music"",""city"":""New York, NY"",""date"":""2023-03-07""}}"
+smol,live_multiple_716-165-3/Hotels_2_SearchHouse/masked,live_multiple_716-165-3,masked,target,True,call,True,True,True,True,stop,"{""name"":""lookup_function"",""arguments"":{""where_to"":""Austin, TX""}}"
+smol,live_multiple_696-164-12/Events_3_BuyEventTickets/masked,live_multiple_696-164-12,masked,distractor,False,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""event_name"": ""Mystery"", ""number_of_tickets"": 1, ""date"": ""2022-01-01"", ""city"": ""New York, NY""}}"
+smol,live_multiple_716-165-3/Hotels_2_SearchHouse/original,live_multiple_716-165-3,original,target,True,call,True,True,True,True,stop,"{""name"":""Hotels_2_SearchHouse"",""arguments"":{""where_to"":""Austin, TX""}}"
+smol,live_multiple_693-164-9/Events_3_BuyEventTickets/masked,live_multiple_693-164-9,masked,distractor,False,call,False,False,False,False,length,"{""name"":""lookup_function"",""description"":""Purchase tickets for a specified cultural event on a particular date in a selected city."",""parameters"":{""type"":""object"",""properties"":{""event_name"":{""type"":""string"",""description"":""The name of the artist, play, or cultural event.""},""number_of_tickets"":{""type"":""integer"",""description"":""The quantity of tickets to purchase. Must be a positive integer and typically ranges from 1 to "
+smol,live_multiple_315-132-5/Movies_3_FindMovies/masked,live_multiple_315-132-5,masked,target,True,call,True,True,True,True,stop,"{""name"":""lookup_function"",""arguments"":{""directed_by"":""Herbert Ross"",""cast"":""James Shapkoff III""}}"
+smol,live_multiple_325-132-15/Movies_3_FindMovies/masked,live_multiple_325-132-15,masked,target,True,call,True,False,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""directed_by"":""Riley Stearns"",""genre"":""drama"",""cast"":""dontcare""}}"
+smol,live_multiple_696-164-12/Events_3_BuyEventTickets/original,live_multiple_696-164-12,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_614-159-7/Hotels_4_SearchHotel/masked,live_multiple_614-159-7,masked,distractor,False,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""location"": ""Portland, OR""}}"
+smol,live_multiple_669-162-11/Hotels_4_SearchHotel/masked,live_multiple_669-162-11,masked,distractor,False,call,True,True,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""location"":""New York, NY"",""star_rating"":""dontcare"",""smoking_allowed"":false,""number_of_rooms"":1}}"
+smol,live_multiple_693-164-9/Events_3_BuyEventTickets/original,live_multiple_693-164-9,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_315-132-5/Movies_3_FindMovies/original,live_multiple_315-132-5,original,target,True,call,True,True,True,True,stop,"{""name"":""Movies_3_FindMovies"",""arguments"":{""directed_by"":""Herbert Ross"",""cast"":""James Shapkoff III""}}"
+smol,live_multiple_325-132-15/Movies_3_FindMovies/original,live_multiple_325-132-15,original,target,True,call,True,True,True,True,stop,"{""name"":""Movies_3_FindMovies"",""arguments"":{""directed_by"":""Riley Stearns"",""genre"":""dontcare"",""cast"":""dontcare""}}"
+smol,live_multiple_373-134-18/Movies_3_FindMovies/masked,live_multiple_373-134-18,masked,target,True,call,True,True,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""directed_by"":""Sanjay Kapoor"",""genre"":""Action"",""cast"":""Sanjay Kapoor""}}"
+smol,live_multiple_614-159-7/Hotels_4_ReserveHotel/masked,live_multiple_614-159-7,masked,distractor,False,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""place_name"": ""Portland, OR"", ""check_in_date"": ""2022-07-25"", ""stay_length"": 2, ""location"": ""Portland, OR"", ""number_of_rooms"": ""2""}}"
+smol,live_multiple_614-159-7/Hotels_4_SearchHotel/original,live_multiple_614-159-7,original,distractor,False,call,True,True,False,False,stop,"{""name"":""Hotels_4_SearchHotel"",""arguments"":{""location"":""Portland, OR""}}"
+smol,live_multiple_669-162-11/Hotels_4_SearchHotel/original,live_multiple_669-162-11,original,distractor,False,call,True,True,False,False,stop,"{""name"":""Hotels_4_SearchHotel"",""arguments"":{""location"":""New York, NY"",""star_rating"":""dontcare"",""smoking_allowed"":false,""number_of_rooms"":1}}"
+smol,live_multiple_669-162-11/Hotels_4_ReserveHotel/masked,live_multiple_669-162-11,masked,distractor,False,call,True,True,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""place_name"":""New York"",""check_in_date"":""2023-03-07"",""stay_length"":3,""location"":""New York, NY"",""number_of_rooms"":""2""}}"
+smol,live_multiple_370-134-15/Movies_3_FindMovies/masked,live_multiple_370-134-15,masked,target,True,call,False,False,False,False,length,"{""name"":""lookup_function"",""description"":""Search for movies based on specific criteria such as director, genre, and cast."",""parameters"":{""type"":""object"",""properties"":{""directed_by"":{""type"":""string"",""description"":""The director of the movie. Use 'dontcare' if the director is not a search criterion.""},""genre"":{""type"":""string"",""description"":""The genre of the movie. Use 'dontcare' if the genre is"
+smol,live_multiple_373-134-18/Movies_3_FindMovies/original,live_multiple_373-134-18,original,target,True,call,True,True,False,False,stop,"{""name"":""Movies_3_FindMovies"",""arguments"":{""directed_by"":""Sanjay Kapoor"",""genre"":""Action"",""cast"":""Sanjay Kapoor""}}"
+smol,live_multiple_614-159-7/Hotels_4_ReserveHotel/original,live_multiple_614-159-7,original,distractor,False,call,True,True,False,False,stop,"{""name"": ""Hotels_4_ReserveHotel"", ""arguments"": {""place_name"": ""Portland, OR"", ""check_in_date"": ""2022-07-25"", ""stay_length"": 3, ""location"": ""Portland, OR"", ""number_of_rooms"": ""1""}}"
+smol,live_multiple_669-162-11/Hotels_4_ReserveHotel/original,live_multiple_669-162-11,original,distractor,False,call,False,False,False,False,length,"{""name"":""Hotels_4_ReserveHotel"",""description"":""Reserve rooms at a selected hotel for given dates."",""parameters"":{""type"":""object"",""properties"":{""place_name"":{""type"":""string"",""description"":""The name of the hotel or accommodation.""},""check_in_date"":{""type"":""string"",""description"":""The check-in date for the reservation, in the format 'YYYY-MM-DD'.""},""stay_"
+smol,live_multiple_370-134-15/Movies_3_FindMovies/original,live_multiple_370-134-15,original,target,True,call,False,False,False,False,length,"{""name"":""Movies_3_FindMovies"",""description"":""Search for movies based on specific criteria such as director, genre, and cast."",""parameters"":{""type"":""object"",""properties"":{""directed_by"":{""type"":""string"",""description"":""The director of the movie. Use 'dontcare' if the director is not a search criterion.""},""genre"":{""type"":""string"",""description"":""The genre of the movie. Use 'dontcare"
+smol,live_multiple_455-145-6/Hotels_2_SearchHouse/masked,live_multiple_455-145-6,masked,distractor,False,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""where_to"": ""London, UK""}}"
+smol,live_multiple_772-171-5/Restaurants_2_ReserveRestaurant/masked,live_multiple_772-171-5,masked,distractor,False,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""restaurant_name"": ""Fremont"", ""location"": ""Fremont, CA"", ""time"": ""18:30"", ""date"": ""2022-07-26""}}"
+smol,live_multiple_576-156-2/Movies_1_GetTimesForMovie/masked,live_multiple_576-156-2,masked,distractor,False,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""movie_name"": ""Unisex Hair Salon"", ""location"": ""Berkeley, CA"", ""show_date"": ""2022-03-15""}}"
+smol,live_multiple_696-164-12/Movies_3_FindMovies/masked,live_multiple_696-164-12,masked,target,True,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""directed_by"": ""Noah Gaynor"", ""genre"": ""Mystery"", ""cast"": ""Noah Gaynor""}}"
+smol,live_multiple_455-145-6/Hotels_2_SearchHouse/original,live_multiple_455-145-6,original,distractor,False,call,True,True,False,False,stop,"{""name"":""Hotels_2_SearchHouse"",""arguments"":{""where_to"":""London, UK""}}"
+smol,live_multiple_716-165-3/Hotels_2_BookHouse/masked,live_multiple_716-165-3,masked,distractor,True,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""where_to"": ""Austin, TX"", ""number_of_adults"": 0, ""check_in_date"": ""04/23/2023"", ""check_out_date"": ""04/27/2023""}}"
+smol,live_multiple_576-156-2/Movies_1_FindMovies/masked,live_multiple_576-156-2,masked,distractor,False,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""location"": ""Berkeley, CA""}}"
+smol,live_multiple_693-164-9/Movies_3_FindMovies/masked,live_multiple_693-164-9,masked,target,True,call,True,False,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""directed_by"": ""Utkarsh Ambudkar"", ""genre"": ""drama"", ""cast"": ""Utkarsh Ambudkar""}}"
+smol,live_multiple_696-164-12/Movies_3_FindMovies/original,live_multiple_696-164-12,original,target,True,call,True,True,False,False,stop,"{""name"": ""Movies_3_FindMovies"", ""arguments"": {""directed_by"": ""Noah Gaynor"", ""genre"": ""Mystery"", ""cast"": ""Noah Gaynor""}}"
+smol,live_multiple_716-165-3/Hotels_2_BookHouse/original,live_multiple_716-165-3,original,distractor,True,call,False,False,False,False,length,"{""name"":""Hotels_2_BookHouse"",""description"":""Book the selected house for given dates and number of adults, ensuring the house is reserved for the specified time period."",""parameters"":{""type"":""object"",""properties"":{""where_to"":{""type"":""string"",""description"":""The location of the house in the format of 'City, State', such as 'Austin, TX'.""},""number_of_adults"":{""type"":""integer"",""description"
+smol,live_multiple_576-156-2/Movies_1_GetTimesForMovie/original,live_multiple_576-156-2,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_772-171-5/Restaurants_2_ReserveRestaurant/original,live_multiple_772-171-5,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_576-156-2/Movies_1_FindMovies/original,live_multiple_576-156-2,original,distractor,False,call,True,False,False,False,stop,"{""name"": ""Movies_1_FindMovies"", ""arguments"": {""location"": ""Berkeley, CA"", ""theater_name"": ""Unisex Hair Salon"", ""genre"": ""Unisex"", ""show_type"": ""Unisex""}}"
+smol,live_multiple_669-162-11/Buses_3_FindBus/masked,live_multiple_669-162-11,masked,distractor,False,call,True,True,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""from_city"":""New York, NY"",""to_city"":""New York, NY"",""departure_date"":""2023-03-07""}}"
+smol,live_multiple_693-164-9/Movies_3_FindMovies/original,live_multiple_693-164-9,original,target,True,call,True,False,False,False,stop,"{""name"": ""Movies_3_FindMovies"", ""arguments"": {""directed_by"": ""Utkarsh Ambudkar"", ""genre"": ""drama"", ""cast"": ""Utkarsh Ambudkar""}}"
+smol,live_multiple_517-150-5/Movies_1_GetTimesForMovie/masked,live_multiple_517-150-5,masked,distractor,True,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""movie_name"": ""Supernatural"", ""location"": ""Los Angeles, CA"", ""show_date"": ""2023-03-15"", ""theater_name"": ""The Hollywood"", ""show_type"": ""regular""}}"
+smol,live_multiple_424-141-13/Movies_1_FindMovies/masked,live_multiple_424-141-13,masked,target,True,call,True,False,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""location"": ""San Bruno, CA"", ""theater_name"": ""Century"", ""genre"": ""Sci-fi"", ""show_type"": ""XD""}}"
+smol,live_multiple_669-162-11/Buses_3_FindBus/original,live_multiple_669-162-11,original,distractor,False,call,True,True,False,False,stop,"{""name"":""Buses_3_FindBus"",""arguments"":{""from_city"":""New York, NY"",""to_city"":""New York, NY"",""departure_date"":""2023-03-07""}}"
+smol,live_multiple_521-150-9/Movies_1_GetTimesForMovie/masked,live_multiple_521-150-9,masked,distractor,True,call,True,False,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""movie_name"":""Finding Nemo"",""location"":""Sonoma, CA"",""show_date"":""2022-03-15"",""theater_name"":""Sonoma Cinema"",""show_type"":""3D""}}"
+smol,live_multiple_424-141-13/Movies_1_GetTimesForMovie/masked,live_multiple_424-141-13,masked,distractor,True,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""movie_name"": ""Sci-Fi"", ""location"": ""San Bruno, CA"", ""show_date"": ""2023-04-15"", ""theater_name"": ""Century"", ""show_type"": ""regular""}}"
+smol,live_multiple_315-132-5/Restaurants_2_ReserveRestaurant/masked,live_multiple_315-132-5,masked,distractor,False,call,False,False,False,False,length,"{""name"":""lookup_function"",""description"":""Make a table reservation at a specified restaurant for a certain number of guests on a given date and time."",""parameters"":{""type"":""object"",""properties"":{""restaurant_name"":{""type"":""string"",""description"":""The name of the restaurant.""},""location"":{""type"":""string"",""description"":""The location of the restaurant.""},""time"":{""type"":""string"",""description"":""The time for the reservation.""},"""
+smol,live_multiple_325-132-15/Restaurants_2_ReserveRestaurant/masked,live_multiple_325-132-15,masked,distractor,False,call,False,False,False,False,length,"{""name"":""lookup_function"",""description"":""Make a table reservation at a specified restaurant for a certain number of guests on a given date and time."",""parameters"":{""type"":""object"",""properties"":{""restaurant_name"":{""type"":""string"",""description"":""The name of the restaurant.""},""location"":{""type"":""string"",""description"":""The location of the restaurant.""},""time"":{""type"":""string"",""description"":""The time for the reservation.""},"""
+smol,live_multiple_424-141-13/Movies_1_FindMovies/original,live_multiple_424-141-13,original,target,True,call,True,False,False,False,stop,"{""name"": ""Movies_1_FindMovies"", ""arguments"": {""location"": ""San Bruno"", ""theater_name"": ""Century"", ""genre"": ""Sci-fi"", ""show_type"": ""XD""}}"
+smol,live_multiple_517-150-5/Movies_1_GetTimesForMovie/original,live_multiple_517-150-5,original,distractor,True,call,True,True,False,False,stop,"{""name"": ""Movies_1_GetTimesForMovie"", ""arguments"": {""movie_name"": ""Supernatural"", ""location"": ""Los Angeles, CA"", ""show_date"": ""2023-03-15""}}"
+smol,live_multiple_521-150-9/Movies_1_GetTimesForMovie/original,live_multiple_521-150-9,original,distractor,True,call,True,False,False,False,stop,"{""name"": ""Movies_1_GetTimesForMovie"", ""arguments"": {""movie_name"": ""Finding Nemo"", ""location"": ""Sonoma, CA"", ""show_date"": ""2022-03-15"", ""theater_name"": ""Sonoma Cinema"", ""show_type"": ""3D""}}"
+smol,live_multiple_424-141-13/Movies_1_GetTimesForMovie/original,live_multiple_424-141-13,original,distractor,True,call,True,True,False,False,stop,"{""name"": ""Movies_1_GetTimesForMovie"", ""arguments"": {""movie_name"": ""Interstellar"", ""location"": ""San Bruno, CA"", ""show_date"": ""2023-04-15"", ""theater_name"": ""Century"", ""show_type"": ""regular""}}"
+smol,live_multiple_315-132-5/Restaurants_2_ReserveRestaurant/original,live_multiple_315-132-5,original,distractor,False,call,False,False,False,False,stop,"{""name"": ""movies_get_recommendation"", ""arguments"": {""genres"": ""Comedy, Drama"", ""actors"": ""James Shapkoff III"", ""director"": ""Herbert Ross""}}"
+smol,live_multiple_325-132-15/Restaurants_2_ReserveRestaurant/original,live_multiple_325-132-15,original,distractor,False,call,False,False,False,False,length,"{""name"":""Restaurants_2_ReserveRestaurant"",""description"":""Make a table reservation at a specified restaurant for a certain number of guests on a given date and time."",""parameters"":{""type"":""object"",""properties"":{""restaurant_name"":{""type"":""string"",""description"":""The name of the restaurant.""},""location"":{""type"":""string"",""description"":""The location of the restaurant.""},""time"":{""type"":""string"",""description"":"""
+smol,live_multiple_299-130-8/Hotels_2_SearchHouse/masked,live_multiple_299-130-8,masked,target,True,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""where_to"": ""Sydney, Australia"", ""has_laundry_service"": ""True"", ""number_of_adults"": 3, ""rating"": 4.5}}"
+smol,live_multiple_353-133-17/Music_3_LookupMusic/masked,live_multiple_353-133-17,masked,target,True,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""artist"": ""pop"", ""album"": ""Halcyon"", ""genre"": ""Pop"", ""year"": 2023}}"
+smol,live_multiple_576-156-2/Movies_1_BuyMovieTickets/masked,live_multiple_576-156-2,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_299-130-8/Hotels_2_SearchHouse/original,live_multiple_299-130-8,original,target,True,call,True,True,False,False,stop,"{""name"": ""Hotels_2_SearchHouse"", ""arguments"": {""where_to"": ""Sydney, Australia"", ""has_laundry_service"": ""True"", ""number_of_adults"": 3, ""rating"": 4.5}}"
+smol,live_multiple_353-133-17/Music_3_LookupMusic/original,live_multiple_353-133-17,original,target,True,call,True,True,False,False,stop,"{""name"": ""Music_3_LookupMusic"", ""arguments"": {""artist"": ""dontcare"", ""album"": ""Halcyon"", ""genre"": ""Pop"", ""year"": 2023}}"
+smol,live_multiple_424-141-13/Movies_1_BuyMovieTickets/masked,live_multiple_424-141-13,masked,distractor,True,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""movie_name"": ""Scientific fiction"", ""number_of_tickets"": 5, ""location"": ""San Bruno, CA"", ""show_date"": ""2022-07-25"", ""show_time"": ""19:00"", ""show_type"": ""regular""}}"
+smol,live_multiple_576-156-2/Movies_1_BuyMovieTickets/original,live_multiple_576-156-2,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_517-150-5/Movies_1_FindMovies/masked,live_multiple_517-150-5,masked,target,True,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""location"": ""Los Angeles, CA"", ""theater_name"": ""The Hollywood"", ""genre"": ""Supernatural"", ""show_type"": ""regular""}}"
+smol,live_multiple_517-150-5/Movies_1_BuyMovieTickets/masked,live_multiple_517-150-5,masked,distractor,True,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""movie_name"": ""Supernatural"", ""number_of_tickets"": 1, ""show_date"": ""2023-03-15"", ""location"": ""Los Angeles, CA"", ""show_time"": ""14:00""}}"
+smol,live_multiple_424-141-13/Movies_1_BuyMovieTickets/original,live_multiple_424-141-13,original,distractor,True,call,True,True,False,False,stop,"{""name"": ""Movies_1_BuyMovieTickets"", ""arguments"": {""movie_name"": ""Blade Runner 2049"", ""number_of_tickets"": 5, ""location"": ""San Bruno, CA"", ""show_date"": ""2023-03-15"", ""show_time"": ""19:00"", ""show_type"": ""regular""}}"
+smol,live_multiple_521-150-9/Movies_1_FindMovies/masked,live_multiple_521-150-9,masked,target,True,call,True,False,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""location"": ""Sonoma, CA"", ""theater_name"": ""The Sonoma Theater"", ""genre"": ""Family"", ""show_type"": ""3D""}}"
+smol,live_multiple_521-150-9/Movies_1_BuyMovieTickets/masked,live_multiple_521-150-9,masked,distractor,True,call,True,False,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""movie_name"": ""Finding Nemo"", ""number_of_tickets"": 2, ""show_date"": ""2022-03-15"", ""location"": ""Sonoma, CA"", ""show_time"": ""20:00:00"", ""show_type"": ""3D""}}"
+smol,live_multiple_517-150-5/Movies_1_FindMovies/original,live_multiple_517-150-5,original,target,True,call,True,True,True,True,stop,"{""name"": ""Movies_1_FindMovies"", ""arguments"": {""location"": ""Los Angeles, CA"", ""theater_name"": ""dontcare"", ""genre"": ""Supernatural"", ""show_type"": ""regular""}}"
+smol,live_multiple_517-150-5/Movies_1_BuyMovieTickets/original,live_multiple_517-150-5,original,distractor,True,call,True,True,False,False,stop,"{""name"": ""Movies_1_BuyMovieTickets"", ""arguments"": {""movie_name"": ""Supernatural"", ""number_of_tickets"": 1, ""show_date"": ""2022-03-15"", ""location"": ""Los Angeles, CA"", ""show_time"": ""19:00""}}"
+smol,live_multiple_521-150-9/Movies_1_FindMovies/original,live_multiple_521-150-9,original,target,True,call,True,False,False,False,stop,"{""name"": ""Movies_1_FindMovies"", ""arguments"": {""location"": ""Sonoma, CA"", ""theater_name"": ""The Sonoma Theater"", ""genre"": ""Family"", ""show_type"": ""3D""}}"
+smol,live_multiple_521-150-9/Movies_1_BuyMovieTickets/original,live_multiple_521-150-9,original,distractor,True,call,True,False,False,False,stop,"{""name"": ""Movies_1_BuyMovieTickets"", ""arguments"": {""movie_name"": ""Finding Nemo"", ""number_of_tickets"": 2, ""show_date"": ""2022-03-15"", ""location"": ""Sonoma, CA"", ""show_time"": ""20:00:00"", ""show_type"": ""3D""}}"
+smol,live_multiple_669-162-11/Buses_3_BuyBusTicket/masked,live_multiple_669-162-11,masked,distractor,False,call,True,True,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""from_city"":""New York, NY"",""to_city"":""New York, NY"",""departure_date"":""2023-03-07"",""departure_time"":""14:00"",""num_passengers"":1,""additional_luggage"":true}}"
+smol,live_multiple_669-162-11/Buses_3_BuyBusTicket/original,live_multiple_669-162-11,original,distractor,False,call,True,True,False,False,stop,"{""name"":""Buses_3_BuyBusTicket"",""arguments"":{""from_city"":""New York, NY"",""to_city"":""New York, NY"",""departure_date"":""2023-03-07"",""departure_time"":""14:00"",""num_passengers"":1,""additional_luggage"":true}}"
+smol,live_multiple_373-134-18/Music_3_LookupMusic/masked,live_multiple_373-134-18,masked,distractor,False,call,True,False,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""artist"": ""Sanjay Kapoor"", ""album"": ""dontcare"", ""genre"": ""Action"", ""year"": ""2019""}}"
+smol,live_multiple_716-165-3/Travel_1_FindAttractions/masked,live_multiple_716-165-3,masked,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_373-134-18/Music_3_LookupMusic/original,live_multiple_373-134-18,original,distractor,False,call,True,False,False,False,stop,"{""name"": ""Music_3_LookupMusic"", ""arguments"": {""artist"": ""Sanjay Kapoor"", ""album"": ""dontcare"", ""genre"": ""Action"", ""year"": ""2019""}}"
+smol,live_multiple_517-150-5/Music_3_LookupMusic/masked,live_multiple_517-150-5,masked,distractor,False,call,True,False,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""artist"": ""Supernatural"", ""album"": ""Unknown"", ""genre"": ""Supernatural"", ""year"": ""2010""}}"
+smol,live_multiple_370-134-15/Music_3_LookupMusic/masked,live_multiple_370-134-15,masked,distractor,False,call,True,False,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""artist"": ""Danny John-Jules"", ""album"": ""Jim Henson"", ""genre"": ""Fantasy"", ""year"": ""1980""}}"
+smol,live_multiple_716-165-3/Travel_1_FindAttractions/original,live_multiple_716-165-3,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_517-150-5/Music_3_LookupMusic/original,live_multiple_517-150-5,original,distractor,False,call,True,False,False,False,stop,"{""name"": ""Music_3_LookupMusic"", ""arguments"": {""artist"": ""Supernatural"", ""album"": ""The Sinner"", ""genre"": ""Supernatural"", ""year"": ""2018""}}"
+smol,live_multiple_521-150-9/Music_3_LookupMusic/masked,live_multiple_521-150-9,masked,distractor,False,call,True,False,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""artist"": ""Finding Nemo"", ""album"": ""Finding Nemo Soundtrack"", ""genre"": ""Family"", ""year"": ""2003""}}"
+smol,live_multiple_370-134-15/Music_3_LookupMusic/original,live_multiple_370-134-15,original,distractor,False,call,True,False,False,False,stop,"{""name"": ""Music_3_LookupMusic"", ""arguments"": {""artist"": ""Danny John-Jules"", ""album"": ""Jim Henson"", ""genre"": ""Fantasy"", ""year"": ""1980""}}"
+smol,live_multiple_772-171-5/Services_1_BookAppointment/masked,live_multiple_772-171-5,masked,distractor,True,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""stylist_name"": ""Fremont Salon"", ""appointment_time"": ""14:00"", ""appointment_date"": ""2022-07-26""}}"
+smol,live_multiple_455-145-6/Flights_4_SearchOnewayFlight/masked,live_multiple_455-145-6,masked,distractor,False,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""origin_airport"": ""LHR"", ""destination_airport"": ""LHR"", ""departure_date"": ""2023-07-25"", ""seating_class"": ""Economy"", ""number_of_tickets"": 1, ""airlines"": ""dontcare""}}"
+smol,live_multiple_521-150-9/Music_3_LookupMusic/original,live_multiple_521-150-9,original,distractor,False,call,True,False,False,False,stop,"{""name"": ""Music_3_LookupMusic"", ""arguments"": {""artist"": ""The Muppets"", ""album"": ""The Muppets"", ""genre"": ""Family"", ""year"": ""2011""}}"
+smol,live_multiple_772-171-5/Services_1_BookAppointment/original,live_multiple_772-171-5,original,distractor,True,call,True,True,False,False,stop,"{""name"": ""Services_1_BookAppointment"", ""arguments"": {""stylist_name"": ""Fremont Salon"", ""appointment_time"": ""14:00"", ""appointment_date"": ""2022-07-26""}}"
+smol,live_multiple_455-145-6/Flights_4_SearchOnewayFlight/original,live_multiple_455-145-6,original,distractor,False,call,True,True,False,False,stop,"{""name"": ""Flights_4_SearchOnewayFlight"", ""arguments"": {""origin_airport"": ""LHR"", ""destination_airport"": ""LHR"", ""departure_date"": ""2023-07-26""}}"
+smol,live_multiple_772-171-5/Restaurants_2_FindRestaurants/masked,live_multiple_772-171-5,masked,distractor,False,call,True,False,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""category"": ""Salon"", ""location"": ""Fremont""}}"
+smol,live_multiple_772-171-5/Restaurants_2_FindRestaurants/original,live_multiple_772-171-5,original,distractor,False,abstain,False,False,False,False,stop,NO_CALL
+smol,live_multiple_750-169-5/Travel_1_FindAttractions/masked,live_multiple_750-169-5,masked,distractor,False,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""location"": ""Madge Brindley movie"", ""free_entry"": ""dontcare"", ""category"": ""dontcare"", ""good_for_kids"": ""dontcare""}}"
+smol,live_multiple_653-161-21/Music_3_LookupMusic/masked,live_multiple_653-161-21,masked,target,True,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""artist"": ""Halcyon"", ""album"": ""Halcyon"", ""genre"": ""dontcare"", ""year"": ""2012""}}"
+smol,live_multiple_750-169-5/Travel_1_FindAttractions/original,live_multiple_750-169-5,original,distractor,False,call,True,False,False,False,stop,"{""name"": ""Travel_1_FindAttractions"", ""arguments"": {""location"": ""New York, NY"", ""free_entry"": ""True"", ""category"": ""Movie Theater"", ""good_for_kids"": ""True"", ""name"": ""Madge Brindley""}}"
+smol,live_multiple_455-145-6/Travel_1_FindAttractions/masked,live_multiple_455-145-6,masked,target,True,call,True,False,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""location"": ""London, UK"", ""free_entry"": ""True"", ""category"": ""Garden"", ""good_for_kids"": ""True""}}"
+smol,live_multiple_653-161-21/Music_3_LookupMusic/original,live_multiple_653-161-21,original,target,True,call,True,True,False,False,stop,"{""name"": ""Music_3_LookupMusic"", ""arguments"": {""artist"": ""Halcyon"", ""album"": ""Halcyon"", ""genre"": ""dontcare"", ""year"": ""2012""}}"
+smol,live_multiple_455-145-6/Travel_1_FindAttractions/original,live_multiple_455-145-6,original,target,True,call,True,False,False,False,stop,"{""name"": ""Travel_1_FindAttractions"", ""arguments"": {""location"": ""London, UK"", ""free_entry"": ""True"", ""category"": ""Garden"", ""good_for_kids"": ""True""}}"
+smol,live_multiple_669-162-11/Flights_4_SearchOnewayFlight/masked,live_multiple_669-162-11,masked,distractor,False,call,True,True,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""origin_airport"":""JFK"",""destination_airport"":""LGA"",""departure_date"":""2023-03-07""}}"
+smol,live_multiple_750-169-5/Music_3_LookupMusic/masked,live_multiple_750-169-5,masked,distractor,False,call,True,True,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""artist"": ""Madge Brindley"", ""album"": ""dontcare"", ""genre"": ""dontcare"", ""year"": ""dontcare""}}"
+smol,live_multiple_750-169-5/Music_3_LookupMusic/original,live_multiple_750-169-5,original,distractor,False,call,True,False,False,False,stop,"{""name"": ""Music_3_LookupMusic"", ""arguments"": {""artist"": ""Madonna"", ""album"": ""Erotica"", ""genre"": ""Pop"", ""year"": ""1992""}}"
+smol,live_multiple_669-162-11/Flights_4_SearchOnewayFlight/original,live_multiple_669-162-11,original,distractor,False,call,True,True,False,False,stop,"{""name"": ""Flights_4_SearchOnewayFlight"", ""arguments"": {""origin_airport"": ""JFK"", ""destination_airport"": ""LGA"", ""departure_date"": ""2023-03-07""}}"
+smol,live_multiple_455-145-6/Flights_4_SearchRoundtripFlights/masked,live_multiple_455-145-6,masked,distractor,False,call,True,False,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""origin_airport"": ""LHR"", ""destination_airport"": ""LHR"", ""departure_date"": ""2023-07-25"", ""return_date"": null, ""seating_class"": ""Economy"", ""number_of_tickets"": 1, ""airlines"": ""dontcare""}}"
+smol,live_multiple_315-132-5/Restaurants_2_FindRestaurants/masked,live_multiple_315-132-5,masked,distractor,False,call,True,False,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""category"": ""drama"", ""location"": ""New York, NY"", ""price_range"": ""moderate"", ""has_vegetarian_options"": ""yes"", ""has_seating_outdoors"": ""yes"", ""director"": ""Herbert Ross"", ""actor"": ""James Shapkoff III""}}"
+smol,live_multiple_325-132-15/Restaurants_2_FindRestaurants/masked,live_multiple_325-132-15,masked,distractor,False,call,True,False,False,False,stop,"{""name"": ""lookup_function"", ""arguments"": {""category"": ""Comedy"", ""location"": ""Los Angeles, CA"", ""price_range"": ""moderate"", ""has_vegetarian_options"": ""yes"", ""has_seating_outdoors"": ""yes"", ""director"": ""Riley Stearns""}}"
+smol,live_multiple_455-145-6/Flights_4_SearchRoundtripFlights/original,live_multiple_455-145-6,original,distractor,False,call,True,False,False,False,stop,"{""name"": ""Flights_4_SearchRoundtripFlights"", ""arguments"": {""origin_airport"": ""LHR"", ""destination_airport"": ""LHR"", ""departure_date"": ""2023-03-15"", ""return_date"": null, ""seating_class"": ""Economy"", ""number_of_tickets"": 1, ""airlines"": ""dontcare""}}"
+smol,live_multiple_315-132-5/Restaurants_2_FindRestaurants/original,live_multiple_315-132-5,original,distractor,False,call,True,False,False,False,stop,"{""name"": ""Restaurants_2_FindRestaurants"", ""arguments"": {""category"": ""drama"", ""location"": ""New York, NY"", ""price_range"": ""moderate"", ""has_vegetarian_options"": ""yes"", ""has_seating_outdoors"": ""yes"", ""director"": ""Herbert Ross"", ""actor"": ""James Shapkoff III""}}"
+smol,live_multiple_325-132-15/Restaurants_2_FindRestaurants/original,live_multiple_325-132-15,original,distractor,False,call,True,False,False,False,stop,"{""name"": ""Restaurants_2_FindRestaurants"", ""arguments"": {""category"": ""Riley Stearns"", ""location"": ""Los Angeles, CA""}}"
+smol,live_multiple_669-162-11/Flights_4_SearchRoundtripFlights/masked,live_multiple_669-162-11,masked,distractor,False,call,True,False,False,False,stop,"{""name"":""lookup_function"",""arguments"":{""origin_airport"":""JFK"",""destination_airport"":""LGA"",""departure_date"":""2023-03-07"",""seating_class"":""Economy"",""number_of_tickets"":1,""airlines"":""dontcare""}}"
+smol,live_multiple_669-162-11/Flights_4_SearchRoundtripFlights/original,live_multiple_669-162-11,original,distractor,False,call,False,False,False,False,length,"{""name"": ""Flights_4_SearchRoundtripFlights"", ""arguments"": {""origin_airport"": ""JFK"", ""destination_airport"": ""LGA"", ""departure_date"": ""2023-03-07"", ""return_date"": ""2023-03-07"", ""seating_class"": ""Economy"", ""number_of_tickets"": 1,"

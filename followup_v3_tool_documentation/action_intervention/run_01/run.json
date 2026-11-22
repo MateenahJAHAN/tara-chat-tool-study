@@ -1,0 +1,35 @@
+{
+  "started_utc": "2026-11-22T02:34:06.601212+00:00",
+  "device": "mps",
+  "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dtype": "float32",
+  "attention": "eager",
+  "versions": {
+    "python": "3.12.11",
+    "torch": "2.15.0",
+    "transformers": "5.2.0"
+  },
+  "generation": {
+    "max_new_tokens": 72,
+    "do_sample": false,
+    "use_cache": true,
+    "pad_token_id": 151643,
+    "eos_token_id": [
+      151645,
+      151643
+    ],
+    "transformers_version": "5.2.0"
+  },
+  "batch": 24,
+  "archive_sha256": "bf7dd6d046eba2b4bd61191b26d3b6030430bd4ab1ba7230798927bc5f511dbe",
+  "sources": {
+    "action_intervention/PROTOCOL.md": "932cfd73d9a1394d3a5821f73308059ba9a9f3e68248342621b62d5a8a837661",
+    "action_intervention/run_generation_patch.py": "ec7e53bb5223e95059ce234f50e14b418916adbfbab47000ab706748566dae7f",
+    "run.py": "c9807ab5ef74443200a8be4a08f97b2629ac16556eb07e19099a2f5820886546",
+    "run_actions.py": "1475e11239353ba398adcd53fe06e875c33da6097d9278544d26860bdced21bf"
+  },
+  "completed_utc": "2026-11-22T02:40:02.890727+00:00",
+  "elapsed_seconds": 356.2847886669915,
+  "raw_sha256": "f1c37f9e38b4ae0f56fd2f6702aa53c239dbcb4b26a941ed3af9f611bf7467d0"
+}

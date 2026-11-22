@@ -1,0 +1,9 @@
+model,naming,role,n,questions,n_call,n_no_call,n_other,n_named,n_schema,n_ref,n_schema_plus_ref,n_length,question_weighted_attempt,question_weighted_attempt_or_other
+qwen,original,target,23,23,21,2,0,21,18,15,14,0,0.9130434782608695,0.9130434782608695
+qwen,original,distractor,60,23,3,57,0,3,3,0,0,0,0.043478260869565216,0.043478260869565216
+qwen,masked,target,23,23,21,2,0,21,18,14,13,0,0.9130434782608695,0.9130434782608695
+qwen,masked,distractor,60,23,4,56,0,4,4,0,0,0,0.043478260869565216,0.043478260869565216
+smol,original,target,23,23,23,0,0,21,17,10,10,2,1,1
+smol,original,distractor,60,23,48,12,0,40,24,0,0,5,0.782608695652174,0.782608695652174
+smol,masked,target,23,23,23,0,0,21,15,6,6,1,1,1
+smol,masked,distractor,60,23,58,2,0,55,38,0,0,3,0.967391304347826,0.967391304347826

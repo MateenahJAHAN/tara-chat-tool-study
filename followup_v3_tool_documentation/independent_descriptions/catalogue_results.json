@@ -1,0 +1,150 @@
+{
+  "cells": [
+    {
+      "model": "qwen",
+      "present": false,
+      "matches": false,
+      "n": 12,
+      "calls": 4,
+      "abstain": 8,
+      "other": 0,
+      "selected_offered": 4,
+      "selected_reference": 0,
+      "schema_and_reference": 0,
+      "length": 0
+    },
+    {
+      "model": "qwen",
+      "present": false,
+      "matches": true,
+      "n": 12,
+      "calls": 3,
+      "abstain": 9,
+      "other": 0,
+      "selected_offered": 3,
+      "selected_reference": 0,
+      "schema_and_reference": 0,
+      "length": 0
+    },
+    {
+      "model": "qwen",
+      "present": true,
+      "matches": false,
+      "n": 12,
+      "calls": 11,
+      "abstain": 1,
+      "other": 0,
+      "selected_offered": 11,
+      "selected_reference": 10,
+      "schema_and_reference": 5,
+      "length": 0
+    },
+    {
+      "model": "qwen",
+      "present": true,
+      "matches": true,
+      "n": 12,
+      "calls": 11,
+      "abstain": 1,
+      "other": 0,
+      "selected_offered": 11,
+      "selected_reference": 10,
+      "schema_and_reference": 6,
+      "length": 0
+    },
+    {
+      "model": "smol",
+      "present": false,
+      "matches": false,
+      "n": 12,
+      "calls": 7,
+      "abstain": 2,
+      "other": 3,
+      "selected_offered": 5,
+      "selected_reference": 0,
+      "schema_and_reference": 0,
+      "length": 2
+    },
+    {
+      "model": "smol",
+      "present": false,
+      "matches": true,
+      "n": 12,
+      "calls": 6,
+      "abstain": 3,
+      "other": 3,
+      "selected_offered": 5,
+      "selected_reference": 0,
+      "schema_and_reference": 0,
+      "length": 1
+    },
+    {
+      "model": "smol",
+      "present": true,
+      "matches": false,
+      "n": 12,
+      "calls": 11,
+      "abstain": 0,
+      "other": 1,
+      "selected_offered": 11,
+      "selected_reference": 8,
+      "schema_and_reference": 4,
+      "length": 0
+    },
+    {
+      "model": "smol",
+      "present": true,
+      "matches": true,
+      "n": 12,
+      "calls": 10,
+      "abstain": 0,
+      "other": 2,
+      "selected_offered": 10,
+      "selected_reference": 8,
+      "schema_and_reference": 4,
+      "length": 1
+    }
+  ],
+  "paired_office_change": [
+    {
+      "model": "qwen",
+      "present": false,
+      "pairs": 12,
+      "gains": 0,
+      "losses": 1,
+      "ties": 11,
+      "mean_change": -0.08333333333333333,
+      "exact_mcnemar_p": 1
+    },
+    {
+      "model": "qwen",
+      "present": true,
+      "pairs": 12,
+      "gains": 0,
+      "losses": 0,
+      "ties": 12,
+      "mean_change": 0,
+      "exact_mcnemar_p": null
+    },
+    {
+      "model": "smol",
+      "present": false,
+      "pairs": 12,
+      "gains": 1,
+      "losses": 2,
+      "ties": 9,
+      "mean_change": -0.08333333333333333,
+      "exact_mcnemar_p": 1
+    },
+    {
+      "model": "smol",
+      "present": true,
+      "pairs": 12,
+      "gains": 1,
+      "losses": 1,
+      "ties": 10,
+      "mean_change": 0,
+      "exact_mcnemar_p": 1
+    }
+  ]
+}

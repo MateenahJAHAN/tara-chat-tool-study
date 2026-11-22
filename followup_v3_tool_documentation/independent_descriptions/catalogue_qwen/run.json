@@ -1,0 +1,26 @@
+{
+  "start": "2026-11-22T03:05:34.389769+00:00",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+  "freeze_sha256": "5bf3e5379d8bd4204acb4bd55f69b4f4265c745e2b2e45e54fc976931b0c0188",
+  "batch_size": 4,
+  "device": "mps",
+  "dtype": "float32",
+  "attention": "eager",
+  "generation": {
+    "max_new_tokens": 96,
+    "do_sample": false,
+    "use_cache": true,
+    "pad_token_id": 151643,
+    "eos_token_id": [
+      151645,
+      151643
+    ],
+    "transformers_version": "5.2.0"
+  },
+  "torch": "2.15.0",
+  "transformers": "5.2.0",
+  "end": "2026-11-22T03:07:51.599598+00:00",
+  "raw_sha256": "fa6080512fd5ce62bf98cad64e3065cd75ac9c7a0e7ac99e7a4f36ef1ea9a151",
+  "n": 48
+}
