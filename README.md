@@ -60,6 +60,6 @@ The office effect did not recur on the 12 eligible city questions drawn from BFC
 
 The first study’s development run exposed a scoring error for complete JSON calls missing a closing tag. The corrected scorer and fitted parameters were frozen before held-out inference. The second study substituted Qwen2.5-1.5B after Qwen3-4B reached its length limit on setup checks. [Scoring amendment](study_v1/MEASUREMENT_AMENDMENT_V2.json) · [Pre-test release](https://github.com/MateenahJAHAN/tara-chat-tool-study/tree/v0.2-before-heldout) · [Second study diagnostics](followup_v2_tool_applicability/RESULTS.md)
 
-## Use of AI tools
+## Methods and contributions
 
-The original TARA project used methods taught in ARENA. Claude Code Opus 5.5 drafted its design and code. Claude Fable 5.2 reviewed the matched-request design. Codex designed and ran the documentation-address follow-up and drafted its report. [ARENA](https://github.com/ARENA-education/ARENA_materials) · [Original project record](study_v1/AI_ASSISTANCE_PROVENANCE.json) · [Follow-up paper](followup_v3_tool_documentation/manuscript.md)
+The project used methods taught in [ARENA](https://github.com/ARENA-education/ARENA_materials). [Study contributions and software](CONTRIBUTIONS.md) describe the design, implementation and follow-up work.
